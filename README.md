@@ -10,7 +10,7 @@
 
 🇩🇪 **Deutsch** · 🇬🇧 [English](https://github.com/streckenwacht/integration/blob/main/README.en.md)
 
-> ℹ️ **Junges Projekt.** Version 0.1 läuft stabil, ist aber noch frisch. Rückmeldungen sind sehr willkommen – siehe [Fehler melden](#fehler-melden).
+> ℹ️ **Junges Projekt.** Version 0.2 – die Grundfunktionen laufen stabil, neue Datenquellen sind frisch dazugekommen. Rückmeldungen sind sehr willkommen – siehe [Fehler melden](#fehler-melden).
 
 Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein täglicher Arbeitsweg. Baustellen, Sperrungen, Staus und Unfälle, direkt in deinem Home Assistant: als Kalender, Sensoren und Events für Automationen.
 
