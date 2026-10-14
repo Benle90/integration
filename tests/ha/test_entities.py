@@ -129,6 +129,9 @@ async def test_entities_and_device(
 
     assert hass.states.get(f"sensor.{PREFIX}_travel_time_loss").state == "25"
     assert hass.states.get(f"calendar.{PREFIX}").state == STATE_ON
+    next_closure = hass.states.get(f"sensor.{PREFIX}_next_closure")
+    assert next_closure.state == (NOW + 10 * H).isoformat()  # the planned closure
+    assert next_closure.attributes["title"] == "planned"
     assert hass.states.get(f"event.{PREFIX}_event_change") is not None
 
     (subentry_id,) = entry.subentries

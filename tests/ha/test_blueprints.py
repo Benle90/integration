@@ -6,6 +6,7 @@ service with the same title and message templates.
 
 from __future__ import annotations
 
+from datetime import timedelta
 from pathlib import Path
 from typing import Any
 
@@ -13,6 +14,7 @@ from homeassistant.components.automation.config import AUTOMATION_BLUEPRINT_SCHE
 from homeassistant.components.blueprint.models import Blueprint, BlueprintInputs
 from homeassistant.core import HomeAssistant
 from homeassistant.setup import async_setup_component
+from homeassistant.util import dt as dt_util
 from homeassistant.util.yaml import load_yaml
 from pytest_homeassistant_custom_component.common import async_mock_service
 
@@ -21,6 +23,7 @@ BLUEPRINTS = (
 )
 EVENT_ENTITY = "event.streckenwacht_arbeitsweg_event_change"
 DELAY_SENSOR = "sensor.streckenwacht_arbeitsweg_travel_time_loss"
+NEXT_CLOSURE = "sensor.streckenwacht_arbeitsweg_next_closure"
 
 
 async def setup_blueprint(
@@ -147,3 +150,28 @@ async def test_traffic_jam_threshold(hass: HomeAssistant) -> None:
     assert calls[0].data["message"] == (
         "A8 | Heimsheim - Pforzheim-Nord (Stuttgart -> Karlsruhe)"
     )
+
+
+async def test_closure_warning_within_the_lead_time(hass: HomeAssistant) -> None:
+    now = dt_util.utcnow()
+    later = (now + timedelta(hours=48)).isoformat()
+    hass.states.async_set(NEXT_CLOSURE, later, {"title": "A81 | Vollsperrung"})
+    calls = await setup_blueprint(
+        hass,
+        "vorwarnung_sperrung.yaml",
+        {"next_closure": NEXT_CLOSURE, "notify_device": "phone"},
+    )
+    await hass.async_block_till_done()
+    assert calls == []  # 48 h ahead: outside the default 12 h lead time
+
+    soon = now + timedelta(hours=11)
+    hass.states.async_set(
+        NEXT_CLOSURE,
+        soon.isoformat(),
+        {"title": "A81 | Leonberg - Engelbergtunnel", "road": "A81", "direction": None},
+    )
+    await hass.async_block_till_done()
+    assert len(calls) == 1
+    local = dt_util.as_local(soon.replace(microsecond=0))
+    assert calls[0].data["title"] == f"Sperrung ab {local.strftime('%d.%m. %H:%M')}"
+    assert calls[0].data["message"] == "A81 | Leonberg - Engelbergtunnel (A81)"

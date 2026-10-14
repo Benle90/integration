@@ -89,6 +89,38 @@ def _closure_counts(event: StreckenwachtEvent, now: datetime) -> bool:
     return window.end is not None and window.end - window.start <= LONG_CLOSURE
 
 
+# How far ahead "next closure" looks.
+NEXT_CLOSURE_HORIZON = timedelta(days=14)
+
+
+@dataclass(frozen=True, slots=True)
+class Upcoming:
+    """The next time window of a planned event."""
+
+    event: StreckenwachtEvent
+    start: datetime
+    end: datetime | None
+
+
+def next_closure(
+    events: Iterable[StreckenwachtEvent],
+    now: datetime,
+    horizon: timedelta = NEXT_CLOSURE_HORIZON,
+) -> Upcoming | None:
+    """The closure window starting next (after now, within the horizon)."""
+    best: Upcoming | None = None
+    for event in events:
+        if event.event_type is not EventType.CLOSURE:
+            continue
+        for period in event.periods:
+            start = period.start
+            if start is None or not now < start <= now + horizon:
+                continue
+            if best is None or (start, event.title) < (best.start, best.event.title):
+                best = Upcoming(event, start, period.end)
+    return best
+
+
 def max_delay(
     events: Iterable[StreckenwachtEvent], now: datetime
 ) -> tuple[int, StreckenwachtEvent | None]:

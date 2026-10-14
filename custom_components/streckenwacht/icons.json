@@ -19,6 +19,9 @@
       },
       "travel_time_loss": {
         "default": "mdi:car-clock"
+      },
+      "next_closure": {
+        "default": "mdi:calendar-alert"
       }
     }
   }

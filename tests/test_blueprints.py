@@ -19,6 +19,7 @@ def test_blueprints_exist() -> None:
     assert [f.name for f in FILES] == [
         "neue_meldung.yaml",
         "stau_benachrichtigung.yaml",
+        "vorwarnung_sperrung.yaml",
     ]
 
 

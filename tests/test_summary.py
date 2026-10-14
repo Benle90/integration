@@ -17,6 +17,7 @@ from custom_components.streckenwacht.summary import (
     disruptions,
     listed,
     max_delay,
+    next_closure,
 )
 
 NOW = datetime(2026, 10, 5, 12, tzinfo=UTC)
@@ -196,3 +197,18 @@ def test_jam_threshold() -> None:
     assert ids(10) == ["accident", "closure", "jam"]
     # closures and accidents always count
     assert ids(60) == ["accident", "closure"]
+
+
+def test_next_closure_is_the_earliest_upcoming_window() -> None:
+    soon = ev("soon", EventType.CLOSURE, (PAST, Period(NOW + 2 * H, NOW + 4 * H)))
+    later = ev("later", EventType.CLOSURE, (Period(NOW + 5 * H, None),))
+    roadworks = ev("rw", EventType.ROADWORKS, (Period(NOW + H, NOW + 3 * H),))
+    upcoming = next_closure([later, roadworks, soon, CLOSURE], NOW)
+    assert upcoming is not None
+    assert upcoming.event.id == "soon"
+    assert (upcoming.start, upcoming.end) == (NOW + 2 * H, NOW + 4 * H)
+
+
+def test_next_closure_only_within_the_horizon() -> None:
+    far = ev("far", EventType.CLOSURE, (Period(NOW + 20 * 24 * H, None),))
+    assert next_closure([far, CLOSURE], NOW) is None

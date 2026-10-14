@@ -1,0 +1,72 @@
+blueprint:
+  name: Streckenwacht – Vorwarnung vor geplanter Sperrung
+  description: >-
+    Schickt eine Push-Nachricht an ein Handy mit der Home-Assistant-App, kurz
+    bevor in einem Streckenwacht-Bereich eine geplante Sperrung beginnt – etwa am
+    Vorabend einer nächtlichen Vollsperrung. Nutzt den Sensor „Nächste Sperrung“.
+  domain: automation
+  author: Streckenwacht
+  homeassistant:
+    min_version: "2026.3.0"
+  source_url: https://github.com/streckenwacht/integration/blob/main/blueprints/automation/streckenwacht/vorwarnung_sperrung.yaml
+  input:
+    next_closure:
+      name: Nächste Sperrung
+      description: Der Sensor „Nächste Sperrung“ des Bereichs.
+      selector:
+        entity:
+          filter:
+            integration: streckenwacht
+            domain: sensor
+            device_class: timestamp
+    lead_time:
+      name: Vorlauf
+      description: Wie lange vor Beginn der Sperrung benachrichtigt wird.
+      default:
+        hours: 12
+        minutes: 0
+        seconds: 0
+      selector:
+        duration: {}
+    notify_device:
+      name: Handy
+      description: Gerät mit der offiziellen Home-Assistant-App.
+      selector:
+        device:
+          filter:
+            integration: mobile_app
+
+mode: single
+
+trigger_variables:
+  sensor: !input next_closure
+  lead: !input lead_time
+
+# Becomes true once the lead time before the next closure has begun; it is
+# re-evaluated every minute (now()) and fires once per closure.
+triggers:
+  - trigger: template
+    value_template: >-
+      {%- set s = states(sensor) %}
+      {%- if s in ['unknown', 'unavailable', ''] %}false
+      {%- else %}
+        {%- set start = as_datetime(s) %}
+        {%- set seconds = (lead.days | int(0)) * 86400 + (lead.hours | int(0)) * 3600
+                          + (lead.minutes | int(0)) * 60 + (lead.seconds | int(0)) %}
+        {{- start is not none and start - timedelta(seconds=seconds) <= now() < start }}
+      {%- endif %}
+
+variables:
+  # Variables are stored as text: format the time right here.
+  when: "{{ (as_datetime(states(sensor)) | as_local).strftime('%d.%m. %H:%M') }}"
+  title: "{{ state_attr(sensor, 'title') or 'Sperrung' }}"
+  where: >-
+    {{ state_attr(sensor, 'direction') or state_attr(sensor, 'road') or '' }}
+
+actions:
+  - alias: Push-Nachricht an das Handy
+    domain: mobile_app
+    type: notify
+    device_id: !input notify_device
+    title: "Sperrung ab {{ when }}"
+    message: "{{ title }}{{ ' (' ~ where ~ ')' if where else '' }}"

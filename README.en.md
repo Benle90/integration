@@ -138,6 +138,7 @@ Example for an area named "Commute" (device *Streckenwacht Commute*). Entity IDs
 | `binary_sensor.streckenwacht_commute_disruption_active` | Disruption active | On while a closure, accident or traffic jam above the configured threshold is active. Closures whose current time window is longer than 30 days only count during their first week (they stay in the calendar and under "Events"). Attributes: `count`, `disruptions` |
 | `sensor.streckenwacht_commute_events` | Events | Number of active reports. Attributes: count per type, `by_source`, `events` (up to 20, most severe first) |
 | `sensor.streckenwacht_commute_travel_time_loss` | Travel time loss | Largest current travel time loss in minutes (only with traffic jam data) |
+| `sensor.streckenwacht_commute_next_closure` | Next closure | Start of the next planned closure (within 14 days) as a timestamp. Attributes: `title`, `road`, `direction`, `end`, `source` |
 | `event.streckenwacht_commute_event_change` | Event change | Event type `new` or `ended` |
 
 <img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/kalender.png" alt="Calendar in list view: night closures as single entries, current traffic jam" width="600">
@@ -157,6 +158,7 @@ No YAML: import the blueprint, select the area and your phone, done. *The bluepr
 | Blueprint | What it does | |
 |---|---|---|
 | **Stau-Benachrichtigung** (traffic jam notification) | Push notification as soon as the travel time loss exceeds a threshold; optionally only within a time window | [![Import blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fstreckenwacht%2Fintegration%2Fblob%2Fmain%2Fblueprints%2Fautomation%2Fstreckenwacht%2Fstau_benachrichtigung.yaml) |
+| **Vorwarnung vor geplanter Sperrung** (closure warning) | Push notification with a configurable lead time (default 12 hours) before a planned closure begins – e.g. the evening before a night closure | [![Import blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fstreckenwacht%2Fintegration%2Fblob%2Fmain%2Fblueprints%2Fautomation%2Fstreckenwacht%2Fvorwarnung_sperrung.yaml) |
 | **Neue oder beendete Meldung** (new or ended report) | Push notification for new reports of the selected types (e.g. closure, accident), optionally also when they end | [![Import blueprint](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fstreckenwacht%2Fintegration%2Fblob%2Fmain%2Fblueprints%2Fautomation%2Fstreckenwacht%2Fneue_meldung.yaml) |
 
 Notifications go to a phone running the official Home Assistant app. If you need something else, adapt the YAML examples below.

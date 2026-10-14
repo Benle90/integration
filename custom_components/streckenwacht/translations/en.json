@@ -144,6 +144,9 @@
       },
       "travel_time_loss": {
         "name": "Travel time loss"
+      },
+      "next_closure": {
+        "name": "Next closure"
       }
     },
     "event": {

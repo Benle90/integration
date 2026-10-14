@@ -144,6 +144,9 @@
       },
       "travel_time_loss": {
         "name": "Reisezeitverlust"
+      },
+      "next_closure": {
+        "name": "Nächste Sperrung"
       }
     },
     "event": {

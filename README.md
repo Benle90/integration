@@ -136,6 +136,7 @@ Beispiel für den Bereich „Arbeitsweg“ (Gerät *Streckenwacht Arbeitsweg*). 
 | `binary_sensor.streckenwacht_arbeitsweg_disruption_active` | Störung aktiv | An bei aktiver Sperrung, Unfall oder Stau ab der eingestellten Schwelle. Sperrungen, deren aktuelles Zeitfenster länger als 30 Tage ist, zählen nur in ihrer ersten Woche (danach bleiben sie im Kalender und unter „Ereignisse“). Attribute: `count`, `disruptions` |
 | `sensor.streckenwacht_arbeitsweg_events` | Ereignisse | Anzahl aktiver Meldungen. Attribute: Anzahl je Typ, `by_source`, `events` (bis zu 20, schwerste zuerst) |
 | `sensor.streckenwacht_arbeitsweg_travel_time_loss` | Reisezeitverlust | Größter aktueller Reisezeitverlust in Minuten (nur mit Staumeldungen) |
+| `sensor.streckenwacht_arbeitsweg_next_closure` | Nächste Sperrung | Beginn der nächsten geplanten Sperrung (innerhalb von 14 Tagen) als Zeitstempel. Attribute: `title`, `road`, `direction`, `end`, `source` |
 | `event.streckenwacht_arbeitsweg_event_change` | Ereignisänderung | Event-Typ `new` oder `ended` |
 
 <img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/kalender.png" alt="Kalender in der Listenansicht: Nachtsperrungen als einzelne Termine, aktueller Stau" width="600">
@@ -155,6 +156,7 @@ Ohne YAML: Blueprint importieren, Bereich und Handy auswählen, fertig.
 | Blueprint | Was sie tut | |
 |---|---|---|
 | **Stau-Benachrichtigung** | Push-Nachricht, sobald der Reisezeitverlust einen Schwellwert überschreitet; optional nur in einem Zeitfenster | [![Blueprint importieren](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fstreckenwacht%2Fintegration%2Fblob%2Fmain%2Fblueprints%2Fautomation%2Fstreckenwacht%2Fstau_benachrichtigung.yaml) |
+| **Vorwarnung vor geplanter Sperrung** | Push-Nachricht mit frei wählbarem Vorlauf (Standard 12 Stunden), bevor eine geplante Sperrung beginnt – etwa am Vorabend einer Nachtsperrung | [![Blueprint importieren](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fstreckenwacht%2Fintegration%2Fblob%2Fmain%2Fblueprints%2Fautomation%2Fstreckenwacht%2Fvorwarnung_sperrung.yaml) |
 | **Neue oder beendete Meldung** | Push-Nachricht bei neuen Meldungen der gewählten Arten (z. B. Sperrung, Unfall), auf Wunsch auch bei deren Ende | [![Blueprint importieren](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fstreckenwacht%2Fintegration%2Fblob%2Fmain%2Fblueprints%2Fautomation%2Fstreckenwacht%2Fneue_meldung.yaml) |
 
 Die Benachrichtigungen gehen an ein Handy mit der offiziellen Home-Assistant-App. Wer es anders braucht, findet unten die Beispiele als YAML zum Anpassen.

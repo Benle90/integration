@@ -1,8 +1,9 @@
-"""Sensors per observation area: active events and travel time loss."""
+"""Sensors per observation area: active events, travel time loss, next closure."""
 
 from __future__ import annotations
 
 from collections import Counter
+from datetime import datetime
 from typing import Any
 
 from homeassistant.components.sensor import (
@@ -20,7 +21,7 @@ from .const import CONF_INCLUDE_INRIX, DEFAULT_INCLUDE_INRIX, Source
 from .coordinator import area_subentries
 from .entity import TimeDependentEntity
 from .model import EventType
-from .summary import active, listed, max_delay
+from .summary import active, listed, max_delay, next_closure
 
 
 async def async_setup_entry(
@@ -34,7 +35,10 @@ async def async_setup_entry(
         and entry.options.get(CONF_INCLUDE_INRIX, DEFAULT_INCLUDE_INRIX)
     )
     for subentry in area_subentries(entry):
-        entities: list[SensorEntity] = [EventsSensor(entry, subentry, "events")]
+        entities: list[SensorEntity] = [
+            EventsSensor(entry, subentry, "events"),
+            NextClosureSensor(entry, subentry, "next_closure"),
+        ]
         if with_delay:
             entities.append(TravelTimeLossSensor(entry, subentry, "travel_time_loss"))
         async_add_entities(entities, config_subentry_id=subentry.subentry_id)
@@ -85,5 +89,37 @@ class TravelTimeLossSensor(TimeDependentEntity, SensorEntity):
             "title": event.title if event else None,
             "road": event.road if event else None,
             "direction": event.direction if event else None,
+            "unavailable_sources": self.unavailable_sources,
+        }
+
+
+class NextClosureSensor(TimeDependentEntity, SensorEntity):
+    """Start of the next planned closure in the area (within two weeks).
+
+    A timestamp, so automations can use it with a time trigger and an offset,
+    e.g. a warning the evening before.
+    """
+
+    _attr_translation_key = "next_closure"
+    _attr_device_class = SensorDeviceClass.TIMESTAMP
+
+    @property
+    def native_value(self) -> datetime | None:
+        """Return the start of the next closure, if any."""
+        upcoming = next_closure(self.area_events, dt_util.utcnow())
+        return upcoming.start if upcoming else None
+
+    @property
+    def extra_state_attributes(self) -> dict[str, Any]:
+        """What closes, and until when."""
+        upcoming = next_closure(self.area_events, dt_util.utcnow())
+        event = upcoming.event if upcoming else None
+        return {
+            "title": event.title if event else None,
+            "road": event.road if event else None,
+            "direction": event.direction if event else None,
+            "end": upcoming.end.isoformat() if upcoming and upcoming.end else None,
+            "source": event.source.value if event else None,
+            "id": event.id if event else None,
             "unavailable_sources": self.unavailable_sources,
         }
