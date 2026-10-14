@@ -217,17 +217,63 @@ async def test_removing_a_source_clears_its_issue(
     assert issue_registry.async_get_issue(DOMAIN, "provider_failed_stuttgart") is None
 
 
-async def test_options_change_reloads(
+async def test_area_change_reloads_with_its_sources(
     hass: HomeAssistant, autobahn: AsyncMock, mobidata: AsyncMock
 ) -> None:
     entry = make_entry()
     await setup(hass, entry)
-    hass.config_entries.async_update_entry(
-        entry, options=dict(entry.options) | {CONF_SOURCES: ["autobahn"]}
+    subentry = next(iter(entry.subentries.values()))
+    hass.config_entries.async_update_subentry(
+        entry, subentry, data=dict(subentry.data) | {"sources": ["autobahn"]}
     )
     await hass.async_block_till_done()
     assert entry.state is ConfigEntryState.LOADED
     assert set(entry.runtime_data.coordinators) == {Source.AUTOBAHN}
+
+
+async def test_only_sources_used_by_an_area_are_polled(
+    hass: HomeAssistant, autobahn: AsyncMock, mobidata: AsyncMock
+) -> None:
+    entry = MockConfigEntry(
+        domain=DOMAIN,
+        title="Streckenwacht",
+        options={CONF_SCAN_INTERVAL: 15, CONF_INCLUDE_INRIX: True},
+        subentries_data=[],
+        minor_version=2,
+    )
+    await setup(hass, entry)
+    assert entry.runtime_data.coordinators == {}
+    autobahn.assert_not_awaited()
+
+
+async def test_migration_moves_sources_into_the_areas(
+    hass: HomeAssistant, autobahn: AsyncMock, mobidata: AsyncMock
+) -> None:
+    """Up to 0.2.0 the entry listed the sources; areas without a list used all."""
+    own = ConfigSubentryData(
+        data=dict(AREA["data"]) | {"sources": ["mobidata_bw"]},
+        subentry_type=SUBENTRY_AREA,
+        title="Eigene Auswahl",
+        unique_id=None,
+    )
+    entry = MockConfigEntry(
+        domain=DOMAIN,
+        title="Streckenwacht",
+        options={
+            CONF_SOURCES: ["mobidata_bw", "autobahn"],
+            CONF_SCAN_INTERVAL: 15,
+            CONF_INCLUDE_INRIX: True,
+        },
+        subentries_data=[AREA, own],
+    )
+    await setup(hass, entry)
+    assert entry.minor_version == 2
+    assert CONF_SOURCES not in entry.options
+    sources = {s.title: s.data["sources"] for s in entry.subentries.values()}
+    assert sources == {
+        "Arbeitsweg": ["autobahn", "mobidata_bw"],
+        "Eigene Auswahl": ["mobidata_bw"],
+    }
 
 
 async def test_area_without_source_is_not_queried(
@@ -247,11 +293,10 @@ async def test_area_without_source_is_not_queried(
         subentries_data=[city_only],
     )
     await setup(hass, entry)
-    (areas,) = autobahn.await_args.args
-    assert areas == []  # the only area does not show motorway events
+    autobahn.assert_not_awaited()  # no area shows motorway events
     (subentry_id,) = entry.subentries
     coordinators = entry.runtime_data.coordinators
-    assert coordinators[Source.AUTOBAHN].data.by_area[subentry_id] == ()
+    assert set(coordinators) == {Source.MOBIDATA_BW}
     assert len(coordinators[Source.MOBIDATA_BW].data.by_area[subentry_id]) == 1
 
 

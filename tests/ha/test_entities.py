@@ -21,11 +21,11 @@ from pytest_homeassistant_custom_component.common import (
 )
 
 from custom_components.streckenwacht.const import (
+    CONF_AREA_SOURCES,
     CONF_INCLUDE_INRIX,
     CONF_RADIUS,
     CONF_ROADS,
     CONF_SCAN_INTERVAL,
-    CONF_SOURCES,
     DOMAIN,
     SUBENTRY_AREA,
     Source,
@@ -68,18 +68,14 @@ def make_entry(area: dict | None = None, **options: object) -> MockConfigEntry:
     return MockConfigEntry(
         domain=DOMAIN,
         title="Streckenwacht",
-        options={
-            CONF_SOURCES: ["autobahn"],
-            CONF_SCAN_INTERVAL: 15,
-            CONF_INCLUDE_INRIX: True,
-        }
-        | options,
+        options={CONF_SCAN_INTERVAL: 15, CONF_INCLUDE_INRIX: True} | options,
         subentries_data=[
             ConfigSubentryData(
                 data={
                     "latitude": 48.78,
                     "longitude": 9.18,
                     CONF_RADIUS: 10000,
+                    CONF_AREA_SOURCES: ["autobahn"],
                     CONF_ROADS: ["A8"],
                 }
                 | (area or {}),
@@ -88,6 +84,7 @@ def make_entry(area: dict | None = None, **options: object) -> MockConfigEntry:
                 unique_id=None,
             )
         ],
+        minor_version=2,  # current format: no migration in between
     )
 
 
