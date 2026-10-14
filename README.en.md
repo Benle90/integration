@@ -21,7 +21,7 @@ The integration's UI is available in German and English and follows your Home As
 - Define **observation areas** freely: a circle on the map, e.g. "Home" or "Commute".
 - Per area: choose **data sources**, **motorways** and **directions of travel** – e.g. only the A81 towards Stuttgart.
 - Per area a **calendar** with all roadworks and closures; night-time roadworks appear as one entry per night.
-- **"Disruption active"** as soon as a closure, an accident or a significant traffic jam is active in the area – ordinary long-term roadworks and minor delays deliberately do not trigger it.
+- **"Disruption active"** as soon as a closure, an accident or a significant traffic jam is active in the area – long-term roadworks, closures lasting months (after their first week) and minor delays deliberately do not trigger it.
 - **Travel time loss** in minutes (largest current value in the area).
 - **Event for new and ended reports** – ideal for push notifications.
 - If one source fails, the others keep working; after repeated failures a notice appears under *Repairs*.
@@ -135,7 +135,7 @@ Example for an area named "Commute" (device *Streckenwacht Commute*). Entity IDs
 | Entity | Name | Content |
 |---|---|---|
 | `calendar.streckenwacht_commute` | Streckenwacht Commute | All reports as calendar entries |
-| `binary_sensor.streckenwacht_commute_disruption_active` | Disruption active | On while a closure, accident or traffic jam above the configured threshold is active. Attributes: `count`, `disruptions` |
+| `binary_sensor.streckenwacht_commute_disruption_active` | Disruption active | On while a closure, accident or traffic jam above the configured threshold is active. Closures whose current time window is longer than 30 days only count during their first week (they stay in the calendar and under "Events"). Attributes: `count`, `disruptions` |
 | `sensor.streckenwacht_commute_events` | Events | Number of active reports. Attributes: count per type, `by_source`, `events` (up to 20, most severe first) |
 | `sensor.streckenwacht_commute_travel_time_loss` | Travel time loss | Largest current travel time loss in minutes (only with traffic jam data) |
 | `event.streckenwacht_commute_event_change` | Event change | Event type `new` or `ended` |

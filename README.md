@@ -19,7 +19,7 @@ Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein
 - **Beobachtungsbereiche** frei festlegen: Kreis auf der Karte, z. B. „Zuhause“ oder „Arbeitsweg“.
 - Pro Bereich wählbar: **Datenquellen**, **Autobahnen** und **Fahrtrichtungen** – etwa nur die A81 Richtung Stuttgart.
 - Pro Bereich ein **Kalender** mit allen Baustellen und Sperrungen; Nachtbaustellen erscheinen als einzelne Termine pro Nacht.
-- **„Störung aktiv“**, sobald im Bereich eine Sperrung, ein Unfall oder ein nennenswerter Stau aktiv ist – normale Dauerbaustellen und kleine Verzögerungen lösen ihn bewusst nicht aus.
+- **„Störung aktiv“**, sobald im Bereich eine Sperrung, ein Unfall oder ein nennenswerter Stau aktiv ist – Dauerbaustellen, monatelange Sperrungen (nach ihrer ersten Woche) und kleine Verzögerungen lösen ihn bewusst nicht aus.
 - **Reisezeitverlust** in Minuten (größter aktueller Wert im Bereich).
 - **Event bei neuen und beendeten Meldungen** – ideal für Push-Nachrichten.
 - Fällt eine Quelle aus, laufen die anderen weiter; nach wiederholten Fehlern erscheint ein Hinweis unter *Reparaturen*.
@@ -133,7 +133,7 @@ Beispiel für den Bereich „Arbeitsweg“ (Gerät *Streckenwacht Arbeitsweg*). 
 | Entität | Anzeigename | Inhalt |
 |---|---|---|
 | `calendar.streckenwacht_arbeitsweg` | Streckenwacht Arbeitsweg | Alle Meldungen als Termine |
-| `binary_sensor.streckenwacht_arbeitsweg_disruption_active` | Störung aktiv | An bei aktiver Sperrung, Unfall oder Stau ab der eingestellten Schwelle. Attribute: `count`, `disruptions` |
+| `binary_sensor.streckenwacht_arbeitsweg_disruption_active` | Störung aktiv | An bei aktiver Sperrung, Unfall oder Stau ab der eingestellten Schwelle. Sperrungen, deren aktuelles Zeitfenster länger als 30 Tage ist, zählen nur in ihrer ersten Woche (danach bleiben sie im Kalender und unter „Ereignisse“). Attribute: `count`, `disruptions` |
 | `sensor.streckenwacht_arbeitsweg_events` | Ereignisse | Anzahl aktiver Meldungen. Attribute: Anzahl je Typ, `by_source`, `events` (bis zu 20, schwerste zuerst) |
 | `sensor.streckenwacht_arbeitsweg_travel_time_loss` | Reisezeitverlust | Größter aktueller Reisezeitverlust in Minuten (nur mit Staumeldungen) |
 | `event.streckenwacht_arbeitsweg_event_change` | Ereignisänderung | Event-Typ `new` oder `ended` |

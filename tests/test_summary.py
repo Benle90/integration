@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from datetime import UTC, datetime, timedelta
 
+import pytest
+
 from custom_components.streckenwacht.const import Source
 from custom_components.streckenwacht.model import EventType, Period, StreckenwachtEvent
 from custom_components.streckenwacht.summary import (
@@ -64,6 +66,35 @@ def test_disruptions_exclude_plain_roadworks() -> None:
     events = [ROADWORKS, CLOSURE, JAM, PLANNED]
     assert [e.id for e in disruptions(events, NOW)] == ["closure", "jam"]
     assert disruptions([ROADWORKS], NOW) == []
+
+
+D = timedelta(days=1)
+
+
+@pytest.mark.parametrize(
+    ("periods", "counts"),
+    [
+        ((Period(NOW - 20 * D, NOW + 5 * D),), True),  # 25 days: short enough
+        ((Period(NOW - 3 * D, NOW + 300 * D),), True),  # long, but new
+        ((Period(NOW - 60 * D, NOW + 300 * D),), False),  # long-running
+        ((Period(NOW - 60 * D, None),), False),  # open-ended and old
+        ((Period(NOW - 2 * D, None),), True),  # open-ended but new
+        ((Period(None, NOW + 300 * D),), False),  # unknown start
+        ((), True),  # no times: listed by the source as current
+        # Nightly closures of a long project: each night is a short window.
+        ((Period(NOW - 90 * D, NOW - 89 * D), Period(NOW - H, NOW + 5 * H)), True),
+    ],
+)
+def test_long_running_closures_only_count_while_new(
+    periods: tuple[Period, ...], counts: bool
+) -> None:
+    closure = ev("c", EventType.CLOSURE, periods)
+    assert bool(disruptions([closure], NOW)) is counts
+
+
+def test_long_running_closures_stay_active_events() -> None:
+    closure = ev("c", EventType.CLOSURE, (Period(NOW - 60 * D, NOW + 300 * D),))
+    assert active([closure], NOW) == [closure]
 
 
 def test_max_delay_is_the_largest_active() -> None:

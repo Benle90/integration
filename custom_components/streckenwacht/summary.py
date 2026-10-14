@@ -15,6 +15,14 @@ DISRUPTION_TYPES = frozenset(
     {EventType.CLOSURE, EventType.ACCIDENT, EventType.TRAFFIC_JAM}
 )
 
+# Long-running closures are the new normal on the road (a bridge closed for
+# years, a street closed for months, many of them in big cities): they turn
+# "disruption active" on only during their first days. Closures whose current
+# time window is short count throughout - nightly closures of a long project
+# included, as every night is a window of its own.
+LONG_CLOSURE = timedelta(days=30)
+NEW_CLOSURE = timedelta(days=7)
+
 # Order for attribute lists: most severe first.
 _SEVERITY = {
     EventType.ACCIDENT: 0,
@@ -54,6 +62,7 @@ def disruptions(
 
     Traffic jams only count from jam_threshold minutes of travel time loss on;
     with a threshold above 0, jams without a known loss do not count.
+    Long-running closures only count while they are new (see LONG_CLOSURE).
     """
     return [
         e
@@ -64,7 +73,20 @@ def disruptions(
             or jam_threshold <= 0
             or (e.delay_minutes or 0) >= jam_threshold
         )
+        and (e.event_type is not EventType.CLOSURE or _closure_counts(e, now))
     ]
+
+
+def _closure_counts(event: StreckenwachtEvent, now: datetime) -> bool:
+    """Short or new closures; long-running ones are ignored after a few days."""
+    if not event.periods:
+        return True  # no times at all: the source lists it as current
+    window = next((p for p in event.periods if p.contains(now)), None)
+    if window is None or window.start is None:
+        return False  # began at an unknown time: treated as long-running
+    if now - window.start <= NEW_CLOSURE:
+        return True
+    return window.end is not None and window.end - window.start <= LONG_CLOSURE
 
 
 def max_delay(

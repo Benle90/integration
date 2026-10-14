@@ -41,7 +41,7 @@ Wie Streckenwacht gebaut ist, was man über die Datenquellen wissen muss und war
 | Entity | Beispiel-ID | Verhalten |
 |---|---|---|
 | Kalender | `calendar.streckenwacht_arbeitsweg` | Jedes Zeitfenster ein Eintrag (Tagesbaustellen mit mehreren Fenstern → mehrere Einträge). Stau/Unfall/Warnung ohne Ende reichen bis jetzt + 30 min (`LIVE_SPAN`), sonst würden sie über den ganzen sichtbaren Zeitraum gestreckt. |
-| Störung aktiv | `binary_sensor.streckenwacht_arbeitsweg_disruption_active` | An bei aktiver Sperrung, Unfall oder Stau ab Stau-Schwelle. Dauerbaustellen zählen bewusst nicht. Keine `device_class` (Anzeige Ein/Aus). |
+| Störung aktiv | `binary_sensor.streckenwacht_arbeitsweg_disruption_active` | An bei aktiver Sperrung, Unfall oder Stau ab Stau-Schwelle. Dauerbaustellen zählen bewusst nicht; Sperrungen mit einem Zeitfenster über 30 Tage nur in ihren ersten 7 Tagen (`summary.LONG_CLOSURE`/`NEW_CLOSURE`). Keine `device_class` (Anzeige Ein/Aus). |
 | Ereignisse | `sensor.streckenwacht_arbeitsweg_events` | Anzahl aktiver Meldungen; Attribute je Typ, `by_source`, `events` (bis zu 20, schwerste zuerst) |
 | Reisezeitverlust | `sensor.streckenwacht_arbeitsweg_travel_time_loss` | Größter aktueller Verlust in Minuten; nur mit INRIX |
 | Ereignisänderung | `event.streckenwacht_arbeitsweg_event_change` | `new`/`ended`. Erste Daten einer Quelle und alles nach einer Bereichsänderung (Fingerprint der Einstellungen) werden still gelernt; ein Ausfall löst kein `ended` aus. Pro Ereignis ein State-Write, damit Automationen jedes sehen. |
@@ -151,6 +151,7 @@ Alle klein genug für den Komplettabruf ohne Ausschnitt.
 - **Keine Webcams** – keine Quelle liefert öffentliche Bilder.
 - **Keine Deduplizierung zwischen Quellen** in v1. Messung (2026-10-02, 10 km um Stuttgart-Kaltental): 64 quellenübergreifende Paare ≤ 300 m, fast alle aber verschiedene Straßen am selben Ort. Ein späteres Verfahren muss dieselbe Straße verlangen.
 - **„Störung aktiv“ nur für Sperrung, Unfall, Stau ab Schwelle** – sonst wäre es wegen Dauerbaustellen praktisch immer an.
+- **Langlaufende Sperrungen zählen nur in ihrer ersten Woche** (0.2.0): In Städten gibt es viele monatelange Sperrungen; der Sensor war dort praktisch immer an. Kurze Zeitfenster (bis 30 Tage, auch einzelne Nachtsperrungen langer Projekte) zählen weiter durchgehend; Sperrungen ohne bekannten Beginn gelten als langlaufend, solche ganz ohne Zeiten zählen. Gemessen 2026-10-14 (aktive Sperrungen → zählend): Stuttgart 10 km 29 → 3, Berlin 8 km 46 → 3, München 5 km 32 → 3, Köln 5 km 16 → 3, Hamburg-Mitte 10 km 134 → 29.
 - **Projektlizenz MIT** (HACS-üblich; Apache-2.0 brächte hier keinen Mehrwert).
 - **Repo** `github.com/streckenwacht/integration` (Organisation), `codeowners` `@n42net`.
 
@@ -172,7 +173,6 @@ Alle klein genug für den Komplettabruf ohne Ausschnitt.
 ## 6. Backlog
 
 - **Weitere Datenquellen:** Planung und geprüfte Endpunkte in [`DATENQUELLEN.md`](DATENQUELLEN.md). Der norddeutsche WFS ist umgesetzt; weitere WFS-Quellen (Rheinland-Pfalz, Brandenburg, Sachsen-Anhalt, Städte) können auf `providers/wfs.py` aufbauen.
-- **„Störung aktiv“ und Dauer-Sperrungen:** In Städten gibt es viele monatelange Sperrungen (10 km um Hamburg-Mitte: 134 aktive, 83 davon seit über 30 Tagen; Stuttgart: 29/22). Der Sensor ist dort praktisch immer an. Idee: Sperrungen nur zählen, wenn sie kürzer als z. B. 30 Tage laufen oder neu sind.
 - **Kartenansicht:** eigene Lovelace-Karte mit der ohnehin vorhandenen Geometrie.
 - **Strecke statt Kreis:** Korridor entlang einer Route (aus dem Beta-Test).
 - **Autobahn-Abschnitte** („A81 zwischen AS X und AS Y“): Abschnittsnamen sind Freitext – zugunsten der Fahrtrichtungen zurückgestellt.
