@@ -10,6 +10,7 @@ from datetime import timedelta
 from pathlib import Path
 from typing import Any
 
+import pytest
 from homeassistant.components.automation.config import AUTOMATION_BLUEPRINT_SCHEMA
 from homeassistant.components.blueprint.models import Blueprint, BlueprintInputs
 from homeassistant.core import HomeAssistant
@@ -152,6 +153,8 @@ async def test_traffic_jam_threshold(hass: HomeAssistant) -> None:
     )
 
 
+# The template trigger re-evaluates now() every minute: its timer outlives the test.
+@pytest.mark.parametrize("expected_lingering_timers", [True])
 async def test_closure_warning_within_the_lead_time(hass: HomeAssistant) -> None:
     now = dt_util.utcnow()
     later = (now + timedelta(hours=48)).isoformat()
