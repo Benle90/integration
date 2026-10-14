@@ -15,11 +15,13 @@ siehe docs/ENTWICKLUNG.md Abschnitt 2).
 from __future__ import annotations
 
 import contextlib
+import io
 import json
 import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+import zipfile
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -67,6 +69,11 @@ SACHSEN_ANHALT_URL = (
     "&REQUEST=GetFeature&TYPENAMES=ms:roadworks&OUTPUTFORMAT=geojson"
     "&SRSNAME=EPSG:4326"
 )
+
+# Sachsen: ZIP mit GeoJSON in UTM 33N; gespeichert wird nur ein Auszug der
+# Sperrungen rund um Leipzig (unverändert in UTM), damit die Fixture klein bleibt.
+SACHSEN_URL = "https://www.list.smwa.sachsen.de/gdi/download/baustelleninfo/Baustelleninfo_Sachsen_geojson.zip"
+SACHSEN_EXCERPT = (300_000, 5_665_000, 330_000, 5_700_000)  # UTM: Ost/Nord min/max
 
 index: list[dict] = []
 
@@ -164,6 +171,26 @@ def osten() -> None:
         save(name, url, s, b, c)
 
 
+def sachsen() -> None:
+    print("Sachsen")
+    s, b, c = get(SACHSEN_URL)
+    if s != 200:
+        save("sachsen_sperrungen_leipzig.geojson.json", SACHSEN_URL, s, b, c)
+        return
+    with zipfile.ZipFile(io.BytesIO(b)) as archive:
+        name = next(n for n in archive.namelist() if "Sperrungen" in n)
+        data = json.loads(archive.read(name))
+    e0, n0, e1, n1 = SACHSEN_EXCERPT
+
+    def inside(feature: dict) -> bool:
+        x, y = feature["geometry"]["coordinates"][0][:2]
+        return e0 <= x <= e1 and n0 <= y <= n1
+
+    data["features"] = [f for f in data["features"] if inside(f)]
+    body = json.dumps(data, ensure_ascii=False).encode()
+    save("sachsen_sperrungen_leipzig.geojson.json", SACHSEN_URL, s, body, c)
+
+
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     autobahn()
@@ -171,6 +198,7 @@ def main() -> int:
     stuttgart()
     norddeutschland()
     osten()
+    sachsen()
     (OUT / "_index.json").write_text(
         json.dumps(
             {

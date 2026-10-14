@@ -59,7 +59,7 @@ def parse_features(features: Iterable[Any]) -> Iterable[StreckenwachtEvent]:
     for feature in features:
         try:
             event = parse_feature(feature)
-        except (AttributeError, KeyError, TypeError, ValueError) as err:
+        except (AttributeError, LookupError, TypeError, ValueError) as err:
             _LOGGER.debug("Skipping malformed VIZ Berlin feature: %s", err)
             continue
         if event is not None:

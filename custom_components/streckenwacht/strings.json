@@ -120,7 +120,8 @@
         "norddeutschland": "Northern Germany (SH, HH, MV, NI; LBV.SH)",
         "berlin": "Berlin (VIZ, main roads incl. incidents)",
         "brandenburg": "Brandenburg (federal, state, district roads)",
-        "sachsen_anhalt": "Saxony-Anhalt (all roads; non-commercial use)"
+        "sachsen_anhalt": "Saxony-Anhalt (all roads; non-commercial use)",
+        "sachsen": "Saxony (all roads)"
       }
     }
   },

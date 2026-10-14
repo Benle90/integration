@@ -38,6 +38,7 @@ Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein
 | [VIZ Berlin](https://daten.berlin.de/datensaetze/baustellen-sperrungen-und-sonstige-storungen-von-besonderem-verkehrlichem-interesse) | Berliner Hauptstraßen: Baustellen, Sperrungen, Störungen (Autobahn-Baustellen kommen über die Autobahn GmbH) | Digitale Plattform Stadtverkehr Berlin, dl-de/by-2-0 |
 | [Landesbetrieb Straßenwesen Brandenburg](https://isk.geobasis-bb.de/ows/baustelleninfo_wfs?SERVICE=WFS&REQUEST=GetCapabilities) | Bundes-, Landes- und Kreisstraßen in Brandenburg | © Landesbetrieb Straßenwesen Brandenburg, dl-de/by-2-0 |
 | [Sperrinfo Sachsen-Anhalt](https://service.ifak.eu/sperrinfo/wfs?SERVICE=WFS&REQUEST=GetCapabilities) | Alle Straßenklassen in Sachsen-Anhalt inkl. Gemeindestraßen | Ministerium für Landesentwicklung und Verkehr; laut Dienst **nur nichtkommerzielle Nutzung** |
+| [Baustelleninformationssystem Sachsen](https://www.baustellen.sachsen.de/baustellendaten-dienste-3997.html) | Alle Straßenklassen in Sachsen inkl. Gemeindestraßen (Autobahnen kommen über die Autobahn GmbH) | Baustelleninformationssystem Sachsen, CC BY 4.0 |
 
 Alle Entitäten tragen die jeweilige Namensnennung im Attribut `attribution`.
 
@@ -57,7 +58,7 @@ Kurz: Streckenwacht eignet sich gut, um größere Störungen auf Hauptstrecken i
 
 ## Datenschutz
 
-Dein Standort verlässt Home Assistant nicht. Streckenwacht lädt die Meldungen ganzer Autobahnen bzw. die landesweite MobiData-Datei und die Stuttgarter Liste herunter und filtert erst lokal auf deine Bereiche. Unveränderte Daten werden dank ETag nicht erneut übertragen.
+Dein Standort verlässt Home Assistant nicht. Streckenwacht lädt die Meldungen ganzer Autobahnen bzw. landes- oder stadtweite Dateien (z. B. MobiData BW, Sachsen, Berlin) herunter und filtert erst lokal auf deine Bereiche. Unveränderte Daten werden dank ETag nicht erneut übertragen.
 
 Ausnahme sind große Landesquellen ohne ETag (Norddeutschland, Brandenburg): Sie sind zu groß, um bei jedem Abruf komplett geladen zu werden. Streckenwacht fragt dort deshalb einen groben Kartenausschnitt ab – auf ein Raster von etwa 55 × 35 km gerundet. Der Server erfährt so nur die ungefähre Region, nicht deinen Bereich.
 

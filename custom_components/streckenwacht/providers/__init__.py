@@ -78,3 +78,33 @@ class Provider(ABC):
             raise ProviderError(f"Error fetching {url}: {err}") from err
         except ValueError as err:
             raise ProviderError(f"Invalid JSON from {url}") from err
+
+    async def _get_bytes(self, url: str) -> bytes | None:
+        """GET a binary file; None if unchanged since the last call (ETag).
+
+        Unlike _get_json the content is not cached here: the caller keeps
+        whatever it derived from it.
+        """
+        headers = {"User-Agent": USER_AGENT}
+        cached = self._etags.get(url)
+        if cached:
+            headers["If-None-Match"] = cached[0]
+        try:
+            async with self._session.get(
+                url,
+                headers=headers,
+                timeout=aiohttp.ClientTimeout(total=REQUEST_TIMEOUT),
+            ) as response:
+                if response.status == HTTPStatus.NOT_MODIFIED and cached:
+                    return None
+                response.raise_for_status()
+                data = await response.read()
+                if etag := response.headers.get("ETag"):
+                    self._etags[url] = (etag, None)
+                return data
+        except TimeoutError as err:
+            raise ProviderError(f"Timeout fetching {url}") from err
+        except aiohttp.ClientResponseError as err:
+            raise ProviderError(f"HTTP {err.status} fetching {url}") from err
+        except aiohttp.ClientError as err:
+            raise ProviderError(f"Error fetching {url}: {err}") from err

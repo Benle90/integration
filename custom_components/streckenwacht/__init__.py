@@ -34,6 +34,7 @@ from .providers.berlin import BerlinProvider
 from .providers.brandenburg import BrandenburgProvider
 from .providers.mobidata_bw import MobiDataBWProvider
 from .providers.norddeutschland import NorddeutschlandProvider
+from .providers.sachsen import SachsenProvider
 from .providers.sachsen_anhalt import SachsenAnhaltProvider
 from .providers.stuttgart import StuttgartProvider
 
@@ -52,6 +53,7 @@ PROVIDERS: dict[Source, type[Provider]] = {
     Source.BERLIN: BerlinProvider,
     Source.BRANDENBURG: BrandenburgProvider,
     Source.SACHSEN_ANHALT: SachsenAnhaltProvider,
+    Source.SACHSEN: SachsenProvider,
 }
 
 

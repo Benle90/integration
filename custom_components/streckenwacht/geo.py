@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from collections.abc import Iterator, Sequence
 from itertools import pairwise
-from math import asin, cos, hypot, radians, sin, sqrt
+from math import asin, atan2, cos, cosh, degrees, hypot, radians, sin, sinh, sqrt
 from typing import Any
 
 EARTH_RADIUS_KM = 6371.0088
@@ -96,3 +96,40 @@ def _is_position(value: Any) -> bool:
         and len(value) >= 2
         and all(isinstance(v, (int, float)) for v in value[:2])
     )
+
+
+# GRS80 (ETRS89), practically identical to WGS84 at this scale.
+_GRS80_A = 6378137.0
+_GRS80_F = 1 / 298.257222101
+_UTM_K0 = 0.9996
+
+
+def utm_to_wgs84(easting: float, northing: float, zone: int) -> tuple[float, float]:
+    """(lat, lon) of an ETRS89/UTM position (northern hemisphere), Krüger series.
+
+    Accurate to well below a metre, enough for roadworks; avoids pyproj.
+    """
+    n = _GRS80_F / (2 - _GRS80_F)
+    a_hat = _GRS80_A / (1 + n) * (1 + n**2 / 4 + n**4 / 64)
+    beta = (
+        n / 2 - 2 * n**2 / 3 + 37 * n**3 / 96,
+        n**2 / 48 + n**3 / 15,
+        17 * n**3 / 480,
+    )
+    delta = (
+        2 * n - 2 * n**2 / 3 - 2 * n**3,
+        7 * n**2 / 3 - 8 * n**3 / 5,
+        56 * n**3 / 15,
+    )
+    xi = northing / (_UTM_K0 * a_hat)
+    eta = (easting - 500_000) / (_UTM_K0 * a_hat)
+    xi_p = xi - sum(
+        b * sin(2 * j * xi) * cosh(2 * j * eta) for j, b in enumerate(beta, 1)
+    )
+    eta_p = eta - sum(
+        b * cos(2 * j * xi) * sinh(2 * j * eta) for j, b in enumerate(beta, 1)
+    )
+    chi = asin(sin(xi_p) / cosh(eta_p))
+    lat = chi + sum(d * sin(2 * j * chi) for j, d in enumerate(delta, 1))
+    lon = radians(zone * 6 - 183) + atan2(sinh(eta_p), cos(xi_p))
+    return degrees(lat), degrees(lon)

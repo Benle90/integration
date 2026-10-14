@@ -40,6 +40,7 @@ The integration's UI is available in German and English and follows your Home As
 | [VIZ Berlin](https://daten.berlin.de/datensaetze/baustellen-sperrungen-und-sonstige-storungen-von-besonderem-verkehrlichem-interesse) | Berlin's main roads: roadworks, closures, incidents (motorway works come from Autobahn GmbH) | Digitale Plattform Stadtverkehr Berlin, dl-de/by-2-0 |
 | [Landesbetrieb Straßenwesen Brandenburg](https://isk.geobasis-bb.de/ows/baustelleninfo_wfs?SERVICE=WFS&REQUEST=GetCapabilities) | Federal, state and district roads in Brandenburg | © Landesbetrieb Straßenwesen Brandenburg, dl-de/by-2-0 |
 | [Sperrinfo Sachsen-Anhalt](https://service.ifak.eu/sperrinfo/wfs?SERVICE=WFS&REQUEST=GetCapabilities) | All road classes in Saxony-Anhalt incl. municipal roads | Ministerium für Landesentwicklung und Verkehr; according to the service **non-commercial use only** |
+| [Baustelleninformationssystem Sachsen](https://www.baustellen.sachsen.de/baustellendaten-dienste-3997.html) | All road classes in Saxony incl. municipal roads (motorways come from Autobahn GmbH) | Baustelleninformationssystem Sachsen, CC BY 4.0 |
 
 Every entity carries the required attribution in its `attribution` attribute.
 
@@ -59,7 +60,7 @@ In short: Streckenwacht is well suited to keep an eye on major disruptions on ma
 
 ## Privacy
 
-Your location never leaves Home Assistant. Streckenwacht downloads the reports of whole motorways, the statewide MobiData file and the Stuttgart list, and filters them locally to your areas. Unchanged data is not transferred again thanks to ETags.
+Your location never leaves Home Assistant. Streckenwacht downloads the reports of whole motorways or statewide and citywide files (e.g. MobiData BW, Saxony, Berlin), and filters them locally to your areas. Unchanged data is not transferred again thanks to ETags.
 
 The exception are large state sources without ETag (northern Germany, Brandenburg): they are too large to download completely on every poll. Streckenwacht therefore requests a coarse map section there, rounded to a grid of about 55 × 35 km. The server only learns the rough region, not your area.
 

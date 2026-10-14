@@ -117,7 +117,7 @@ def parse_layer(
     for feature in features:
         try:
             parsed = layer.parse(feature)
-        except (AttributeError, KeyError, TypeError, ValueError) as err:
+        except (AttributeError, LookupError, TypeError, ValueError) as err:
             _LOGGER.debug("Skipping malformed feature of %s: %s", layer.name, err)
             continue
         if parsed is None:
