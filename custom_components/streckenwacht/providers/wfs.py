@@ -304,6 +304,42 @@ def iso_utc(value: str | None) -> datetime | None:
     return datetime(year, month, day, hour, minute, tzinfo=UTC)
 
 
+# A full stop after a word of at least three lower-case letters, before a capital
+# (so "ca. 50 m" or "Str. 5" do not end the sentence).
+_SENTENCE_END = re.compile(r"(?<=[a-zäöüß]{3})\.\s+(?=[A-ZÄÖÜ])")
+
+
+def shorten(value: str | None, limit: int = 80) -> str | None:
+    """First sentence of a free text, cut at a word boundary for a title."""
+    if not value:
+        return None
+    first = _SENTENCE_END.split(value.strip(), maxsplit=1)[0].strip()
+    if len(first) > limit:
+        first = first[: limit - 1].rsplit(" ", 1)[0] + "…"
+    return first
+
+
+def merge_features(
+    features: list[Any], key: Callable[[dict[str, Any]], Any]
+) -> list[Any]:
+    """Combine features describing the same site into one GeometryCollection."""
+    groups: dict[Any, list[dict[str, Any]]] = {}
+    for feature in features:
+        try:
+            groups.setdefault(key(feature), []).append(feature)
+        except AttributeError, LookupError, TypeError:
+            continue
+    merged = []
+    for parts in groups.values():
+        geometries = [f["geometry"] for f in parts if f.get("geometry")]
+        if len(geometries) > 1:
+            parts[0] = parts[0] | {
+                "geometry": {"type": "GeometryCollection", "geometries": geometries}
+            }
+        merged.append(parts[0])
+    return merged
+
+
 def first_position(geometry: Any) -> tuple[float | None, float | None]:
     """(lat, lon) of the first position of a GeoJSON geometry."""
     if isinstance(geometry, dict) and geometry.get("type") == "GeometryCollection":

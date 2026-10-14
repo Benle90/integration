@@ -1,0 +1,7089 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.9",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.56710596,
+              48.13474574
+            ],
+            [
+              11.56707847,
+              48.13475359
+            ],
+            [
+              11.56706076,
+              48.13476351
+            ],
+            [
+              11.56704568,
+              48.13477509
+            ],
+            [
+              11.56703238,
+              48.13479367
+            ],
+            [
+              11.56657541,
+              48.13575485
+            ],
+            [
+              11.56641646,
+              48.13630459
+            ],
+            [
+              11.56641531,
+              48.13630485
+            ],
+            [
+              11.5663174,
+              48.13629561
+            ],
+            [
+              11.56647193,
+              48.13576424
+            ],
+            [
+              11.56696421,
+              48.13473741
+            ],
+            [
+              11.56698015,
+              48.13471829
+            ],
+            [
+              11.56700408,
+              48.13470176
+            ],
+            [
+              11.56703571,
+              48.13469134
+            ],
+            [
+              11.5670688,
+              48.13468736
+            ],
+            [
+              11.56709395,
+              48.13468966
+            ],
+            [
+              11.56719055,
+              48.13470959
+            ],
+            [
+              11.56717268,
+              48.13474718
+            ],
+            [
+              11.56715578,
+              48.13474489
+            ],
+            [
+              11.56713413,
+              48.13474285
+            ],
+            [
+              11.56710596,
+              48.13474574
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Herzog-Wilhelm-Straße 16 - 28",
+        "betroffene_bereiche": "Parkbucht,Fahrbahn",
+        "beschreibung": "Fahrbahnsanierung",
+        "beeintraechtigung": "In der Nacht vom 15. auf 16. Oktober besteht eine Kfz-Sperre.",
+        "art": "Baumaßnahme",
+        "weitere_info": "<a href=\"https://stadt.muenchen.de/news/baustelleninfo-herzog-wilhelm-strasse.html\" target=\"_blank\">https://stadt.muenchen.de/news/baustelleninfo-herzog-wilhelm-strasse.html</a>",
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "12.10.2026",
+        "ende_datum_kombiniert": "16.10.2026",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.232",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.58099194,
+                48.13738194
+              ],
+              [
+                11.58104773,
+                48.13737646
+              ],
+              [
+                11.58105518,
+                48.13739906
+              ],
+              [
+                11.58110107,
+                48.1373947
+              ],
+              [
+                11.5811062,
+                48.13741402
+              ],
+              [
+                11.58103635,
+                48.13742035
+              ],
+              [
+                11.58102723,
+                48.13739393
+              ],
+              [
+                11.5809977,
+                48.13739747
+              ],
+              [
+                11.58099194,
+                48.13738194
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Hildegardstraße 2",
+        "betroffene_bereiche": "Fahrbahn, Gehweg, Parkbucht",
+        "beschreibung": "Arbeiten am Fernkältenetz",
+        "beeintraechtigung": "Straßensperrung, Parkplätze entfallen",
+        "art": "Baumaßnahme",
+        "weitere_info": "<a href=\"https://www.swm.de/fernkaelte\" target=\"_blank\">https://www.swm.de/fernkaelte</a>",
+        "kontakt_oeffentlich": "baustellen@swm.de oder +49 89 2361-2604",
+        "beginn_datum_kombiniert": "12.10.2026",
+        "ende_datum_kombiniert": "11.12.2026",
+        "fachliche_id": "460933"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.429",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.5682515,
+                48.13631509
+              ],
+              [
+                11.56809487,
+                48.13634097
+              ],
+              [
+                11.56808575,
+                48.13631499
+              ],
+              [
+                11.56824237,
+                48.13628911
+              ],
+              [
+                11.5682515,
+                48.13631509
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Josephspitalstr. 2 - 4",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Haltverbot zur Freihaltung Fahrverkehr",
+        "beeintraechtigung": "Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "04.07.2026",
+        "ende_datum_kombiniert": "01.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.430",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.5682515,
+                48.13631509
+              ],
+              [
+                11.56809487,
+                48.13634097
+              ],
+              [
+                11.56808575,
+                48.13631499
+              ],
+              [
+                11.56824237,
+                48.13628911
+              ],
+              [
+                11.5682515,
+                48.13631509
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Josephspitalstr. 1 - 3",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche und Anlieferzone",
+        "beeintraechtigung": "Wegfall Parkplatz",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "04.07.2026",
+        "ende_datum_kombiniert": "01.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.485",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57402418,
+                48.13535122
+              ],
+              [
+                11.57406292,
+                48.13541463
+              ],
+              [
+                11.57378762,
+                48.13552794
+              ],
+              [
+                11.57354997,
+                48.13568325
+              ],
+              [
+                11.57343109,
+                48.135724
+              ],
+              [
+                11.57328222,
+                48.13566306
+              ],
+              [
+                11.57295025,
+                48.1354967
+              ],
+              [
+                11.57261177,
+                48.13534239
+              ],
+              [
+                11.572612,
+                48.13534715
+              ],
+              [
+                11.57237017,
+                48.13527638
+              ],
+              [
+                11.57237395,
+                48.13520964
+              ],
+              [
+                11.57227281,
+                48.13517857
+              ],
+              [
+                11.57228713,
+                48.13510921
+              ],
+              [
+                11.57228725,
+                48.13511159
+              ],
+              [
+                11.57313887,
+                48.13478778
+              ],
+              [
+                11.57322614,
+                48.13475488
+              ],
+              [
+                11.57318183,
+                48.13465112
+              ],
+              [
+                11.5733958,
+                48.13459157
+              ],
+              [
+                11.57366101,
+                48.13491655
+              ],
+              [
+                11.5735979,
+                48.13493463
+              ],
+              [
+                11.57377925,
+                48.13514721
+              ],
+              [
+                11.57382791,
+                48.13512469
+              ],
+              [
+                11.57393724,
+                48.13524842
+              ],
+              [
+                11.57402418,
+                48.13535122
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Rindermarkt 7",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Ersatz-Zebrastreifen + Ersatz-Behindertenparkplatz",
+        "beeintraechtigung": "Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "16.03.2026",
+        "ende_datum_kombiniert": "18.01.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.486",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57402418,
+                48.13535122
+              ],
+              [
+                11.57406292,
+                48.13541463
+              ],
+              [
+                11.57378762,
+                48.13552794
+              ],
+              [
+                11.57354997,
+                48.13568325
+              ],
+              [
+                11.57343109,
+                48.135724
+              ],
+              [
+                11.57328222,
+                48.13566306
+              ],
+              [
+                11.57295025,
+                48.1354967
+              ],
+              [
+                11.57261177,
+                48.13534239
+              ],
+              [
+                11.572612,
+                48.13534715
+              ],
+              [
+                11.57237017,
+                48.13527638
+              ],
+              [
+                11.57237395,
+                48.13520964
+              ],
+              [
+                11.57227281,
+                48.13517857
+              ],
+              [
+                11.57228713,
+                48.13510921
+              ],
+              [
+                11.57228725,
+                48.13511159
+              ],
+              [
+                11.57313887,
+                48.13478778
+              ],
+              [
+                11.57322614,
+                48.13475488
+              ],
+              [
+                11.57318183,
+                48.13465112
+              ],
+              [
+                11.5733958,
+                48.13459157
+              ],
+              [
+                11.57366101,
+                48.13491655
+              ],
+              [
+                11.5735979,
+                48.13493463
+              ],
+              [
+                11.57377925,
+                48.13514721
+              ],
+              [
+                11.57382791,
+                48.13512469
+              ],
+              [
+                11.57393724,
+                48.13524842
+              ],
+              [
+                11.57402418,
+                48.13535122
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Oberanger",
+        "betroffene_bereiche": "Gehweg,Radweg,Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fußgänger gegenüber, Radweg-Ende (Radler auf der Fahrbahn), EINBAHNREGELUNG zwischen Dultstr. und Rosental (in nordöstl. Richtung), Radfahrer frei",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "16.03.2026",
+        "ende_datum_kombiniert": "18.01.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.487",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57402418,
+                48.13535122
+              ],
+              [
+                11.57406292,
+                48.13541463
+              ],
+              [
+                11.57378762,
+                48.13552794
+              ],
+              [
+                11.57354997,
+                48.13568325
+              ],
+              [
+                11.57343109,
+                48.135724
+              ],
+              [
+                11.57328222,
+                48.13566306
+              ],
+              [
+                11.57295025,
+                48.1354967
+              ],
+              [
+                11.57261177,
+                48.13534239
+              ],
+              [
+                11.572612,
+                48.13534715
+              ],
+              [
+                11.57237017,
+                48.13527638
+              ],
+              [
+                11.57237395,
+                48.13520964
+              ],
+              [
+                11.57227281,
+                48.13517857
+              ],
+              [
+                11.57228713,
+                48.13510921
+              ],
+              [
+                11.57228725,
+                48.13511159
+              ],
+              [
+                11.57313887,
+                48.13478778
+              ],
+              [
+                11.57322614,
+                48.13475488
+              ],
+              [
+                11.57318183,
+                48.13465112
+              ],
+              [
+                11.5733958,
+                48.13459157
+              ],
+              [
+                11.57366101,
+                48.13491655
+              ],
+              [
+                11.5735979,
+                48.13493463
+              ],
+              [
+                11.57377925,
+                48.13514721
+              ],
+              [
+                11.57382791,
+                48.13512469
+              ],
+              [
+                11.57393724,
+                48.13524842
+              ],
+              [
+                11.57402418,
+                48.13535122
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Blumenstr. 22",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "geänderte Verkehrsführung wegen Baustelle im Rosental",
+        "beeintraechtigung": null,
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "16.03.2026",
+        "ende_datum_kombiniert": "18.01.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.489",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57402418,
+                48.13535122
+              ],
+              [
+                11.57406292,
+                48.13541463
+              ],
+              [
+                11.57378762,
+                48.13552794
+              ],
+              [
+                11.57354997,
+                48.13568325
+              ],
+              [
+                11.57343109,
+                48.135724
+              ],
+              [
+                11.57328222,
+                48.13566306
+              ],
+              [
+                11.57295025,
+                48.1354967
+              ],
+              [
+                11.57261177,
+                48.13534239
+              ],
+              [
+                11.572612,
+                48.13534715
+              ],
+              [
+                11.57237017,
+                48.13527638
+              ],
+              [
+                11.57237395,
+                48.13520964
+              ],
+              [
+                11.57227281,
+                48.13517857
+              ],
+              [
+                11.57228713,
+                48.13510921
+              ],
+              [
+                11.57228725,
+                48.13511159
+              ],
+              [
+                11.57313887,
+                48.13478778
+              ],
+              [
+                11.57322614,
+                48.13475488
+              ],
+              [
+                11.57318183,
+                48.13465112
+              ],
+              [
+                11.5733958,
+                48.13459157
+              ],
+              [
+                11.57366101,
+                48.13491655
+              ],
+              [
+                11.5735979,
+                48.13493463
+              ],
+              [
+                11.57377925,
+                48.13514721
+              ],
+              [
+                11.57382791,
+                48.13512469
+              ],
+              [
+                11.57393724,
+                48.13524842
+              ],
+              [
+                11.57402418,
+                48.13535122
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Rosental 10 - 16",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fußgänger gegenüber (Fußgängerschutzanlage Höhe Nr. 5/10), Fahrbahn eingeengt, EINBAHNREGELUNG vom Oberanger über Prälat-Zistl-Str. bis Blumenstr.",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "16.03.2026",
+        "ende_datum_kombiniert": "18.01.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.490",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57402418,
+                48.13535122
+              ],
+              [
+                11.57406292,
+                48.13541463
+              ],
+              [
+                11.57378762,
+                48.13552794
+              ],
+              [
+                11.57354997,
+                48.13568325
+              ],
+              [
+                11.57343109,
+                48.135724
+              ],
+              [
+                11.57328222,
+                48.13566306
+              ],
+              [
+                11.57295025,
+                48.1354967
+              ],
+              [
+                11.57261177,
+                48.13534239
+              ],
+              [
+                11.572612,
+                48.13534715
+              ],
+              [
+                11.57237017,
+                48.13527638
+              ],
+              [
+                11.57237395,
+                48.13520964
+              ],
+              [
+                11.57227281,
+                48.13517857
+              ],
+              [
+                11.57228713,
+                48.13510921
+              ],
+              [
+                11.57228725,
+                48.13511159
+              ],
+              [
+                11.57313887,
+                48.13478778
+              ],
+              [
+                11.57322614,
+                48.13475488
+              ],
+              [
+                11.57318183,
+                48.13465112
+              ],
+              [
+                11.5733958,
+                48.13459157
+              ],
+              [
+                11.57366101,
+                48.13491655
+              ],
+              [
+                11.5735979,
+                48.13493463
+              ],
+              [
+                11.57377925,
+                48.13514721
+              ],
+              [
+                11.57382791,
+                48.13512469
+              ],
+              [
+                11.57393724,
+                48.13524842
+              ],
+              [
+                11.57402418,
+                48.13535122
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Prälat-Zistl-Str.",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "geänderte Verkehrsführung wegen Baustelle im Rosental",
+        "beeintraechtigung": "EINBAHNREGELUNG vom Oberanger über Prälat-Zistl-Str. bis Blumenstr., Zufahrt bis Schrannenparkhaus frei",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "16.03.2026",
+        "ende_datum_kombiniert": "18.01.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.491",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57402418,
+                48.13535122
+              ],
+              [
+                11.57406292,
+                48.13541463
+              ],
+              [
+                11.57378762,
+                48.13552794
+              ],
+              [
+                11.57354997,
+                48.13568325
+              ],
+              [
+                11.57343109,
+                48.135724
+              ],
+              [
+                11.57328222,
+                48.13566306
+              ],
+              [
+                11.57295025,
+                48.1354967
+              ],
+              [
+                11.57261177,
+                48.13534239
+              ],
+              [
+                11.572612,
+                48.13534715
+              ],
+              [
+                11.57237017,
+                48.13527638
+              ],
+              [
+                11.57237395,
+                48.13520964
+              ],
+              [
+                11.57227281,
+                48.13517857
+              ],
+              [
+                11.57228713,
+                48.13510921
+              ],
+              [
+                11.57228725,
+                48.13511159
+              ],
+              [
+                11.57313887,
+                48.13478778
+              ],
+              [
+                11.57322614,
+                48.13475488
+              ],
+              [
+                11.57318183,
+                48.13465112
+              ],
+              [
+                11.5733958,
+                48.13459157
+              ],
+              [
+                11.57366101,
+                48.13491655
+              ],
+              [
+                11.5735979,
+                48.13493463
+              ],
+              [
+                11.57377925,
+                48.13514721
+              ],
+              [
+                11.57382791,
+                48.13512469
+              ],
+              [
+                11.57393724,
+                48.13524842
+              ],
+              [
+                11.57402418,
+                48.13535122
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Corneliusstr.",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "geänderte Verkehrsführung wegen Baustelle im Rosental",
+        "beeintraechtigung": "EINBAHNREGELUNG vom Oberanger über Prälat-Zistl-Str. bis Blumenstr., Zufahrt bis Schrannenparkhaus frei",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "16.03.2026",
+        "ende_datum_kombiniert": "18.01.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.494",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57777091,
+                48.13438118
+              ],
+              [
+                11.57777903,
+                48.13440123
+              ],
+              [
+                11.57749932,
+                48.13439084
+              ],
+              [
+                11.577495,
+                48.13437546
+              ],
+              [
+                11.57777091,
+                48.13438118
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Frauenstr. 14 - 16",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fahrbahn auf 6,45 m verengt, Haltverbot auf Gebäudelängen",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "28.09.2026",
+        "ende_datum_kombiniert": "23.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.502",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57051776,
+                48.14072138
+              ],
+              [
+                11.5705212,
+                48.1407332
+              ],
+              [
+                11.57053205,
+                48.14076534
+              ],
+              [
+                11.5702062,
+                48.14082167
+              ],
+              [
+                11.56989072,
+                48.14087206
+              ],
+              [
+                11.56982423,
+                48.14087974
+              ],
+              [
+                11.56981492,
+                48.14084995
+              ],
+              [
+                11.56980341,
+                48.14081878
+              ],
+              [
+                11.57046819,
+                48.14071154
+              ],
+              [
+                11.57051776,
+                48.14072138
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Pacellistr. 14 - 16",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche mit Kran",
+        "beeintraechtigung": "Notgehweg auf Fahrbahn, Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "01.06.2026",
+        "ende_datum_kombiniert": "31.12.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.515",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.58096732,
+                48.13658406
+              ],
+              [
+                11.58081191,
+                48.13681848
+              ],
+              [
+                11.58073966,
+                48.1367963
+              ],
+              [
+                11.58088429,
+                48.13655974
+              ],
+              [
+                11.58096732,
+                48.13658406
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Marienstr. 2 - 6",
+        "betroffene_bereiche": "Gehweg, Parkbucht, Fahrbahn, Begleitgrün",
+        "beschreibung": "Büro-und Aufenthaltscontainer",
+        "beeintraechtigung": "Gehweg entfällt, Fußgänger auf andere Straßenseite, Parkbucht entfällt, Fahrbahn verengt, Baumgraben verengt, Haltverbot",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "02.10.2026",
+        "ende_datum_kombiniert": "14.02.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.548",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57768661,
+                48.1388401
+              ],
+              [
+                11.57741459,
+                48.13887716
+              ],
+              [
+                11.57741411,
+                48.13886764
+              ],
+              [
+                11.57767867,
+                48.13882362
+              ],
+              [
+                11.57768661,
+                48.1388401
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Hofgraben",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fahrbahn verengt, Ausnahme vom Haltverbot",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "16.10.2026",
+        "ende_datum_kombiniert": "31.01.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.563",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.56775236,
+                48.13647657
+              ],
+              [
+                11.56692826,
+                48.13664021
+              ],
+              [
+                11.56674064,
+                48.1367293
+              ],
+              [
+                11.5666836,
+                48.13729719
+              ],
+              [
+                11.56658975,
+                48.13726953
+              ],
+              [
+                11.56659242,
+                48.13682389
+              ],
+              [
+                11.56662769,
+                48.13656837
+              ],
+              [
+                11.5668813,
+                48.13655437
+              ],
+              [
+                11.56705349,
+                48.13654814
+              ],
+              [
+                11.56706846,
+                48.13652757
+              ],
+              [
+                11.56773169,
+                48.1364187
+              ],
+              [
+                11.56775236,
+                48.13647657
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.56671817,
+                48.13635008
+              ],
+              [
+                11.56664984,
+                48.13633494
+              ],
+              [
+                11.56655759,
+                48.13633939
+              ],
+              [
+                11.56642424,
+                48.13630427
+              ],
+              [
+                11.56642057,
+                48.13630198
+              ],
+              [
+                11.5664536,
+                48.13617982
+              ],
+              [
+                11.56652537,
+                48.13626392
+              ],
+              [
+                11.56662153,
+                48.13626654
+              ],
+              [
+                11.56668334,
+                48.1362223
+              ],
+              [
+                11.56672811,
+                48.13626415
+              ],
+              [
+                11.56671817,
+                48.13635008
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Josephspitalstr. 6 - 12",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fußgänger gegenüber, Fahrbahn eingeengt, Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "Beginn vor mehr als einem Jahr",
+        "ende_datum_kombiniert": "31.12.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.564",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.56775236,
+                48.13647657
+              ],
+              [
+                11.56692826,
+                48.13664021
+              ],
+              [
+                11.56674064,
+                48.1367293
+              ],
+              [
+                11.5666836,
+                48.13729719
+              ],
+              [
+                11.56658975,
+                48.13726953
+              ],
+              [
+                11.56659242,
+                48.13682389
+              ],
+              [
+                11.56662769,
+                48.13656837
+              ],
+              [
+                11.5668813,
+                48.13655437
+              ],
+              [
+                11.56705349,
+                48.13654814
+              ],
+              [
+                11.56706846,
+                48.13652757
+              ],
+              [
+                11.56773169,
+                48.1364187
+              ],
+              [
+                11.56775236,
+                48.13647657
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.56671817,
+                48.13635008
+              ],
+              [
+                11.56664984,
+                48.13633494
+              ],
+              [
+                11.56655759,
+                48.13633939
+              ],
+              [
+                11.56642424,
+                48.13630427
+              ],
+              [
+                11.56642057,
+                48.13630198
+              ],
+              [
+                11.5664536,
+                48.13617982
+              ],
+              [
+                11.56652537,
+                48.13626392
+              ],
+              [
+                11.56662153,
+                48.13626654
+              ],
+              [
+                11.56668334,
+                48.1362223
+              ],
+              [
+                11.56672811,
+                48.13626415
+              ],
+              [
+                11.56671817,
+                48.13635008
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Herzog-Wilhelm-Str. 15",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Containeranlage im Wendebereich+Versetz. Beh.Parkplatz",
+        "beeintraechtigung": "Vollsperrung Wendehammer, Notgehweg (ggü. Nr. 15) und Wegfall Parkplätze, beidseitig",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "Beginn vor mehr als einem Jahr",
+        "ende_datum_kombiniert": "31.12.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.565",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.56775236,
+                48.13647657
+              ],
+              [
+                11.56692826,
+                48.13664021
+              ],
+              [
+                11.56674064,
+                48.1367293
+              ],
+              [
+                11.5666836,
+                48.13729719
+              ],
+              [
+                11.56658975,
+                48.13726953
+              ],
+              [
+                11.56659242,
+                48.13682389
+              ],
+              [
+                11.56662769,
+                48.13656837
+              ],
+              [
+                11.5668813,
+                48.13655437
+              ],
+              [
+                11.56705349,
+                48.13654814
+              ],
+              [
+                11.56706846,
+                48.13652757
+              ],
+              [
+                11.56773169,
+                48.1364187
+              ],
+              [
+                11.56775236,
+                48.13647657
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.56671817,
+                48.13635008
+              ],
+              [
+                11.56664984,
+                48.13633494
+              ],
+              [
+                11.56655759,
+                48.13633939
+              ],
+              [
+                11.56642424,
+                48.13630427
+              ],
+              [
+                11.56642057,
+                48.13630198
+              ],
+              [
+                11.5664536,
+                48.13617982
+              ],
+              [
+                11.56652537,
+                48.13626392
+              ],
+              [
+                11.56662153,
+                48.13626654
+              ],
+              [
+                11.56668334,
+                48.1362223
+              ],
+              [
+                11.56672811,
+                48.13626415
+              ],
+              [
+                11.56671817,
+                48.13635008
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Herzog-Wilhelm-Str. 5 - 11",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Notgehweg, VOLLSPERRUNG Fahrbahn , Zufahrt zur Tiefgarage möglich",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "Beginn vor mehr als einem Jahr",
+        "ende_datum_kombiniert": "31.12.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.594",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.58120488,
+                48.13643846
+              ],
+              [
+                11.58105587,
+                48.1365168
+              ],
+              [
+                11.58103105,
+                48.13648283
+              ],
+              [
+                11.58116064,
+                48.13640731
+              ],
+              [
+                11.58120488,
+                48.13643846
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58127429,
+                48.13629762
+              ],
+              [
+                11.58101404,
+                48.13642727
+              ],
+              [
+                11.58098229,
+                48.13639703
+              ],
+              [
+                11.58124781,
+                48.13626608
+              ],
+              [
+                11.58127429,
+                48.13629762
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58088285,
+                48.1365064
+              ],
+              [
+                11.58085704,
+                48.13652365
+              ],
+              [
+                11.58084964,
+                48.13651786
+              ],
+              [
+                11.58087533,
+                48.13649824
+              ],
+              [
+                11.58088285,
+                48.1365064
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Marienstr. 10",
+        "betroffene_bereiche": "Gehweg, Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fußgängerführung durch Schutztunnel, Parkplätze entfallen, Fahrbahn verengt, Haltverbot auf Gebäudelänge",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "17.08.2026",
+        "ende_datum_kombiniert": "06.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.596",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.58120488,
+                48.13643846
+              ],
+              [
+                11.58105587,
+                48.1365168
+              ],
+              [
+                11.58103105,
+                48.13648283
+              ],
+              [
+                11.58116064,
+                48.13640731
+              ],
+              [
+                11.58120488,
+                48.13643846
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58127429,
+                48.13629762
+              ],
+              [
+                11.58101404,
+                48.13642727
+              ],
+              [
+                11.58098229,
+                48.13639703
+              ],
+              [
+                11.58124781,
+                48.13626608
+              ],
+              [
+                11.58127429,
+                48.13629762
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58088285,
+                48.1365064
+              ],
+              [
+                11.58085704,
+                48.13652365
+              ],
+              [
+                11.58084964,
+                48.13651786
+              ],
+              [
+                11.58087533,
+                48.13649824
+              ],
+              [
+                11.58088285,
+                48.1365064
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Marienstr.",
+        "betroffene_bereiche": "Gehweg, Fahrbahn",
+        "beschreibung": "Baustelleneinrichungsfläche",
+        "beeintraechtigung": "Gehweg gesperrt, Fußgänger auf andere Straßenseite, Haltverbot auf Anwesenslänge",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "17.08.2026",
+        "ende_datum_kombiniert": "06.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.597",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.58120488,
+                48.13643846
+              ],
+              [
+                11.58105587,
+                48.1365168
+              ],
+              [
+                11.58103105,
+                48.13648283
+              ],
+              [
+                11.58116064,
+                48.13640731
+              ],
+              [
+                11.58120488,
+                48.13643846
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58127429,
+                48.13629762
+              ],
+              [
+                11.58101404,
+                48.13642727
+              ],
+              [
+                11.58098229,
+                48.13639703
+              ],
+              [
+                11.58124781,
+                48.13626608
+              ],
+              [
+                11.58127429,
+                48.13629762
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58088285,
+                48.1365064
+              ],
+              [
+                11.58085704,
+                48.13652365
+              ],
+              [
+                11.58084964,
+                48.13651786
+              ],
+              [
+                11.58087533,
+                48.13649824
+              ],
+              [
+                11.58088285,
+                48.1365064
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Herrnstr. 21",
+        "betroffene_bereiche": "Gehweg, Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Gehweg gesperrt, Fußgängerführung auf andere Straßenseite, Fahrbahn verengt, Haltverbot auf Anwesenslänge",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "17.08.2026",
+        "ende_datum_kombiniert": "06.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.598",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.58120488,
+                48.13643846
+              ],
+              [
+                11.58105587,
+                48.1365168
+              ],
+              [
+                11.58103105,
+                48.13648283
+              ],
+              [
+                11.58116064,
+                48.13640731
+              ],
+              [
+                11.58120488,
+                48.13643846
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58127429,
+                48.13629762
+              ],
+              [
+                11.58101404,
+                48.13642727
+              ],
+              [
+                11.58098229,
+                48.13639703
+              ],
+              [
+                11.58124781,
+                48.13626608
+              ],
+              [
+                11.58127429,
+                48.13629762
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58088285,
+                48.1365064
+              ],
+              [
+                11.58085704,
+                48.13652365
+              ],
+              [
+                11.58084964,
+                48.13651786
+              ],
+              [
+                11.58087533,
+                48.13649824
+              ],
+              [
+                11.58088285,
+                48.1365064
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Marienstr. 4 - 6",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Parkplätze entfallen im Anschluss an den Schanigarten vor Hausnummer 4 auf 8,5 m Richtung Hausnummer 6",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "17.08.2026",
+        "ende_datum_kombiniert": "06.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.622",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57575985,
+                48.13919994
+              ],
+              [
+                11.57550123,
+                48.13861651
+              ],
+              [
+                11.57577958,
+                48.13852813
+              ],
+              [
+                11.57573888,
+                48.1384612
+              ],
+              [
+                11.57599183,
+                48.13839839
+              ],
+              [
+                11.5759609,
+                48.13831337
+              ],
+              [
+                11.57643109,
+                48.13822069
+              ],
+              [
+                11.57653169,
+                48.13841842
+              ],
+              [
+                11.57697098,
+                48.13834785
+              ],
+              [
+                11.57720154,
+                48.13890334
+              ],
+              [
+                11.57681643,
+                48.13899054
+              ],
+              [
+                11.576645,
+                48.13897653
+              ],
+              [
+                11.57575985,
+                48.13919994
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Schrammerstr.",
+        "betroffene_bereiche": "Gehweg, Fahrbahn",
+        "beschreibung": "Lärmschutzwand Marienhof",
+        "beeintraechtigung": "Gehweg gesperrt, Fahrbahn eingeengt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "01.01.2026",
+        "ende_datum_kombiniert": "31.12.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.632",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.56918594,
+                48.13763536
+              ],
+              [
+                11.56916131,
+                48.13764067
+              ],
+              [
+                11.56913667,
+                48.13757456
+              ],
+              [
+                11.5691626,
+                48.13755969
+              ],
+              [
+                11.56914679,
+                48.13752791
+              ],
+              [
+                11.56941229,
+                48.13746721
+              ],
+              [
+                11.56941413,
+                48.13746777
+              ],
+              [
+                11.56941058,
+                48.13746785
+              ],
+              [
+                11.56943682,
+                48.13753035
+              ],
+              [
+                11.56916515,
+                48.13757511
+              ],
+              [
+                11.5691671,
+                48.13757804
+              ],
+              [
+                11.56918784,
+                48.1376371
+              ],
+              [
+                11.56916343,
+                48.13757574
+              ],
+              [
+                11.56918594,
+                48.13763536
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Altheimer Eck 16",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche mit Fußgängertunnel und Portalkran (ab 24.03.)",
+        "beeintraechtigung": "Schutztunnel, Gehweg und Fahrbahn eingeengt, Wegfall Parkplätze, auch gegenüber",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "13.04.2026",
+        "ende_datum_kombiniert": "26.12.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.683",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57719107,
+                48.13903489
+              ],
+              [
+                11.57635523,
+                48.13917744
+              ],
+              [
+                11.5763384,
+                48.13912544
+              ],
+              [
+                11.57716985,
+                48.13896633
+              ],
+              [
+                11.57719107,
+                48.13903489
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Schrammerstr. 3",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Kamerabefahrung Brunnen",
+        "beeintraechtigung": "Fahrbahn gesperrt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "19.10.2026",
+        "ende_datum_kombiniert": "23.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.684",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57719107,
+                48.13903489
+              ],
+              [
+                11.57635523,
+                48.13917744
+              ],
+              [
+                11.5763384,
+                48.13912544
+              ],
+              [
+                11.57716985,
+                48.13896633
+              ],
+              [
+                11.57719107,
+                48.13903489
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Perusastr.",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Umfahrungsroute",
+        "beeintraechtigung": "Umfahrungsroute",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "19.10.2026",
+        "ende_datum_kombiniert": "23.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.685",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57719107,
+                48.13903489
+              ],
+              [
+                11.57635523,
+                48.13917744
+              ],
+              [
+                11.5763384,
+                48.13912544
+              ],
+              [
+                11.57716985,
+                48.13896633
+              ],
+              [
+                11.57719107,
+                48.13903489
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Residenzstr.",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Umfahrungsroute",
+        "beeintraechtigung": "Umfahrungsroute",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "19.10.2026",
+        "ende_datum_kombiniert": "23.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.686",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57719107,
+                48.13903489
+              ],
+              [
+                11.57635523,
+                48.13917744
+              ],
+              [
+                11.5763384,
+                48.13912544
+              ],
+              [
+                11.57716985,
+                48.13896633
+              ],
+              [
+                11.57719107,
+                48.13903489
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Theatinerstr.",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Umfahrungsroute",
+        "beeintraechtigung": "Umfahrungsroute",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "19.10.2026",
+        "ende_datum_kombiniert": "23.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.745",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57769348,
+                48.13883519
+              ],
+              [
+                11.57741814,
+                48.13887708
+              ],
+              [
+                11.57742441,
+                48.13886027
+              ],
+              [
+                11.5776924,
+                48.13881378
+              ],
+              [
+                11.57769348,
+                48.13883519
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Hofgraben",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fahrbahn verengt, Ausnahme vom Haltverbot",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "01.03.2026",
+        "ende_datum_kombiniert": "15.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.751",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.5714209,
+                48.14059146
+              ],
+              [
+                11.57130285,
+                48.14061374
+              ],
+              [
+                11.57128253,
+                48.14056301
+              ],
+              [
+                11.57140404,
+                48.14053886
+              ],
+              [
+                11.5714209,
+                48.14059146
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Pacellistr. 2 - 8",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Tunnelberüst und Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Gerüsttunnel, Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "27.07.2026",
+        "ende_datum_kombiniert": "23.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.753",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.5811571,
+                48.13645739
+              ],
+              [
+                11.58105443,
+                48.13650921
+              ],
+              [
+                11.58101254,
+                48.13646825
+              ],
+              [
+                11.58110688,
+                48.13642042
+              ],
+              [
+                11.5811571,
+                48.13645739
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58127207,
+                48.13631005
+              ],
+              [
+                11.58103611,
+                48.13642773
+              ],
+              [
+                11.58100029,
+                48.13639425
+              ],
+              [
+                11.58124713,
+                48.13626681
+              ],
+              [
+                11.58127207,
+                48.13631005
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Marienstr. 10",
+        "betroffene_bereiche": "Gehweg, Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fußgängerführung durch Schutztunnel, Parkplätze entfallen, Fahrbahn verengt, Haltverbot auf Gebäudelänge",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "07.11.2026",
+        "ende_datum_kombiniert": "12.12.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.754",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.5811571,
+                48.13645739
+              ],
+              [
+                11.58105443,
+                48.13650921
+              ],
+              [
+                11.58101254,
+                48.13646825
+              ],
+              [
+                11.58110688,
+                48.13642042
+              ],
+              [
+                11.5811571,
+                48.13645739
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58127207,
+                48.13631005
+              ],
+              [
+                11.58103611,
+                48.13642773
+              ],
+              [
+                11.58100029,
+                48.13639425
+              ],
+              [
+                11.58124713,
+                48.13626681
+              ],
+              [
+                11.58127207,
+                48.13631005
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Marienstr.",
+        "betroffene_bereiche": "Gehweg, Fahrbahn",
+        "beschreibung": "Baustelleneinrichungsfläche",
+        "beeintraechtigung": "Gehweg gesperrt, Fußgänger auf andere Straßenseite, Haltverbot auf Anwesenslänge",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "07.11.2026",
+        "ende_datum_kombiniert": "12.12.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.755",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.5811571,
+                48.13645739
+              ],
+              [
+                11.58105443,
+                48.13650921
+              ],
+              [
+                11.58101254,
+                48.13646825
+              ],
+              [
+                11.58110688,
+                48.13642042
+              ],
+              [
+                11.5811571,
+                48.13645739
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58127207,
+                48.13631005
+              ],
+              [
+                11.58103611,
+                48.13642773
+              ],
+              [
+                11.58100029,
+                48.13639425
+              ],
+              [
+                11.58124713,
+                48.13626681
+              ],
+              [
+                11.58127207,
+                48.13631005
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Marienstr. 4 - 6",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Parkplätze entfallen im Anschluss an den Schanigarten vor Hausnummer 4 auf 8,5 m Richtung Hausnummer 6",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "07.11.2026",
+        "ende_datum_kombiniert": "12.12.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.758",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.5811571,
+                48.13645739
+              ],
+              [
+                11.58105443,
+                48.13650921
+              ],
+              [
+                11.58101254,
+                48.13646825
+              ],
+              [
+                11.58110688,
+                48.13642042
+              ],
+              [
+                11.5811571,
+                48.13645739
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58127207,
+                48.13631005
+              ],
+              [
+                11.58103611,
+                48.13642773
+              ],
+              [
+                11.58100029,
+                48.13639425
+              ],
+              [
+                11.58124713,
+                48.13626681
+              ],
+              [
+                11.58127207,
+                48.13631005
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Herrnstr. 21",
+        "betroffene_bereiche": "Gehweg, Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Gehweg gesperrt, Fußgängerführung auf andere Straßenseite, Fahrbahn verengt, Haltverbot auf Anwesenslänge",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "07.11.2026",
+        "ende_datum_kombiniert": "12.12.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.790",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.57282181,
+                48.1376603
+              ],
+              [
+                11.57285687,
+                48.13772141
+              ],
+              [
+                11.57212799,
+                48.1379401
+              ],
+              [
+                11.57196582,
+                48.13768423
+              ],
+              [
+                11.57193294,
+                48.13759569
+              ],
+              [
+                11.57193845,
+                48.13759914
+              ],
+              [
+                11.5719292,
+                48.13752078
+              ],
+              [
+                11.57193453,
+                48.13752066
+              ],
+              [
+                11.57201563,
+                48.13739981
+              ],
+              [
+                11.57210088,
+                48.13732648
+              ],
+              [
+                11.57236783,
+                48.13711695
+              ],
+              [
+                11.57238237,
+                48.13712317
+              ],
+              [
+                11.5723806,
+                48.13712321
+              ],
+              [
+                11.57239605,
+                48.13713001
+              ],
+              [
+                11.57239608,
+                48.1371306
+              ],
+              [
+                11.5724589,
+                48.13708872
+              ],
+              [
+                11.572492,
+                48.1371106
+              ],
+              [
+                11.57248564,
+                48.13710777
+              ],
+              [
+                11.57242057,
+                48.13715803
+              ],
+              [
+                11.57241968,
+                48.13715805
+              ],
+              [
+                11.57282181,
+                48.1376603
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Fürstenfelder Str. 1 - 3",
+        "betroffene_bereiche": "Fußgängerzone,Gehweg,Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fußgängerzone eingeengt, Fußgänger gebgenüber, Durchfahrt zur Fußgängerzone nicht möglich",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "Beginn vor mehr als einem Jahr",
+        "ende_datum_kombiniert": "30.06.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.793",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.58168262,
+                48.13850037
+              ],
+              [
+                11.58165088,
+                48.13850585
+              ],
+              [
+                11.5816159,
+                48.13837569
+              ],
+              [
+                11.58166528,
+                48.13836744
+              ],
+              [
+                11.58168262,
+                48.13850037
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Falckenbergstr",
+        "betroffene_bereiche": "Gehweg, Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche ab Zugang Falckenbergstr. 11 auf 17.5 m Richtung Norden",
+        "beeintraechtigung": "Gehweg gesperrt, Fußgängerführung über andere Straßenseite, Seitenstreifen belegt, Restbreite Fahrbahn 3,20 m, Haltverbot",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "03.08.2026",
+        "ende_datum_kombiniert": "23.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.794",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.58168262,
+                48.13850037
+              ],
+              [
+                11.58165088,
+                48.13850585
+              ],
+              [
+                11.5816159,
+                48.13837569
+              ],
+              [
+                11.58166528,
+                48.13836744
+              ],
+              [
+                11.58168262,
+                48.13850037
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Falckenbergstr. 11",
+        "betroffene_bereiche": "Gehweg, Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Gehweg gesperrt, Fußgängerführung auf andere Straßenseite, Fahrbahn auf 3,20 m verengt, Haltverbot auf 17,50 m",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "03.08.2026",
+        "ende_datum_kombiniert": "23.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.828",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.5810243,
+                48.13867267
+              ],
+              [
+                11.58100364,
+                48.13868623
+              ],
+              [
+                11.58087018,
+                48.13854282
+              ],
+              [
+                11.58089108,
+                48.13853402
+              ],
+              [
+                11.5810243,
+                48.13867267
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Am Kosttor",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "rote Anlieferzone entfällt temporär",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "10.10.2026",
+        "ende_datum_kombiniert": "22.12.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.833",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                11.58022393,
+                48.13572964
+              ],
+              [
+                11.58013885,
+                48.13575298
+              ],
+              [
+                11.58013296,
+                48.1357418
+              ],
+              [
+                11.58021436,
+                48.13571617
+              ],
+              [
+                11.58022393,
+                48.13572964
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58047817,
+                48.1356043
+              ],
+              [
+                11.58042121,
+                48.13562105
+              ],
+              [
+                11.58040599,
+                48.13560116
+              ],
+              [
+                11.58046558,
+                48.13558375
+              ],
+              [
+                11.58047817,
+                48.1356043
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                11.58047514,
+                48.13557937
+              ],
+              [
+                11.5804646,
+                48.13558199
+              ],
+              [
+                11.58040127,
+                48.13547152
+              ],
+              [
+                11.58040746,
+                48.13547078
+              ],
+              [
+                11.58047514,
+                48.13557937
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Tal 30 - 34",
+        "betroffene_bereiche": "Parkbucht, Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Parkplätze entfallen, Fahrbahn um 0,5 m verengt, E-Ladeplätze sind frei, rote Anlieferzone ist frei, Haltverbot auf 17 m zwischen den E-Ladeplätzen und der roten Anlieferzone",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "14.09.2026",
+        "ende_datum_kombiniert": "27.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.1301",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.58099003,
+              48.13732255
+            ],
+            [
+              11.58098765,
+              48.13731572
+            ],
+            [
+              11.58098153,
+              48.13731002
+            ],
+            [
+              11.58097262,
+              48.13730632
+            ],
+            [
+              11.58096228,
+              48.13730518
+            ],
+            [
+              11.58095207,
+              48.13730678
+            ],
+            [
+              11.58094355,
+              48.13731087
+            ],
+            [
+              11.58093802,
+              48.13731684
+            ],
+            [
+              11.58093632,
+              48.13732376
+            ],
+            [
+              11.58093871,
+              48.13733059
+            ],
+            [
+              11.58094483,
+              48.1373363
+            ],
+            [
+              11.58095374,
+              48.13734
+            ],
+            [
+              11.58096408,
+              48.13734113
+            ],
+            [
+              11.58097429,
+              48.13733953
+            ],
+            [
+              11.58098281,
+              48.13733544
+            ],
+            [
+              11.58098834,
+              48.13732948
+            ],
+            [
+              11.58099003,
+              48.13732255
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Neuturmstr. 1",
+        "betroffene_bereiche": "Parkbucht, Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fahrbahn verengt gegenüber Neuturmstr. 1, Verschwenkung der Fahrspur über die Parkbucht vor Neuturmstr. 1, Haltverbot",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "27.10.2026",
+        "ende_datum_kombiniert": "14.02.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.1485",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57954362,
+              48.13638309
+            ],
+            [
+              11.57954123,
+              48.13637625
+            ],
+            [
+              11.57953512,
+              48.13637055
+            ],
+            [
+              11.57952621,
+              48.13636685
+            ],
+            [
+              11.57951587,
+              48.13636571
+            ],
+            [
+              11.57950566,
+              48.13636731
+            ],
+            [
+              11.57949714,
+              48.13637141
+            ],
+            [
+              11.57949161,
+              48.13637737
+            ],
+            [
+              11.57948991,
+              48.13638429
+            ],
+            [
+              11.5794923,
+              48.13639113
+            ],
+            [
+              11.57949842,
+              48.13639683
+            ],
+            [
+              11.57950732,
+              48.13640053
+            ],
+            [
+              11.57951767,
+              48.13640167
+            ],
+            [
+              11.57952788,
+              48.13640007
+            ],
+            [
+              11.57953639,
+              48.13639597
+            ],
+            [
+              11.57954192,
+              48.13639001
+            ],
+            [
+              11.57954362,
+              48.13638309
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Hochbrückenstr. 3",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Gerüst,Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Gehweg verengt, Fahrbahn verengt, Haltverbot",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "19.09.2026",
+        "ende_datum_kombiniert": "15.02.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.1504",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.56981347,
+              48.14188198
+            ],
+            [
+              11.56981108,
+              48.14187515
+            ],
+            [
+              11.56980497,
+              48.14186945
+            ],
+            [
+              11.56979606,
+              48.14186575
+            ],
+            [
+              11.56978572,
+              48.14186461
+            ],
+            [
+              11.56977551,
+              48.14186621
+            ],
+            [
+              11.56976699,
+              48.1418703
+            ],
+            [
+              11.56976146,
+              48.14187626
+            ],
+            [
+              11.56975976,
+              48.14188318
+            ],
+            [
+              11.56976214,
+              48.14189002
+            ],
+            [
+              11.56976826,
+              48.14189572
+            ],
+            [
+              11.56977717,
+              48.14189942
+            ],
+            [
+              11.56978751,
+              48.14190056
+            ],
+            [
+              11.56979772,
+              48.14189896
+            ],
+            [
+              11.56980624,
+              48.14189487
+            ],
+            [
+              11.56981177,
+              48.14188891
+            ],
+            [
+              11.56981347,
+              48.14188198
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Maximilianspl. 2",
+        "betroffene_bereiche": "Gehweg, Radweg, Parkbucht, Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Gehweg eingeengt, Radweg gesperrt, gemeinsamer Geh- und Radweg, Parkbucht gesperrt, Fahrbahn eine Spur fällt weg, Haltverbot beidseitig 120,0m",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "21.10.2026",
+        "ende_datum_kombiniert": "21.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.1514",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.5726113,
+              48.1395238
+            ],
+            [
+              11.57260891,
+              48.13951697
+            ],
+            [
+              11.5726028,
+              48.13951127
+            ],
+            [
+              11.57259389,
+              48.13950756
+            ],
+            [
+              11.57258355,
+              48.13950643
+            ],
+            [
+              11.57257334,
+              48.13950802
+            ],
+            [
+              11.57256482,
+              48.13951212
+            ],
+            [
+              11.57255929,
+              48.13951808
+            ],
+            [
+              11.57255759,
+              48.139525
+            ],
+            [
+              11.57255998,
+              48.13953184
+            ],
+            [
+              11.57256609,
+              48.13953754
+            ],
+            [
+              11.572575,
+              48.13954124
+            ],
+            [
+              11.57258534,
+              48.13954238
+            ],
+            [
+              11.57259555,
+              48.13954078
+            ],
+            [
+              11.57260407,
+              48.13953669
+            ],
+            [
+              11.5726096,
+              48.13953072
+            ],
+            [
+              11.5726113,
+              48.1395238
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Hartmannstr. 8",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Bautelleneinrichtungsfläche",
+        "beeintraechtigung": "Fußgänger gegenüber, Wegfall Parkplätze, auch gegenüber",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "15.08.2026",
+        "ende_datum_kombiniert": "18.12.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.1516",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57410428,
+              48.14091146
+            ],
+            [
+              11.57410189,
+              48.14090462
+            ],
+            [
+              11.57409578,
+              48.14089892
+            ],
+            [
+              11.57408687,
+              48.14089522
+            ],
+            [
+              11.57407653,
+              48.14089408
+            ],
+            [
+              11.57406632,
+              48.14089568
+            ],
+            [
+              11.5740578,
+              48.14089977
+            ],
+            [
+              11.57405227,
+              48.14090574
+            ],
+            [
+              11.57405057,
+              48.14091266
+            ],
+            [
+              11.57405296,
+              48.14091949
+            ],
+            [
+              11.57405907,
+              48.1409252
+            ],
+            [
+              11.57406798,
+              48.1409289
+            ],
+            [
+              11.57407832,
+              48.14093003
+            ],
+            [
+              11.57408853,
+              48.14092844
+            ],
+            [
+              11.57409705,
+              48.14092434
+            ],
+            [
+              11.57410258,
+              48.14091838
+            ],
+            [
+              11.57410428,
+              48.14091146
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Prannerstr. 1",
+        "betroffene_bereiche": "Gehweg, Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Gehweg eingeengt, Fahrbahn eingeengt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "11.08.2026",
+        "ende_datum_kombiniert": "23.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.1517",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57198547,
+              48.14143462
+            ],
+            [
+              11.57198308,
+              48.14142779
+            ],
+            [
+              11.57197697,
+              48.14142209
+            ],
+            [
+              11.57196806,
+              48.14141838
+            ],
+            [
+              11.57195771,
+              48.14141725
+            ],
+            [
+              11.5719475,
+              48.14141885
+            ],
+            [
+              11.57193898,
+              48.14142294
+            ],
+            [
+              11.57193345,
+              48.1414289
+            ],
+            [
+              11.57193175,
+              48.14143582
+            ],
+            [
+              11.57193414,
+              48.14144266
+            ],
+            [
+              11.57194025,
+              48.14144836
+            ],
+            [
+              11.57194916,
+              48.14145206
+            ],
+            [
+              11.57195951,
+              48.1414532
+            ],
+            [
+              11.57196972,
+              48.1414516
+            ],
+            [
+              11.57197824,
+              48.14144751
+            ],
+            [
+              11.57198377,
+              48.14144155
+            ],
+            [
+              11.57198547,
+              48.14143462
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Prannerstr. 13",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "1x Pritschenfahrzeug",
+        "beeintraechtigung": "Ausnahmegenehmigung Parken im HV",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "16.09.2026",
+        "ende_datum_kombiniert": "31.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.1542",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57219097,
+              48.14049901
+            ],
+            [
+              11.57218859,
+              48.14049218
+            ],
+            [
+              11.57218247,
+              48.14048648
+            ],
+            [
+              11.57217356,
+              48.14048278
+            ],
+            [
+              11.57216322,
+              48.14048164
+            ],
+            [
+              11.57215301,
+              48.14048324
+            ],
+            [
+              11.57214449,
+              48.14048733
+            ],
+            [
+              11.57213896,
+              48.14049329
+            ],
+            [
+              11.57213726,
+              48.14050022
+            ],
+            [
+              11.57213965,
+              48.14050705
+            ],
+            [
+              11.57214576,
+              48.14051275
+            ],
+            [
+              11.57215467,
+              48.14051645
+            ],
+            [
+              11.57216502,
+              48.14051759
+            ],
+            [
+              11.57217522,
+              48.14051599
+            ],
+            [
+              11.57218374,
+              48.1405119
+            ],
+            [
+              11.57218927,
+              48.14050594
+            ],
+            [
+              11.57219097,
+              48.14049901
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Promenadepl. 10",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Gehweg und Fahrbahn eingeengt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "21.09.2026",
+        "ende_datum_kombiniert": "31.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.2667",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57727964,
+              48.13871442
+            ],
+            [
+              11.57727726,
+              48.13870758
+            ],
+            [
+              11.57727114,
+              48.13870188
+            ],
+            [
+              11.57726223,
+              48.13869818
+            ],
+            [
+              11.57725189,
+              48.13869704
+            ],
+            [
+              11.57724168,
+              48.13869864
+            ],
+            [
+              11.57723316,
+              48.13870273
+            ],
+            [
+              11.57722763,
+              48.1387087
+            ],
+            [
+              11.57722593,
+              48.13871562
+            ],
+            [
+              11.57722832,
+              48.13872246
+            ],
+            [
+              11.57723443,
+              48.13872816
+            ],
+            [
+              11.57724334,
+              48.13873186
+            ],
+            [
+              11.57725369,
+              48.138733
+            ],
+            [
+              11.5772639,
+              48.1387314
+            ],
+            [
+              11.57727241,
+              48.1387273
+            ],
+            [
+              11.57727794,
+              48.13872134
+            ],
+            [
+              11.57727964,
+              48.13871442
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Dienerstr. 12",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche für Montage Wetterschutzdach",
+        "beeintraechtigung": "Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "14.10.2026",
+        "ende_datum_kombiniert": "23.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.3327",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.56646277,
+              48.13594854
+            ],
+            [
+              11.56646038,
+              48.13594171
+            ],
+            [
+              11.56645427,
+              48.13593601
+            ],
+            [
+              11.56644536,
+              48.13593231
+            ],
+            [
+              11.56643502,
+              48.13593117
+            ],
+            [
+              11.56642481,
+              48.13593277
+            ],
+            [
+              11.56641629,
+              48.13593686
+            ],
+            [
+              11.56641076,
+              48.13594282
+            ],
+            [
+              11.56640906,
+              48.13594974
+            ],
+            [
+              11.56641145,
+              48.13595658
+            ],
+            [
+              11.56641756,
+              48.13596228
+            ],
+            [
+              11.56642646,
+              48.13596598
+            ],
+            [
+              11.56643681,
+              48.13596712
+            ],
+            [
+              11.56644702,
+              48.13596552
+            ],
+            [
+              11.56645554,
+              48.13596143
+            ],
+            [
+              11.56646107,
+              48.13595547
+            ],
+            [
+              11.56646277,
+              48.13594854
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Herzog-Wilhelm-Str. 18",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Hebebühne",
+        "beeintraechtigung": "Notgehweg auf der Fahrbahn, Wegfall Parkplätze, auch gegenüber",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "26.10.2026",
+        "ende_datum_kombiniert": "28.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.3329",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57161891,
+              48.13713202
+            ],
+            [
+              11.57161652,
+              48.13712519
+            ],
+            [
+              11.57161041,
+              48.13711949
+            ],
+            [
+              11.5716015,
+              48.13711579
+            ],
+            [
+              11.57159115,
+              48.13711465
+            ],
+            [
+              11.57158095,
+              48.13711625
+            ],
+            [
+              11.57157243,
+              48.13712034
+            ],
+            [
+              11.5715669,
+              48.1371263
+            ],
+            [
+              11.5715652,
+              48.13713323
+            ],
+            [
+              11.57156759,
+              48.13714006
+            ],
+            [
+              11.5715737,
+              48.13714576
+            ],
+            [
+              11.57158261,
+              48.13714946
+            ],
+            [
+              11.57159295,
+              48.1371506
+            ],
+            [
+              11.57160316,
+              48.137149
+            ],
+            [
+              11.57161168,
+              48.13714491
+            ],
+            [
+              11.57161721,
+              48.13713895
+            ],
+            [
+              11.57161891,
+              48.13713202
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Färbergraben 5",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Autokraneinsatz",
+        "beeintraechtigung": "Fußgänger gegenüber, VOLLSPERRUNG Einfahrt Fußgängerzone, Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "17.10.2026",
+        "ende_datum_kombiniert": "18.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.3337",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.5732114,
+              48.13598821
+            ],
+            [
+              11.57320902,
+              48.13598138
+            ],
+            [
+              11.5732029,
+              48.13597568
+            ],
+            [
+              11.573194,
+              48.13597198
+            ],
+            [
+              11.57318365,
+              48.13597084
+            ],
+            [
+              11.57317344,
+              48.13597244
+            ],
+            [
+              11.57316493,
+              48.13597653
+            ],
+            [
+              11.5731594,
+              48.13598249
+            ],
+            [
+              11.5731577,
+              48.13598942
+            ],
+            [
+              11.57316008,
+              48.13599625
+            ],
+            [
+              11.5731662,
+              48.13600195
+            ],
+            [
+              11.5731751,
+              48.13600565
+            ],
+            [
+              11.57318545,
+              48.13600679
+            ],
+            [
+              11.57319566,
+              48.13600519
+            ],
+            [
+              11.57320417,
+              48.1360011
+            ],
+            [
+              11.5732097,
+              48.13599514
+            ],
+            [
+              11.5732114,
+              48.13598821
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Rosental 1",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Haltverbot zur Durchfahrt Fahrverkehr",
+        "beeintraechtigung": "Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "23.10.2026",
+        "ende_datum_kombiniert": "24.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.3355",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57296321,
+              48.13555369
+            ],
+            [
+              11.57296083,
+              48.13554685
+            ],
+            [
+              11.57295471,
+              48.13554115
+            ],
+            [
+              11.57294581,
+              48.13553745
+            ],
+            [
+              11.57293546,
+              48.13553631
+            ],
+            [
+              11.57292525,
+              48.13553791
+            ],
+            [
+              11.57291673,
+              48.135542
+            ],
+            [
+              11.5729112,
+              48.13554796
+            ],
+            [
+              11.5729095,
+              48.13555489
+            ],
+            [
+              11.57291189,
+              48.13556172
+            ],
+            [
+              11.57291801,
+              48.13556742
+            ],
+            [
+              11.57292691,
+              48.13557113
+            ],
+            [
+              11.57293726,
+              48.13557226
+            ],
+            [
+              11.57294747,
+              48.13557067
+            ],
+            [
+              11.57295598,
+              48.13556657
+            ],
+            [
+              11.57296151,
+              48.13556061
+            ],
+            [
+              11.57296321,
+              48.13555369
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Oberanger 4",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Hebebühne (22-2 Uhr)",
+        "beeintraechtigung": "Gehweg und Fahrbahn eingeengt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "23.10.2026",
+        "ende_datum_kombiniert": "24.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.3357",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57587641,
+              48.14130358
+            ],
+            [
+              11.57587402,
+              48.14129674
+            ],
+            [
+              11.57586791,
+              48.14129104
+            ],
+            [
+              11.575859,
+              48.14128734
+            ],
+            [
+              11.57584866,
+              48.1412862
+            ],
+            [
+              11.57583845,
+              48.1412878
+            ],
+            [
+              11.57582993,
+              48.14129189
+            ],
+            [
+              11.5758244,
+              48.14129786
+            ],
+            [
+              11.5758227,
+              48.14130478
+            ],
+            [
+              11.57582509,
+              48.14131161
+            ],
+            [
+              11.5758312,
+              48.14131731
+            ],
+            [
+              11.57584011,
+              48.14132102
+            ],
+            [
+              11.57585046,
+              48.14132215
+            ],
+            [
+              11.57586066,
+              48.14132055
+            ],
+            [
+              11.57586918,
+              48.14131646
+            ],
+            [
+              11.57587471,
+              48.1413105
+            ],
+            [
+              11.57587641,
+              48.14130358
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Salvatorstr. 2",
+        "betroffene_bereiche": "Gehweg,Fahrbahn,Fußgängerzone",
+        "beschreibung": "Baustelleneinrichtungsfläche und Gerüst (am Kopfgeb.)",
+        "beeintraechtigung": "Fußgänger gegenüber, Wegfall Parkplätze, Fußgängerzone eingeengt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "26.05.2026",
+        "ende_datum_kombiniert": "31.07.2028 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.3523",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.56987315,
+              48.13733962
+            ],
+            [
+              11.56987076,
+              48.13733279
+            ],
+            [
+              11.56986465,
+              48.13732709
+            ],
+            [
+              11.56985574,
+              48.13732339
+            ],
+            [
+              11.5698454,
+              48.13732225
+            ],
+            [
+              11.56983519,
+              48.13732385
+            ],
+            [
+              11.56982667,
+              48.13732794
+            ],
+            [
+              11.56982114,
+              48.1373339
+            ],
+            [
+              11.56981944,
+              48.13734082
+            ],
+            [
+              11.56982183,
+              48.13734766
+            ],
+            [
+              11.56982794,
+              48.13735336
+            ],
+            [
+              11.56983685,
+              48.13735706
+            ],
+            [
+              11.56984719,
+              48.1373582
+            ],
+            [
+              11.5698574,
+              48.1373566
+            ],
+            [
+              11.56986592,
+              48.13735251
+            ],
+            [
+              11.56987145,
+              48.13734655
+            ],
+            [
+              11.56987315,
+              48.13733962
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Altheimer Eck 15",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Gerüst und Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Gehweg eingeengt, Fußgängerschutztunnel, Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "25.07.2026",
+        "ende_datum_kombiniert": "31.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.3524",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57101372,
+              48.13742545
+            ],
+            [
+              11.57101134,
+              48.13741862
+            ],
+            [
+              11.57100522,
+              48.13741292
+            ],
+            [
+              11.57099632,
+              48.13740922
+            ],
+            [
+              11.57098597,
+              48.13740808
+            ],
+            [
+              11.57097576,
+              48.13740968
+            ],
+            [
+              11.57096724,
+              48.13741377
+            ],
+            [
+              11.57096171,
+              48.13741973
+            ],
+            [
+              11.57096001,
+              48.13742666
+            ],
+            [
+              11.5709624,
+              48.13743349
+            ],
+            [
+              11.57096851,
+              48.13743919
+            ],
+            [
+              11.57097742,
+              48.13744289
+            ],
+            [
+              11.57098777,
+              48.13744403
+            ],
+            [
+              11.57099797,
+              48.13744243
+            ],
+            [
+              11.57100649,
+              48.13743834
+            ],
+            [
+              11.57101202,
+              48.13743238
+            ],
+            [
+              11.57101372,
+              48.13742545
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Altheimer Eck 2",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Haltverbot zur Baustellenbelieferung",
+        "beeintraechtigung": "Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "17.10.2026",
+        "ende_datum_kombiniert": "18.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.3532",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57451729,
+              48.13463219
+            ],
+            [
+              11.5745149,
+              48.13462536
+            ],
+            [
+              11.57450879,
+              48.13461965
+            ],
+            [
+              11.57449988,
+              48.13461595
+            ],
+            [
+              11.57448954,
+              48.13461481
+            ],
+            [
+              11.57447933,
+              48.13461641
+            ],
+            [
+              11.57447081,
+              48.13462051
+            ],
+            [
+              11.57446528,
+              48.13462647
+            ],
+            [
+              11.57446358,
+              48.13463339
+            ],
+            [
+              11.57446597,
+              48.13464023
+            ],
+            [
+              11.57447208,
+              48.13464593
+            ],
+            [
+              11.57448099,
+              48.13464963
+            ],
+            [
+              11.57449134,
+              48.13465077
+            ],
+            [
+              11.57450154,
+              48.13464917
+            ],
+            [
+              11.57451006,
+              48.13464508
+            ],
+            [
+              11.57451559,
+              48.13463911
+            ],
+            [
+              11.57451729,
+              48.13463219
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Prälat-Zistl-Str. 14",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Tunnelgerüst und Baustelleneinrichtungsfläche mit Kran",
+        "beeintraechtigung": "Fußgängerschutztunnel, Fahrbahn und Gehweg eingeengt, Wegfall Anlieferzone",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "18.02.2026",
+        "ende_datum_kombiniert": "30.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.3558",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.56834627,
+              48.13604854
+            ],
+            [
+              11.56834388,
+              48.1360417
+            ],
+            [
+              11.56833777,
+              48.136036
+            ],
+            [
+              11.56832886,
+              48.1360323
+            ],
+            [
+              11.56831852,
+              48.13603116
+            ],
+            [
+              11.56830831,
+              48.13603276
+            ],
+            [
+              11.56829979,
+              48.13603685
+            ],
+            [
+              11.56829426,
+              48.13604281
+            ],
+            [
+              11.56829256,
+              48.13604974
+            ],
+            [
+              11.56829495,
+              48.13605657
+            ],
+            [
+              11.56830106,
+              48.13606227
+            ],
+            [
+              11.56830996,
+              48.13606598
+            ],
+            [
+              11.56832031,
+              48.13606711
+            ],
+            [
+              11.56833052,
+              48.13606552
+            ],
+            [
+              11.56833904,
+              48.13606142
+            ],
+            [
+              11.56834457,
+              48.13605546
+            ],
+            [
+              11.56834627,
+              48.13604854
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Kreuzstr. 1",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "2 x Aufgrabung f. Regenrohrsanierung",
+        "beeintraechtigung": "Gehweg eingeengt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "19.10.2026",
+        "ende_datum_kombiniert": "23.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.3930",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.56726724,
+              48.13787771
+            ],
+            [
+              11.56726485,
+              48.13787088
+            ],
+            [
+              11.56725874,
+              48.13786518
+            ],
+            [
+              11.56724984,
+              48.13786147
+            ],
+            [
+              11.56723949,
+              48.13786033
+            ],
+            [
+              11.56722928,
+              48.13786193
+            ],
+            [
+              11.56722076,
+              48.13786602
+            ],
+            [
+              11.56721523,
+              48.13787199
+            ],
+            [
+              11.56721353,
+              48.13787891
+            ],
+            [
+              11.56721592,
+              48.13788574
+            ],
+            [
+              11.56722203,
+              48.13789145
+            ],
+            [
+              11.56723094,
+              48.13789515
+            ],
+            [
+              11.56724128,
+              48.13789629
+            ],
+            [
+              11.56725149,
+              48.13789469
+            ],
+            [
+              11.56726001,
+              48.1378906
+            ],
+            [
+              11.56726554,
+              48.13788464
+            ],
+            [
+              11.56726724,
+              48.13787771
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Herzogspitalstr. 20",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fahrbahn eingeengt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "10.09.2026",
+        "ende_datum_kombiniert": "31.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.3931",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.56715629,
+              48.13784196
+            ],
+            [
+              11.56715391,
+              48.13783513
+            ],
+            [
+              11.56714779,
+              48.13782942
+            ],
+            [
+              11.56713889,
+              48.13782572
+            ],
+            [
+              11.56712854,
+              48.13782458
+            ],
+            [
+              11.56711833,
+              48.13782618
+            ],
+            [
+              11.56710981,
+              48.13783027
+            ],
+            [
+              11.56710428,
+              48.13783624
+            ],
+            [
+              11.56710258,
+              48.13784316
+            ],
+            [
+              11.56710497,
+              48.13784999
+            ],
+            [
+              11.56711108,
+              48.1378557
+            ],
+            [
+              11.56711999,
+              48.1378594
+            ],
+            [
+              11.56713033,
+              48.13786054
+            ],
+            [
+              11.56714054,
+              48.13785894
+            ],
+            [
+              11.56714906,
+              48.13785485
+            ],
+            [
+              11.56715459,
+              48.13784888
+            ],
+            [
+              11.56715629,
+              48.13784196
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Herzogspitalstr. 11",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fahrbahn eingeengt, Parkplätze entfallen",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "15.09.2026",
+        "ende_datum_kombiniert": "13.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.3941",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57424005,
+              48.14055114
+            ],
+            [
+              11.57423767,
+              48.14054431
+            ],
+            [
+              11.57423155,
+              48.14053861
+            ],
+            [
+              11.57422264,
+              48.14053491
+            ],
+            [
+              11.5742123,
+              48.14053377
+            ],
+            [
+              11.57420209,
+              48.14053537
+            ],
+            [
+              11.57419357,
+              48.14053946
+            ],
+            [
+              11.57418804,
+              48.14054542
+            ],
+            [
+              11.57418634,
+              48.14055235
+            ],
+            [
+              11.57418873,
+              48.14055918
+            ],
+            [
+              11.57419484,
+              48.14056488
+            ],
+            [
+              11.57420375,
+              48.14056858
+            ],
+            [
+              11.5742141,
+              48.14056972
+            ],
+            [
+              11.57422431,
+              48.14056812
+            ],
+            [
+              11.57423282,
+              48.14056403
+            ],
+            [
+              11.57423835,
+              48.14055807
+            ],
+            [
+              11.57424005,
+              48.14055114
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Kardinal-Faulhaber-Str. 15",
+        "betroffene_bereiche": "Gehweg, Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Gehweg gesperrt, Gerüst mit Tunnel, Haltverbot",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "04.05.2026",
+        "ende_datum_kombiniert": "27.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4212",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57161891,
+              48.13713202
+            ],
+            [
+              11.57161652,
+              48.13712519
+            ],
+            [
+              11.57161041,
+              48.13711949
+            ],
+            [
+              11.5716015,
+              48.13711579
+            ],
+            [
+              11.57159115,
+              48.13711465
+            ],
+            [
+              11.57158095,
+              48.13711625
+            ],
+            [
+              11.57157243,
+              48.13712034
+            ],
+            [
+              11.5715669,
+              48.1371263
+            ],
+            [
+              11.5715652,
+              48.13713323
+            ],
+            [
+              11.57156759,
+              48.13714006
+            ],
+            [
+              11.5715737,
+              48.13714576
+            ],
+            [
+              11.57158261,
+              48.13714946
+            ],
+            [
+              11.57159295,
+              48.1371506
+            ],
+            [
+              11.57160316,
+              48.137149
+            ],
+            [
+              11.57161168,
+              48.13714491
+            ],
+            [
+              11.57161721,
+              48.13713895
+            ],
+            [
+              11.57161891,
+              48.13713202
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Färbergraben 5",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Autokraneinsatz",
+        "beeintraechtigung": "Fußgänger gegenüber, VOLLSPERRUNG Einfahrt Fußgängerzone, Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "07.11.2026",
+        "ende_datum_kombiniert": "08.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4229",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57101372,
+              48.13742545
+            ],
+            [
+              11.57101134,
+              48.13741862
+            ],
+            [
+              11.57100522,
+              48.13741292
+            ],
+            [
+              11.57099632,
+              48.13740922
+            ],
+            [
+              11.57098597,
+              48.13740808
+            ],
+            [
+              11.57097576,
+              48.13740968
+            ],
+            [
+              11.57096724,
+              48.13741377
+            ],
+            [
+              11.57096171,
+              48.13741973
+            ],
+            [
+              11.57096001,
+              48.13742666
+            ],
+            [
+              11.5709624,
+              48.13743349
+            ],
+            [
+              11.57096851,
+              48.13743919
+            ],
+            [
+              11.57097742,
+              48.13744289
+            ],
+            [
+              11.57098777,
+              48.13744403
+            ],
+            [
+              11.57099797,
+              48.13744243
+            ],
+            [
+              11.57100649,
+              48.13743834
+            ],
+            [
+              11.57101202,
+              48.13743238
+            ],
+            [
+              11.57101372,
+              48.13742545
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Altheimer Eck 2",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Haltverbot zur Baustellenbelieferung",
+        "beeintraechtigung": "Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "07.11.2026",
+        "ende_datum_kombiniert": "08.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4230",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57271295,
+              48.13691095
+            ],
+            [
+              11.57271056,
+              48.13690411
+            ],
+            [
+              11.57270445,
+              48.13689841
+            ],
+            [
+              11.57269554,
+              48.13689471
+            ],
+            [
+              11.57268519,
+              48.13689357
+            ],
+            [
+              11.57267498,
+              48.13689517
+            ],
+            [
+              11.57266647,
+              48.13689926
+            ],
+            [
+              11.57266094,
+              48.13690522
+            ],
+            [
+              11.57265924,
+              48.13691215
+            ],
+            [
+              11.57266162,
+              48.13691898
+            ],
+            [
+              11.57266774,
+              48.13692468
+            ],
+            [
+              11.57267665,
+              48.13692838
+            ],
+            [
+              11.57268699,
+              48.13692952
+            ],
+            [
+              11.5726972,
+              48.13692792
+            ],
+            [
+              11.57270572,
+              48.13692383
+            ],
+            [
+              11.57271125,
+              48.13691787
+            ],
+            [
+              11.57271295,
+              48.13691095
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Fürstenfelder Str. 7",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Hebebühne",
+        "beeintraechtigung": "Gehweg und Fahrbahn eingeengt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "02.11.2026",
+        "ende_datum_kombiniert": "06.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4308",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57105458,
+              48.13734241
+            ],
+            [
+              11.5709099,
+              48.13736053
+            ],
+            [
+              11.57074875,
+              48.13737255
+            ],
+            [
+              11.57073875,
+              48.13737467
+            ],
+            [
+              11.57073073,
+              48.13737919
+            ],
+            [
+              11.57072591,
+              48.13738542
+            ],
+            [
+              11.57072502,
+              48.13739241
+            ],
+            [
+              11.57072819,
+              48.1373991
+            ],
+            [
+              11.57073494,
+              48.13740447
+            ],
+            [
+              11.57074425,
+              48.1374077
+            ],
+            [
+              11.5707547,
+              48.1374083
+            ],
+            [
+              11.57091684,
+              48.13739621
+            ],
+            [
+              11.57091881,
+              48.13739601
+            ],
+            [
+              11.57106447,
+              48.13737777
+            ],
+            [
+              11.5710732,
+              48.13737557
+            ],
+            [
+              11.57108029,
+              48.13737151
+            ],
+            [
+              11.57108487,
+              48.13736607
+            ],
+            [
+              11.57108639,
+              48.1373599
+            ],
+            [
+              11.57108468,
+              48.13735376
+            ],
+            [
+              11.57107993,
+              48.13734839
+            ],
+            [
+              11.57107271,
+              48.13734442
+            ],
+            [
+              11.57106391,
+              48.13734235
+            ],
+            [
+              11.57105458,
+              48.13734241
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Altheimer Eck 1 - 5",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Haltverbot zur Baustellenbelieferung",
+        "beeintraechtigung": "Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "07.11.2026",
+        "ende_datum_kombiniert": "08.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4309",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57105458,
+              48.13734241
+            ],
+            [
+              11.5709099,
+              48.13736053
+            ],
+            [
+              11.57074875,
+              48.13737255
+            ],
+            [
+              11.57073875,
+              48.13737467
+            ],
+            [
+              11.57073073,
+              48.13737919
+            ],
+            [
+              11.57072591,
+              48.13738542
+            ],
+            [
+              11.57072502,
+              48.13739241
+            ],
+            [
+              11.57072819,
+              48.1373991
+            ],
+            [
+              11.57073494,
+              48.13740447
+            ],
+            [
+              11.57074425,
+              48.1374077
+            ],
+            [
+              11.5707547,
+              48.1374083
+            ],
+            [
+              11.57091684,
+              48.13739621
+            ],
+            [
+              11.57091881,
+              48.13739601
+            ],
+            [
+              11.57106447,
+              48.13737777
+            ],
+            [
+              11.5710732,
+              48.13737557
+            ],
+            [
+              11.57108029,
+              48.13737151
+            ],
+            [
+              11.57108487,
+              48.13736607
+            ],
+            [
+              11.57108639,
+              48.1373599
+            ],
+            [
+              11.57108468,
+              48.13735376
+            ],
+            [
+              11.57107993,
+              48.13734839
+            ],
+            [
+              11.57107271,
+              48.13734442
+            ],
+            [
+              11.57106391,
+              48.13734235
+            ],
+            [
+              11.57105458,
+              48.13734241
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Altheimer Eck 1 - 5",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Haltverbot zur Baustellenbelieferung",
+        "beeintraechtigung": "Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "17.10.2026",
+        "ende_datum_kombiniert": "18.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4310",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57074875,
+              48.13737255
+            ],
+            [
+              11.57067834,
+              48.1373778
+            ],
+            [
+              11.57066834,
+              48.13737992
+            ],
+            [
+              11.57066033,
+              48.13738444
+            ],
+            [
+              11.5706555,
+              48.13739067
+            ],
+            [
+              11.57065461,
+              48.13739766
+            ],
+            [
+              11.57065778,
+              48.13740435
+            ],
+            [
+              11.57066453,
+              48.13740972
+            ],
+            [
+              11.57067384,
+              48.13741295
+            ],
+            [
+              11.57068429,
+              48.13741355
+            ],
+            [
+              11.5707547,
+              48.1374083
+            ],
+            [
+              11.57076469,
+              48.13740618
+            ],
+            [
+              11.57077271,
+              48.13740166
+            ],
+            [
+              11.57077753,
+              48.13739542
+            ],
+            [
+              11.57077843,
+              48.13738843
+            ],
+            [
+              11.57077526,
+              48.13738174
+            ],
+            [
+              11.5707685,
+              48.13737638
+            ],
+            [
+              11.57075919,
+              48.13737315
+            ],
+            [
+              11.57074875,
+              48.13737255
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Altheimer Eck 5 - 7",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsflächen",
+        "beeintraechtigung": "Notgehweg auf Fahrbahn, Wegfall Parkplätze, Fahrbahn eingeengt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "14.09.2026",
+        "ende_datum_kombiniert": "13.09.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4539",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.56906152,
+              48.13738572
+            ],
+            [
+              11.56891064,
+              48.13709676
+            ],
+            [
+              11.56890532,
+              48.13709071
+            ],
+            [
+              11.56889694,
+              48.13708649
+            ],
+            [
+              11.56888679,
+              48.13708473
+            ],
+            [
+              11.56887641,
+              48.13708571
+            ],
+            [
+              11.56886738,
+              48.13708927
+            ],
+            [
+              11.56886107,
+              48.13709488
+            ],
+            [
+              11.56885845,
+              48.13710168
+            ],
+            [
+              11.56885991,
+              48.13710862
+            ],
+            [
+              11.56901079,
+              48.13739759
+            ],
+            [
+              11.56901535,
+              48.13740304
+            ],
+            [
+              11.56902242,
+              48.13740712
+            ],
+            [
+              11.56903115,
+              48.13740933
+            ],
+            [
+              11.56904048,
+              48.13740941
+            ],
+            [
+              11.56904929,
+              48.13740735
+            ],
+            [
+              11.56905651,
+              48.13740339
+            ],
+            [
+              11.56906128,
+              48.13739802
+            ],
+            [
+              11.56906302,
+              48.13739189
+            ],
+            [
+              11.56906152,
+              48.13738572
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Damenstiftstr. 1 - 3",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Gerüst und Anlieferzone",
+        "beeintraechtigung": "Gehweg eingeengt, Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "25.07.2026",
+        "ende_datum_kombiniert": "31.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4540",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.56861317,
+              48.13653563
+            ],
+            [
+              11.56860865,
+              48.13653016
+            ],
+            [
+              11.56860161,
+              48.13652606
+            ],
+            [
+              11.5685929,
+              48.13652382
+            ],
+            [
+              11.56858357,
+              48.13652371
+            ],
+            [
+              11.56857474,
+              48.13652574
+            ],
+            [
+              11.56856749,
+              48.13652967
+            ],
+            [
+              11.56856268,
+              48.13653502
+            ],
+            [
+              11.56856089,
+              48.13654115
+            ],
+            [
+              11.56856235,
+              48.13654732
+            ],
+            [
+              11.5686659,
+              48.13674898
+            ],
+            [
+              11.56866614,
+              48.13674944
+            ],
+            [
+              11.56872516,
+              48.13685487
+            ],
+            [
+              11.5687299,
+              48.13686025
+            ],
+            [
+              11.56873711,
+              48.13686422
+            ],
+            [
+              11.56874591,
+              48.1368663
+            ],
+            [
+              11.56875524,
+              48.13686624
+            ],
+            [
+              11.56876398,
+              48.13686405
+            ],
+            [
+              11.56877107,
+              48.13685999
+            ],
+            [
+              11.56877566,
+              48.13685455
+            ],
+            [
+              11.56877719,
+              48.13684839
+            ],
+            [
+              11.56877549,
+              48.13684225
+            ],
+            [
+              11.5687166,
+              48.13673705
+            ],
+            [
+              11.56861317,
+              48.13653563
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Damenstiftstr. 7 - 11",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fußgänger gegenüber, Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "07.04.2026",
+        "ende_datum_kombiniert": "14.02.2028 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4541",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.56854896,
+              48.13657941
+            ],
+            [
+              11.56854383,
+              48.13657328
+            ],
+            [
+              11.5685356,
+              48.13656894
+            ],
+            [
+              11.56852551,
+              48.13656704
+            ],
+            [
+              11.5685151,
+              48.13656786
+            ],
+            [
+              11.56850595,
+              48.13657129
+            ],
+            [
+              11.56849946,
+              48.1365768
+            ],
+            [
+              11.56849662,
+              48.13658356
+            ],
+            [
+              11.56849785,
+              48.13659053
+            ],
+            [
+              11.5685418,
+              48.13668105
+            ],
+            [
+              11.5685422,
+              48.1366818
+            ],
+            [
+              11.56867679,
+              48.13692224
+            ],
+            [
+              11.56868231,
+              48.1369282
+            ],
+            [
+              11.56869083,
+              48.1369323
+            ],
+            [
+              11.56870103,
+              48.1369339
+            ],
+            [
+              11.56871138,
+              48.13693277
+            ],
+            [
+              11.56872029,
+              48.13692907
+            ],
+            [
+              11.56872641,
+              48.13692337
+            ],
+            [
+              11.56872881,
+              48.13691654
+            ],
+            [
+              11.56872711,
+              48.13690961
+            ],
+            [
+              11.56859273,
+              48.13666955
+            ],
+            [
+              11.56854896,
+              48.13657941
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Damenstiftstr. 8 - 14",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Haltverbot zur Durchfahrt Fahrverkehr",
+        "beeintraechtigung": "Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "07.04.2026",
+        "ende_datum_kombiniert": "14.02.2028 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4893",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.56699788,
+              48.13477651
+            ],
+            [
+              11.56699924,
+              48.13476955
+            ],
+            [
+              11.56699652,
+              48.13476278
+            ],
+            [
+              11.56699014,
+              48.13475721
+            ],
+            [
+              11.56698106,
+              48.1347537
+            ],
+            [
+              11.56697066,
+              48.13475279
+            ],
+            [
+              11.56696054,
+              48.13475461
+            ],
+            [
+              11.56695222,
+              48.13475889
+            ],
+            [
+              11.56694698,
+              48.13476496
+            ],
+            [
+              11.56666963,
+              48.13531267
+            ],
+            [
+              11.56666951,
+              48.13531291
+            ],
+            [
+              11.56654266,
+              48.13557502
+            ],
+            [
+              11.56654209,
+              48.13557636
+            ],
+            [
+              11.56640979,
+              48.13594494
+            ],
+            [
+              11.5664096,
+              48.13594551
+            ],
+            [
+              11.56634979,
+              48.13613983
+            ],
+            [
+              11.56634971,
+              48.13614684
+            ],
+            [
+              11.56635366,
+              48.13615335
+            ],
+            [
+              11.56636102,
+              48.13615834
+            ],
+            [
+              11.56637068,
+              48.13616107
+            ],
+            [
+              11.56638116,
+              48.13616112
+            ],
+            [
+              11.56639088,
+              48.13615848
+            ],
+            [
+              11.56639834,
+              48.13615355
+            ],
+            [
+              11.56640242,
+              48.13614709
+            ],
+            [
+              11.56646214,
+              48.13595306
+            ],
+            [
+              11.5665941,
+              48.13558545
+            ],
+            [
+              11.56672058,
+              48.13532411
+            ],
+            [
+              11.56699788,
+              48.13477651
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Herzog-Wilhelm-Str. 16 - 28",
+        "betroffene_bereiche": "gesamte Fahrbahn zwischen Kreuzstr. und Josephspitalstr.",
+        "beschreibung": "FB",
+        "beeintraechtigung": "Fahrbahnsanierung",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "12.10.2026",
+        "ende_datum_kombiniert": "16.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4912",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.58193844,
+              48.13753653
+            ],
+            [
+              11.58130934,
+              48.13756229
+            ],
+            [
+              11.5812992,
+              48.13756408
+            ],
+            [
+              11.58129086,
+              48.13756832
+            ],
+            [
+              11.58128557,
+              48.13757438
+            ],
+            [
+              11.58128416,
+              48.13758134
+            ],
+            [
+              11.58128683,
+              48.13758813
+            ],
+            [
+              11.58129317,
+              48.13759371
+            ],
+            [
+              11.58130223,
+              48.13759725
+            ],
+            [
+              11.58131262,
+              48.13759819
+            ],
+            [
+              11.58194172,
+              48.13757244
+            ],
+            [
+              11.58195186,
+              48.13757065
+            ],
+            [
+              11.58196021,
+              48.1375664
+            ],
+            [
+              11.58196549,
+              48.13756034
+            ],
+            [
+              11.5819669,
+              48.13755339
+            ],
+            [
+              11.58196423,
+              48.1375466
+            ],
+            [
+              11.58195789,
+              48.13754102
+            ],
+            [
+              11.58194883,
+              48.13753748
+            ],
+            [
+              11.58193844,
+              48.13753653
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Hildegardstr. 1 - 2",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Lärmschutzwand vor gesamter Nr. 2",
+        "beeintraechtigung": "Fahrbahnverengung, Haltverbot vor Nr.1 und Nr. 2, keine Radler entgegen der Einbahnstr. erlaubt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "27.10.2026",
+        "ende_datum_kombiniert": "14.02.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4922",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.58170866,
+              48.13707327
+            ],
+            [
+              11.5817004,
+              48.13706894
+            ],
+            [
+              11.5816903,
+              48.13706707
+            ],
+            [
+              11.58167989,
+              48.13706792
+            ],
+            [
+              11.58167077,
+              48.13707137
+            ],
+            [
+              11.58166431,
+              48.1370769
+            ],
+            [
+              11.5816615,
+              48.13708366
+            ],
+            [
+              11.58166278,
+              48.13709063
+            ],
+            [
+              11.58166794,
+              48.13709674
+            ],
+            [
+              11.58190934,
+              48.13728439
+            ],
+            [
+              11.58204827,
+              48.13740274
+            ],
+            [
+              11.58205623,
+              48.13740731
+            ],
+            [
+              11.5820662,
+              48.13740949
+            ],
+            [
+              11.58207665,
+              48.13740895
+            ],
+            [
+              11.582086,
+              48.13740577
+            ],
+            [
+              11.58209282,
+              48.13740044
+            ],
+            [
+              11.58209608,
+              48.13739377
+            ],
+            [
+              11.58209527,
+              48.13738677
+            ],
+            [
+              11.58209053,
+              48.13738052
+            ],
+            [
+              11.58195122,
+              48.13726185
+            ],
+            [
+              11.58195045,
+              48.13726123
+            ],
+            [
+              11.58170866,
+              48.13707327
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Hochbrückenstr. 14 - 20",
+        "betroffene_bereiche": "Fahrbahn, Gehweg",
+        "beschreibung": "Lärmschutzwand",
+        "beeintraechtigung": "Fahrbahn verengt, Gehweg entfällt, Zufahrt von Hildegardstr. Richtung Süden auf 20 m erlaubt wegen Erreichbarkeit Baustellenzufahrt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "27.10.2026",
+        "ende_datum_kombiniert": "14.02.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4965",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57119332,
+              48.13714048
+            ],
+            [
+              11.57094562,
+              48.13696829
+            ],
+            [
+              11.57093702,
+              48.13696429
+            ],
+            [
+              11.57092677,
+              48.13696279
+            ],
+            [
+              11.57091646,
+              48.13696403
+            ],
+            [
+              11.57090763,
+              48.13696781
+            ],
+            [
+              11.57090164,
+              48.13697357
+            ],
+            [
+              11.5708994,
+              48.13698043
+            ],
+            [
+              11.57090125,
+              48.13698734
+            ],
+            [
+              11.57090691,
+              48.13699324
+            ],
+            [
+              11.57115461,
+              48.13716543
+            ],
+            [
+              11.57116322,
+              48.13716944
+            ],
+            [
+              11.57117346,
+              48.13717094
+            ],
+            [
+              11.57118378,
+              48.1371697
+            ],
+            [
+              11.5711926,
+              48.13716592
+            ],
+            [
+              11.57119859,
+              48.13716015
+            ],
+            [
+              11.57120083,
+              48.1371533
+            ],
+            [
+              11.57119898,
+              48.13714639
+            ],
+            [
+              11.57119332,
+              48.13714048
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Hotterstr. 2 - 4",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Autokraneinsatz für 1 Tag",
+        "beeintraechtigung": "Fußgänger gegenüber, VOLLSPERRUNG FAHRBAHN, Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "14.10.2026",
+        "ende_datum_kombiniert": "14.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.4966",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57030833,
+              48.13633877
+            ],
+            [
+              11.57030178,
+              48.1363333
+            ],
+            [
+              11.57029259,
+              48.13632991
+            ],
+            [
+              11.57028217,
+              48.13632914
+            ],
+            [
+              11.5702721,
+              48.1363311
+            ],
+            [
+              11.57026392,
+              48.13633548
+            ],
+            [
+              11.57025887,
+              48.13634163
+            ],
+            [
+              11.57025771,
+              48.13634861
+            ],
+            [
+              11.57026064,
+              48.13635535
+            ],
+            [
+              11.57034304,
+              48.1364616
+            ],
+            [
+              11.5703437,
+              48.1364624
+            ],
+            [
+              11.57046089,
+              48.13659646
+            ],
+            [
+              11.57046345,
+              48.13659889
+            ],
+            [
+              11.57058899,
+              48.13669965
+            ],
+            [
+              11.57059715,
+              48.13670406
+            ],
+            [
+              11.5706072,
+              48.13670605
+            ],
+            [
+              11.57061763,
+              48.1367053
+            ],
+            [
+              11.57062683,
+              48.13670195
+            ],
+            [
+              11.57063342,
+              48.13669649
+            ],
+            [
+              11.57063639,
+              48.13668976
+            ],
+            [
+              11.57063528,
+              48.13668278
+            ],
+            [
+              11.57063026,
+              48.13667661
+            ],
+            [
+              11.57050615,
+              48.136577
+            ],
+            [
+              11.57039042,
+              48.13644462
+            ],
+            [
+              11.57030833,
+              48.13633877
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Hotterstr. 11b - 15",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Fasadengerüst und Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fußgänger gegenüber, Fahrbahn eingeengt, Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "01.10.2026",
+        "ende_datum_kombiniert": "30.10.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.5008",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.56816019,
+              48.13628669
+            ],
+            [
+              11.56802777,
+              48.136311
+            ],
+            [
+              11.5680184,
+              48.13631414
+            ],
+            [
+              11.56801153,
+              48.13631944
+            ],
+            [
+              11.56800822,
+              48.1363261
+            ],
+            [
+              11.56800897,
+              48.1363331
+            ],
+            [
+              11.56801366,
+              48.13633938
+            ],
+            [
+              11.56802158,
+              48.13634397
+            ],
+            [
+              11.56803153,
+              48.13634619
+            ],
+            [
+              11.56804199,
+              48.13634569
+            ],
+            [
+              11.5681744,
+              48.13632138
+            ],
+            [
+              11.56818378,
+              48.13631824
+            ],
+            [
+              11.56819065,
+              48.13631294
+            ],
+            [
+              11.56819396,
+              48.13630628
+            ],
+            [
+              11.56819321,
+              48.13629928
+            ],
+            [
+              11.56818852,
+              48.136293
+            ],
+            [
+              11.56818059,
+              48.13628841
+            ],
+            [
+              11.56817065,
+              48.13628619
+            ],
+            [
+              11.56816019,
+              48.13628669
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Josephspitalstr. 1 - 3",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Haltverbot zur Durchfahrt Fahrverkehr",
+        "beeintraechtigung": "Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "02.11.2026",
+        "ende_datum_kombiniert": "22.04.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.5009",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.56823494,
+              48.13632892
+            ],
+            [
+              11.56795193,
+              48.13638088
+            ],
+            [
+              11.56794255,
+              48.13638402
+            ],
+            [
+              11.56793568,
+              48.13638932
+            ],
+            [
+              11.56793237,
+              48.13639598
+            ],
+            [
+              11.56793312,
+              48.13640298
+            ],
+            [
+              11.56793781,
+              48.13640925
+            ],
+            [
+              11.56794574,
+              48.13641385
+            ],
+            [
+              11.56795568,
+              48.13641607
+            ],
+            [
+              11.56796614,
+              48.13641557
+            ],
+            [
+              11.56824915,
+              48.13636361
+            ],
+            [
+              11.56825759,
+              48.13636093
+            ],
+            [
+              11.56826415,
+              48.13635649
+            ],
+            [
+              11.56826804,
+              48.13635081
+            ],
+            [
+              11.5682688,
+              48.13634459
+            ],
+            [
+              11.56826633,
+              48.13633857
+            ],
+            [
+              11.56826093,
+              48.13633347
+            ],
+            [
+              11.56825326,
+              48.13632992
+            ],
+            [
+              11.56824423,
+              48.13632834
+            ],
+            [
+              11.56823494,
+              48.13632892
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Josephspitalstr. 2 - 6",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Gerüst und Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fußgängerschutztunnel, Wegfall Parkplätze, Fahrbahn eingeengt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "02.11.2026",
+        "ende_datum_kombiniert": "22.04.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.5264",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.58092027,
+              48.13649112
+            ],
+            [
+              11.58092552,
+              48.13648504
+            ],
+            [
+              11.58092689,
+              48.13647808
+            ],
+            [
+              11.58092419,
+              48.1364713
+            ],
+            [
+              11.58091781,
+              48.13646573
+            ],
+            [
+              11.58090873,
+              48.13646222
+            ],
+            [
+              11.58089834,
+              48.1364613
+            ],
+            [
+              11.58088821,
+              48.13646311
+            ],
+            [
+              11.58087989,
+              48.13646738
+            ],
+            [
+              11.58080875,
+              48.13652161
+            ],
+            [
+              11.58080491,
+              48.13652542
+            ],
+            [
+              11.58069485,
+              48.13667261
+            ],
+            [
+              11.58069208,
+              48.13667938
+            ],
+            [
+              11.58069339,
+              48.13668635
+            ],
+            [
+              11.58069858,
+              48.13669244
+            ],
+            [
+              11.58070686,
+              48.13669675
+            ],
+            [
+              11.58071697,
+              48.1366986
+            ],
+            [
+              11.58072737,
+              48.13669773
+            ],
+            [
+              11.58073648,
+              48.13669426
+            ],
+            [
+              11.58074291,
+              48.13668871
+            ],
+            [
+              11.58085142,
+              48.1365436
+            ],
+            [
+              11.58092027,
+              48.13649112
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Marienstr. 2 - 6",
+        "betroffene_bereiche": "Gehweg, Parkbucht, Fahrbahn",
+        "beschreibung": "Containeranlage für Baustelle Neuturmstr./Hildegardstr./Hochbrückenstr.",
+        "beeintraechtigung": "Gehweg gesperrt, Parkbucht entfällt, Fahrbahn verengt",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "01.06.2026",
+        "ende_datum_kombiniert": "31.07.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.5343",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.58093675,
+              48.13732639
+            ],
+            [
+              11.58102271,
+              48.13764092
+            ],
+            [
+              11.58102657,
+              48.13764744
+            ],
+            [
+              11.58103387,
+              48.13765248
+            ],
+            [
+              11.5810435,
+              48.13765526
+            ],
+            [
+              11.58105398,
+              48.13765537
+            ],
+            [
+              11.58106373,
+              48.13765279
+            ],
+            [
+              11.58107125,
+              48.1376479
+            ],
+            [
+              11.58107541,
+              48.13764146
+            ],
+            [
+              11.58107558,
+              48.13763444
+            ],
+            [
+              11.58098961,
+              48.13731992
+            ],
+            [
+              11.58098575,
+              48.1373134
+            ],
+            [
+              11.58097845,
+              48.13730836
+            ],
+            [
+              11.58096883,
+              48.13730557
+            ],
+            [
+              11.58095834,
+              48.13730547
+            ],
+            [
+              11.5809486,
+              48.13730805
+            ],
+            [
+              11.58094107,
+              48.13731294
+            ],
+            [
+              11.58093691,
+              48.13731938
+            ],
+            [
+              11.58093675,
+              48.13732639
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Neuturmstr. 1 - 3",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Lärmschutzwand",
+        "beeintraechtigung": "Fahrbahnverengung, Einbahnregelung Richtung Süden, Haltverbot",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "27.10.2026",
+        "ende_datum_kombiniert": "14.02.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.5471",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57406764,
+              48.14089531
+            ],
+            [
+              11.57347654,
+              48.14105
+            ],
+            [
+              11.57346771,
+              48.14105378
+            ],
+            [
+              11.57346171,
+              48.14105954
+            ],
+            [
+              11.57345946,
+              48.14106639
+            ],
+            [
+              11.5734613,
+              48.1410733
+            ],
+            [
+              11.57346695,
+              48.14107921
+            ],
+            [
+              11.57347555,
+              48.14108323
+            ],
+            [
+              11.57348579,
+              48.14108473
+            ],
+            [
+              11.57349611,
+              48.1410835
+            ],
+            [
+              11.57408721,
+              48.14092881
+            ],
+            [
+              11.57409604,
+              48.14092503
+            ],
+            [
+              11.57410204,
+              48.14091927
+            ],
+            [
+              11.57410429,
+              48.14091242
+            ],
+            [
+              11.57410245,
+              48.14090551
+            ],
+            [
+              11.5740968,
+              48.1408996
+            ],
+            [
+              11.5740882,
+              48.14089558
+            ],
+            [
+              11.57407796,
+              48.14089408
+            ],
+            [
+              11.57406764,
+              48.14089531
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Prannerstr. 1 - 5",
+        "betroffene_bereiche": "Gehweg,Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche mit Kran",
+        "beeintraechtigung": "Gehweg gesperrt, Gerüst mit Tunnel, Fahrbahn eingeengt, Haltverbot",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "04.05.2026",
+        "ende_datum_kombiniert": "27.11.2026 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.5490",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.57267172,
+              48.14000498
+            ],
+            [
+              11.57237513,
+              48.14008153
+            ],
+            [
+              11.57236627,
+              48.14008529
+            ],
+            [
+              11.57236023,
+              48.14009103
+            ],
+            [
+              11.57235793,
+              48.14009787
+            ],
+            [
+              11.57235972,
+              48.14010479
+            ],
+            [
+              11.57236533,
+              48.14011072
+            ],
+            [
+              11.5723739,
+              48.14011476
+            ],
+            [
+              11.57238413,
+              48.1401163
+            ],
+            [
+              11.57239446,
+              48.1401151
+            ],
+            [
+              11.57269105,
+              48.14003854
+            ],
+            [
+              11.57269905,
+              48.14003532
+            ],
+            [
+              11.57270491,
+              48.14003046
+            ],
+            [
+              11.57270793,
+              48.14002455
+            ],
+            [
+              11.57270776,
+              48.1400183
+            ],
+            [
+              11.5727044,
+              48.14001247
+            ],
+            [
+              11.57269826,
+              48.14000777
+            ],
+            [
+              11.57269009,
+              48.14000475
+            ],
+            [
+              11.57268087,
+              48.14000378
+            ],
+            [
+              11.57267172,
+              48.14000498
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Promenadepl. 9 - 13",
+        "betroffene_bereiche": "Gehweg,Parkbucht,Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Gehweg eingeengt, Wegfall Parkplätze",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "28.08.2026",
+        "ende_datum_kombiniert": "31.05.2027 23:59",
+        "fachliche_id": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "baustellen_opendata.5868",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.58049758,
+              48.13501722
+            ],
+            [
+              11.58058697,
+              48.13502399
+            ],
+            [
+              11.58059742,
+              48.1350234
+            ],
+            [
+              11.58060674,
+              48.13502019
+            ],
+            [
+              11.5806135,
+              48.13501483
+            ],
+            [
+              11.58061669,
+              48.13500814
+            ],
+            [
+              11.58061582,
+              48.13500115
+            ],
+            [
+              11.58061101,
+              48.13499491
+            ],
+            [
+              11.580603,
+              48.13499038
+            ],
+            [
+              11.58059301,
+              48.13498825
+            ],
+            [
+              11.58050362,
+              48.13498148
+            ],
+            [
+              11.58049317,
+              48.13498206
+            ],
+            [
+              11.58048386,
+              48.13498528
+            ],
+            [
+              11.58047709,
+              48.13499064
+            ],
+            [
+              11.5804739,
+              48.13499733
+            ],
+            [
+              11.58047478,
+              48.13500432
+            ],
+            [
+              11.58047958,
+              48.13501056
+            ],
+            [
+              11.58048759,
+              48.13501509
+            ],
+            [
+              11.58049758,
+              48.13501722
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "shape",
+      "properties": {
+        "strasse_hausnr": "Westenriederstr. 45 - 47",
+        "betroffene_bereiche": "Fahrbahn",
+        "beschreibung": "Baustelleneinrichtungsfläche",
+        "beeintraechtigung": "Fahrbahn eingeengt, Parkplätze entfallen",
+        "art": "Baumaßnahme",
+        "weitere_info": null,
+        "kontakt_oeffentlich": null,
+        "beginn_datum_kombiniert": "31.08.2026",
+        "ende_datum_kombiniert": "31.10.2026 23:59",
+        "fachliche_id": null
+      }
+    }
+  ],
+  "totalFeatures": 1198,
+  "numberMatched": 1198,
+  "numberReturned": 1198,
+  "timeStamp": "2026-10-14T09:44:32.532Z",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::4326"
+    }
+  }
+}

@@ -41,13 +41,13 @@ BW-Städte sind teilweise schon über MobiData BW abgedeckt (Gemeindestraßen nu
 |---|---|---|---|
 | 1 | **Berlin** – **umgesetzt in 0.2.0** | ✅ 🔎 | VIZ: WFS `https://api.viz.berlin.de/geoserver/mdhwfs/wfs` (`baustellen_sperrungen`) oder direkt `https://api.viz.berlin.de/daten/baustellen_sperrungen_viz.json`; DL-DE-BY 2.0 |
 | 2 | **Hamburg** | ✅ 🔎 | WFS `https://geodienste.hamburg.de/hh_wfs_baustellen` (`de.hh.up:baustelle`); außerdem `Baustellen_FHH` im norddeutschen WFS |
-| 3 | **München** | ✅ 🔎 | WFS `https://geoportal.muenchen.de/geoserver/mor_wfs/ows` (`mor_wfs:baustellen_opendata`); DL-DE-BY 2.0 |
-| 4 | **Köln** | ✅ | WFS `https://geoportal.stadt-koeln.de/wss/service/baustellen_wfs/guest` (DL-DE-Zero); zusätzlich ArcGIS „Verkehrskalender“ `https://geoportal.stadt-koeln.de/arcgis/rest/services/verkehr/verkehrskalender/MapServer/0/query?where=1%3D1&outFields=*&f=geojson` |
-| 5 | **Frankfurt** | ✅ 🔎 | WFS `https://geowebdienste.frankfurt.de/Baustellen`, Layer `opendata_verkehr:Baustellen` und `opendata_verkehr:Verkehrsmeldungen` |
+| 3 | **München** – **umgesetzt in 0.2.0** | ✅ 🔎 | WFS `https://geoportal.muenchen.de/geoserver/mor_wfs/ows` (`mor_wfs:baustellen_opendata`); DL-DE-BY 2.0 |
+| 4 | **Köln** – **umgesetzt in 0.2.0** (Verkehrskalender) | ✅ | WFS `https://geoportal.stadt-koeln.de/wss/service/baustellen_wfs/guest` (DL-DE-Zero); zusätzlich ArcGIS „Verkehrskalender“ `https://geoportal.stadt-koeln.de/arcgis/rest/services/verkehr/verkehrskalender/MapServer/0/query?where=1%3D1&outFields=*&f=geojson` |
+| 5 | **Frankfurt** – **umgesetzt in 0.2.0** | ✅ 🔎 | WFS `https://geowebdienste.frankfurt.de/Baustellen`, Layer `opendata_verkehr:Baustellen` und `opendata_verkehr:Verkehrsmeldungen` |
 | 6 | Stuttgart | ✅ umgesetzt | |
 | 7 | Düsseldorf | ❓ | |
 | 8 | **Leipzig** | ✅ | WFS `https://geodienste.leipzig.de/l3/OpenData/wfs` (`OpenData:verkehrsraumeinschraenkungen`, `…_point`) |
-| 9 | **Dortmund** | ✅ 🔎 | `https://open-data.dortmund.de/api/v2/catalog/datasets/fb66-baustellen-tagesaktuell/exports/geojson` (+ `…-geplant`, Flächen-Varianten); DL-DE-Zero |
+| 9 | **Dortmund** – **umgesetzt in 0.2.0** | ✅ 🔎 | `https://open-data.dortmund.de/api/v2/catalog/datasets/fb66-baustellen-tagesaktuell/exports/geojson` (+ `…-geplant`, Flächen-Varianten); DL-DE-Zero |
 | 10 | Essen | ❓ | |
 | 11 | Bremen | ❌ | nur Mobilithek / Webseite VMZ (Umland über Niedersachsen-Layer) |
 | 12 | Dresden | ⚠️ | über Sachsen landesweit (Bundes- bis Kreisstraßen); städtische Daten nur im Themenstadtplan |

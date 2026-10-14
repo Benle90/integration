@@ -85,6 +85,31 @@ RLP_URL = (
 )
 RLP_EXCERPT = (49.9, 7.4, 50.5, 8.4)  # Süd, West, Nord, Ost
 
+# Großstädte: München (nur Fahrbahn-Baustellen, Ausschnitt Innenstadt),
+# Köln (Verkehrskalender), Frankfurt (Ausschnitt Innenstadt), Dortmund.
+MUENCHEN_URL = (
+    "https://geoportal.muenchen.de/geoserver/mor_wfs/ows?service=WFS&version=2.0.0"
+    "&request=GetFeature&typeNames=mor_wfs:baustellen_opendata"
+    "&outputFormat=application/json&srsName=EPSG:4326&CQL_FILTER="
+    + urllib.parse.quote("art='Baumaßnahme' AND betroffene_bereiche LIKE '%Fahrbahn%'")
+)
+KOELN_URL = (
+    "https://geoportal.stadt-koeln.de/arcgis/rest/services/verkehr/verkehrskalender"
+    "/MapServer/0/query?where=anzeige%3D1&outFields=*&f=geojson"
+)
+FRANKFURT_URL = (
+    "https://geowebdienste.frankfurt.de/Baustellen?SERVICE=WFS&VERSION=2.0.0"
+    "&REQUEST=GetFeature&TYPENAMES=opendata_verkehr:{}"
+    "&OUTPUTFORMAT=application/json&SRSNAME=EPSG:4326"
+)
+DORTMUND_URL = (
+    "https://open-data.dortmund.de/api/v2/catalog/datasets/{}/exports/geojson"
+)
+CITY_EXCERPTS = {
+    "muenchen": (48.134, 11.566, 48.142, 11.582),
+    "frankfurt": (50.09, 8.64, 50.13, 8.71),
+}
+
 index: list[dict] = []
 
 
@@ -217,6 +242,46 @@ def rheinland_pfalz() -> None:
     save("rheinland_pfalz_mainz_koblenz.geojson.json", RLP_URL, s, b, c)
 
 
+def _first_lon_lat(geometry: dict) -> tuple[float, float]:
+    coords = geometry["coordinates"]
+    while isinstance(coords[0], list):
+        coords = coords[0]
+    return coords[0], coords[1]
+
+
+def _excerpt(body: bytes, bounds: tuple[float, float, float, float]) -> bytes:
+    data = json.loads(body)
+    south, west, north, east = bounds
+    data["features"] = [
+        f
+        for f in data["features"]
+        if f.get("geometry")
+        and west <= _first_lon_lat(f["geometry"])[0] <= east
+        and south <= _first_lon_lat(f["geometry"])[1] <= north
+    ]
+    return json.dumps(data, ensure_ascii=False).encode()
+
+
+def staedte() -> None:
+    print("Großstädte")
+    s, b, c = get(MUENCHEN_URL)
+    if s == 200:
+        b = _excerpt(b, CITY_EXCERPTS["muenchen"])
+    save("muenchen_innenstadt.geojson.json", MUENCHEN_URL, s, b, c)
+    s, b, c = get(KOELN_URL)
+    save("koeln_verkehrskalender.geojson.json", KOELN_URL, s, b, c)
+    for layer in ("Baustellen", "Verkehrsmeldungen"):
+        url = FRANKFURT_URL.format(layer)
+        s, b, c = get(url)
+        if s == 200:
+            b = _excerpt(b, CITY_EXCERPTS["frankfurt"])
+        save(f"frankfurt_{layer.lower()}.geojson.json", url, s, b, c)
+    for name in ("fb66-baustellen-tagesaktuell", "fb66-baustellen-geplant"):
+        url = DORTMUND_URL.format(name)
+        s, b, c = get(url)
+        save(f"dortmund_{name.removeprefix('fb66-')}.geojson.json", url, s, b, c)
+
+
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     autobahn()
@@ -226,6 +291,7 @@ def main() -> int:
     osten()
     sachsen()
     rheinland_pfalz()
+    staedte()
     (OUT / "_index.json").write_text(
         json.dumps(
             {

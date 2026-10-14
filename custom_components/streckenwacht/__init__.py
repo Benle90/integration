@@ -32,7 +32,11 @@ from .providers import Provider
 from .providers.autobahn import AutobahnProvider
 from .providers.berlin import BerlinProvider
 from .providers.brandenburg import BrandenburgProvider
+from .providers.dortmund import DortmundProvider
+from .providers.frankfurt import FrankfurtProvider
+from .providers.koeln import KoelnProvider
 from .providers.mobidata_bw import MobiDataBWProvider
+from .providers.muenchen import MuenchenProvider
 from .providers.norddeutschland import NorddeutschlandProvider
 from .providers.rheinland_pfalz import RheinlandPfalzProvider
 from .providers.sachsen import SachsenProvider
@@ -56,6 +60,10 @@ PROVIDERS: dict[Source, type[Provider]] = {
     Source.SACHSEN_ANHALT: SachsenAnhaltProvider,
     Source.SACHSEN: SachsenProvider,
     Source.RHEINLAND_PFALZ: RheinlandPfalzProvider,
+    Source.MUENCHEN: MuenchenProvider,
+    Source.KOELN: KoelnProvider,
+    Source.FRANKFURT: FrankfurtProvider,
+    Source.DORTMUND: DortmundProvider,
 }
 
 

@@ -122,7 +122,11 @@
         "brandenburg": "Brandenburg (Bundes-, Landes-, Kreisstraßen)",
         "sachsen_anhalt": "Sachsen-Anhalt (alle Straßen; nur nichtkommerziell)",
         "sachsen": "Sachsen (alle Straßen)",
-        "rheinland_pfalz": "Rheinland-Pfalz (alle Straßen)"
+        "rheinland_pfalz": "Rheinland-Pfalz (alle Straßen)",
+        "muenchen": "München (Baustellen auf der Fahrbahn)",
+        "koeln": "Köln (Verkehrskalender)",
+        "frankfurt": "Frankfurt am Main (Baustellen, Verkehrsmeldungen)",
+        "dortmund": "Dortmund (Baustellen)"
       }
     }
   },

@@ -30,7 +30,11 @@ from custom_components.streckenwacht.providers.autobahn import (
 )
 from custom_components.streckenwacht.providers.berlin import BerlinProvider
 from custom_components.streckenwacht.providers.brandenburg import BrandenburgProvider
+from custom_components.streckenwacht.providers.dortmund import DortmundProvider
+from custom_components.streckenwacht.providers.frankfurt import FrankfurtProvider
+from custom_components.streckenwacht.providers.koeln import KoelnProvider
 from custom_components.streckenwacht.providers.mobidata_bw import MobiDataBWProvider
+from custom_components.streckenwacht.providers.muenchen import MuenchenProvider
 from custom_components.streckenwacht.providers.norddeutschland import (
     NorddeutschlandProvider,
 )
@@ -82,6 +86,10 @@ async def main(args: argparse.Namespace) -> int:
             SachsenAnhaltProvider(session),
             SachsenProvider(session),
             RheinlandPfalzProvider(session),
+            MuenchenProvider(session),
+            KoelnProvider(session),
+            FrankfurtProvider(session),
+            DortmundProvider(session),
         )
         for provider in providers:
             print(f"{provider.source}:")

@@ -1,0 +1,3239 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.394315385348547,
+          51.49273629636694
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Sebrathweg 25 - Hausanschluss (Strom/ Wasser) /// Vollsperrung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "14.10.2026 - 13.11.2026",
+        "von": "2026-10-14",
+        "bis": "2026-11-13",
+        "stadtbezirk": "Lütgendortmund",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.493481118659541,
+          51.51430135918913
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Kaiserstraße - Masterneuerung // Halbseitige Sperrung, Spureinzug",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "14.10.2026 - 13.11.2026",
+        "von": "2026-10-14",
+        "bis": "2026-11-13",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.488599463975875,
+          51.441589103208045
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Wittbräucker Straße - Glasfaserausbau // halbseitige Sperrung bzw. Vollsperrung",
+        "auftraggeber": "Telekommunikationsanbieter",
+        "einschrankung": null,
+        "zeitraum": "13.10.2026 - 03.11.2026",
+        "von": "2026-10-13",
+        "bis": "2026-11-03",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.507212114394536,
+          51.42288245882146
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Westhofener Straße - Glasfaserausbau // Vollsperrung in mehreren Abschnitten",
+        "auftraggeber": "Telekommunikationsanbieter",
+        "einschrankung": null,
+        "zeitraum": "13.10.2026 - 11.12.2026",
+        "von": "2026-10-13",
+        "bis": "2026-12-11",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.490235381983161,
+          51.487309321393305
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Hochofenstraße - Gehwegsanierung // halbseitige Sperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "13.10.2026 - 30.10.2026",
+        "von": "2026-10-13",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.440211600324868,
+          51.46813045563616
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Froschloch 10-12 - Renovierung Kirchhörder Bach // Fahrbahneinengung",
+        "auftraggeber": "EB70 - Stadtentwässerung",
+        "einschrankung": null,
+        "zeitraum": "12.10.2026 - 19.10.2026",
+        "von": "2026-10-12",
+        "bis": "2026-10-19",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.538980683645926,
+          51.49094689346606
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Schüruferstraße 181-183 - Verlegung Glasfaser /// Halbseitige Sperrung (wechselseitig)",
+        "auftraggeber": "DOKOM21",
+        "einschrankung": null,
+        "zeitraum": "12.10.2026 - 26.10.2026",
+        "von": "2026-10-12",
+        "bis": "2026-10-26",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.435108855782371,
+          51.502784298971335
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Leierweg / Hausanschluss // Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "12.10.2026 - 23.10.2026",
+        "von": "2026-10-12",
+        "bis": "2026-10-23",
+        "stadtbezirk": "Innenstadt-West",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.377094568784565,
+          51.56372013192273
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Hansamnnstr. 79-83 - Dachsanierung // gehwegsp.",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "12.10.2026 - 18.12.2026",
+        "von": "2026-10-12",
+        "bis": "2026-12-18",
+        "stadtbezirk": "Mengede",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.437488217675905,
+          51.474665024478064
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Leostraße - Fahrbahnerneuerung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "12.10.2026 - 23.10.2026",
+        "von": "2026-10-12",
+        "bis": "2026-10-23",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.486857469206097,
+          51.48824955472465
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Carlo-Schmid-Allee - Überprüfung Skywalk // Vollsperrung in mehreren Abschnitten",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "12.10.2026 - 16.10.2026",
+        "von": "2026-10-12",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.365870433231288,
+          51.49541385051063
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Borussiastraße Brückenbauwerk A40 - Brückeninstandhaltung /// Fahrbahneinengung in verschiednene Bauabschnitten",
+        "auftraggeber": "Die Autobahn GmbH",
+        "einschrankung": null,
+        "zeitraum": "12.10.2026 - 01.11.2026",
+        "von": "2026-10-12",
+        "bis": "2026-11-01",
+        "stadtbezirk": "Lütgendortmund",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4796695234194575,
+          51.4870536558649
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Carlo-Schmid-Allee - Neubau Parkhaus+Bürogebäude // Vollsperrung der Richtungsfahrbahn",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "12.10.2026 - 30.09.2028",
+        "von": "2026-10-12",
+        "bis": "2028-09-30",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.521002287593668,
+          51.50508238636644
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Westfalendamm - Treppenabriss Haltestelle/Max-Eyth-Straße // Halbseitige Sperrung (linke Spur)",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "09.10.2026 - 16.10.2026",
+        "von": "2026-10-09",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.503826338687147,
+          51.4961152209894
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Kurze Hecke - Wasserrohrbruch // halbseitige Sperrung mit Ampel",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "08.10.2026 - 16.10.2026",
+        "von": "2026-10-08",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.473645319819898,
+          51.52280931041108
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Gronaustraße - Notmaßnahme Wasserrohrbruch // Vollsperrung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "08.10.2026 - 06.11.2026",
+        "von": "2026-10-08",
+        "bis": "2026-11-06",
+        "stadtbezirk": "Innenstadt-Nord",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.379101649623216,
+          51.48648848751523
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Grummetweg - Hausanschluss Strom // Vollsperrung Fahrbahn",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "07.10.2026 - 26.10.2026",
+        "von": "2026-10-07",
+        "bis": "2026-10-26",
+        "stadtbezirk": "Lütgendortmund",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.494718756322141,
+          51.478616320373426
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Wellinghofer Straße - Stromleitung //  halbseitige Sperrung mit Ampel",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "07.10.2026 - 28.10.2026",
+        "von": "2026-10-07",
+        "bis": "2026-10-28",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.38002765096941,
+          51.52451314037927
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Rahmer Str. 314 - Galsfaser 1 & 1 // Fahrbahneinengung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "06.10.2026 - 23.12.2026",
+        "von": "2026-10-06",
+        "bis": "2026-12-23",
+        "stadtbezirk": "Huckarde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.532281890090497,
+          51.49257269652851
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Niergartenstraße 25 - Hausanschluss - Gas erneuern /// Fahrbahneinengung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "06.10.2026 - 19.10.2026",
+        "von": "2026-10-06",
+        "bis": "2026-10-19",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.379691652253242,
+          51.527650674455025
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Bothestr. -Glasfaser 1 &1 // halbs.SP.",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "06.10.2026 - 23.12.2026",
+        "von": "2026-10-06",
+        "bis": "2026-12-23",
+        "stadtbezirk": "Huckarde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.380442462964951,
+          51.529021411119615
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "JUngferntalstr. 73-81 - Glasfaser 1&1 //halbs. Sp.",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "06.10.2026 - 23.12.2026",
+        "von": "2026-10-06",
+        "bis": "2026-12-23",
+        "stadtbezirk": "Huckarde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.469373933541539,
+          51.55074251785323
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Deutsche Straße - Notmaßnahme Stromstörung // Vollsperrung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "06.10.2026 - 16.10.2026",
+        "von": "2026-10-06",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Eving",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.503389487995744,
+          51.50514109701389
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Obere Brikstraße - Fahrbahnerneuerung // Vollsperrung + Umleitung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 16.10.2026",
+        "von": "2026-10-05",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.504054397361175,
+          51.552274325768195
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Merckenbuschweg - Sondierung KVP // Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 30.10.2026",
+        "von": "2026-10-05",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Scharnhorst",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.491123682308581,
+          51.551031041693086
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Posthornweg-Wrangelstr. _ Glasfaserausbau // VSP",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 31.10.2026",
+        "von": "2026-10-05",
+        "bis": "2026-10-31",
+        "stadtbezirk": "Eving",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.479034279113646,
+          51.543356998231516
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Derner Str./An den Teichen -LSA Austausch // Einengung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 28.10.2026",
+        "von": "2026-10-05",
+        "bis": "2026-10-28",
+        "stadtbezirk": "Eving",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.474294573276108,
+          51.51916919020481
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Gronaustraße - Arb. am Fernwärmeschacht // Spureinzug, halbseitige Sperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 06.11.2026",
+        "von": "2026-10-05",
+        "bis": "2026-11-06",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.507983855244524,
+          51.47026875943948
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Benninghofer Heide 33a - Kanalhausanschluss // Fahrbahneinengung",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 19.10.2026",
+        "von": "2026-10-05",
+        "bis": "2026-10-19",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.469242045026377,
+          51.424148469900814
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Hohensyburgstraße - Arbeiten an den Stromleitungen // halbseitige Sperrung mit Ampel",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 30.11.2026",
+        "von": "2026-10-05",
+        "bis": "2026-11-30",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.468214041848934,
+          51.57138856521469
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Maienweg 30 u 31 - Versorgungsleitungen // 2 BA wechselseitig",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 23.10.2026",
+        "von": "2026-10-05",
+        "bis": "2026-10-23",
+        "stadtbezirk": "Eving",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.493256222804881,
+          51.49498229082475
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Willem-van-Vloten-Straße - Notmaßnahme-Stromstörung // Fahrbahneinengung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 16.10.2026",
+        "von": "2026-10-05",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.475126208975398,
+          51.513848338291986
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Kaiserstraße - Oberflächensanierung // Vollsperrung Straße + Umleitung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 16.10.2026",
+        "von": "2026-10-05",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.502743139434138,
+          51.50127556632612
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Hueckstraße - Arb. a. d. Versorgungsleitungen // Vollsperrung (Wanderbaustelle)",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 18.12.2026",
+        "von": "2026-10-05",
+        "bis": "2026-12-18",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.489477404575836,
+          51.46977137281096
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Blenkerweg - Arbeiten an den Stromleitungen // Vollsperrung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 13.11.2026",
+        "von": "2026-10-05",
+        "bis": "2026-11-13",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3890223792220215,
+          51.567184633429804
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Mengeder Str. 590-600a - halbs. Sp. mit LSA // Brückensanierung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 16.10.2026",
+        "von": "2026-10-05",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Mengede",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.52554226342969,
+          51.45874090702103
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Grenzweg - Bordsteinabsenkung // Fahrbahneinengung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 06.11.2026",
+        "von": "2026-10-05",
+        "bis": "2026-11-06",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.534042447658359,
+          51.48922032026607
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Schüruferstraße 160 - Glasfaserausbau /// Halbseitige Sperrung + LSA / Bauabschnitte wechselseitig",
+        "auftraggeber": "DOKOM21",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 19.10.2026",
+        "von": "2026-10-05",
+        "bis": "2026-10-19",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.48807991105066,
+          51.49836473121135
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Tewaagstraße - Fahrbahnsanierung // Vollsperrung + Umleitung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 16.10.2026",
+        "von": "2026-10-05",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.468202719348712,
+          51.43167255976451
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Wittbräucker Straße 980 - Glasfaserverlegung // Fahrbahneinengung",
+        "auftraggeber": "Telekommunikationsanbieter",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 15.10.2026",
+        "von": "2026-10-05",
+        "bis": "2026-10-15",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.474470026595251,
+          51.57219540935677
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Am Gulloh - Barrierefreiheit // halb.Sp.",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "05.10.2026 - 16.10.2026",
+        "von": "2026-10-05",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Eving",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.452710317412563,
+          51.46868166358634
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Rotkehlchenweg - Deckensanierung // Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt / Straßenoffensive",
+        "einschrankung": null,
+        "zeitraum": "02.10.2026 - 05.11.2026",
+        "von": "2026-10-02",
+        "bis": "2026-11-05",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.484385770746844,
+          51.51156378855239
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Prinz-Friedrich-Karl-Straße 61 - Notmaßnahme- Wasserrohbruch /// Vollsperrung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "02.10.2026 - 23.10.2026",
+        "von": "2026-10-02",
+        "bis": "2026-10-23",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.477273293234684,
+          51.51153826234024
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Hohenzollernstraße - Kran-/Containerstellung für Hausbau // Halbseitige Sperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "01.10.2026 - 30.09.2027",
+        "von": "2026-10-01",
+        "bis": "2027-09-30",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.550580763120734,
+          51.49873257044162
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Gevelsbergstraße zw. Kleingarten \"Im Massbruch\" und Hausnr. 138 - Ökologische Verbesserung der Archenbecke /// Halbseitige Sperrung + LSA",
+        "auftraggeber": "EB70 - Stadtentwässerung",
+        "einschrankung": null,
+        "zeitraum": "01.10.2026 - 11.12.2026",
+        "von": "2026-10-01",
+        "bis": "2026-12-11",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.488666131840114,
+          51.55018331537693
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Röddingsbaumeg 14-16 - Stromleitungen // VSP",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "01.10.2026 - 30.10.2026",
+        "von": "2026-10-01",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Eving",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.390400701250039,
+          51.50922661862503
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Martener Straße (A45 Brückenbauwerk) - Baumfällung /// Vollsperrung",
+        "auftraggeber": "Die Autobahn GmbH",
+        "einschrankung": null,
+        "zeitraum": "30.09.2026 - 30.10.2026",
+        "von": "2026-09-30",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Lütgendortmund",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.527717770250961,
+          51.565229640226626
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Derner Bahnstraße - Notmaßnahme Wasserrohrbruch // Vollsperrung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "30.09.2026 - 14.10.2026",
+        "von": "2026-09-30",
+        "bis": "2026-10-14",
+        "stadtbezirk": "Scharnhorst",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.453627232127118,
+          51.54042459815547
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Lindenhorster Str. 41 - Stromanschluss // halbs. Sp.",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "30.09.2026 - 23.10.2026",
+        "von": "2026-09-30",
+        "bis": "2026-10-23",
+        "stadtbezirk": "Eving",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.468957382442742,
+          51.50574357431988
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Saarlandstraße - Arb. an Stromleitungen // Halbseitige Sperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "30.09.2026 - 16.10.2026",
+        "von": "2026-09-30",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.367503756903205,
+          51.551791327827644
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Bodelschwingher Str. 211-217 - Dach-& Fassadensanierung // Fahrbahneinengung & Gehwesperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "29.09.2026 - 27.11.2026",
+        "von": "2026-09-29",
+        "bis": "2026-11-27",
+        "stadtbezirk": "Mengede",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.521250294982837,
+          51.47703617119844
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Wilmsmannstraße 19-21 - Kranstellung /// Fahrbahneinengung",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "29.09.2026 - 18.12.2026",
+        "von": "2026-09-29",
+        "bis": "2026-12-18",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3681248703652535,
+          51.49487487463599
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "A40/ Auffahrt/ Abfahrt DO-Kley FR Dortmund - Erneuerung der Fahrzeugrückhaltesysteme /// Vollsperrung",
+        "auftraggeber": "Die Autobahn GmbH",
+        "einschrankung": null,
+        "zeitraum": "28.09.2026 - 20.11.2026",
+        "von": "2026-09-28",
+        "bis": "2026-11-20",
+        "stadtbezirk": "Lütgendortmund",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.477781307916562,
+          51.503589647228665
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Märkische Straße 87-91 - Neubau Hochbau // Gehwegsperrung teilw.",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "28.09.2026 - 27.09.2027",
+        "von": "2026-09-28",
+        "bis": "2027-09-27",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.497999530409158,
+          51.48773500623101
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Schildstraße 4 - Instandsetzung Entwässerung // Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "28.09.2026 - 16.10.2026",
+        "von": "2026-09-28",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.438942852214444,
+          51.481509525748905
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Steinäckerstraße - KVP // Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "28.09.2026 - 13.11.2026",
+        "von": "2026-09-28",
+        "bis": "2026-11-13",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.453289333393099,
+          51.45475242917369
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Kirchhörder Berg - Arbeiten an den Stromleitungen // Vollsperrung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "28.09.2026 - 18.12.2026",
+        "von": "2026-09-28",
+        "bis": "2026-12-18",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.529156836493009,
+          51.467812927975686
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Biberweg 14 ggü. - Hausanschluss /// Fahrbahneinengung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "28.09.2026 - 16.10.2026",
+        "von": "2026-09-28",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.502463122797139,
+          51.507128945764265
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Tucholskystraße - Straßensanierung // Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "28.09.2026 - 13.11.2026",
+        "von": "2026-09-28",
+        "bis": "2026-11-13",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.491756880022524,
+          51.50548935544048
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Adickestraße - Gehwegerneuerung // Vollsperrung (tagsüber) Wanderbaustelle",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "28.09.2026 - 20.11.2026",
+        "von": "2026-09-28",
+        "bis": "2026-11-20",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.571136989494662,
+          51.573294966876674
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Wasserfuhr - Arbeiten an den Wasserleitungen // Vollsperrung u. Halbseitige Sperrung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "28.09.2026 - 06.11.2026",
+        "von": "2026-09-28",
+        "bis": "2026-11-06",
+        "stadtbezirk": "Scharnhorst",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3898482964851455,
+          51.479094952532634
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Universitätsstraße - Glasfaserausbau // Sperrung Parkstreifen in mehreren Abschnitten",
+        "auftraggeber": "DOKOM21",
+        "einschrankung": null,
+        "zeitraum": "25.09.2026 - 17.10.2026",
+        "von": "2026-09-25",
+        "bis": "2026-10-17",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.528324667150935,
+          51.49352530407498
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Untere Pekingstraße - Fahrbahnsnierung /// Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "25.09.2026 - 13.11.2026",
+        "von": "2026-09-25",
+        "bis": "2026-11-13",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.32257540039567,
+          51.52148529481704
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Bövinghauser Str. 25 -Arbeiten an Strom- u. Wasserleitungen",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "24.09.2026 - 18.12.2026",
+        "von": "2026-09-24",
+        "bis": "2026-12-18",
+        "stadtbezirk": "Lütgendortmund",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.510008499365509,
+          51.51732825128518
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Alte Straße - Gehweg-/und Parkstreifensanierung // Halbseitige Sperrung, Einbahnstraße, Umleitung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "24.09.2026 - 23.10.2026",
+        "von": "2026-09-24",
+        "bis": "2026-10-23",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.437690530576714,
+          51.510172760664204
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Lange Straße / Abbruch Brücke // Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "22.09.2026 - 29.01.2027",
+        "von": "2026-09-22",
+        "bis": "2027-01-29",
+        "stadtbezirk": "Innenstadt-West",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.376878992846893,
+          51.489496974434346
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Borussiastraße - Arb. an Stromleitungen / Einbahnstraßenregelung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "21.09.2026 - 21.11.2026",
+        "von": "2026-09-21",
+        "bis": "2026-11-21",
+        "stadtbezirk": "Lütgendortmund",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.463888265200503,
+          51.483335874908725
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Am Segen - Bau einer barrierefreien Rampe // Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "21.09.2026 - 27.11.2026",
+        "von": "2026-09-21",
+        "bis": "2026-11-27",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5448317181347395,
+          51.494949853464156
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Linnigmannstr. 26 - Hausanschluss /// Fahrbahneinengung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "21.09.2026 - 16.10.2026",
+        "von": "2026-09-21",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.470171848086668,
+          51.526436151096426
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Schüchtermannstraße / Fernwärme // Vollsperrung",
+        "auftraggeber": "DEW21",
+        "einschrankung": null,
+        "zeitraum": "21.09.2026 - 23.12.2026",
+        "von": "2026-09-21",
+        "bis": "2026-12-23",
+        "stadtbezirk": "Innenstadt-Nord",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.495461594565323,
+          51.42066301872176
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Syburger Dorfstraße 69 - Notmaßnahme // Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "21.09.2026 - 23.10.2026",
+        "von": "2026-09-21",
+        "bis": "2026-10-23",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.418889318689345,
+          51.53560565935476
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Fallgatter 8-15 - Glasfaer // Wanderbaustelle",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "18.09.2026 - 23.12.2026",
+        "von": "2026-09-18",
+        "bis": "2026-12-23",
+        "stadtbezirk": "Huckarde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.60801926511795,
+          51.53475515742971
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Eichwaldstraße - Verlegung Glasfaser // Halbseitige Sperrung",
+        "auftraggeber": "Telekommunikationsanbieter",
+        "einschrankung": null,
+        "zeitraum": "16.09.2026 - 23.10.2026",
+        "von": "2026-09-16",
+        "bis": "2026-10-23",
+        "stadtbezirk": "Brackel",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.521231255403408,
+          51.565149592334244
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Walter-Behrendt-Straße // Sondierung KVP // Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "16.09.2026 - 31.10.2026",
+        "von": "2026-09-16",
+        "bis": "2026-10-31",
+        "stadtbezirk": "Scharnhorst",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.542858977098813,
+          51.47516492137148
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Berghofer Straße/ Wittbräucker Straße - Glasfaserausbau /// Halbseitige Sperrung + LSA in verschiedenen BA",
+        "auftraggeber": "DOKOM21",
+        "einschrankung": null,
+        "zeitraum": "15.09.2026 - 16.10.2026",
+        "von": "2026-09-15",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.496744316299512,
+          51.48466284019933
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Lugierstraße 9-11 - Dacharbeiten // Vollsperrung",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "14.09.2026 - 15.11.2026",
+        "von": "2026-09-14",
+        "bis": "2026-11-15",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.500641510243151,
+          51.51597217922295
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Hildesheimer Straße - Dacharbeiten, BE-Fläche // Fahrbahneinengung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "14.09.2026 - 13.11.2026",
+        "von": "2026-09-14",
+        "bis": "2026-11-13",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.460798888035655,
+          51.46343823344198
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Klausener Straße - Baustelleneinrichtung+Kanalanschluss // Fahrbahneinengung",
+        "auftraggeber": "PRIVAT",
+        "einschrankung": null,
+        "zeitraum": "14.09.2026 - 01.05.2027",
+        "von": "2026-09-14",
+        "bis": "2027-05-01",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.472573964579047,
+          51.52260071994725
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Heroldstraße / Fernwärme // Vollsperrung",
+        "auftraggeber": "DEW21",
+        "einschrankung": null,
+        "zeitraum": "14.09.2026 - 13.11.2026",
+        "von": "2026-09-14",
+        "bis": "2026-11-13",
+        "stadtbezirk": "Innenstadt-Nord",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.476628883824313,
+          51.4874139911276
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Walter-Bruch-Straße - Glasfaserverlegung // teilweise Gehwegsperrung",
+        "auftraggeber": "Telekommunikationsanbieter",
+        "einschrankung": null,
+        "zeitraum": "14.09.2026 - 02.11.2026",
+        "von": "2026-09-14",
+        "bis": "2026-11-02",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.483043849762413,
+          51.506598359859645
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Feldstraße 81 - Kranstellung für Neubau // Halbseitige Sperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "14.09.2026 - 13.09.2027",
+        "von": "2026-09-14",
+        "bis": "2027-09-13",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.59683210493835,
+          51.55772022280984
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Wickeder Straße - Notmaßnahme Entlastung Brückenbauwerk // Halbseitige Sperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "11.09.2026 - 31.01.2027",
+        "von": "2026-09-11",
+        "bis": "2027-01-31",
+        "stadtbezirk": "Scharnhorst",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.484241749926981,
+          51.49961144400711
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Märkische Straße 152 - Hydromat wechseln // Halbseitige Sperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "09.09.2026 - 30.10.2026",
+        "von": "2026-09-09",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.537884109933427,
+          51.49417048813294
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Emscherradweg zw. \"Bergparte\" und \"Schürener Vorstadt\" - Ausbau Radweg /// Vollsperrung",
+        "auftraggeber": "Emschergenossenschaft",
+        "einschrankung": null,
+        "zeitraum": "09.09.2026 - 16.10.2026",
+        "von": "2026-09-09",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.485045176642086,
+          51.509546316406656
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Kronprinzenstraße - Fernwärme BA3 // Vollsperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "08.09.2026 - 13.11.2026",
+        "von": "2026-09-08",
+        "bis": "2026-11-13",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.47545847471584,
+          51.52970014680831
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Ravensberger Straße / Baustellenzufahrt // halbseitge Sperrung",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "07.09.2026 - 18.12.2026",
+        "von": "2026-09-07",
+        "bis": "2026-12-18",
+        "stadtbezirk": "Innenstadt-Nord",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.484773651803197,
+          51.46405943843986
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Staudenweg 8 - Kanalsanierung // Vollsperrung",
+        "auftraggeber": "EB70 - Stadtentwässerung",
+        "einschrankung": null,
+        "zeitraum": "07.09.2026 - 22.10.2026",
+        "von": "2026-09-07",
+        "bis": "2026-10-22",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4745391521123326,
+          51.510361057502735
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Heiliger Weg 50 - Arb. an Stromleitungen // Halbseitige Sperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "07.09.2026 - 27.10.2026",
+        "von": "2026-09-07",
+        "bis": "2026-10-27",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.407019527414168,
+          51.535566776808395
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Burgheisterkamp/Am sattel - Stromleitung // halbs. Sp & VSP",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "07.09.2026 - 04.12.2026",
+        "von": "2026-09-07",
+        "bis": "2026-12-04",
+        "stadtbezirk": "Huckarde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4100219350096665,
+          51.46122681805035
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Menglinghauser Straße - Sicherung Brücke // halbseitige Sperrung mit Ampel",
+        "auftraggeber": "Emschergenossenschaft",
+        "einschrankung": null,
+        "zeitraum": "03.09.2026 - 04.12.2026",
+        "von": "2026-09-03",
+        "bis": "2026-12-04",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.533423006359329,
+          51.490254831154495
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Emscherradweg zw. \"Schürener Str.\" und \"Röhrenstr.\" - Ausbau Radweg /// Vollsperrung",
+        "auftraggeber": "Emschergenossenschaft",
+        "einschrankung": null,
+        "zeitraum": "02.09.2026 - 16.10.2026",
+        "von": "2026-09-02",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.408175264011578,
+          51.50872419370935
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Iggelhorst / Wasserleitungen // Vollsperrung",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "01.09.2026 - 30.11.2026",
+        "von": "2026-09-01",
+        "bis": "2026-11-30",
+        "stadtbezirk": "Innenstadt-West",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.514258607972199,
+          51.5040277913666
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Westfalendamm - Aufstellung temporäre LSA/ Fußgängerüberweg",
+        "auftraggeber": "StA 66 - Tiefbauamt / Verkehrsbauwerke",
+        "einschrankung": null,
+        "zeitraum": "01.09.2026 - 31.08.2027",
+        "von": "2026-09-01",
+        "bis": "2027-08-31",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.454636199051267,
+          51.51509087755385
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Brinkhoffstraße / Sondierung // halbseitige Sperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "31.08.2026 - 13.11.2026",
+        "von": "2026-08-31",
+        "bis": "2026-11-13",
+        "stadtbezirk": "Innenstadt-West",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.537300262760903,
+          51.46199553610399
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Obermarkstraße 90a - Strom- und Wasseranschluss /// Fahrbahneinengung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "28.08.2026 - 16.10.2026",
+        "von": "2026-08-28",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.549834743225092,
+          51.47974800819503
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Schewenort 3 - Sanierungsmaßnahmen /// Fahrbahneinengung",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "27.08.2026 - 20.11.2026",
+        "von": "2026-08-27",
+        "bis": "2026-11-20",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.552503519810104,
+          51.49474914061274
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Emscherradeweg zw. \"Ringofenstraße\", \"Rodenbergstr.\" und \"Schüruferstr.\" - Ausbau Radweg /// Vollsperrung",
+        "auftraggeber": "Emschergenossenschaft",
+        "einschrankung": null,
+        "zeitraum": "26.08.2026 - 16.10.2026",
+        "von": "2026-08-26",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.378626246708625,
+          51.580844129022616
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Millkottenweg 1-15 - Kanal & Straßenbau // VSP",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "24.08.2026 - 06.12.2026",
+        "von": "2026-08-24",
+        "bis": "2026-12-06",
+        "stadtbezirk": "Mengede",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.483426547842419,
+          51.499213780213225
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Winterfeldstraße - Sondierung KVP // Vollsperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "24.08.2026 - 22.10.2026",
+        "von": "2026-08-24",
+        "bis": "2026-10-22",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.533800090995761,
+          51.49681631594882
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Gevelsbergstraße 2 - Neubau /// Halbseitige Sperrung mit LSA",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "24.08.2026 - 31.12.2026",
+        "von": "2026-08-24",
+        "bis": "2026-12-31",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.38707488734497,
+          51.48415605996298
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Steinsweg - Stromverlegung // halbseitige Sperrung/ VSP",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "20.08.2026 - 30.10.2026",
+        "von": "2026-08-20",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Lütgendortmund",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.545657755903742,
+          51.49316666726676
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Lindstraße 15A - Austausch Trafostation /// halbseitige Sperrung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "19.08.2026 - 30.10.2026",
+        "von": "2026-08-19",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.579851716567593,
+          51.49651527625018
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Emscherradweg zw. \"Köln-Berliner-Str.\" und \"Sölder Straße\" - Ausbau Radweg /// Vollsperrung",
+        "auftraggeber": "Emschergenossenschaft",
+        "einschrankung": null,
+        "zeitraum": "19.08.2026 - 16.10.2026",
+        "von": "2026-08-19",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.463728798291836,
+          51.54700208842122
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Deutsche STr. 5 - Notmaßnahme // halbs. Sp. mit Notgehweg",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "19.08.2026 - 15.12.2026",
+        "von": "2026-08-19",
+        "bis": "2026-12-15",
+        "stadtbezirk": "Eving",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4524909013143725,
+          51.50819505998432
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Fächerstraße / Kranstellung // Vollsperrung",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "13.08.2026 - 06.11.2026",
+        "von": "2026-08-13",
+        "bis": "2026-11-06",
+        "stadtbezirk": "Innenstadt-West",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5849860304929155,
+          51.53420795120138
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Bienenstraße / Küsterkamp - Arbeiten an den Versorgungsleitungen // Halbseitige Sperrung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "12.08.2026 - 21.10.2026",
+        "von": "2026-08-12",
+        "bis": "2026-10-21",
+        "stadtbezirk": "Brackel",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.475073954544934,
+          51.484841186404864
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Konrad-Adenauer-Allee - Fernwärme // halbseitige Sperrung bzw. Einbahnstraße",
+        "auftraggeber": "DEW21",
+        "einschrankung": null,
+        "zeitraum": "04.08.2026 - 19.10.2026",
+        "von": "2026-08-04",
+        "bis": "2026-10-19",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.568458718082936,
+          51.57401947174097
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Bremsstraße - Arbeiten an den Stromleitungen // Vollsperrung u. Halbseitige Sperrung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "04.08.2026 - 06.11.2026",
+        "von": "2026-08-04",
+        "bis": "2026-11-06",
+        "stadtbezirk": "Scharnhorst",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.338777047696104,
+          51.503691494423165
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Westricher Straße - Kanal-und Straßenbau // Vollsperrung",
+        "auftraggeber": "EB70 - Stadtentwässerung",
+        "einschrankung": null,
+        "zeitraum": "30.07.2026 - 30.10.2026",
+        "von": "2026-07-30",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Lütgendortmund",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.45746551090637,
+          51.50492709432015
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Schillingstraße / Dacharbeiten / Vollsperrung",
+        "auftraggeber": "PRIVAT",
+        "einschrankung": null,
+        "zeitraum": "28.07.2026 - 15.10.2026",
+        "von": "2026-07-28",
+        "bis": "2026-10-15",
+        "stadtbezirk": "Innenstadt-West",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.602737922791587,
+          51.550898042738815
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Wickeder Straße - Arbeiten an den Stromleitung // Vollsperrung u. Halbs. Sperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "27.07.2026 - 30.11.2026",
+        "von": "2026-07-27",
+        "bis": "2026-11-30",
+        "stadtbezirk": "Scharnhorst",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.461595613328948,
+          51.49323000400397
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Victor-Toyka-Straße 6 - Bergbauliche Erkundungsbohrungen // Fahrbahneinengung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "20.07.2026 - 20.10.2026",
+        "von": "2026-07-20",
+        "bis": "2026-10-20",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.483584459357625,
+          51.51729682985152
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Eisenacher Straße 17c-21 - Neubau Wohngebäude /// Vollsperrung",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "20.07.2026 - 16.10.2026",
+        "von": "2026-07-20",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.459854406302209,
+          51.443135410774
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Spissenagelstraße - Arbeiten an den Wasserleitungen // Vollsperrung",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "20.07.2026 - 30.10.2026",
+        "von": "2026-07-20",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3289846402876915,
+          51.49781256520089
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Werner Straße - Straßenoffensive // halbseitige Sperrung (Einbahnstraße FR Osten)",
+        "auftraggeber": "StA 66 - Tiefbauamt / Straßenoffensive",
+        "einschrankung": null,
+        "zeitraum": "20.07.2026 - 16.10.2026",
+        "von": "2026-07-20",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Lütgendortmund",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.469945645779054,
+          51.50665391713703
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Am Knappenberg - BE-Fläche & Bauaufzug f. Sanierung // Halbseitige Sperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "20.07.2026 - 01.07.2027",
+        "von": "2026-07-20",
+        "bis": "2027-07-01",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.479805990316544,
+          51.52627983401358
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Stahlwerkstraße / Baustelleneinfahrt // Fahrbahneinengung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "15.07.2026 - 31.12.2026",
+        "von": "2026-07-15",
+        "bis": "2026-12-31",
+        "stadtbezirk": "Innenstadt-Nord",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.511773510674398,
+          51.487450167093556
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Keltenstraße 3 - Abbruch + Neubau // Vollsperrung",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "10.07.2026 - 29.05.2027",
+        "von": "2026-07-10",
+        "bis": "2027-05-29",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4350452359028285,
+          51.50293245301545
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Leierweg / Strom // Einbahnstraße",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "07.07.2026 - 16.10.2026",
+        "von": "2026-07-07",
+        "bis": "2026-10-16",
+        "stadtbezirk": "Innenstadt-West",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.393896090611773,
+          51.54256875817071
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Schloß-Westhusener-Straße - Arbeiten am Bahnübergang",
+        "auftraggeber": "Deutsche Bahn",
+        "einschrankung": null,
+        "zeitraum": "01.07.2026 - 27.11.2026",
+        "von": "2026-07-01",
+        "bis": "2026-11-27",
+        "stadtbezirk": "Huckarde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.457933465631415,
+          51.45872218241271
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Sterzinger Straße 5 - Neubau // Fahrbahneinengung",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "17.06.2026 - 29.01.2027",
+        "von": "2026-06-17",
+        "bis": "2027-01-29",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.390894693568485,
+          51.56973606189109
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Nevelingweg - Errichtung Wohnanlage // VSp",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "15.06.2026 - 14.06.2027",
+        "von": "2026-06-15",
+        "bis": "2027-06-14",
+        "stadtbezirk": "Mengede",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.385893154863074,
+          51.550834943740284
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Haberlandstr./Bodelschwingher Str - Arbeiten an der Versorgungsleitungen // LSA",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "03.06.2026 - 30.07.2027",
+        "von": "2026-06-03",
+        "bis": "2027-07-30",
+        "stadtbezirk": "Mengede",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.443701149596645,
+          51.50551994338024
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Neuer Graben // Kanalbau / Vollsperrung",
+        "auftraggeber": "EB70 - Stadtentwässerung",
+        "einschrankung": null,
+        "zeitraum": "11.05.2026 - 15.01.2027",
+        "von": "2026-05-11",
+        "bis": "2027-01-15",
+        "stadtbezirk": "Innenstadt-West",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.464792619898631,
+          51.48280287038965
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Am Rombergpark - Wasserrohrbruch // Einbahnstraße",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "26.04.2026 - 30.10.2026",
+        "von": "2026-04-26",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.357944918582666,
+          51.56433011866724
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Langenacker - Straßenbau // Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt / Verkehrswege",
+        "einschrankung": null,
+        "zeitraum": "21.04.2026 - 23.10.2026",
+        "von": "2026-04-21",
+        "bis": "2026-10-23",
+        "stadtbezirk": "Mengede",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.458853523636764,
+          51.454270898219185
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Kirchhörder Berg 1 - Haltverbote für Neubau",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "15.04.2026 - 30.04.2027",
+        "von": "2026-04-15",
+        "bis": "2027-04-30",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.456350135608682,
+          51.441524081728346
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Hellerstraße - Notstützen Verstärkung Überbau // Vollsperrung",
+        "auftraggeber": "Die Autobahn GmbH",
+        "einschrankung": null,
+        "zeitraum": "13.04.2026 - 30.10.2026",
+        "von": "2026-04-13",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.47754591736824,
+          51.47895851410569
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Glückaufsegenstraße - Abriss Gebäude",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "13.04.2026 - 31.10.2026",
+        "von": "2026-04-13",
+        "bis": "2026-10-31",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.526707431032755,
+          51.505829523413084
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Freie-Vogel-Straße - Herstellung provisorische Treppe (Barrierefreier Ausbau Stadtkrone-Ost) /// Halbseitige Sperrung + LSA",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "30.03.2026 - 30.10.2026",
+        "von": "2026-03-30",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.546981125115062,
+          51.56411442947423
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "In der Liethe / Am Brandhof - Kanalsanierung (BA 2) // Vollsperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "30.03.2026 - 26.02.2027",
+        "von": "2026-03-30",
+        "bis": "2027-02-26",
+        "stadtbezirk": "Scharnhorst",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.510029350938748,
+          51.482225046635754
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "An der Goymark - Herstellung Baustellenzufahrt // Vollsperrung Fußweg + Baustellenausfahrt mit Ampel",
+        "auftraggeber": "Emschergenossenschaft",
+        "einschrankung": null,
+        "zeitraum": "09.03.2026 - 31.12.2026",
+        "von": "2026-03-09",
+        "bis": "2026-12-31",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.491002443993526,
+          51.470788544181026
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Preinstraße 74 - Neubau Wohnhaus // Gehwegsperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "09.02.2026 - 30.12.2026",
+        "von": "2026-02-09",
+        "bis": "2026-12-30",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.43873230405978,
+          51.47472831222519
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Tannenstraße 7 Hausneubau",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "01.02.2026 - 01.02.2027",
+        "von": "2026-02-01",
+        "bis": "2027-02-01",
+        "stadtbezirk": "Hombruch",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.493510965038975,
+          51.503342240642894
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Westfalendamm - Gebäudekernsanierung // Halbseitige Sperrung",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "19.01.2026 - 23.10.2026",
+        "von": "2026-01-19",
+        "bis": "2026-10-23",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.458675079866754,
+          51.51146656710665
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Poststraße - Neubau // Einbahnstraße",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "22.12.2025 - 31.12.2026",
+        "von": "2025-12-22",
+        "bis": "2026-12-31",
+        "stadtbezirk": "Innenstadt-West",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.370752945728006,
+          51.50479626502877
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Froschlake - Straßenbau // Vollsperrung",
+        "auftraggeber": "EB70 - Stadtentwässerung",
+        "einschrankung": null,
+        "zeitraum": "17.11.2025 - 30.10.2026",
+        "von": "2025-11-17",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Lütgendortmund",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.410447505319051,
+          51.50239056115442
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Lange Fuhr - Kanal- und Straßenbauarbeiten // Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "17.11.2025 - 30.10.2026",
+        "von": "2025-11-17",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Innenstadt-West",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.483266658520153,
+          51.5119599952268
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Bismarckstraße - Sanierungsarbeiten // halbseitige Sperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "22.09.2025 - 30.10.2026",
+        "von": "2025-09-22",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.463294336737509,
+          51.52949629254761
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Carl-Holtschneider-Straße 8 - Neubau",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "17.09.2025 - 31.03.2027",
+        "von": "2025-09-17",
+        "bis": "2027-03-31",
+        "stadtbezirk": "Innenstadt-Nord",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.544046057456559,
+          51.47799923880081
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Falterweg - Kanalbau // Vollsperrung",
+        "auftraggeber": "EB70 - Stadtentwässerung",
+        "einschrankung": null,
+        "zeitraum": "08.09.2025 - 30.10.2026",
+        "von": "2025-09-08",
+        "bis": "2026-10-30",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.454928874838787,
+          51.50750076047357
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Alexanderstraße - Neubau // Einbahnstraße",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "25.08.2025 - 31.08.2027",
+        "von": "2025-08-25",
+        "bis": "2027-08-31",
+        "stadtbezirk": "Innenstadt-West",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.533194295156715,
+          51.479630098977374
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Kneebuschstraße 10 - Abriss eines Gebäudes + Hochbau // Vollsperrung",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "18.08.2025 - 31.12.2026",
+        "von": "2025-08-18",
+        "bis": "2026-12-31",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.422665583401642,
+          51.52995659129889
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Franziusstraße - Rückbau und Ersatzneubau der Brücke // Vollsperrung",
+        "auftraggeber": "StA 66 - Tiefbauamt",
+        "einschrankung": null,
+        "zeitraum": "04.08.2025 - 31.03.2027",
+        "von": "2025-08-04",
+        "bis": "2027-03-31",
+        "stadtbezirk": "Huckarde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.468992209567185,
+          51.50944136982757
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Märkische Straße - Sanierung Jugendamt",
+        "auftraggeber": "StA 65 - Immobilienwirtschaft",
+        "einschrankung": null,
+        "zeitraum": "20.06.2025 - 30.04.2029",
+        "von": "2025-06-20",
+        "bis": "2029-04-30",
+        "stadtbezirk": "Innenstadt-West",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.378399420625284,
+          51.511596350945794
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Bärenbruch - Ökologische Verbesserung Roßbach, Umgestaltung Dücker",
+        "auftraggeber": "Emschergenossenschaft",
+        "einschrankung": null,
+        "zeitraum": "04.06.2025 - 31.05.2027",
+        "von": "2025-06-04",
+        "bis": "2027-05-31",
+        "stadtbezirk": "Lütgendortmund",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.468628374187067,
+          51.503250170930684
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Landgrafenstraße - Energetische Sanierung // Halbseitige Sperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "19.05.2025 - 23.12.2026",
+        "von": "2025-05-19",
+        "bis": "2026-12-23",
+        "stadtbezirk": "Innenstadt-Ost",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.528462569421378,
+          51.477488876612
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Busenbergstraße 8a - 20 - Arbeiten an den Stromleitungen /// Halbseitige Sperrung (Einbahnstraße) + LSA",
+        "auftraggeber": "Dortmunder Netz",
+        "einschrankung": null,
+        "zeitraum": "16.03.2025 - 31.10.2026",
+        "von": "2025-03-16",
+        "bis": "2026-10-31",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.463965120293023,
+          51.51924967614509
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Leopoldstraße // Quartier Burgtor -  Halbseitige Sperrung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "20.01.2025 - 31.12.2026",
+        "von": "2025-01-20",
+        "bis": "2026-12-31",
+        "stadtbezirk": "Innenstadt-Nord",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.58873245208722,
+          51.52194082694194
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Erlemannsweg 2- 10 Straßensanierung",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "30.09.2024 - 07.10.2204",
+        "von": "2024-09-30",
+        "bis": "2204-10-07",
+        "stadtbezirk": "Brackel",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4919076618548255,
+          51.477351116660344
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Stettiner Straße - Errichtung von 3 MFH // Vollsperrung",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "17.07.2024 - 01.10.2027",
+        "von": "2024-07-17",
+        "bis": "2027-10-01",
+        "stadtbezirk": "Hörde",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.450713145807648,
+          51.52213465325653
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Blücherstraße 57 - herabfallende Dachziegel NotMaßnahme",
+        "auftraggeber": "Privatmaßnahme",
+        "einschrankung": null,
+        "zeitraum": "16.04.2024 - 31.12.2099",
+        "von": "2024-04-16",
+        "bis": "2099-12-31",
+        "stadtbezirk": "Innenstadt-Nord",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.533626621721643,
+          51.46127161457379
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "Obermarkstraße 127 - Tagesbruch",
+        "auftraggeber": "Stadt Dortmund",
+        "einschrankung": null,
+        "zeitraum": "14.02.2024 - 31.12.2999",
+        "von": "2024-02-14",
+        "bis": "2999-12-31",
+        "stadtbezirk": "Aplerbeck",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.515120131919117,
+          51.53156345119819
+        ]
+      },
+      "properties": {
+        "art_der_baumassnahme": "B 236 Vollsperrung - Tangente FR Schwerte",
+        "auftraggeber": "Straßen NRW",
+        "einschrankung": null,
+        "zeitraum": "26.08.2019 - 31.12.2026",
+        "von": "2019-08-26",
+        "bis": "2026-12-31",
+        "stadtbezirk": "Innenstadt-Nord",
+        "status": "tagesaktuell",
+        "kommune": "Dortmund"
+      }
+    }
+  ]
+}

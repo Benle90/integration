@@ -134,6 +134,16 @@ Layer `mwvlw:baustelle` (GeoServer, `outputFormat=application/json`, **gzip**). 
 - **Zeiten tragen „Z“, sind aber Ortszeit** (Tage laufen von 00:00 bis 23:59).
 - Gehweg- und Halteverbots-Meldungen werden ausgelassen. Vereinzelt kaputte Umlaute in den Quelldaten („Straï¿½e“, 4 von 1.058) – nicht rekonstruierbar, bleiben so.
 
+### Großstädte in Ländern ohne Landesquelle (geprüft 2026-10-14)
+
+Alle klein genug für den Komplettabruf ohne Ausschnitt.
+
+- **München** (WFS `https://geoportal.muenchen.de/geoserver/mor_wfs/ows`, Layer `mor_wfs:baustellen_opendata`, gzip; dl-de-by-2.0 „Landeshauptstadt München – opendata.muenchen.de“). Sehr feinkörnig (~6.000 Einträge, nächste vier Wochen, Fokus Innenstadt und Hauptstraßen) → `CQL_FILTER=art='Baumaßnahme' AND betroffene_bereiche LIKE '%Fahrbahn%'` (~1.200, ~200 KB gzip); zusätzlich werden Einträge ausgelassen, deren `beeintraechtigung` nur Parkplätze/Halteverbote nennt. Feature-IDs fortlaufend, `fachliche_id` meist leer → Schlüssel aus Inhalt; mehrere Polygone einer Baustelle werden zusammengefasst (`merge_features`). Beginn teils Freitext („Beginn vor mehr als einem Jahr“ → offener Start). „Straßensperrung“/„Vollsperrung“ → `closure`, „halbseitige …“ nicht.
+- **Köln** (ArcGIS `…/verkehr/verkehrskalender/MapServer/0/query`, `f=geojson`, `where=anzeige=1`; **mit ETag**; dl-de-zero laut Open-Data-Portal). Redaktioneller Verkehrskalender (~170 Einträge). `typ` 1–15 (Codeliste aus den Layer-Metadaten): 2 Einfahrtverbot → `closure`, 3 Baustelle (bei „gesperrt“ im Text `closure`), 5 Stau, sonst Hinweise/Veranstaltungen → `warning`. Zeiten in Epoch-ms UTC; 00:00 UTC steht für ganze Tage. Kennung = `objectid` (die Nummer im `link` ist nicht eindeutig).
+- **Frankfurt** (WFS `https://geowebdienste.frankfurt.de/Baustellen`, GeoServer hinter mainziel.de; Layer `opendata_verkehr:Baustellen` und `…:Verkehrsmeldungen`, ~340 KB). **Keine Lizenzangabe** (`AccessConstraints: YES` ist der GeoServer-Platzhalter) → wie Rheinland-Pfalz behandelt. `sperrung` = 1 → `closure` (Text „Vollsperrung“ betrifft oft nur Park- oder Gehwege). Zeiten echtes UTC; Ende 2099 = offen. Titel aus „aufgrund von …“ in `textlong`.
+- **Dortmund** (Opendatasoft-Export `…/fb66-baustellen-tagesaktuell` und `…-geplant`, je ~10 KB gzip; dl-de-zero). **Keine Kennungen** → Schlüssel aus Inhalt. Einschränkung steckt im Titel hinter „//“; „Vollsperrung“ am Anfang → `closure`. Ende 2099/2204/2999 = offen.
+- Nicht genutzt: Kölner Baustellen-WFS (15 Layer nach Arbeitsart, viel Kleinkram), Frankfurter Region (ivm, Mobilithek, nicht erreichbar).
+
 ## 3. Entscheidungen
 
 - **Eine Integration mit Providern** statt mehrerer: gemeinsame Entities pro Bereich, ein Config-Flow, ein HACS-Eintrag.
@@ -146,7 +156,7 @@ Layer `mwvlw:baustelle` (GeoServer, `outputFormat=application/json`, **gzip**). 
 
 ## 4. Risiken, Lizenzen, Recht (keine Rechtsberatung)
 
-- **Namensnennung** je Quelle in `const.ATTRIBUTION` und im Attribut `attribution`: Stuttgart CC BY 4.0, MobiData BW DL-DE-BY-2.0, Norddeutschland CC BY 4.0, Berlin und Brandenburg DL-DE-BY-2.0, Sachsen CC BY 4.0, Sachsen-Anhalt nur nichtkommerziell, Rheinland-Pfalz ohne erklärte Lizenz, Autobahn GmbH (keine erklärte Lizenz, Nennung als gute Praxis), zusätzlich „Verkehrslage: INRIX“.
+- **Namensnennung** je Quelle in `const.ATTRIBUTION` und im Attribut `attribution`: Stuttgart CC BY 4.0, MobiData BW DL-DE-BY-2.0, Norddeutschland CC BY 4.0, Berlin und Brandenburg DL-DE-BY-2.0, Sachsen CC BY 4.0, Sachsen-Anhalt nur nichtkommerziell, Rheinland-Pfalz und Frankfurt ohne erklärte Lizenz, München dl-de-by-2.0, Köln und Dortmund dl-de-zero, Autobahn GmbH (keine erklärte Lizenz, Nennung als gute Praxis), zusätzlich „Verkehrslage: INRIX“.
 - **INRIX** (entschieden 2026-10-02): keine erklärten Nutzungsbedingungen; die Daten werden offen und auch kommerziell genutzt. Streckenwacht verbreitet nichts weiter – jede Instanz ruft den öffentlichen Endpunkt selbst ab; Risiko gering. Vorsorge: `upstream="inrix"` und die abschaltbare Option. **Warnungs-Fixtures (echte INRIX-Daten) nur lokal, nie committen** (`.gitignore`; aus der Historie entfernt); Tests nutzen ein eingebettetes Beispiel.
 - **Zurückgestellt** (Entscheidung des Projektinhabers): Impressumsfrage und Anfrage bei der Autobahn GmbH zu INRIX – erst beim öffentlichen Bewerben wieder aufgreifen. Bis dahin keine Spenden-Links oder Werbung.
 - **API-Stabilität:** keine Quelle ist versioniert oder hat ein SLA, Rate Limits sind unbekannt → defensiv parsen, konservativ pollen, ETag nutzen.

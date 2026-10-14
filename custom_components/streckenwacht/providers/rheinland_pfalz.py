@@ -13,7 +13,7 @@ from typing import Any, ClassVar
 
 from ..const import RHEINLAND_PFALZ, Source
 from ..model import EventType, Period, StreckenwachtEvent
-from .wfs import Layer, WfsProvider, first_position, iso_local, text
+from .wfs import Layer, WfsProvider, first_position, iso_local, shorten, text
 
 URL = "https://maps.mobilitaetsatlas.de/geoserver/ows"
 ORIGIN = "Verkehrsbehörden in Rheinland-Pfalz"
@@ -22,10 +22,6 @@ ORIGIN = "Verkehrsbehörden in Rheinland-Pfalz"
 _CLOSED = {"G", "F"}
 _OFF_ROAD = re.compile(r"^\s*(Gehweg|Halte?verbot|Parkverbot)", re.IGNORECASE)
 _ROAD = re.compile(r"^([ABLK])(\d+[a-z]?)$")
-# A full stop after a word of at least three lower-case letters, before a capital
-# (so "ca. 50 m" or "Str. 5" do not end the sentence).
-_SENTENCE_END = re.compile(r"(?<=[a-zäöüß]{3})\.\s+(?=[A-ZÄÖÜ])")
-_MAX_TITLE = 80
 
 
 def parse_feature(feature: dict[str, Any]) -> tuple[str, StreckenwachtEvent] | None:
@@ -41,7 +37,7 @@ def parse_feature(feature: dict[str, Any]) -> tuple[str, StreckenwachtEvent] | N
     road = street if street and _ROAD.match(street) else None
     kind = text(props.get("art_der_arbeiten"))
     code = (text(props.get("typ")) or "").removesuffix("_GEPLANT")
-    label = _summary(description) or kind or "Baustelle"
+    label = shorten(description) or kind or "Baustelle"
     where = road or "Gemeindestraße"
     start = iso_local(text(props.get("von")))
     end = iso_local(text(props.get("bis")))
@@ -71,16 +67,6 @@ def parse_feature(feature: dict[str, Any]) -> tuple[str, StreckenwachtEvent] | N
         periods=(Period(start, end),) if start or end else (),
     )
     return identifier, event
-
-
-def _summary(description: str | None) -> str | None:
-    """First sentence of the description, shortened for a title."""
-    if not description:
-        return None
-    first = _SENTENCE_END.split(description, maxsplit=1)[0].strip()
-    if len(first) > _MAX_TITLE:
-        first = first[: _MAX_TITLE - 1].rsplit(" ", 1)[0] + "…"
-    return first
 
 
 class RheinlandPfalzProvider(WfsProvider):
