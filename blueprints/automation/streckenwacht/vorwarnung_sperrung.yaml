@@ -51,8 +51,11 @@ triggers:
       {%- if s in ['unknown', 'unavailable', ''] %}false
       {%- else %}
         {%- set start = as_datetime(s) %}
-        {%- set seconds = (lead.days | int(0)) * 86400 + (lead.hours | int(0)) * 3600
-                          + (lead.minutes | int(0)) * 60 + (lead.seconds | int(0)) %}
+        {#- The duration selector leaves out unused parts (e.g. "days"). #}
+        {%- set seconds = (lead.get('days', 0) | int(0)) * 86400
+                          + (lead.get('hours', 0) | int(0)) * 3600
+                          + (lead.get('minutes', 0) | int(0)) * 60
+                          + (lead.get('seconds', 0) | int(0)) %}
         {{- start is not none and start - timedelta(seconds=seconds) <= now() < start }}
       {%- endif %}
 
