@@ -48,6 +48,7 @@ PLATFORMS: list[Platform] = [
     Platform.BINARY_SENSOR,
     Platform.CALENDAR,
     Platform.EVENT,
+    Platform.GEO_LOCATION,
     Platform.SENSOR,
 ]
 

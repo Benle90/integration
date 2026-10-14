@@ -7,7 +7,8 @@ from dataclasses import dataclass
 from datetime import datetime, timedelta
 from typing import Any
 
-from .model import EventType, StreckenwachtEvent
+from .geo import haversine_km
+from .model import EventType, ObservationArea, StreckenwachtEvent
 
 # Types that turn "disruption active" on. Plain roadworks do not: many run for
 # years (S21 in Stuttgart: 2014-2029) and would keep the sensor on permanently.
@@ -225,3 +226,57 @@ def current_or_next(
                 end = period.end or period.start + _OPEN_END
                 best = CalendarItem(event, period.start, end, f"{event.id}#{index}")
     return best
+
+
+# geo_location entities are cheap but not free (state machine, recorder):
+# more than this many markers would only clutter the map anyway.
+MAX_MAP_EVENTS = 150
+
+
+@dataclass(frozen=True, slots=True)
+class MapEvent:
+    """An active event for the map, with the areas it belongs to."""
+
+    event: StreckenwachtEvent
+    distance_km: float | None
+    areas: tuple[str, ...]
+
+
+def map_events(
+    by_area: dict[str, Iterable[StreckenwachtEvent]],
+    areas: dict[str, ObservationArea],
+    now: datetime,
+    limit: int = MAX_MAP_EVENTS,
+) -> list[MapEvent]:
+    """Active events with a position, once each, most severe and nearest first.
+
+    The distance is measured to the centre of the nearest area containing it.
+    """
+    found: dict[str, tuple[StreckenwachtEvent, list[str], float | None]] = {}
+    for area_id, events in by_area.items():
+        area = areas.get(area_id)
+        if area is None:
+            continue
+        for event in active(events, now):
+            if event.latitude is None or event.longitude is None:
+                continue
+            distance = haversine_km(
+                area.latitude, area.longitude, event.latitude, event.longitude
+            )
+            known = found.get(event.id)
+            if known is None:
+                found[event.id] = (event, [area.name], distance)
+            else:
+                known[1].append(area.name)
+                if known[2] is None or distance < known[2]:
+                    found[event.id] = (event, known[1], distance)
+    ordered = sorted(
+        found.values(),
+        key=lambda f: (_SEVERITY[f[0].event_type], f[2] or 0.0, f[0].id),
+    )
+    return [
+        MapEvent(
+            event, round(distance, 1) if distance is not None else None, tuple(names)
+        )
+        for event, names, distance in ordered[:limit]
+    ]

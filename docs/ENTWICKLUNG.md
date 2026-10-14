@@ -46,6 +46,8 @@ Wie Streckenwacht gebaut ist, was man über die Datenquellen wissen muss und war
 | Ereignisse | `sensor.streckenwacht_arbeitsweg_events` | Anzahl aktiver Meldungen; Attribute je Typ, `by_source`, `events` (bis zu 20, schwerste zuerst) |
 | Reisezeitverlust | `sensor.streckenwacht_arbeitsweg_travel_time_loss` | Größter aktueller Verlust in Minuten; nur mit INRIX |
 | Ereignisänderung | `event.streckenwacht_arbeitsweg_event_change` | `new`/`ended`. Erste Daten einer Quelle und alles nach einer Bereichsänderung (Fingerprint der Einstellungen) werden still gelernt; ein Ausfall löst kein `ended` aus. Pro Ereignis ein State-Write, damit Automationen jedes sehen. |
+| Nächste Sperrung | `sensor.streckenwacht_arbeitsweg_next_closure` | Zeitstempel des Beginns der nächsten geplanten Sperrung (14 Tage); Grundlage des Blueprints „Vorwarnung“. |
+| Kartenpunkte | `geo_location.<titel>` (Quelle `streckenwacht`) | Je aktive Meldung aller Bereiche eine Entity (ohne Registry-Eintrag, wie Feed-Integrationen), höchstens 150, schwerste und nächste zuerst (`summary.map_events`); Zustand = Entfernung zum nächsten Bereichsmittelpunkt in km. Verwaltet von `geo_location.MarkerManager` (Coordinator-Updates + alle 5 min). |
 
 Entity-IDs sind englisch, weil HA sie aus den englischen Namen bildet. Zwei Blueprints liegen unter `blueprints/automation/streckenwacht/`.
 

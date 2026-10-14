@@ -22,6 +22,7 @@ Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein
 - **„Störung aktiv“**, sobald im Bereich eine Sperrung, ein Unfall oder ein nennenswerter Stau aktiv ist – Dauerbaustellen, monatelange Sperrungen (nach ihrer ersten Woche) und kleine Verzögerungen lösen ihn bewusst nicht aus.
 - **Reisezeitverlust** in Minuten (größter aktueller Wert im Bereich).
 - **Event bei neuen und beendeten Meldungen** – ideal für Push-Nachrichten.
+- **Karte:** alle aktuellen Meldungen als Punkte auf der Kartenkarte im Dashboard.
 - Fällt eine Quelle aus, laufen die anderen weiter; nach wiederholten Fehlern erscheint ein Hinweis unter *Reparaturen*.
 
 <img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/geraet.png" alt="Gerät eines Beobachtungsbereichs mit Kalender, Ereignissen, Reisezeitverlust, Störung aktiv und Ereignisänderung" width="720">
@@ -229,6 +230,20 @@ initial_view: listWeek
 entities:
   - calendar.streckenwacht_arbeitsweg
 ```
+
+### Karte im Dashboard
+
+Alle aktuellen Meldungen deiner Bereiche erscheinen als Punkte auf der Kartenkarte (je Meldung eine `geo_location`-Entität, höchstens 150, die schwersten und nächsten zuerst):
+
+```yaml
+type: map
+geo_location_sources:
+  - streckenwacht
+entities:
+  - zone.home
+```
+
+Die Punkte tragen Titel, Art, Straße, Zeitraum und die Namensnennung der Quelle. Sie kommen und gehen mit den Meldungen und landen nicht in der Entitätsliste.
 
 ## Fehlerbehebung
 

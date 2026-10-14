@@ -24,6 +24,7 @@ The integration's UI is available in German and English and follows your Home As
 - **"Disruption active"** as soon as a closure, an accident or a significant traffic jam is active in the area – long-term roadworks, closures lasting months (after their first week) and minor delays deliberately do not trigger it.
 - **Travel time loss** in minutes (largest current value in the area).
 - **Event for new and ended reports** – ideal for push notifications.
+- **Map:** all current reports as markers on the dashboard map card.
 - If one source fails, the others keep working; after repeated failures a notice appears under *Repairs*.
 
 <img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/geraet.png" alt="Device of an observation area with calendar, events, travel time loss, disruption active and event change" width="720">
@@ -231,6 +232,20 @@ initial_view: listWeek
 entities:
   - calendar.streckenwacht_commute
 ```
+
+### Map in the dashboard
+
+All current reports of your areas appear as markers on the map card (one `geo_location` entity per report, at most 150, most severe and nearest first):
+
+```yaml
+type: map
+geo_location_sources:
+  - streckenwacht
+entities:
+  - zone.home
+```
+
+The markers carry title, type, road, period and the source's attribution. They come and go with the reports and do not end up in the entity list.
 
 ## Troubleshooting
 

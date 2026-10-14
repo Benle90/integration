@@ -7,7 +7,12 @@ from datetime import UTC, datetime, timedelta
 import pytest
 
 from custom_components.streckenwacht.const import Source
-from custom_components.streckenwacht.model import EventType, Period, StreckenwachtEvent
+from custom_components.streckenwacht.model import (
+    EventType,
+    ObservationArea,
+    Period,
+    StreckenwachtEvent,
+)
 from custom_components.streckenwacht.summary import (
     LIVE_SPAN,
     MAX_LISTED_EVENTS,
@@ -16,6 +21,7 @@ from custom_components.streckenwacht.summary import (
     current_or_next,
     disruptions,
     listed,
+    map_events,
     max_delay,
     next_closure,
 )
@@ -212,3 +218,27 @@ def test_next_closure_is_the_earliest_upcoming_window() -> None:
 def test_next_closure_only_within_the_horizon() -> None:
     far = ev("far", EventType.CLOSURE, (Period(NOW + 20 * 24 * H, None),))
     assert next_closure([far, CLOSURE], NOW) is None
+
+
+def test_map_events_once_each_nearest_area_most_severe_first() -> None:
+    def at(id_: str, event_type: EventType, lat: float) -> StreckenwachtEvent:
+        return ev(id_, event_type, (RUNNING,), latitude=lat, longitude=9.0)
+
+    north = ObservationArea("Nord", 49.0, 9.0, 20)
+    south = ObservationArea("Süd", 48.8, 9.0, 20)
+    shared = at("shared", EventType.ROADWORKS, 48.9)
+    closure = at("closure", EventType.CLOSURE, 48.81)
+    planned = ev("planned", EventType.CLOSURE, (FUTURE,), latitude=48.8, longitude=9.0)
+    no_position = ev("nopos", EventType.ACCIDENT, (RUNNING,))
+    items = map_events(
+        {"n": [shared], "s": [shared, closure, planned, no_position]},
+        {"n": north, "s": south},
+        NOW,
+    )
+    assert [i.event.id for i in items] == ["closure", "shared"]
+    assert items[1].areas == ("Nord", "Süd")
+    assert items[0].distance_km == pytest.approx(1.1, abs=0.1)
+    assert (
+        map_events({"n": [shared, closure]}, {"n": north}, NOW, limit=1)[0].event.id
+        == "closure"
+    )

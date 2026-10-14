@@ -129,6 +129,16 @@ async def test_entities_and_device(
 
     assert hass.states.get(f"sensor.{PREFIX}_travel_time_loss").state == "25"
     assert hass.states.get(f"calendar.{PREFIX}").state == STATE_ON
+    markers = {
+        s.attributes["event_id"]: s
+        for s in hass.states.async_all("geo_location")
+        if s.attributes.get("source") == "streckenwacht"
+    }
+    # active events only (not the planned closure), distance to the area centre
+    assert set(markers) == {"autobahn:roadworks", "autobahn:closure", "autobahn:jam"}
+    assert markers["autobahn:jam"].attributes["type"] == "traffic_jam"
+    assert markers["autobahn:jam"].attributes["areas"] == ["Arbeitsweg"]
+    assert float(markers["autobahn:jam"].state) == 0.0
     next_closure = hass.states.get(f"sensor.{PREFIX}_next_closure")
     assert next_closure.state == (NOW + 10 * H).isoformat()  # the planned closure
     assert next_closure.attributes["title"] == "planned"
