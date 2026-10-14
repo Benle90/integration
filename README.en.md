@@ -91,13 +91,12 @@ Note: the icon is currently missing in the HACS dashboard ([HACS issue #5171](ht
 
 ### Data sources and options
 
-When adding the integration you choose the data sources. Preselected are the motorways and the regional sources for your Home Assistant location (e.g. Baden-Württemberg, or Berlin and Brandenburg).
+When adding the integration, Streckenwacht only asks for the update interval and traffic jams. Data sources are chosen per observation area (see below); whatever any area uses is queried.
 
 <a id="options"></a>Change them later via **Devices & services → Streckenwacht → Configure**:
 
 | Option | Default | Meaning |
 |---|---|---|
-| Data sources | depends on location | Which sources are queried at all |
 | Update interval | 15 min | 10–60 minutes |
 | Include traffic jams (INRIX) | on | Traffic jams and travel time loss from the Autobahn API |
 
@@ -105,11 +104,12 @@ When adding the integration you choose the data sources. Preselected are the mot
 
 ### Observation areas
 
-On the Streckenwacht page choose **Add observation area**. The dialog guides you through up to three steps:
+On the Streckenwacht page choose **Add observation area**. The dialog guides you through up to four steps:
 
-1. **Area** – name (becomes part of the entity IDs, e.g. "Commute"), circle on the map (max. 100 km) and the **data sources** for this area, e.g. only motorways for a commute.
-2. **Motorways** – only if "Autobahn GmbH" is selected. Only their events within the circle are shown. The selection is needed because the Autobahn API always returns a whole motorway and cannot search by area. Here you also set **from how many minutes of travel time loss a traffic jam counts as a disruption** (default 10, 0 = every jam).
-3. **Directions of travel** – you can choose from the directions currently used on the selected motorways. Leave empty for all directions. Events at junction ramps and events without a direction are always shown.
+1. **Area** – name (becomes part of the entity IDs, e.g. "Commute") and circle on the map (max. 100 km).
+2. **Data sources** – offered are the motorways and every source whose region touches the circle, all preselected. Deselect what you don't need, e.g. everything but the motorways for a commute. If only the motorways are available, this step is skipped.
+3. **Motorways** – only if "Autobahn GmbH" is selected. Only their events within the circle are shown. The selection is needed because the Autobahn API always returns a whole motorway and cannot search by area. Here you also set **from how many minutes of travel time loss a traffic jam counts as a disruption** (default 10, 0 = every jam).
+4. **Directions of travel** – you can choose from the directions currently used on the selected motorways. Leave empty for all directions. Events at junction ramps and events without a direction are always shown.
 
 <table>
   <tr>

@@ -13,6 +13,7 @@ from custom_components.streckenwacht.model import (
     Period,
     StreckenwachtEvent,
     is_route_direction,
+    sources_for_circle,
 )
 
 
@@ -187,3 +188,20 @@ def test_directions_do_not_affect_other_sources() -> None:
     )
     event = make_event(direction="eine Richtung", latitude=48.0, longitude=9.0)
     assert area.contains(event)
+
+
+@pytest.mark.parametrize(
+    ("lat", "lon", "radius_km", "expected"),
+    [
+        (48.78, 9.18, 15, ["autobahn", "mobidata_bw", "stuttgart"]),
+        (47.99, 7.85, 10, ["autobahn", "mobidata_bw"]),  # Freiburg: not Stuttgart
+        (52.13, 11.63, 5, ["autobahn", "sachsen_anhalt"]),  # not BB or NI
+        (52.52, 13.40, 5, ["autobahn", "berlin", "brandenburg"]),
+        (51.51, 7.47, 5, ["autobahn", "dortmund"]),  # NRW: not Niedersachsen
+        (49.45, 11.08, 5, ["autobahn"]),  # Nürnberg: no regional source
+    ],
+)
+def test_sources_for_circle(
+    lat: float, lon: float, radius_km: float, expected: list[str]
+) -> None:
+    assert [s.value for s in sources_for_circle(lat, lon, radius_km)] == expected

@@ -11,6 +11,20 @@ EARTH_RADIUS_KM = 6371.0088
 _KM_PER_DEGREE = radians(1) * EARTH_RADIUS_KM
 
 
+def circle_bounds(
+    lat: float, lon: float, radius_km: float
+) -> tuple[float, float, float, float]:
+    """Bounding box (south, west, north, east) of a circle."""
+    dlat = radius_km / _KM_PER_DEGREE
+    dlon = radius_km / (_KM_PER_DEGREE * max(cos(radians(lat)), 0.1))
+    return (lat - dlat, lon - dlon, lat + dlat, lon + dlon)
+
+
+def bounds_overlap(a: tuple[float, ...], b: tuple[float, ...]) -> bool:
+    """True if two (south, west, north, east) boxes overlap."""
+    return a[0] < b[2] and b[0] < a[2] and a[1] < b[3] and b[1] < a[3]
+
+
 def in_bounds(lat: float, lon: float, bounds: tuple[float, ...]) -> bool:
     """True if the point lies within (south, west, north, east)."""
     south, west, north, east = bounds

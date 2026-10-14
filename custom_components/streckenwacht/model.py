@@ -8,8 +8,13 @@ from datetime import datetime
 from enum import StrEnum
 from typing import Any
 
-from .const import ATTRIBUTION, UPSTREAM_ATTRIBUTION, Source
-from .geo import distance_to_geometry_km, haversine_km
+from .const import ATTRIBUTION, SOURCE_REGIONS, UPSTREAM_ATTRIBUTION, Source
+from .geo import (
+    bounds_overlap,
+    circle_bounds,
+    distance_to_geometry_km,
+    haversine_km,
+)
 
 
 class EventType(StrEnum):
@@ -150,3 +155,14 @@ class ObservationArea:
                 self.latitude, self.longitude, event.latitude, event.longitude
             )
         return distance <= self.radius_km
+
+
+def sources_for_circle(lat: float, lon: float, radius_km: float) -> list[Source]:
+    """The Autobahn plus every regional source whose region the circle touches."""
+    box = circle_bounds(lat, lon, radius_km)
+    return [
+        source
+        for source in Source
+        if source not in SOURCE_REGIONS
+        or any(bounds_overlap(box, region) for region in SOURCE_REGIONS[source])
+    ]

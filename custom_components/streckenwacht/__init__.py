@@ -13,6 +13,7 @@ from homeassistant.helpers import issue_registry as ir
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 
 from .const import (
+    CONF_AREA_SOURCES,
     CONF_INCLUDE_INRIX,
     CONF_SCAN_INTERVAL,
     CONF_SOURCES,
@@ -83,11 +84,13 @@ async def async_setup_entry(
 ) -> bool:
     """Set up Streckenwacht from a config entry."""
     session = async_get_clientsession(hass)
-    sources = [Source(s) for s in entry.options.get(CONF_SOURCES, [])]
     areas = {
         subentry.subentry_id: area_from_subentry(subentry)
         for subentry in area_subentries(entry)
     }
+    # Only the sources some area shows are polled.
+    used = {s for area in areas.values() for s in (area.sources or {Source.AUTOBAHN})}
+    sources = [source for source in Source if source in used]
     scan_interval = timedelta(
         minutes=entry.options.get(CONF_SCAN_INTERVAL, DEFAULT_SCAN_INTERVAL)
     )
@@ -121,6 +124,30 @@ async def async_setup_entry(
     # Options and subentry (area) changes both trigger a reload.
     entry.async_on_unload(entry.add_update_listener(_async_update_listener))
     await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
+    return True
+
+
+async def async_migrate_entry(
+    hass: HomeAssistant, entry: StreckenwachtConfigEntry
+) -> bool:
+    """Move the entry's source list into the areas (minor version 1 -> 2).
+
+    Up to 0.2.0 the entry held the enabled sources and an area without its own
+    list showed all of them. Now every area lists its sources.
+    """
+    if entry.version > 1:
+        return False  # downgrade from a future version
+    if entry.minor_version < 2:
+        legacy = sorted(entry.options.get(CONF_SOURCES) or [Source.AUTOBAHN.value])
+        for subentry in area_subentries(entry):
+            if subentry.data.get(CONF_AREA_SOURCES) is None:
+                hass.config_entries.async_update_subentry(
+                    entry,
+                    subentry,
+                    data={**subentry.data, CONF_AREA_SOURCES: legacy},
+                )
+        options = {k: v for k, v in entry.options.items() if k != CONF_SOURCES}
+        hass.config_entries.async_update_entry(entry, options=options, minor_version=2)
     return True
 
 

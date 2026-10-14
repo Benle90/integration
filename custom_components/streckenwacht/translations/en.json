@@ -3,21 +3,16 @@
     "step": {
       "user": {
         "title": "Streckenwacht",
-        "description": "Choose the data sources. Add observation areas afterwards via “Add observation area”.",
+        "description": "Data sources are chosen per observation area. Add areas afterwards via “Add observation area”.",
         "data": {
-          "sources": "Data sources",
           "scan_interval": "Update interval",
           "include_inrix": "Include traffic jams (INRIX)"
         },
         "data_description": {
-          "sources": "Except for Autobahn GmbH, the sources only cover the state or city named.",
           "scan_interval": "How often the sources are polled. They do not change by the minute.",
           "include_inrix": "Traffic jam data in the Autobahn API comes from the commercial provider INRIX."
         }
       }
-    },
-    "error": {
-      "no_sources": "Select at least one data source."
     },
     "abort": {
       "single_instance_allowed": "Streckenwacht is already set up. Add more areas there."
@@ -28,19 +23,14 @@
       "init": {
         "title": "Streckenwacht",
         "data": {
-          "sources": "Data sources",
           "scan_interval": "Update interval",
           "include_inrix": "Include traffic jams (INRIX)"
         },
         "data_description": {
-          "sources": "Except for Autobahn GmbH, the sources only cover the state or city named.",
           "scan_interval": "How often the sources are polled. They do not change by the minute.",
           "include_inrix": "Traffic jam data in the Autobahn API comes from the commercial provider INRIX."
         }
       }
-    },
-    "error": {
-      "no_sources": "Select at least one data source."
     }
   },
   "config_subentries": {
@@ -56,13 +46,11 @@
           "description": "Events within the circle are shown.",
           "data": {
             "name": "Name",
-            "location": "Area",
-            "sources": "Data sources"
+            "location": "Area"
           },
           "data_description": {
             "name": "For example “Commute”. Used in entity names.",
-            "location": "Move the marker and drag the circle. Maximum radius: 100 km.",
-            "sources": "Which sources to show in this area, e.g. only the motorway for a commute."
+            "location": "Move the marker and drag the circle. Maximum radius: 100 km."
           }
         },
         "reconfigure": {
@@ -70,12 +58,20 @@
           "description": "Events within the circle are shown.",
           "data": {
             "name": "Name",
-            "location": "Area",
-            "sources": "Data sources"
+            "location": "Area"
           },
           "data_description": {
             "name": "For example “Commute”. Used in entity names.",
-            "location": "Move the marker and drag the circle. Maximum radius: 100 km.",
+            "location": "Move the marker and drag the circle. Maximum radius: 100 km."
+          }
+        },
+        "sources": {
+          "title": "Data sources",
+          "description": "Offered are the motorways and the sources whose region touches this area.",
+          "data": {
+            "sources": "Data sources"
+          },
+          "data_description": {
             "sources": "Which sources to show in this area, e.g. only the motorway for a commute."
           }
         },

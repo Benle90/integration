@@ -20,18 +20,18 @@ import re
 from collections.abc import Callable, Iterable, Sequence
 from dataclasses import dataclass, replace
 from datetime import UTC, date, datetime, time, timedelta
-from math import ceil, cos, floor, radians
+from math import ceil, floor
 from typing import Any, ClassVar
 
 import aiohttp
 
 from ..const import LOCAL_TZ, Bounds
+from ..geo import circle_bounds
 from ..model import ObservationArea, Period, StreckenwachtEvent
 from . import Provider, ProviderError
 
 _LOGGER = logging.getLogger(__name__)
 
-_KM_PER_DEGREE = 111.2
 # About 55 x 35 km in northern Germany.
 GRID_DEGREES = 0.5
 
@@ -169,14 +169,7 @@ def snap_to_grid(bbox: Bounds, cell: float) -> Bounds:
 
 def area_bbox(area: ObservationArea) -> Bounds:
     """Bounding box of the area's circle."""
-    dlat = area.radius_km / _KM_PER_DEGREE
-    dlon = area.radius_km / (_KM_PER_DEGREE * max(cos(radians(area.latitude)), 0.1))
-    return (
-        area.latitude - dlat,
-        area.longitude - dlon,
-        area.latitude + dlat,
-        area.longitude + dlon,
-    )
+    return circle_bounds(area.latitude, area.longitude, area.radius_km)
 
 
 def _intersect(a: Bounds, b: Bounds) -> Bounds | None:

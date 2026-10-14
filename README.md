@@ -89,13 +89,12 @@ Hinweis: Im HACS-Dashboard fehlt das Icon derzeit ([HACS-Issue #5171](https://gi
 
 ### Datenquellen und Optionen
 
-Beim Hinzufügen wählst du die Datenquellen. Vorausgewählt sind die Autobahn und die regionalen Quellen für deinen Home-Assistant-Standort (z. B. Baden-Württemberg oder Berlin und Brandenburg).
+Beim Hinzufügen fragt Streckenwacht nur nach Abrufintervall und Staumeldungen. Die Datenquellen wählst du pro Beobachtungsbereich (siehe unten); abgefragt wird, was irgendein Bereich nutzt.
 
 <a id="optionen"></a>Später änderbar über **Geräte & Dienste → Streckenwacht → Konfigurieren**:
 
 | Option | Standard | Bedeutung |
 |---|---|---|
-| Datenquellen | je nach Standort | Welche Quellen überhaupt abgefragt werden |
 | Abrufintervall | 15 min | 10–60 Minuten |
 | Staumeldungen einbeziehen (INRIX) | an | Staus und Reisezeitverlust aus der Autobahn-API |
 
@@ -103,11 +102,12 @@ Beim Hinzufügen wählst du die Datenquellen. Vorausgewählt sind die Autobahn u
 
 ### Beobachtungsbereiche
 
-Auf der Streckenwacht-Seite **Beobachtungsbereich hinzufügen**. Der Dialog führt in bis zu drei Schritten durch die Einrichtung:
+Auf der Streckenwacht-Seite **Beobachtungsbereich hinzufügen**. Der Dialog führt in bis zu vier Schritten durch die Einrichtung:
 
-1. **Bereich** – Name (wird Teil der Entity-IDs, z. B. „Arbeitsweg“), Kreis auf der Karte (max. 100 km) und die **Datenquellen** für diesen Bereich, z. B. nur Autobahn für den Arbeitsweg.
-2. **Autobahnen** – nur wenn „Autobahn GmbH“ gewählt ist. Angezeigt werden nur ihre Meldungen innerhalb des Kreises. Die Auswahl ist nötig, weil die Autobahn-API immer eine ganze Autobahn liefert und keine Umkreissuche kennt. Hier stellst du auch ein, **ab wie vielen Minuten Reisezeitverlust ein Stau als Störung zählt** (Standard 10, 0 = jeder Stau).
-3. **Fahrtrichtungen** – zur Auswahl stehen die Richtungen, die auf den gewählten Autobahnen aktuell vorkommen. Leer lassen für alle Richtungen. Meldungen an Anschlussstellen und ohne Richtung werden immer angezeigt.
+1. **Bereich** – Name (wird Teil der Entity-IDs, z. B. „Arbeitsweg“) und Kreis auf der Karte (max. 100 km).
+2. **Datenquellen** – angeboten werden die Autobahn und alle Quellen, deren Gebiet den Kreis berührt, alle vorausgewählt. Abwählen, was du nicht brauchst, z. B. alles außer der Autobahn für einen Arbeitsweg. Gibt es nur die Autobahn, entfällt der Schritt.
+3. **Autobahnen** – nur wenn „Autobahn GmbH“ gewählt ist. Angezeigt werden nur ihre Meldungen innerhalb des Kreises. Die Auswahl ist nötig, weil die Autobahn-API immer eine ganze Autobahn liefert und keine Umkreissuche kennt. Hier stellst du auch ein, **ab wie vielen Minuten Reisezeitverlust ein Stau als Störung zählt** (Standard 10, 0 = jeder Stau).
+4. **Fahrtrichtungen** – zur Auswahl stehen die Richtungen, die auf den gewählten Autobahnen aktuell vorkommen. Leer lassen für alle Richtungen. Meldungen an Anschlussstellen und ohne Richtung werden immer angezeigt.
 
 <table>
   <tr>

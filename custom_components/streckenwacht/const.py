@@ -20,7 +20,7 @@ LOCAL_TZ: Final = ZoneInfo("Europe/Berlin")
 REQUEST_TIMEOUT: Final = 30  # seconds
 
 # Config entry options
-CONF_SOURCES: Final = "sources"
+CONF_SOURCES: Final = "sources"  # entry option up to 0.2.0, migrated to the areas
 CONF_SCAN_INTERVAL: Final = "scan_interval"  # minutes
 CONF_INCLUDE_INRIX: Final = "include_inrix"
 
@@ -34,7 +34,7 @@ SUBENTRY_AREA: Final = "area"
 CONF_LOCATION: Final = "location"
 CONF_RADIUS: Final = "radius"  # meters, as returned by the location selector
 CONF_ROADS: Final = "roads"
-CONF_AREA_SOURCES: Final = "sources"  # per area; None/missing means all
+CONF_AREA_SOURCES: Final = "sources"  # per area (since entry minor version 2)
 CONF_DIRECTIONS: Final = "directions"
 CONF_JAM_THRESHOLD: Final = "jam_threshold"  # minutes
 
@@ -121,11 +121,34 @@ UPSTREAM_ATTRIBUTION: Final[dict[str, str]] = {
 type Bounds = tuple[float, float, float, float]
 
 BADEN_WUERTTEMBERG: Final[Bounds] = (47.5, 7.5, 49.8, 10.5)
+STUTTGART: Final[Bounds] = (48.69, 9.03, 48.87, 9.32)
 SCHLESWIG_HOLSTEIN_HAMBURG: Final[Bounds] = (53.35, 7.8, 55.1, 11.4)
 MECKLENBURG_VORPOMMERN: Final[Bounds] = (53.1, 10.5, 54.7, 14.5)
 NIEDERSACHSEN: Final[Bounds] = (51.29, 6.6, 53.9, 11.6)
 BERLIN: Final[Bounds] = (52.33, 13.08, 52.68, 13.77)
 BRANDENBURG: Final[Bounds] = (51.35, 11.26, 53.56, 14.77)
+# Finer parts for offering sources (a few boxes per state): the single boxes
+# above reach far into neighbouring states (Dortmund would get Niedersachsen,
+# Magdeburg Brandenburg). Areas near a border may still get both states.
+_NIEDERSACHSEN_PARTS: Final = (
+    (52.25, 6.6, 53.9, 10.95),
+    (51.29, 8.9, 52.25, 10.95),
+    (52.75, 10.95, 53.3, 11.6),
+)
+_BRANDENBURG_PARTS: Final = (
+    (51.75, 12.2, 53.56, 14.77),
+    (51.35, 13.2, 51.75, 14.77),
+    (52.75, 11.26, 53.4, 12.2),
+)
+_SACHSEN_ANHALT_PARTS: Final = (
+    (50.93, 10.56, 52.0, 12.6),
+    (52.0, 10.9, 53.05, 12.6),
+    (51.4, 12.6, 52.1, 13.19),
+)
+_RHEINLAND_PFALZ_PARTS: Final = (
+    (48.96, 6.11, 50.6, 8.51),
+    (50.6, 7.3, 50.95, 8.2),
+)
 SACHSEN_ANHALT: Final[Bounds] = (50.93, 10.56, 53.05, 13.19)
 SACHSEN: Final[Bounds] = (50.17, 11.87, 51.69, 15.04)
 RHEINLAND_PFALZ: Final[Bounds] = (48.96, 6.11, 50.95, 8.51)
@@ -134,21 +157,22 @@ KOELN: Final[Bounds] = (50.83, 6.77, 51.09, 7.17)
 FRANKFURT: Final[Bounds] = (50.01, 8.47, 50.23, 8.80)
 DORTMUND: Final[Bounds] = (51.41, 7.30, 51.60, 7.64)
 
-# Rough regions of the regional sources, to preselect them by the home location.
-# Sources without a region (the Autobahn) cover all of Germany.
+# Rough regions of the regional sources: an area is offered the sources whose
+# region its circle touches. Sources without a region (the Autobahn) cover all
+# of Germany.
 SOURCE_REGIONS: Final[dict[Source, tuple[Bounds, ...]]] = {
     Source.MOBIDATA_BW: (BADEN_WUERTTEMBERG,),
-    Source.STUTTGART: (BADEN_WUERTTEMBERG,),
+    Source.STUTTGART: (STUTTGART,),
     Source.NORDDEUTSCHLAND: (
         SCHLESWIG_HOLSTEIN_HAMBURG,
         MECKLENBURG_VORPOMMERN,
-        NIEDERSACHSEN,
+        *_NIEDERSACHSEN_PARTS,
     ),
     Source.BERLIN: (BERLIN,),
-    Source.BRANDENBURG: (BRANDENBURG,),
-    Source.SACHSEN_ANHALT: (SACHSEN_ANHALT,),
+    Source.BRANDENBURG: _BRANDENBURG_PARTS,
+    Source.SACHSEN_ANHALT: _SACHSEN_ANHALT_PARTS,
     Source.SACHSEN: (SACHSEN,),
-    Source.RHEINLAND_PFALZ: (RHEINLAND_PFALZ,),
+    Source.RHEINLAND_PFALZ: _RHEINLAND_PFALZ_PARTS,
     Source.MUENCHEN: (MUENCHEN,),
     Source.KOELN: (KOELN,),
     Source.FRANKFURT: (FRANKFURT,),
