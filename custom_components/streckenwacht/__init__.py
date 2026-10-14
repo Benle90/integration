@@ -31,6 +31,7 @@ from .known_events import KnownEvents
 from .providers import Provider
 from .providers.autobahn import AutobahnProvider
 from .providers.mobidata_bw import MobiDataBWProvider
+from .providers.norddeutschland import NorddeutschlandProvider
 from .providers.stuttgart import StuttgartProvider
 
 PLATFORMS: list[Platform] = [
@@ -44,6 +45,7 @@ PROVIDERS: dict[Source, type[Provider]] = {
     Source.AUTOBAHN: AutobahnProvider,
     Source.MOBIDATA_BW: MobiDataBWProvider,
     Source.STUTTGART: StuttgartProvider,
+    Source.NORDDEUTSCHLAND: NorddeutschlandProvider,
 }
 
 

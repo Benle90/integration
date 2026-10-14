@@ -1,0 +1,908 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.32646362,
+          53.78353852
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.1",
+        "OBJECTID": 1,
+        "Von": "Schönhof",
+        "Nach": "Bobitz",
+        "Baubeginn": "2026-02-09 00:00:00",
+        "Bauende": "2027-05-31 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Radwegneubau",
+        "Sperrlänge": 2831,
+        "Andere_Maßnahmen": "",
+        "Erläuterung": "zeitweise halbseitige Sperrung"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.31486863,
+          53.65806612
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.8",
+        "OBJECTID": 8,
+        "Von": "Abzweig Kreisstraße 28, Bahnübergang",
+        "Nach": "Schwerin",
+        "Baubeginn": "2024-02-02 00:00:00",
+        "Bauende": "2027-06-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Akute Verkehrsgefährdung",
+        "Sperrlänge": 510,
+        "Andere_Maßnahmen": "Herabsetzung der zulässigen Höchstgeschwindigkeit aufgrund von Fahrbahnschäden",
+        "Erläuterung": "Verkehrsraumeinschränkungen"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.30114567,
+          53.57014922
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.10",
+        "OBJECTID": 10,
+        "Von": "Stralendorf",
+        "Nach": "Obere Bergstraße",
+        "Baubeginn": "2026-09-28 00:00:00",
+        "Bauende": "2026-10-09 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Leitungsarbeiten",
+        "Sperrlänge": 42,
+        "Andere_Maßnahmen": "",
+        "Erläuterung": "Vollsperrung"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.383256,
+          53.60836672
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.11",
+        "OBJECTID": 11,
+        "Von": "Schwerin, Brücke über die Rogahner Straß",
+        "Nach": "",
+        "Baubeginn": "2026-07-06 00:00:00",
+        "Bauende": "2026-12-11 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Brückeninstandsetzung",
+        "Sperrlänge": 190,
+        "Andere_Maßnahmen": "",
+        "Erläuterung": "Verkehrsraumeinschränkungen"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.33948777,
+          53.67904394
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.13",
+        "OBJECTID": 13,
+        "Von": "Ortsausgang Schwerin",
+        "Nach": "Abzw. Klein Trebbow (K NWM 46)",
+        "Baubeginn": "2026-10-12 00:00:00",
+        "Bauende": "2026-11-06 00:00:00",
+        "Verkehrslenkung": "OU Schwerin - B 104 - B 106 - L 031 - B 208 - Mühlen Eichsen und umgekehrt.",
+        "Sperrart": "Erneuerung der Fahrbahn",
+        "Sperrlänge": 2675,
+        "Andere_Maßnahmen": "",
+        "Erläuterung": "Vollsperrung"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.54195285,
+          53.69739414
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.25",
+        "OBJECTID": 25,
+        "Von": "Cambs",
+        "Nach": "Brahlstorf",
+        "Baubeginn": "2026-02-09 00:00:00",
+        "Bauende": "2026-12-17 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Radwegneubau",
+        "Sperrlänge": 2093,
+        "Andere_Maßnahmen": "",
+        "Erläuterung": "zeitweise halbseitige Sperrung"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.509065,
+          53.592478
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.33",
+        "OBJECTID": 33,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 67,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.509065,
+          53.592478
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.34",
+        "OBJECTID": 34,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 67,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.504674,
+          53.592587
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.35",
+        "OBJECTID": 35,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 28,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.39701047,
+          53.57589306
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.37",
+        "OBJECTID": 37,
+        "Von": "Schwerin, Pampower Straße",
+        "Nach": "",
+        "Baubeginn": "2026-05-01 00:00:00",
+        "Bauende": "2026-12-31 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Fahrbahninstandsetzung",
+        "Sperrlänge": 3250,
+        "Andere_Maßnahmen": "",
+        "Erläuterung": "sonstige Sperrung"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.509065,
+          53.592478
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.38",
+        "OBJECTID": 38,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 67,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.504674,
+          53.592587
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.39",
+        "OBJECTID": 39,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 28,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.504674,
+          53.592587
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.40",
+        "OBJECTID": 40,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 28,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.49817423,
+          53.55348569
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.41",
+        "OBJECTID": 41,
+        "Von": "Plate",
+        "Nach": "",
+        "Baubeginn": "2026-05-04 00:00:00",
+        "Bauende": "2026-10-11 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Straßenumbau",
+        "Sperrlänge": 165,
+        "Andere_Maßnahmen": "",
+        "Erläuterung": "Vollsperrung"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.509065,
+          53.592478
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.43",
+        "OBJECTID": 43,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 67,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.504674,
+          53.592587
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.44",
+        "OBJECTID": 44,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 28,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.509065,
+          53.592478
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.48",
+        "OBJECTID": 48,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 67,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.504674,
+          53.592587
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.49",
+        "OBJECTID": 49,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 28,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.38085153,
+          53.61264293
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.51",
+        "OBJECTID": 51,
+        "Von": "Ortsumgehung Schwerin, Schulzenweg",
+        "Nach": "Neumühle",
+        "Baubeginn": "2026-06-15 00:00:00",
+        "Bauende": "2026-12-11 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Erneuerung der Fahrbahn",
+        "Sperrlänge": 2554,
+        "Andere_Maßnahmen": "zunächst vorbereitende Arbeiten, am 19. Juni ab 12:00 Uhr Umverlegung des Richtungsverkehrs Wismar auf die Gegenfahrbahn.",
+        "Erläuterung": "Verkehrsraumeinschränkungen"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.509065,
+          53.592478
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.58",
+        "OBJECTID": 58,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 67,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.504674,
+          53.592587
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.59",
+        "OBJECTID": 59,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 28,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.509065,
+          53.592478
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.72",
+        "OBJECTID": 72,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 67,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.504674,
+          53.592587
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.73",
+        "OBJECTID": 73,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 28,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.509065,
+          53.592478
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.91",
+        "OBJECTID": 91,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 67,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.504674,
+          53.592587
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.92",
+        "OBJECTID": 92,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 28,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.506927,
+          53.592933
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.98",
+        "OBJECTID": 98,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2026-06-22 16:15:00",
+        "Bauende": "2026-10-31 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 359,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.509065,
+          53.592478
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.106",
+        "OBJECTID": 106,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 67,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.504674,
+          53.592587
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.107",
+        "OBJECTID": 107,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 28,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.506927,
+          53.592933
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.108",
+        "OBJECTID": 108,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2026-06-22 16:15:00",
+        "Bauende": "2026-10-31 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 359,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.506927,
+          53.592933
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.109",
+        "OBJECTID": 109,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2026-06-22 16:15:00",
+        "Bauende": "2026-10-31 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 359,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.509065,
+          53.592478
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.117",
+        "OBJECTID": 117,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 67,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.504674,
+          53.592587
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.118",
+        "OBJECTID": 118,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 28,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.506927,
+          53.592933
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.119",
+        "OBJECTID": 119,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2026-06-22 16:15:00",
+        "Bauende": "2026-10-31 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 359,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.506927,
+          53.592933
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.120",
+        "OBJECTID": 120,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2026-06-22 16:15:00",
+        "Bauende": "2026-10-31 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 359,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.509065,
+          53.592478
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.134",
+        "OBJECTID": 134,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 67,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.504674,
+          53.592587
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.135",
+        "OBJECTID": 135,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2024-07-10 00:00:00",
+        "Bauende": "2027-01-30 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 28,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.506927,
+          53.592933
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.136",
+        "OBJECTID": 136,
+        "Von": "",
+        "Nach": "",
+        "Baubeginn": "2026-06-22 16:15:00",
+        "Bauende": "2026-10-31 00:00:00",
+        "Verkehrslenkung": "",
+        "Sperrart": "Sonstiges",
+        "Sperrlänge": 359,
+        "Andere_Maßnahmen": "In Erfassungsrichtung",
+        "Erläuterung": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.20434298,
+          53.74495795
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.153",
+        "OBJECTID": 153,
+        "Von": "Abzw. Veelböken",
+        "Nach": "Goddin, inkl. OD Goddin",
+        "Baubeginn": "2026-10-14 00:00:00",
+        "Bauende": "2026-10-30 00:00:00",
+        "Verkehrslenkung": "Gadebusch - B 104 - Rehna - L 02 - Grevesmühlen - L 03 - Mühlen Eichsen und umgekehrt.",
+        "Sperrart": "Erneuerung der Fahrbahn",
+        "Sperrlänge": 2053,
+        "Andere_Maßnahmen": "",
+        "Erläuterung": "Vollsperrung"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.56559252,
+          53.74139679
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_MV.157",
+        "OBJECTID": 157,
+        "Von": "Liessow",
+        "Nach": "Neu Schlagsdorf",
+        "Baubeginn": "2026-10-12 00:00:00",
+        "Bauende": "2026-10-30 00:00:00",
+        "Verkehrslenkung": "Cambs - B 104 - Brüel - B 192 -Warin - L 031 - Ventschow und umgekehrt.",
+        "Sperrart": "Erneuerung der Fahrbahn",
+        "Sperrlänge": 2736,
+        "Andere_Maßnahmen": "",
+        "Erläuterung": "Vollsperrung"
+      }
+    }
+  ]
+}

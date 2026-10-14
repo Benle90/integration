@@ -1,0 +1,857 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.02044001,
+          53.55723
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.6",
+        "OBJECTID": 6,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Lübeckertordamm bis Lübecker Straßezwischen Steindamm und Sechslingspfortein beiden Richtungen Fahrbahn auf einen Fahrstreifen verengt, geänderte Verkehrsführung, Dauerbaustelle, ortskundige Autofahrer werden gebeten, das Gebiet weiträumig zu umfahren, bis 31.01.2027 17:00 Uhr",
+        "Baubeginn": "2026-08-03, 09:50:00",
+        "Bauende": "2027-01-31, 16:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.97983,
+          53.58
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.13",
+        "OBJECTID": 13,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Klosteralleezwischen Isestraße und Oberstraßein beiden Richtungen gesperrt, Bauarbeiten, bis 28.05.2027 ca. 17:00 Uhr",
+        "Baubeginn": "2026-08-12, 06:25:00",
+        "Bauende": "2027-05-28, 15:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.95168,
+          53.57612
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.20",
+        "OBJECTID": 20,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Fanny-Mendelssohn-Platz bis Osterstraßezwischen Heußweg und Emilienstraßein beiden Richtungen gesperrt, Bauarbeiten, bis 23.10.2026 18:00 Uhr",
+        "Baubeginn": "2026-08-18, 10:15:00",
+        "Bauende": "2026-10-23, 16:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.97273,
+          53.54755
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.25",
+        "OBJECTID": 25,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Seewartenstraßezwischen Neumayerstraße und Bernhard-Nocht-StraßeFahrbahnverengung, Bauarbeiten, bis 30.10.2026 17:00 Uhr",
+        "Baubeginn": "2026-08-24, 05:00:00",
+        "Bauende": "2026-10-30, 16:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.95168,
+          53.57612
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.28",
+        "OBJECTID": 28,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Fanny-Mendelssohn-Platzin Höhe Osterstraßein beiden Richtungen gesperrt, Bauarbeiten, bis 23.10.2026 18:00 Uhr",
+        "Baubeginn": "2026-08-24, 05:00:00",
+        "Bauende": "2026-10-23, 16:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.97837001,
+          53.57108
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.34",
+        "OBJECTID": 34,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Grindelalleezwischen Bogenstraße und SedanstraßeFahrbahn auf einen Fahrstreifen verengt, Bauarbeiten, bis 30.10.2026 18:00 Uhr",
+        "Baubeginn": "2026-08-31, 04:00:00",
+        "Bauende": "2026-10-30, 17:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.96359,
+          53.56939
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.48",
+        "OBJECTID": 48,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Bellealliancestraßezwischen Fruchtallee und Fettstraßein beiden Richtungen gesperrt, Baustelle, von 15.09.2026 07:00 Uhr bis 06.11.2026 17:00 Uhr",
+        "Baubeginn": "2026-09-15, 05:00:00",
+        "Bauende": "2026-11-06, 16:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.95509,
+          53.56131
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.49",
+        "OBJECTID": 49,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Max-Brauer-Alleezwischen B4, Stresemannstraße und Bei der Johanniskirchein beiden Richtungen gesperrt, Bauarbeiten, bis voraussichtlich 20.10.2026",
+        "Baubeginn": "2026-09-09, 14:05:00",
+        "Bauende": "2026-10-20, 21:59:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.95257,
+          53.55653
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.52",
+        "OBJECTID": 52,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Gählerstraßezwischen Thadenstraße und Gilbertstraßegesperrt, Bauarbeiten, bis 20.11.2026 18:00 Uhr",
+        "Baubeginn": "2026-09-10, 06:55:00",
+        "Bauende": "2026-11-20, 17:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.96184,
+          53.56852
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.58",
+        "OBJECTID": 58,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Bellealliancestraßezwischen Vereinsstraße und Schäferkampsalleegesperrt, Tiefbauarbeiten, bis 06.11.2026 17:00 Uhr",
+        "Baubeginn": "2026-09-15, 06:10:00",
+        "Bauende": "2026-11-06, 16:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.00708,
+          53.54057
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.64",
+        "OBJECTID": 64,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Versmannstraßezwischen Überseeallee und Baakenwerder Straßein beiden Richtungen Fahrbahn auf einen Fahrstreifen verengt, geänderte Verkehrsführung im Baustellenbereich, Bauarbeiten, bis 20.11.2026",
+        "Baubeginn": "2026-09-21, 06:35:00",
+        "Bauende": "2026-11-20, 22:59:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.02447001,
+          53.56537
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.65",
+        "OBJECTID": 65,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Armgartstraßezwischen Kuhmühlenbrücke und Mundsburger DammFahrbahn auf einen Fahrstreifen verengt, Bauarbeiten, bis 16.10.2026 ca. 17:00 Uhr",
+        "Baubeginn": "2026-09-21, 05:00:00",
+        "Bauende": "2026-10-16, 15:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.96553,
+          53.56309
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.68",
+        "OBJECTID": 68,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Schanzenstraßezwischen Susannenstraße und Sternschanzein beiden Richtungen gesperrt, Brückenarbeiten, bis 14.12.2026 ca. 18:00 Uhr",
+        "Baubeginn": "2026-09-21, 07:10:00",
+        "Bauende": "2026-12-14, 17:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.97587999,
+          53.5743
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.73",
+        "OBJECTID": 73,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Helene-Lange-Straßezwischen Gustav-Falke-Straße und Grindelberggesperrt, Tiefbauarbeiten, von 28.09.2026 07:00 Uhr bis 04.12.2026 17:00 Uhr",
+        "Baubeginn": "2026-09-28, 05:00:00",
+        "Bauende": "2026-12-04, 16:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.00226001,
+          53.54735
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.90",
+        "OBJECTID": 90,
+        "HEADER": "Baustelle",
+        "Informationen": "B4 Hamburg, Willy-Brandt-Straße bis Amsinckstraßezwischen Dovenfleet und Lippeltstraßein beiden Richtungen Fahrbahnverengung, geänderte Verkehrsführung im Baustellenbereich, Bauarbeiten, bis voraussichtlich 30.11.2026, täglich zwischen 05:00 Uhr und 11:00 Uhrdirekte Zufahrt über Amsinckstraße zum HBF nicht möglich - mit Zeitverzögerungen bei der Anreise muss gerechnet werden",
+        "Baubeginn": "2026-10-12, 06:20:00",
+        "Bauende": "2026-11-30, 22:59:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0201292,
+          53.550281
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.91",
+        "OBJECTID": 91,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Spaldingstraßezwischen Hammerbrookstraße und Repsoldstraßegesperrt, Bauarbeiten, bis 16.10.2026",
+        "Baubeginn": "2026-09-30, 14:50:00",
+        "Bauende": "2026-10-16, 21:59:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.99456999,
+          53.57184
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.107",
+        "OBJECTID": 107,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Böhmerswegzwischen Mittelweg und Pöseldorfer Weggesperrt, Bauarbeiten, bis 27.11.2026 ca. 18:00 Uhr",
+        "Baubeginn": "2026-10-05, 07:05:00",
+        "Bauende": "2026-11-27, 17:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.97067001,
+          53.57584
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.110",
+        "OBJECTID": 110,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Bogenstraßezwischen Kaiser-Friedrich-Ufer und Schlankreyein beiden Richtungen gesperrt, Bauarbeiten, bis 18.12.2026 ca. 17:00 Uhr",
+        "Baubeginn": "2026-10-05, 07:20:00",
+        "Bauende": "2026-12-18, 16:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.98746001,
+          53.55427
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.114",
+        "OBJECTID": 114,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Hohe Bleichenzwischen ABC-Straße und Amelungstraßegesperrt, Bauarbeiten, bis 31.10.2026 ca. 17:00 Uhr",
+        "Baubeginn": "2026-10-05, 07:35:00",
+        "Bauende": "2026-10-31, 16:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.96918,
+          53.54608
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.122",
+        "OBJECTID": 122,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Sankt Pauli Hafenstraßezwischen Helgoländer Allee und Bei den Sankt Pauli-Landungsbrückenin beiden Richtungen Fahrbahn auf einen Fahrstreifen verengt, Bauarbeiten, bis 27.10.2026 ca. 17:00 Uhr",
+        "Baubeginn": "2026-10-08, 08:30:00",
+        "Bauende": "2026-10-27, 16:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.96922999,
+          53.57347
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.123",
+        "OBJECTID": 123,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Heymannstraßezwischen Hohe Weide und Kaiser-Friedrich-Ufergesperrt, Bauarbeiten, bis 29.01.2027 ca. 17:00 Uhr",
+        "Baubeginn": "2026-10-08, 11:55:00",
+        "Bauende": "2027-01-29, 16:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.95204,
+          53.55977
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.124",
+        "OBJECTID": 124,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Max-Brauer-Alleezwischen Bei der Johanniskirche und Langenfelder Straßein beiden Richtungen gesperrt, Bauarbeiten, bis 30.10.2026 20:00 Uhr",
+        "Baubeginn": "2026-10-08, 12:30:00",
+        "Bauende": "2026-10-30, 19:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.96131999,
+          53.5504
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.125",
+        "OBJECTID": 125,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Hamburger Bergzwischen Seilerstraße und Simon-von-Utrecht-Straßegesperrt, Bauarbeiten, bis 16.10.2026 17:00 Uhr",
+        "Baubeginn": "2026-10-08, 15:25:00",
+        "Bauende": "2026-10-16, 15:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0135122,
+          53.5484861
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.126",
+        "OBJECTID": 126,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Repsoldstraßezwischen Spaldingstraße und Rosenalleegesperrt, bis voraussichtlich 30.11.2026",
+        "Baubeginn": "2026-10-09, 10:55:00",
+        "Bauende": "2026-11-30, 22:59:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.01724,
+          53.54529
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.130",
+        "OBJECTID": 130,
+        "HEADER": "Baustelle",
+        "Informationen": "B4 Hamburg, Amsinckstraßezwischen Högerdamm und Klostertorgesperrt, Bauarbeiten, bis voraussichtlich 30.11.2026, täglich zwischen 11:00 Uhr und 05:00 Uhr",
+        "Baubeginn": "2026-10-12, 09:00:00",
+        "Bauende": "2026-11-30, 22:59:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.01819,
+          53.56114
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.139",
+        "OBJECTID": 139,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Schweimlerstraßezwischen Sechslingspforte und Barcastraßegesperrt, Bauarbeiten, bis 28.10.2026, Mo - Fr zwischen 07:00 Uhr und 17:00 Uhr",
+        "Baubeginn": "2026-10-12, 10:15:00",
+        "Bauende": "2026-10-28, 16:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.99403001,
+          53.57975
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.140",
+        "OBJECTID": 140,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Harvestehuder Wegin Höhe Frauenthalgesperrt, Unfall, Polizei ist vor Ort",
+        "Baubeginn": "2026-10-12, 10:15:00",
+        "Bauende": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.98996,
+          53.55316
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.147",
+        "OBJECTID": 147,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Große Bleichenzwischen Poststraße und Bleichenbrückegesperrt, Bauarbeiten, vom 12.10.2026 bis 14.10.2026, Mo und Di zwischen 21:00 Uhr und 06:00 Uhr",
+        "Baubeginn": "2026-10-12, 19:00:00",
+        "Bauende": "2026-10-14, 04:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.00383,
+          53.57834
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.170",
+        "OBJECTID": 170,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Bellevuezwischen Scheffelstraße und KörnerstraßeFahrbahnverengung, maximale Fahrbahnbreite von 3,20 m, Bauarbeiten, bis 31.12.2026 17:00 Uhr",
+        "Baubeginn": "2024-11-11, 06:00:00",
+        "Bauende": "2026-12-31, 16:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.02914001,
+          53.56862
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.172",
+        "OBJECTID": 172,
+        "HEADER": "Sperrung",
+        "Informationen": "B5 Hamburg, Lerchenfeld bis Wartenauzwischen Birkenau und B75, Lübecker Straßegesperrt, Brückenarbeiten, bis 31.03.2027 ca. 17:00 UhrEinbahnstraßenregelung stadteinwärts",
+        "Baubeginn": "2025-07-30, 09:11:00",
+        "Bauende": "2027-03-31, 15:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.03183,
+          53.56639
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.173",
+        "OBJECTID": 173,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Eilenauin Höhe B5, LerchenfeldAbbiegen nicht möglich, Fahrbahnverengung, Dauerbaustelle, bis 31.03.2027 ca. 17:00 Uhrin Zusammenhang mit den Brückenarbeiten auf der B5",
+        "Baubeginn": "2025-07-30, 09:16:00",
+        "Bauende": "2027-03-31, 15:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.02072999,
+          53.53149
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.178",
+        "OBJECTID": 178,
+        "HEADER": "Sperrung",
+        "Informationen": "HamburgFreihafenelbbrückein beiden Richtungen Brücke gesperrt, eine örtliche Umleitung ist eingerichtetAus Sicherheitsgründen bleibt die Freihafenelbbrücke bis auf Weiteres in beide Richtungen gesperrt.",
+        "Baubeginn": "2025-10-28, 12:31:00",
+        "Bauende": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.00705,
+          53.54068
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.179",
+        "OBJECTID": 179,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Am Hannoverschen Bahnhofin Höhe Versmannstraßegesperrt, Dauerbaustellevoraussichtlich bis 2027 ",
+        "Baubeginn": "2025-11-03, 06:21:00",
+        "Bauende": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.99369,
+          53.54142
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.180",
+        "OBJECTID": 180,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Am Dalmannkai in Richtung Ostenzwischen Großer Grasbrook und Am Sandtorparkgesperrt, Bauarbeiten, bis voraussichtlich 31.12.2026Einbahnstraßenregelung Richtung Westen",
+        "Baubeginn": "2025-11-18, 07:16:00",
+        "Bauende": "2026-12-31, 22:59:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.97323,
+          53.57426
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.185",
+        "OBJECTID": 185,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Bogenstraßein Höhe Schlankreyein beiden Richtungen gesperrt, Unfall, Polizei ist vor Ort",
+        "Baubeginn": "2026-02-11, 13:55:00",
+        "Bauende": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.97285999,
+          53.53345
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.186",
+        "OBJECTID": 186,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Ellerholzdammzwischen Schilfstraße und Reiherdammin beiden Richtungen gesperrt, Brückenarbeiten, bis voraussichtlich 01.12.2026",
+        "Baubeginn": "2026-02-16, 05:35:00",
+        "Bauende": "2026-12-01, 22:59:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.02119001,
+          53.55003
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.190",
+        "OBJECTID": 190,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Nordkanalstraßein Höhe Hammerbrookstraßegesperrt, Feuerwehreinsatz",
+        "Baubeginn": "2026-02-18, 15:30:00",
+        "Bauende": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.03507999,
+          53.57246
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.197",
+        "OBJECTID": 197,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Richardstraße, stadteinwärtszwischen Klinikweg und Oberaltenalleegesperrt, Gleisbauarbeiten, bis 30.10.2026 22:00 UhrEinbahnstraßenregelung stadtauswärts",
+        "Baubeginn": "2026-03-23, 05:35:00",
+        "Bauende": "2026-10-30, 21:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.03873,
+          53.56867
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.204",
+        "OBJECTID": 204,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Blumenauin Höhe Richardstraßegeänderte VerkehrsführungZufahrt in Richtung Wartenau / Lerchenfeld frei",
+        "Baubeginn": "2026-04-24, 10:20:00",
+        "Bauende": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.02559999,
+          53.55994
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.212",
+        "OBJECTID": 212,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Mühlendammzwischen Wandsbeker Stieg und GüntherstraßeFahrbahnverengung, Bauarbeiten, bis 31.12.2026, Mo - Fr zwischen 09:00 Uhr und 15:00 Uhr",
+        "Baubeginn": "2026-05-26, 07:00:00",
+        "Bauende": "2026-12-31, 14:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.98193,
+          53.54408
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.216",
+        "OBJECTID": 216,
+        "HEADER": "Sperrung",
+        "Informationen": "HamburgNiederbaumbrückegesperrt, Dauerbaustelle, eine Umleitung ist eingerichtet, bis voraussichtlich 31.12.2027Kaimauersanierung",
+        "Baubeginn": "2026-06-04, 11:45:00",
+        "Bauende": "2027-12-31, 22:59:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.96012,
+          53.56374
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.218",
+        "OBJECTID": 218,
+        "HEADER": "Sperrung",
+        "Informationen": "Hamburg, Max-Brauer-Alleezwischen Altonaer Straße und B4, Stresemannstraßein beiden Richtungen gesperrt, Brückenarbeiten, bis voraussichtlich 20.10.2026",
+        "Baubeginn": "2026-06-26, 05:40:00",
+        "Bauende": "2026-10-20, 21:59:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.95448,
+          53.55526
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.220",
+        "OBJECTID": 220,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Gilbertstraßezwischen Scheplerstraße und Bernstorffstraßein beiden Richtungen gesperrt, Bauarbeiten, bis 20.11.2026 18:00 Uhr",
+        "Baubeginn": "2026-06-29, 05:00:00",
+        "Bauende": "2026-11-20, 17:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.99934,
+          53.54602
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.222",
+        "OBJECTID": 222,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Dienerreihezwischen Alter Wandrahm und Holländischer Brookgesperrt, Bauarbeiten, bis 23.10.2026 23:59 Uhr",
+        "Baubeginn": "2026-07-20, 06:30:00",
+        "Bauende": "2026-10-23, 21:59:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.99960999,
+          53.54542
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.223",
+        "OBJECTID": 223,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Dienerreihezwischen Holländischer Brook und Brooktorkaigesperrt, Bauarbeiten, bis 23.10.2026 23:59 UhrEinbahnstraße in Fahrtrichtung Norden",
+        "Baubeginn": "2026-07-20, 06:35:00",
+        "Bauende": "2026-10-23, 21:59:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.99728129,
+          53.5456181
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.224",
+        "OBJECTID": 224,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Alter Wandrahmzwischen Bei Sankt Annen und Dienerreihegesperrt für Durchgangsverkehr, Bauarbeiten, bis 23.10.2026 23:59 Uhr",
+        "Baubeginn": "2026-07-20, 06:35:00",
+        "Bauende": "2026-10-23, 21:59:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.00178379,
+          53.5464446
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_FHH.225",
+        "OBJECTID": 225,
+        "HEADER": "Baustelle",
+        "Informationen": "Hamburg, Alter Wandrahmzwischen Poggenmühle und Dienerreihegesperrt für Durchgangsverkehr, Bauarbeiten, bis 23.10.2026 23:59 Uhr",
+        "Baubeginn": "2026-07-20, 06:35:00",
+        "Bauende": "2026-10-23, 21:59:00"
+      }
+    }
+  ]
+}

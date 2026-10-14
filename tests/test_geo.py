@@ -4,7 +4,11 @@ from __future__ import annotations
 
 import pytest
 
-from custom_components.streckenwacht.geo import distance_to_geometry_km, haversine_km
+from custom_components.streckenwacht.geo import (
+    distance_to_geometry_km,
+    haversine_km,
+    in_bounds,
+)
 
 STUTTGART_HBF = (48.7840, 9.1829)
 KARLSRUHE_HBF = (48.9935, 8.4020)
@@ -62,3 +66,9 @@ def test_geometry_collection() -> None:
 )
 def test_unusable_geometry_returns_none(geometry: dict | None) -> None:
     assert distance_to_geometry_km(48.0, 9.0, geometry) is None
+
+
+def test_in_bounds() -> None:
+    bounds = (47.5, 7.5, 49.8, 10.5)  # south, west, north, east
+    assert in_bounds(*STUTTGART_HBF, bounds)
+    assert not in_bounds(53.55, 10.0, bounds)

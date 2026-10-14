@@ -11,6 +11,12 @@ EARTH_RADIUS_KM = 6371.0088
 _KM_PER_DEGREE = radians(1) * EARTH_RADIUS_KM
 
 
+def in_bounds(lat: float, lon: float, bounds: tuple[float, ...]) -> bool:
+    """True if the point lies within (south, west, north, east)."""
+    south, west, north, east = bounds
+    return south <= lat <= north and west <= lon <= east
+
+
 def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     """Return the great-circle distance between two WGS84 points in km."""
     dlat = radians(lat2 - lat1)

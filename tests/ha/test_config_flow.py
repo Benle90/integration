@@ -106,6 +106,18 @@ async def test_user_flow_outside_bw_preselects_autobahn(hass: HomeAssistant) -> 
     assert next(k for k in schema if k == CONF_SOURCES).default() == ["autobahn"]
 
 
+async def test_user_flow_in_the_north_preselects_its_source(
+    hass: HomeAssistant,
+) -> None:
+    hass.config.latitude, hass.config.longitude = 53.55, 10.0  # Hamburg
+    result = await hass.config_entries.flow.async_init(
+        DOMAIN, context={"source": SOURCE_USER}
+    )
+    schema = result["data_schema"].schema
+    default = next(k for k in schema if k == CONF_SOURCES).default()
+    assert default == ["autobahn", "norddeutschland"]
+
+
 async def test_user_flow_requires_a_source(hass: HomeAssistant) -> None:
     result = await hass.config_entries.flow.async_init(
         DOMAIN, context={"source": SOURCE_USER}

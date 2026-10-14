@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lädt echte Beispielantworten der drei Streckenwacht-Datenquellen als Test-Fixtures.
+"""Lädt echte Beispielantworten der Streckenwacht-Datenquellen als Test-Fixtures.
 
 Aufruf (aus dem Repo-Root):
     uv run --python 3.13 --no-project tools/fetch_fixtures.py
@@ -40,6 +40,17 @@ STUTTGART_WFS = "https://geoserver.stuttgart.de/geoserver/wfs"
 STUTTGART_LAYERS = {
     "geplant": "GEOLINE_FLEX:A66_BAUM_BAUSTELLEN_DATE_geplant_EPSG25832",
     "im_bau": "GEOLINE_FLEX:A66_BAUM_BAUSTELLEN_DATE_im_Bau_EPSG25832",
+}
+
+# Norddeutscher WFS (LBV.SH, CC BY 4.0): je Layer ein kleiner Ausschnitt per BBOX
+# (Süd, West, Nord, Ost), damit die Fixtures klein bleiben.
+NORD_WFS = "https://dienste.gdi-sh.de/WFS_SH_Baustelleninformationen"
+NORD_LAYERS = {
+    "Baustellen_SH": (54.25, 9.95, 54.45, 10.30),  # Kiel
+    "Verkehrsstoerungen": (53.35, 7.8, 55.1, 11.4),  # ganz SH
+    "Baustellen_FHH": (53.53, 9.95, 53.58, 10.05),  # Hamburg-Mitte
+    "Baustellen_MV": (53.45, 11.20, 53.80, 11.60),  # Schwerin
+    "Baustellen_Niedersachsen": (52.0, 9.0, 53.0, 10.5),  # Raum Hannover
 }
 
 index: list[dict] = []
@@ -110,11 +121,29 @@ def stuttgart() -> None:
         save(f"stuttgart_{key}.geojson.json", url, s, b, c)
 
 
+def norddeutschland() -> None:
+    print("Norddeutscher WFS")
+    for layer, (south, west, north, east) in NORD_LAYERS.items():
+        params = {
+            "SERVICE": "WFS",
+            "VERSION": "2.0.0",
+            "REQUEST": "GetFeature",
+            "TYPENAMES": f"Baustelleninformationen:{layer}",
+            "OUTPUTFORMAT": "GEOJSON",
+            "SRSNAME": "EPSG:4326",
+            "BBOX": f"{south},{west},{north},{east},urn:ogc:def:crs:EPSG::4326",
+        }
+        url = NORD_WFS + "?" + urllib.parse.urlencode(params)
+        s, b, c = get(url)
+        save(f"norddeutschland_{layer}.geojson.json", url, s, b, c)
+
+
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     autobahn()
     mobidata()
     stuttgart()
+    norddeutschland()
     (OUT / "_index.json").write_text(
         json.dumps(
             {

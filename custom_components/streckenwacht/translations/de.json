@@ -10,7 +10,7 @@
           "include_inrix": "Staumeldungen einbeziehen (INRIX)"
         },
         "data_description": {
-          "sources": "MobiData BW und Stuttgart decken nur Baden-Württemberg bzw. Stuttgart ab.",
+          "sources": "Bis auf die Autobahn GmbH decken die Quellen nur ihre Region ab (Baden-Württemberg, Stuttgart, Norddeutschland).",
           "scan_interval": "Wie oft die Quellen abgefragt werden. Sie ändern sich nicht im Minutentakt.",
           "include_inrix": "Staudaten der Autobahn-API stammen vom kommerziellen Anbieter INRIX."
         }
@@ -33,7 +33,7 @@
           "include_inrix": "Staumeldungen einbeziehen (INRIX)"
         },
         "data_description": {
-          "sources": "MobiData BW und Stuttgart decken nur Baden-Württemberg bzw. Stuttgart ab.",
+          "sources": "Bis auf die Autobahn GmbH decken die Quellen nur ihre Region ab (Baden-Württemberg, Stuttgart, Norddeutschland).",
           "scan_interval": "Wie oft die Quellen abgefragt werden. Sie ändern sich nicht im Minutentakt.",
           "include_inrix": "Staudaten der Autobahn-API stammen vom kommerziellen Anbieter INRIX."
         }
@@ -116,7 +116,8 @@
       "options": {
         "autobahn": "Autobahn GmbH (Autobahnen, bundesweit)",
         "mobidata_bw": "MobiData BW (Bundes-, Landes-, Kreisstraßen in BW)",
-        "stuttgart": "Stadt Stuttgart (Hauptstraßennetz)"
+        "stuttgart": "Stadt Stuttgart (Hauptstraßennetz)",
+        "norddeutschland": "Norddeutschland (SH, HH, MV, NI; LBV.SH)"
       }
     }
   },

@@ -34,6 +34,7 @@ Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein
 | ↳ Staumeldungen darin | Verkehrslage aus Fahrzeugdaten | Verkehrslage: INRIX (abschaltbar, siehe [Optionen](#optionen)) |
 | [MobiData BW](https://mobidata-bw.de/dataset/baustelleninformationen-baden-wurttemberg) | Bundes-, Landes- und Kreisstraßen in Baden-Württemberg, vereinzelt Gemeindestraßen | Datenlizenz Deutschland – Namensnennung 2.0 |
 | [Stadt Stuttgart – Baustellenkalender](https://www.stuttgart.de/baustellenkalender) | Hauptverkehrsstraßen (Vorbehaltsstraßennetz) in Stuttgart | CC BY 4.0, © Landeshauptstadt Stuttgart |
+| [Baustelleninformationen Norddeutschland (LBV.SH)](https://dienste.gdi-sh.de/WFS_SH_Baustelleninformationen?SERVICE=WFS&REQUEST=GetCapabilities) | Schleswig-Holstein (alle Straßenklassen, dazu aktuelle Verkehrsstörungen und Unfälle), Hamburg, Mecklenburg-Vorpommern, Bundesstraßen in Niedersachsen | CC BY 4.0, © Geokompetenz/LVermGeo SH |
 
 Alle Entitäten tragen die jeweilige Namensnennung im Attribut `attribution`.
 
@@ -44,15 +45,20 @@ Die Quellen sind nicht vollständig:
 - Die Autobahn-API deckt nur Bundesautobahnen ab, nicht Landes-, Kreis- oder Kommunalstraßen.
 - MobiData BW deckt Bundes-, Landes- und Kreisstraßen in Baden-Württemberg ab, kommunale Straßen nur vereinzelt.
 - Der Stuttgarter Baustellenkalender deckt nur das „Vorbehaltsstraßennetz“ ab – Wohnstraßen, Notreparaturen und nicht verkehrsrelevante Arbeiten von Versorgern fehlen bewusst.
-- Außerhalb von Baden-Württemberg stehen nur die Autobahnen zur Verfügung.
-- Unfälle haben in keiner Quelle eine eigene Kategorie; Streckenwacht erkennt sie am Wort „Unfall“ in Autobahn-Warnungen.
+- Die norddeutschen Daten sind je Land unterschiedlich ausführlich: In Niedersachsen sind es nur Bundesstraßen, in Mecklenburg-Vorpommern fehlen oft Straßennamen.
+- Außerhalb von Baden-Württemberg und Norddeutschland stehen nur die Autobahnen zur Verfügung.
+- Unfälle haben in keiner Quelle eine eigene Kategorie; Streckenwacht erkennt sie am Wort „Unfall“ in den Warnungen und Verkehrsstörungen.
 - Keine der Quellen garantiert Vollständigkeit oder eine feste Aktualisierungsfrequenz; alle Angaben stammen ungefiltert von den jeweiligen Behörden und Betreibern.
 
 Kurz: Streckenwacht eignet sich gut, um größere Störungen auf Hauptstrecken im Blick zu behalten – nicht, um jede kleine Baustelle in jeder Nebenstraße zu erfassen.
 
 ## Datenschutz
 
-Dein Standort verlässt Home Assistant nicht. Streckenwacht lädt die Meldungen ganzer Autobahnen bzw. die landesweite MobiData-Datei und die Stuttgarter Liste herunter und filtert erst lokal auf deine Bereiche. Die Abrufe enthalten keine Koordinaten und keine persönlichen Daten, nur eine Kennung der Integration (User-Agent). Unveränderte Daten werden dank ETag nicht erneut übertragen.
+Dein Standort verlässt Home Assistant nicht. Streckenwacht lädt die Meldungen ganzer Autobahnen bzw. die landesweite MobiData-Datei und die Stuttgarter Liste herunter und filtert erst lokal auf deine Bereiche. Unveränderte Daten werden dank ETag nicht erneut übertragen.
+
+Einzige Ausnahme ist die Quelle Norddeutschland: Sie ist zu groß, um bei jedem Abruf komplett geladen zu werden. Streckenwacht fragt dort deshalb einen groben Kartenausschnitt ab – auf ein Raster von etwa 55 × 35 km gerundet. Der Server erfährt so nur die ungefähre Region, nicht deinen Bereich.
+
+Die Abrufe enthalten keine persönlichen Daten, nur eine Kennung der Integration (User-Agent).
 
 ## Installation (HACS, benutzerdefiniertes Repository)
 
@@ -74,7 +80,7 @@ Hinweis: Im HACS-Dashboard fehlt das Icon derzeit ([HACS-Issue #5171](https://gi
 
 ### Datenquellen und Optionen
 
-Beim Hinzufügen wählst du die Datenquellen. Liegt dein Home-Assistant-Standort in Baden-Württemberg, sind alle drei vorausgewählt, sonst nur die Autobahn.
+Beim Hinzufügen wählst du die Datenquellen. Vorausgewählt sind die Autobahn und die regionalen Quellen für deinen Home-Assistant-Standort (Baden-Württemberg bzw. Norddeutschland).
 
 <a id="optionen"></a>Später änderbar über **Geräte & Dienste → Streckenwacht → Konfigurieren**:
 

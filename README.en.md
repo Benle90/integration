@@ -36,6 +36,7 @@ The integration's UI is available in German and English and follows your Home As
 | ↳ traffic jams within it | Traffic situation from vehicle data | Verkehrslage: INRIX (can be switched off, see [Options](#options)) |
 | [MobiData BW](https://mobidata-bw.de/dataset/baustelleninformationen-baden-wurttemberg) | Federal, state and district roads in Baden-Württemberg, some municipal roads | Datenlizenz Deutschland – Namensnennung 2.0 |
 | [City of Stuttgart – roadworks calendar](https://www.stuttgart.de/baustellenkalender) | Main roads (Vorbehaltsstraßennetz) in Stuttgart | CC BY 4.0, © Landeshauptstadt Stuttgart |
+| [Roadworks information northern Germany (LBV.SH)](https://dienste.gdi-sh.de/WFS_SH_Baustelleninformationen?SERVICE=WFS&REQUEST=GetCapabilities) | Schleswig-Holstein (all road classes, plus current traffic disruptions and accidents), Hamburg, Mecklenburg-Vorpommern, federal roads in Lower Saxony | CC BY 4.0, © Geokompetenz/LVermGeo SH |
 
 Every entity carries the required attribution in its `attribution` attribute.
 
@@ -46,15 +47,20 @@ The sources are not complete:
 - The Autobahn API only covers federal motorways, not state, district or municipal roads.
 - MobiData BW covers federal, state and district roads in Baden-Württemberg, municipal roads only occasionally.
 - The Stuttgart roadworks calendar only covers the main road network – residential streets, emergency repairs and utility works without traffic impact are deliberately missing.
-- Outside Baden-Württemberg only motorways are available.
-- No source has a dedicated accident category; Streckenwacht recognizes accidents by the word "Unfall" in motorway warnings.
+- The northern German data differs per state: Lower Saxony only has federal roads, Mecklenburg-Vorpommern often lacks road names.
+- Outside Baden-Württemberg and northern Germany only motorways are available.
+- No source has a dedicated accident category; Streckenwacht recognizes accidents by the word "Unfall" in warnings and traffic disruptions.
 - None of the sources guarantees completeness or a fixed update frequency; all information comes unfiltered from the respective authorities and operators.
 
 In short: Streckenwacht is well suited to keep an eye on major disruptions on main routes – not to catch every small construction site in every side street.
 
 ## Privacy
 
-Your location never leaves Home Assistant. Streckenwacht downloads the reports of whole motorways, the statewide MobiData file and the Stuttgart list, and filters them locally to your areas. The requests contain no coordinates and no personal data, only an identifier of the integration (user agent). Unchanged data is not transferred again thanks to ETags.
+Your location never leaves Home Assistant. Streckenwacht downloads the reports of whole motorways, the statewide MobiData file and the Stuttgart list, and filters them locally to your areas. Unchanged data is not transferred again thanks to ETags.
+
+The only exception is the northern Germany source: it is too large to download completely on every poll. Streckenwacht therefore requests a coarse map section there, rounded to a grid of about 55 × 35 km. The server only learns the rough region, not your area.
+
+The requests contain no personal data, only an identifier of the integration (user agent).
 
 ## Installation (HACS, custom repository)
 
@@ -76,7 +82,7 @@ Note: the icon is currently missing in the HACS dashboard ([HACS issue #5171](ht
 
 ### Data sources and options
 
-When adding the integration you choose the data sources. If your Home Assistant location is in Baden-Württemberg, all three are preselected, otherwise only the motorways.
+When adding the integration you choose the data sources. Preselected are the motorways and the regional sources for your Home Assistant location (Baden-Württemberg or northern Germany).
 
 <a id="options"></a>Change them later via **Devices & services → Streckenwacht → Configure**:
 

@@ -29,6 +29,9 @@ from custom_components.streckenwacht.providers.autobahn import (
     AutobahnProvider,
 )
 from custom_components.streckenwacht.providers.mobidata_bw import MobiDataBWProvider
+from custom_components.streckenwacht.providers.norddeutschland import (
+    NorddeutschlandProvider,
+)
 from custom_components.streckenwacht.providers.stuttgart import StuttgartProvider
 
 
@@ -64,6 +67,7 @@ async def main(args: argparse.Namespace) -> int:
             AutobahnProvider(session),
             MobiDataBWProvider(session),
             StuttgartProvider(session),
+            NorddeutschlandProvider(session),
         )
         for provider in providers:
             print(f"{provider.source}:")

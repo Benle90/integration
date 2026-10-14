@@ -56,6 +56,7 @@ class Source(StrEnum):
     AUTOBAHN = "autobahn"
     MOBIDATA_BW = "mobidata_bw"
     STUTTGART = "stuttgart"
+    NORDDEUTSCHLAND = "norddeutschland"
 
 
 # Proper names, used as translation placeholders (not translatable).
@@ -63,6 +64,7 @@ SOURCE_NAMES: Final[dict[Source, str]] = {
     Source.AUTOBAHN: "Autobahn GmbH",
     Source.MOBIDATA_BW: "MobiData BW",
     Source.STUTTGART: "Stadt Stuttgart",
+    Source.NORDDEUTSCHLAND: "Baustelleninformationen Norddeutschland",
 }
 
 # Attribution required by the data licenses (see docs/ENTWICKLUNG.md, section 4).
@@ -70,6 +72,7 @@ ATTRIBUTION: Final[dict[Source, str]] = {
     Source.AUTOBAHN: "Die Autobahn GmbH des Bundes",
     Source.MOBIDATA_BW: "MobiData BW, Datenlizenz Deutschland – Namensnennung 2.0",
     Source.STUTTGART: "© Landeshauptstadt Stuttgart, CC BY 4.0",
+    Source.NORDDEUTSCHLAND: "LBV.SH Baustelleninformationen, © Geokompetenz/LVermGeo SH/CC BY 4.0",
 }
 
 # Additional attribution for data the source got from a third party.
@@ -78,5 +81,22 @@ UPSTREAM_ATTRIBUTION: Final[dict[str, str]] = {
     UPSTREAM_INRIX: "Verkehrslage: INRIX",
 }
 
-# Rough bounding box of Baden-Württemberg, to preselect the BW sources.
-BW_BOUNDS: Final = {"lat": (47.5, 49.8), "lon": (7.5, 10.5)}
+# Bounding box as (south, west, north, east) in degrees.
+type Bounds = tuple[float, float, float, float]
+
+BADEN_WUERTTEMBERG: Final[Bounds] = (47.5, 7.5, 49.8, 10.5)
+SCHLESWIG_HOLSTEIN_HAMBURG: Final[Bounds] = (53.35, 7.8, 55.1, 11.4)
+MECKLENBURG_VORPOMMERN: Final[Bounds] = (53.1, 10.5, 54.7, 14.5)
+NIEDERSACHSEN: Final[Bounds] = (51.29, 6.6, 53.9, 11.6)
+
+# Rough regions of the regional sources, to preselect them by the home location.
+# Sources without a region (the Autobahn) cover all of Germany.
+SOURCE_REGIONS: Final[dict[Source, tuple[Bounds, ...]]] = {
+    Source.MOBIDATA_BW: (BADEN_WUERTTEMBERG,),
+    Source.STUTTGART: (BADEN_WUERTTEMBERG,),
+    Source.NORDDEUTSCHLAND: (
+        SCHLESWIG_HOLSTEIN_HAMBURG,
+        MECKLENBURG_VORPOMMERN,
+        NIEDERSACHSEN,
+    ),
+}

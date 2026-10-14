@@ -20,7 +20,6 @@ from homeassistant.helpers import selector
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 
 from .const import (
-    BW_BOUNDS,
     CONF_AREA_SOURCES,
     CONF_DIRECTIONS,
     CONF_INCLUDE_INRIX,
@@ -38,9 +37,11 @@ from .const import (
     MAX_RADIUS,
     MAX_SCAN_INTERVAL,
     MIN_SCAN_INTERVAL,
+    SOURCE_REGIONS,
     SUBENTRY_AREA,
     Source,
 )
+from .geo import in_bounds
 from .model import ObservationArea, is_route_direction
 from .providers import ProviderError
 from .providers.autobahn import AutobahnProvider
@@ -117,13 +118,14 @@ class StreckenwachtConfigFlow(ConfigFlow, domain=DOMAIN):
         )
 
     def _default_sources(self) -> list[str]:
-        """All sources if home is in Baden-Württemberg, else only the Autobahn."""
+        """The Autobahn plus the regional sources covering the home location."""
         lat, lon = self.hass.config.latitude, self.hass.config.longitude
-        in_bw = (
-            BW_BOUNDS["lat"][0] <= lat <= BW_BOUNDS["lat"][1]
-            and BW_BOUNDS["lon"][0] <= lon <= BW_BOUNDS["lon"][1]
-        )
-        return [s.value for s in Source] if in_bw else [Source.AUTOBAHN.value]
+        return [
+            source.value
+            for source in Source
+            if source not in SOURCE_REGIONS
+            or any(in_bounds(lat, lon, b) for b in SOURCE_REGIONS[source])
+        ]
 
     @staticmethod
     @callback

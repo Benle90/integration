@@ -16,8 +16,8 @@ Wie Streckenwacht gebaut ist, was man über die Datenquellen wissen muss und war
 
 ### Datenfluss
 
-- **Ein `DataUpdateCoordinator` pro Quelle** (`coordinator.py`), `always_update=False`. Er lädt einmal pro Abruf alles, was alle Bereiche zusammen brauchen (Autobahn: Vereinigungsmenge der gewählten Autobahnen; MobiData: eine landesweite Datei; Stuttgart: zwei Layer). Jeder Bereich filtert lokal über `ObservationArea.contains()`; Abstand zu Linien wird zum Segment gemessen, nicht nur zu den Stützpunkten.
-- **Provider** (`providers/`) sind reines Python ohne HA-Importe, bekommen nur eine `aiohttp`-Session und werfen bei jedem Fehler `ProviderError`. Bedingte Abrufe per ETag (`If-None-Match`/304) stecken in der Basisklasse.
+- **Ein `DataUpdateCoordinator` pro Quelle** (`coordinator.py`), `always_update=False`. Er lädt einmal pro Abruf alles, was alle Bereiche zusammen brauchen (Autobahn: Vereinigungsmenge der gewählten Autobahnen; MobiData: eine landesweite Datei; Stuttgart: zwei Layer; Norddeutschland: nur die Layer, deren Region einen Bereich berührt, per `BBOX` auf einen Ausschnitt begrenzt). Jeder Bereich filtert lokal über `ObservationArea.contains()`; Abstand zu Linien wird zum Segment gemessen, nicht nur zu den Stützpunkten.
+- **Provider** (`providers/`) sind reines Python ohne HA-Importe, bekommen nur eine `aiohttp`-Session und werfen bei jedem Fehler `ProviderError`. Bedingte Abrufe per ETag (`If-None-Match`/304) stecken in der Basisklasse. WFS-Quellen ohne ETag erben von `providers/wfs.py`: Abruf je Layer mit Ausschnitt, auf ein 0,5°-Raster gerundet (etwa 55 × 35 km), damit der Server nur die grobe Region erfährt – Entscheidung des Projektinhabers 2026-10-14 statt genauem Ausschnitt (weniger Daten, aber Bereich erkennbar) oder ganzen Layern (bis 100 MB/Tag).
 - **Fehler** betreffen nie andere Quellen. Nach 3 Fehlschlägen in Folge entsteht ein Hinweis unter *Reparaturen*, beim nächsten Erfolg verschwindet er. Entities behalten die letzten Daten und nennen ausgefallene Quellen im Attribut `unavailable_sources`.
 - Alle Requests mit User-Agent `Streckenwacht/<version> (+https://github.com/streckenwacht/integration)`.
 
@@ -31,6 +31,7 @@ Wie Streckenwacht gebaut ist, was man über die Datenquellen wissen muss und war
 | `changes.py` | „neu/beendet“-Erkennung inkl. Stau-Glättung (Abschnitt 2, Autobahn) |
 | `known_events.py` | Speichert pro Bereich die bekannten Meldungen (`streckenwacht.<entry_id>.known_events`), damit Neustarts nichts erneut melden |
 | `providers/*.py` | Abruf und Umwandlung je Quelle |
+| `providers/wfs.py` | Basis für WFS-Quellen: Ausschnitt je Layer, inhaltsbasierte Kennungen, Helfer für verklebte Texte, Sperr-Erkennung und deutsche Datumsangaben |
 | `diagnostics.py` | Diagnose-Download; Koordinaten der Bereiche geschwärzt (landet in öffentlichen Issues) |
 
 `model.py`, `geo.py`, `summary.py`, `changes.py` und die Provider importieren nichts aus HA und werden lokal getestet.
@@ -77,6 +78,20 @@ Die Fixtures in `tests/fixtures/` (`tools/fetch_fixtures.py`) sind die Wahrheit 
 - `ANFANG`/`ENDE` sind Freitext: meist `dd.mm.yyyy`, daneben „Ende Dez. 2026“, „Mitte Okt. 2026“ (Anfang = 1., Mitte = 15., Ende = Monatsletzter). Bei Fehlschlag bleibt die Meldung erhalten. `BEGINN_UHRZEIT`/`ENDE_UHRZEIT` ergänzen Start bzw. Ende zu einem durchgehenden Zeitraum; `ZEITL_REGELUNG: werktags` wird nicht in Einzeltage zerlegt, sondern in der Beschreibung genannt. „Vollsperrung“ in der Auswirkung → `closure`.
 - Qualität: am schwächsten (nur Hauptachsen, bekannte Koordinationsprobleme mit Versorgern).
 
+### Norddeutschland (WFS `https://dienste.gdi-sh.de/WFS_SH_Baustelleninformationen`)
+
+Betrieben vom LBV.SH, Lizenz laut GDI-DE-Metadatenkatalog CC BY 4.0 („© Geokompetenz/LVermGeo SH/CC BY 4.0“; der Dienst selbst nennt keine). `OUTPUTFORMAT=GEOJSON`, `SRSNAME=EPSG:4326`; `BBOX` mit `urn:ogc:def:crs:EPSG::4326` erwartet Breite zuerst. Kein ETag, keine Kompression. Geprüft am 2026-10-14.
+
+- **Keine stabilen Kennungen:** `OBJECTID` läuft je Layer 1…n. Kennung daher aus dem Inhalt (Position, Beginn, Maßnahme, …); exakte Dubletten fallen weg, gleiche Schlüssel werden nummeriert (`parse_layer`). Verlängert die Quelle eine Baustelle, bleibt die Kennung meist erhalten (Ende nicht im Schlüssel).
+- **Texte ohne Trennzeichen:** Felder sind teils direkt aneinandergehängt („Knooper Weg**zwischen**“, „herstellen**S**perrung“, „Niemannstraße**gesperrt**“) → `unglue()`.
+- **Zeitzonen je Layer verschieden:** SH = Ortszeit minus 1 h ohne Sommerzeit (Mitternacht steht ganzjährig als „23:00“ des Vortags), Hamburg = UTC, MV/NI/Störungen = Ortszeit.
+- `Baustellen_SH` (Linien, alle Straßenklassen, `Straßenname` „G“ = Gemeindestraße): „Vollsperrung“ → `closure`; Halteverbote und Geh-/Radweg-/Parkplatzsperrungen werden ausgelassen. Titel aus Straße, Ort (Anfang der Hinweise) und Maßnahme.
+- `Baustellen_FHH` (Hamburg, Punkte): Kopf „Baustelle“/„Sperrung“ plus Freitext; `closure` bei „Sperrung“ oder wenn die Fahrbahn „gesperrt“ ist (nicht nur ein Fahrstreifen, `closes_road()`). Viele Dauer-Sperrungen.
+- `Baustellen_MV` (Punkte): kein Straßenfeld, nur `Von`/`Nach`; rund die Hälfte der Einträge doppelt; Datumsangaben ohne Uhrzeit enden am Ende des Tages. „Vollsperrung für Lkw“ ist keine Sperrung.
+- `Baustellen_Niedersachsen` (Linien): nur Bundesstraßen, kein Ortsname. „Sperrung“ = Richtungsfahrbahn gesperrt → `closure`.
+- `Verkehrsstoerungen` (SH, live): Unfälle („Unfall“ im Ereignis), Sperrungen, Warnungen; `Dauer` als Freitext („am 18.10.2026 von ca. 07:00 Uhr bis ca. 18:00 Uhr“), sonst Beginn = `Datenerzeugungszeit`.
+- **Ausgelassen:** Autobahn-Layer (deckt die Autobahn-API ab), Punkt-Zwillinge der Linien-Layer, `Baustellenpunkte_Norderstedt` (nicht gepflegt, alles 2023–2025 beendet), Umleitungen, Verkehrslage.
+
 ## 3. Entscheidungen
 
 - **Eine Integration mit Providern** statt mehrerer: gemeinsame Entities pro Bereich, ein Config-Flow, ein HACS-Eintrag.
@@ -89,7 +104,7 @@ Die Fixtures in `tests/fixtures/` (`tools/fetch_fixtures.py`) sind die Wahrheit 
 
 ## 4. Risiken, Lizenzen, Recht (keine Rechtsberatung)
 
-- **Namensnennung** je Quelle in `const.ATTRIBUTION` und im Attribut `attribution`: Stuttgart CC BY 4.0, MobiData BW DL-DE-BY-2.0, Autobahn GmbH (keine erklärte Lizenz, Nennung als gute Praxis), zusätzlich „Verkehrslage: INRIX“.
+- **Namensnennung** je Quelle in `const.ATTRIBUTION` und im Attribut `attribution`: Stuttgart CC BY 4.0, MobiData BW DL-DE-BY-2.0, Norddeutschland CC BY 4.0, Autobahn GmbH (keine erklärte Lizenz, Nennung als gute Praxis), zusätzlich „Verkehrslage: INRIX“.
 - **INRIX** (entschieden 2026-10-02): keine erklärten Nutzungsbedingungen; die Daten werden offen und auch kommerziell genutzt. Streckenwacht verbreitet nichts weiter – jede Instanz ruft den öffentlichen Endpunkt selbst ab; Risiko gering. Vorsorge: `upstream="inrix"` und die abschaltbare Option. **Warnungs-Fixtures (echte INRIX-Daten) nur lokal, nie committen** (`.gitignore`; aus der Historie entfernt); Tests nutzen ein eingebettetes Beispiel.
 - **Zurückgestellt** (Entscheidung des Projektinhabers): Impressumsfrage und Anfrage bei der Autobahn GmbH zu INRIX – erst beim öffentlichen Bewerben wieder aufgreifen. Bis dahin keine Spenden-Links oder Werbung.
 - **API-Stabilität:** keine Quelle ist versioniert oder hat ein SLA, Rate Limits sind unbekannt → defensiv parsen, konservativ pollen, ETag nutzen.
@@ -104,7 +119,8 @@ Die Fixtures in `tests/fixtures/` (`tools/fetch_fixtures.py`) sind die Wahrheit 
 
 ## 6. Backlog
 
-- **Weitere Datenquellen:** Planung und geprüfte Endpunkte in [`DATENQUELLEN.md`](DATENQUELLEN.md). Empfehlung: generischer WFS/GeoJSON-Provider, beginnend mit dem norddeutschen WFS (SH, MV, NI, HH).
+- **Weitere Datenquellen:** Planung und geprüfte Endpunkte in [`DATENQUELLEN.md`](DATENQUELLEN.md). Der norddeutsche WFS ist umgesetzt; weitere WFS-Quellen (Rheinland-Pfalz, Brandenburg, Sachsen-Anhalt, Städte) können auf `providers/wfs.py` aufbauen.
+- **„Störung aktiv“ und Dauer-Sperrungen:** In Städten gibt es viele monatelange Sperrungen (10 km um Hamburg-Mitte: 134 aktive, 83 davon seit über 30 Tagen; Stuttgart: 29/22). Der Sensor ist dort praktisch immer an. Idee: Sperrungen nur zählen, wenn sie kürzer als z. B. 30 Tage laufen oder neu sind.
 - **Kartenansicht:** eigene Lovelace-Karte mit der ohnehin vorhandenen Geometrie.
 - **Strecke statt Kreis:** Korridor entlang einer Route (aus dem Beta-Test).
 - **Autobahn-Abschnitte** („A81 zwischen AS X und AS Y“): Abschnittsnamen sind Freitext – zugunsten der Fahrtrichtungen zurückgestellt.
