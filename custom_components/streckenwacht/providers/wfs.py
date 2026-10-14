@@ -112,6 +112,44 @@ class WfsProvider(Provider):
         return parse_layer(self.source, layer, features)
 
 
+class GeoJsonProvider(Provider):
+    """A city source: one or more fixed GeoJSON URLs, small enough to fetch whole.
+
+    Fetched only if an area showing this source touches the region; ETags are
+    used where the server sends them.
+    """
+
+    urls: ClassVar[tuple[str, ...]]
+    params: ClassVar[dict[str, str]] = {}
+    region: ClassVar[Bounds]
+    layer: ClassVar[Layer]
+
+    def __init__(
+        self, session: aiohttp.ClientSession, urls: tuple[str, ...] | None = None
+    ) -> None:
+        super().__init__(session)
+        self._urls = urls or self.urls
+
+    async def async_fetch(
+        self, areas: Sequence[ObservationArea]
+    ) -> list[StreckenwachtEvent]:
+        """Fetch every URL if an area in the region shows this source."""
+        if layer_bbox(self.region, [a for a in areas if a.uses(self.source)]) is None:
+            return []
+        results = await asyncio.gather(
+            *(self._get_json(url, params=self.params or None) for url in self._urls)
+        )
+        features: list[Any] = []
+        for data in results:
+            items = data.get("features") if isinstance(data, dict) else None
+            if not isinstance(items, list):
+                raise ProviderError(f"Unexpected GeoJSON from {self.source}")
+            features.extend(items)
+        if self.layer.prepare:
+            features = self.layer.prepare(features)
+        return parse_layer(self.source, self.layer, features)
+
+
 def parse_layer(
     source: str, layer: Layer, features: Iterable[Any]
 ) -> list[StreckenwachtEvent]:

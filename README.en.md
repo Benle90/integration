@@ -47,6 +47,9 @@ The integration's UI is available in German and English and follows your Home As
 | [City of Cologne – traffic calendar](https://www.stadt-koeln.de/leben-in-koeln/verkehr/verkehrskalender/) | Traffic-relevant roadworks, closures and events on Cologne's main roads | Stadt Köln, dl-de/zero-2-0 |
 | [City of Frankfurt am Main](https://geowebdienste.frankfurt.de/Baustellen?SERVICE=WFS&REQUEST=GetCapabilities) | Roadworks and traffic messages in Frankfurt | Stadt Frankfurt am Main; published openly, no license declared |
 | [City of Dortmund](https://open-data.dortmund.de/explore/dataset/fb66-baustellen-tagesaktuell/) | Roadworks in Dortmund (current and planned) | Stadt Dortmund, dl-de/zero-2-0 |
+| [City of Aachen](https://bsis.aachen.de) | Roadworks in Aachen (without footpath- and parking-only restrictions) | Stadt Aachen, dl-de/by-2-0 |
+| [City of Duisburg](https://opendata-duisburg.de/dataset/baustellen-duisburg) | Current roadworks in Duisburg | Stadt Duisburg, CC BY 3.0 DE |
+| [City of Münster](https://opendata.stadt-muenster.de/dataset/baustellen) | Major roadworks in Münster | Stadt Münster, dl-de/by-2-0 |
 
 Every entity carries the required attribution in its `attribution` attribute.
 
@@ -58,7 +61,7 @@ The sources are not complete:
 - MobiData BW covers federal, state and district roads in Baden-Württemberg, municipal roads only occasionally.
 - The Stuttgart roadworks calendar only covers the main road network – residential streets, emergency repairs and utility works without traffic impact are deliberately missing.
 - The northern German data differs per state: Lower Saxony only has federal roads, Mecklenburg-Vorpommern often lacks road names.
-- In Bavaria, Hesse and North Rhine-Westphalia there are only single cities so far (Munich, Frankfurt, Cologne, Dortmund); in Thuringia, Bremen and Saarland only motorways.
+- In Bavaria, Hesse and North Rhine-Westphalia there are only single cities so far (Munich, Frankfurt, Cologne, Dortmund, Aachen, Duisburg, Münster); in Thuringia, Bremen and Saarland only motorways.
 - No source has a dedicated accident category; Streckenwacht recognizes accidents by the word "Unfall" in warnings and traffic disruptions.
 - None of the sources guarantees completeness or a fixed update frequency; all information comes unfiltered from the respective authorities and operators.
 

@@ -39,6 +39,7 @@ from .providers.koeln import KoelnProvider
 from .providers.mobidata_bw import MobiDataBWProvider
 from .providers.muenchen import MuenchenProvider
 from .providers.norddeutschland import NorddeutschlandProvider
+from .providers.nrw import AachenProvider, DuisburgProvider, MuensterProvider
 from .providers.rheinland_pfalz import RheinlandPfalzProvider
 from .providers.sachsen import SachsenProvider
 from .providers.sachsen_anhalt import SachsenAnhaltProvider
@@ -66,6 +67,9 @@ PROVIDERS: dict[Source, type[Provider]] = {
     Source.KOELN: KoelnProvider,
     Source.FRANKFURT: FrankfurtProvider,
     Source.DORTMUND: DortmundProvider,
+    Source.AACHEN: AachenProvider,
+    Source.DUISBURG: DuisburgProvider,
+    Source.MUENSTER: MuensterProvider,
 }
 
 

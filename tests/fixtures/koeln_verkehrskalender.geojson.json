@@ -3300,6 +3300,27 @@
     },
     {
       "type": "Feature",
+      "id": 427299,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.960025036423013,
+          50.97653061540964
+        ]
+      },
+      "properties": {
+        "objectid": 427299,
+        "name": "Niehler Straße (Niehl)",
+        "datum_von": 1787011200000,
+        "datum_bis": 1792710000000,
+        "link": "/leben-in-koeln/verkehr/verkehrskalender/stoerungen/20468/index.html",
+        "typ": 3,
+        "anzeige": 1,
+        "beschreibung": "Die Niehler Straße ist im Kreuzungsbereich Niehler Kirchweg eingeengt."
+      }
+    },
+    {
+      "type": "Feature",
       "id": 424893,
       "geometry": {
         "type": "Point",
@@ -3548,6 +3569,27 @@
         "typ": 3,
         "anzeige": 1,
         "beschreibung": "Die Riehler Straße ist im gesamten Kreuzungsbereich zur Weißenburgstraße/Wörthstraße abschnittsweise eingeengt."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 425297,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.960510263562812,
+          50.936953974236616
+        ]
+      },
+      "properties": {
+        "objectid": 425297,
+        "name": "Karnevalseröffnung – Altstadt",
+        "datum_von": 1794358800000,
+        "datum_bis": 1794441600000,
+        "link": "/leben-in-koeln/verkehr/verkehrskalender/stoerungen/10899/index.html",
+        "typ": 13,
+        "anzeige": 1,
+        "beschreibung": "Wegen der Karnevalseröffnung am 11. November ist im Innenstadtbereich mit einem hohen Andrang an Zuschauenden sowie mit Straßensperrungen rund um den Heumarkt zu rechnen."
       }
     },
     {

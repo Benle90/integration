@@ -66,6 +66,9 @@ class Source(StrEnum):
     KOELN = "koeln"
     FRANKFURT = "frankfurt"
     DORTMUND = "dortmund"
+    AACHEN = "aachen"
+    DUISBURG = "duisburg"
+    MUENSTER = "muenster"
 
 
 # Proper names, used as translation placeholders (not translatable).
@@ -83,6 +86,9 @@ SOURCE_NAMES: Final[dict[Source, str]] = {
     Source.KOELN: "Stadt Köln",
     Source.FRANKFURT: "Stadt Frankfurt am Main",
     Source.DORTMUND: "Stadt Dortmund",
+    Source.AACHEN: "Stadt Aachen",
+    Source.DUISBURG: "Stadt Duisburg",
+    Source.MUENSTER: "Stadt Münster",
 }
 
 # Attribution required by the data licenses (see docs/ENTWICKLUNG.md, section 4).
@@ -109,6 +115,9 @@ ATTRIBUTION: Final[dict[Source, str]] = {
     # The WFS states no license (GeoServer default "AccessConstraints: YES").
     Source.FRANKFURT: "Stadt Frankfurt am Main (geowebdienste.frankfurt.de)",
     Source.DORTMUND: "Stadt Dortmund, dl-de/zero-2-0",
+    Source.AACHEN: "Stadt Aachen, dl-de/by-2-0",
+    Source.DUISBURG: "Stadt Duisburg, CC BY 3.0 DE",
+    Source.MUENSTER: "Stadt Münster, dl-de/by-2-0",
 }
 
 # Additional attribution for data the source got from a third party.
@@ -156,6 +165,9 @@ MUENCHEN: Final[Bounds] = (48.06, 11.36, 48.25, 11.72)
 KOELN: Final[Bounds] = (50.83, 6.77, 51.09, 7.17)
 FRANKFURT: Final[Bounds] = (50.01, 8.47, 50.23, 8.80)
 DORTMUND: Final[Bounds] = (51.41, 7.30, 51.60, 7.64)
+AACHEN: Final[Bounds] = (50.68, 5.97, 50.86, 6.22)
+DUISBURG: Final[Bounds] = (51.33, 6.62, 51.56, 6.83)
+MUENSTER: Final[Bounds] = (51.84, 7.47, 52.06, 7.78)
 
 # Rough regions of the regional sources: an area is offered the sources whose
 # region its circle touches. Sources without a region (the Autobahn) cover all
@@ -177,4 +189,7 @@ SOURCE_REGIONS: Final[dict[Source, tuple[Bounds, ...]]] = {
     Source.KOELN: (KOELN,),
     Source.FRANKFURT: (FRANKFURT,),
     Source.DORTMUND: (DORTMUND,),
+    Source.AACHEN: (AACHEN,),
+    Source.DUISBURG: (DUISBURG,),
+    Source.MUENSTER: (MUENSTER,),
 }

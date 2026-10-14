@@ -3,7 +3,7 @@
   "features": [
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30e0",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d55",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -49,7 +49,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30d3",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d64",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -119,7 +119,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30d2",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d65",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -441,7 +441,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30cc",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d6b",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -511,7 +511,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30cb",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d6c",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -577,7 +577,53 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30ca",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d6d",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                8.66500051,
+                50.10760449
+              ],
+              [
+                8.66494017,
+                50.10767177
+              ],
+              [
+                8.6648979,
+                50.10765366
+              ],
+              [
+                8.66495905,
+                50.10759538
+              ],
+              [
+                8.66500051,
+                50.10760449
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "startevent": "2026-10-18T22:00:00Z",
+        "endevent": "2026-10-27T22:59:59Z",
+        "name": "Am Hauptbahnhof 10",
+        "textshort": "",
+        "textlong": "Bahnhofsviertel, Am Hauptbahnhof 10, aufgrund von Bohrungen und Sondierungen Teilsperrung der linken Fahrspur vom 19.10.2026 bis 27.10.2026.",
+        "address": "Am Hauptbahnhof 10, Bahnhofsviertel, Teilsperrung",
+        "baustellennummer": "V-2026-02107",
+        "sperrung": 0,
+        "meldung": "Baustelle",
+        "meldung_en": "roadworks"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d6e",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -683,7 +729,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30c9",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d6f",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -741,7 +787,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30c8",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d70",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -927,7 +973,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30c1",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d77",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -973,7 +1019,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30c0",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d78",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1019,7 +1065,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30bf",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d79",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1105,7 +1151,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30be",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d7a",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1151,7 +1197,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30ba",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d7e",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1225,123 +1271,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30b9",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                8.68320778,
-                50.11196367
-              ],
-              [
-                8.6832251,
-                50.11192325
-              ],
-              [
-                8.6832644,
-                50.11192785
-              ],
-              [
-                8.68324444,
-                50.11197277
-              ],
-              [
-                8.68320778,
-                50.11196367
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "startevent": "2026-10-07T07:00:00Z",
-        "endevent": "2026-10-14T13:00:00Z",
-        "name": "Berliner Straße 27",
-        "textshort": "",
-        "textlong": "Altstadt, Berliner Straße 27, aufgrund von Bohrungen und Sondierungen Teilsperrung der Fahrspur vom 07.10.2026 bis 14.10.2026 jeweils zwischen 09:00 und 15:00 Uhr.",
-        "address": "Berliner Straße 27, Altstadt_2 / Altstadt, Baustelle, Teilsperrung",
-        "baustellennummer": "V-2026-01899",
-        "sperrung": 0,
-        "meldung": "Baustelle",
-        "meldung_en": "roadworks"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30b8",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                8.68488,
-                50.11235946
-              ],
-              [
-                8.68491689,
-                50.11233258
-              ],
-              [
-                8.68510736,
-                50.11234659
-              ],
-              [
-                8.68513251,
-                50.11237813
-              ],
-              [
-                8.68488,
-                50.11235946
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                8.68501549,
-                50.11242728
-              ],
-              [
-                8.68502315,
-                50.11239133
-              ],
-              [
-                8.68509174,
-                50.11239601
-              ],
-              [
-                8.68508102,
-                50.11243196
-              ],
-              [
-                8.68501549,
-                50.11242728
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "startevent": "2026-10-07T07:00:00Z",
-        "endevent": "2026-10-14T13:00:00Z",
-        "name": "Berliner Straße 8 - 10",
-        "textshort": "",
-        "textlong": "Altstadt, Berliner Straße 8 - 10, aufgrund von Bohrungen und Sondierungen Teilsperrung des rechten Fahrstreifens vom 07.10.2026 bis 14.10.2026 jeweils zwischen 09:00 und 15:00 Uhr.",
-        "address": "Berliner Straße 8, 10, Altstadt_2 / Altstadt, Baustelle, Teilsperrung",
-        "baustellennummer": "V-2026-01900",
-        "sperrung": 0,
-        "meldung": "Baustelle",
-        "meldung_en": "roadworks"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30b7",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d7f",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1395,7 +1325,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30b5",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d81",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1453,7 +1383,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30b4",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d82",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1499,7 +1429,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30b3",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d83",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1553,7 +1483,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30b2",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d84",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1603,7 +1533,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30b1",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d85",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3057,7 +2987,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30b0",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d86",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3131,7 +3061,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30ad",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d89",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3177,7 +3107,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30ab",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d8b",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3243,7 +3173,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30a9",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d8d",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3317,7 +3247,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30a2",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d94",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3763,7 +3693,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-30a1",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d95",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3997,7 +3927,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-309e",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d98",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4063,7 +3993,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-309d",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d99",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4197,7 +4127,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-309c",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d9a",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4323,7 +4253,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-309b",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6d9b",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4409,7 +4339,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3095",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6da1",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4471,7 +4401,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3094",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6da2",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4541,53 +4471,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3092",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                8.6754827,
-                50.1217322
-              ],
-              [
-                8.67546998,
-                50.12148033
-              ],
-              [
-                8.67556003,
-                50.12148059
-              ],
-              [
-                8.67557144,
-                50.12173245
-              ],
-              [
-                8.6754827,
-                50.1217322
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "startevent": "2026-10-12T07:00:00Z",
-        "endevent": "2026-10-14T13:00:00Z",
-        "name": "Eschersheimer Landstraße 55",
-        "textshort": "",
-        "textlong": "Westend-Nord, Eschersheimer Landstraße 55, aufgrund von Kran-, Hebe- und Hubsteigerarbeiten Teilsperrung der Fahrbahn vom 12.10.2026 bis 14.10.2026 zwischen 09:00 und 15:00 Uhr.",
-        "address": "Eschersheimer Landstraße 55, Nordend-West / Westend-Nord",
-        "baustellennummer": "B-2026-01238",
-        "sperrung": 0,
-        "meldung": "Baustelle",
-        "meldung_en": "roadworks"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3091",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6da4",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4653,7 +4537,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3090",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6da5",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4695,7 +4579,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-308f",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6da6",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4737,7 +4621,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-308e",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6da7",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4783,7 +4667,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-308c",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6da9",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4857,7 +4741,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-308b",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6daa",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5011,7 +4895,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-308a",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dab",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5477,7 +5361,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3089",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dac",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5599,7 +5483,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3087",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dae",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5845,7 +5729,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-307d",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6db9",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5907,7 +5791,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-307c",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dba",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6061,7 +5945,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-307b",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dbb",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6159,7 +6043,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-307a",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dbc",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6225,7 +6109,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3079",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dbd",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6407,7 +6291,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3075",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dc1",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6453,7 +6337,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3074",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dc2",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6715,7 +6599,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3070",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dc6",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6785,7 +6669,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-306f",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dc7",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6839,7 +6723,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-306e",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dc8",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6885,7 +6769,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-306d",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dc9",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6931,7 +6815,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-306c",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dca",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6977,7 +6861,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-306b",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dcb",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7103,7 +6987,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-306a",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dcc",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7269,7 +7153,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3066",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dd0",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7559,7 +7443,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3065",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dd1",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7633,7 +7517,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3062",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dd4",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7679,7 +7563,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3060",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dd6",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7957,7 +7841,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-305b",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6ddb",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -8027,7 +7911,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3059",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6ddd",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -8073,7 +7957,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3058",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dde",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -8131,7 +8015,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3043",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6df3",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -8221,7 +8105,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3042",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6df4",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -8355,7 +8239,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-303f",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6df7",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -8473,7 +8357,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-303e",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6df8",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -8663,7 +8547,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-303c",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dfa",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -8749,7 +8633,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-303b",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6dfb",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -8835,7 +8719,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3035",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e01",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -8893,7 +8777,77 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-302e",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e02",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                8.69242505,
+                50.11017618
+              ],
+              [
+                8.69237479,
+                50.11017605
+              ],
+              [
+                8.6923203,
+                50.1097442
+              ],
+              [
+                8.69237059,
+                50.10973983
+              ],
+              [
+                8.69242505,
+                50.11017618
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                8.69198094,
+                50.11025595
+              ],
+              [
+                8.69237748,
+                50.11023452
+              ],
+              [
+                8.69237995,
+                50.11025701
+              ],
+              [
+                8.6919821,
+                50.11027844
+              ],
+              [
+                8.69198094,
+                50.11025595
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "startevent": "2026-10-18T22:00:00Z",
+        "endevent": "2026-10-23T21:59:59Z",
+        "name": "Lange Straße 5-9, Fischerfeldstraße 1",
+        "textshort": "",
+        "textlong": "Innenstadt, Lange Straße 5-9, Fischerfeldstraße 1, aufgrund von Kran-, Hebe- und Hubsteigerarbeiten Teilsperrung des rechten Fahrstreifens vom 19.10.2026 bis 23.10.2026.",
+        "address": "Lange Straße 5, 7, 9, Fischerfeldstraße 1, Innenstadt, Baustelle, Teilsperrung/Vollsperrung",
+        "baustellennummer": "B-2026-01391",
+        "sperrung": 0,
+        "meldung": "Baustelle",
+        "meldung_en": "roadworks"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e09",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9099,7 +9053,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-302d",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e0a",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9245,7 +9199,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-302a",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e0d",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9335,7 +9289,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3028",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e0f",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9417,7 +9371,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3027",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e10",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9471,7 +9425,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3025",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e12",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9517,7 +9471,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3021",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e16",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9587,7 +9541,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3020",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e17",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9681,7 +9635,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-301e",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e18",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9735,7 +9689,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-301d",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e1a",
       "geometry": {
         "type": "MultiLineString",
         "coordinates": [
@@ -9841,7 +9795,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-301c",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e1b",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9895,7 +9849,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-301a",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e1d",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9985,81 +9939,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3018",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                8.67537141,
-                50.10825903
-              ],
-              [
-                8.67537644,
-                50.10829052
-              ],
-              [
-                8.67535679,
-                50.10835342
-              ],
-              [
-                8.67529522,
-                50.10847467
-              ],
-              [
-                8.67524939,
-                50.10846554
-              ],
-              [
-                8.67537141,
-                50.10825903
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                8.67519322,
-                50.10856432
-              ],
-              [
-                8.67523558,
-                50.10856894
-              ],
-              [
-                8.67516921,
-                50.10869017
-              ],
-              [
-                8.67513125,
-                50.10868107
-              ],
-              [
-                8.67519322,
-                50.10856432
-              ]
-            ]
-          ]
-        ]
-      },
-      "geometry_name": "the_geom",
-      "properties": {
-        "startevent": "2026-10-07T07:00:00Z",
-        "endevent": "2026-10-14T13:00:00Z",
-        "name": "Neue Mainzer Straße 10",
-        "textshort": "",
-        "textlong": "Altstadt_2, Altstadt, Innenstadt, Neue Mainzer Straße 10, aufgrund von Bohrungen und Sondierungen Teilsperrung der Fahrbahn in Richtung Nord, Teilsperrung der Gehwege vom 07.10.2026 bis 14.10.2026 zwischen 09:00 und 15:00 Uhr.",
-        "address": "Neue Mainzer Straße 10, Altstadt_2 / Altstadt / Innenstadt_2 / Innenstadt, Baustelle, Teilsperrung",
-        "baustellennummer": "V-2026-01889",
-        "sperrung": 0,
-        "meldung": "Baustelle",
-        "meldung_en": "roadworks"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3017",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e1f",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -10157,7 +10037,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3016",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e20",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -10323,7 +10203,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3015",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e21",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -10373,7 +10253,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3014",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e22",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -10443,7 +10323,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3013",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e23",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -10497,7 +10377,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3012",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e24",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -10651,7 +10531,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3011",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e25",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -10865,7 +10745,81 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3009",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e2d",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                8.70092171,
+                50.10132139
+              ],
+              [
+                8.70093211,
+                50.10133491
+              ],
+              [
+                8.70044469,
+                50.10164844
+              ],
+              [
+                8.70013852,
+                50.10183652
+              ],
+              [
+                8.69985353,
+                50.10198868
+              ],
+              [
+                8.69960982,
+                50.10210947
+              ],
+              [
+                8.69955027,
+                50.10205985
+              ],
+              [
+                8.69976896,
+                50.10195698
+              ],
+              [
+                8.70005132,
+                50.10180482
+              ],
+              [
+                8.70045091,
+                50.10156301
+              ],
+              [
+                8.70090435,
+                50.10130336
+              ],
+              [
+                8.70092171,
+                50.10132139
+              ]
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "startevent": "2026-10-17T22:00:00Z",
+        "endevent": "2026-10-18T21:59:59Z",
+        "name": "Offenbacher Landstraße gegenüber Haus-Nr. 80 - 84",
+        "textshort": "",
+        "textlong": "Sachsenhausen-Nord, Offenbacher Landstraße gegenüber Haus-Nr. 80 - 84, aufgrund von Arbeiten an Kanalleitungen Vollsperrung der Fahrbahn in Richtung Nord-West am 18.10.2026.",
+        "address": "Offenbacher Landstraße, Sachsenhausen-Nord, Baustelle, Vollsperrung",
+        "baustellennummer": "V-2026-01932",
+        "sperrung": 1,
+        "meldung": "Baustelle",
+        "meldung_en": "roadworks"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e2e",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -10963,7 +10917,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3006",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e31",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -11097,7 +11051,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-3003",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e34",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -11175,7 +11129,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fff",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e38",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -11221,7 +11175,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2ffe",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e39",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -11347,7 +11301,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2ffa",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e3d",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -11393,7 +11347,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2ff9",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e3e",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -11459,7 +11413,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2ff8",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e3f",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -11597,7 +11551,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2ff0",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e48",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -11751,7 +11705,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fef",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e49",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -11797,7 +11751,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fec",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e4d",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -11863,7 +11817,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2feb",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e4e",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -11953,7 +11907,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fea",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e4f",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12015,7 +11969,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fe9",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e50",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12061,7 +12015,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fe8",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e51",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12159,7 +12113,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fe5",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e54",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12305,7 +12259,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fe2",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e57",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12375,7 +12329,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fe1",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e58",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12421,7 +12375,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fdb",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e5e",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12567,7 +12521,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fda",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e5f",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12617,7 +12571,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fd9",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e60",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12675,7 +12629,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fd8",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e61",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12753,7 +12707,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fd6",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e63",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12839,7 +12793,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fd5",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e64",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12885,7 +12839,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fd4",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e65",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12951,7 +12905,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fcf",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e6a",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -13409,7 +13363,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fcd",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e6c",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -13455,7 +13409,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fca",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e6f",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -13609,7 +13563,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fc9",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e70",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -13711,7 +13665,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fc8",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e71",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -13757,7 +13711,7 @@
     },
     {
       "type": "Feature",
-      "id": "Baustellen.fid--6fa13ce5_1a139cae0d5_-2fc6",
+      "id": "Baustellen.fid--6fa13ce5_1a13b089110_6e73",
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -13978,10 +13932,10 @@
       }
     }
   ],
-  "totalFeatures": 285,
-  "numberMatched": 285,
-  "numberReturned": 285,
-  "timeStamp": "2026-10-14T09:44:33.266Z",
+  "totalFeatures": 289,
+  "numberMatched": 289,
+  "numberReturned": 289,
+  "timeStamp": "2026-10-14T15:33:45.585Z",
   "crs": {
     "type": "name",
     "properties": {

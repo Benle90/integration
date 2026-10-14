@@ -122,7 +122,10 @@
         "muenchen": "Munich (carriageway roadworks)",
         "koeln": "Cologne (traffic calendar)",
         "frankfurt": "Frankfurt am Main (roadworks, traffic messages)",
-        "dortmund": "Dortmund (roadworks)"
+        "dortmund": "Dortmund (roadworks)",
+        "aachen": "Aachen (roadworks)",
+        "duisburg": "Duisburg (roadworks)",
+        "muenster": "Münster (roadworks)"
       }
     }
   },

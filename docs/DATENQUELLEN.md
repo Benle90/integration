@@ -53,16 +53,16 @@ BW-Städte sind teilweise schon über MobiData BW abgedeckt (Gemeindestraßen nu
 | 12 | Dresden | ⚠️ | über Sachsen landesweit (Bundes- bis Kreisstraßen); städtische Daten nur im Themenstadtplan |
 | 13 | Hannover | ⚠️ | städtische Verkehrsmeldungen nur Mobilithek; Bundesstraßen über den norddeutschen WFS (Niedersachsen) |
 | 14 | Nürnberg | ❓ | nur Webseite |
-| 15 | **Duisburg** | ✅ | ArcGIS-REST `https://geoportal2.duisburg.de/arcgisserver/rest/services/Masterportal/MP_Verkehrsportal/MapServer/2/query` („nächste 7 Tage“) |
-| 16 | **Bochum** | ✅ | ArcGIS-REST `https://geoservicekkm.bochum.de/arcgis/rest/services/maponline/Baustellen/MapServer` |
+| 15 | **Duisburg** – **umgesetzt in 0.3.0** | ✅ | ArcGIS-REST `https://geoportal2.duisburg.de/arcgisserver/rest/services/Masterportal/MP_Verkehrsportal/MapServer/2/query` („nächste 7 Tage“) |
+| 16 | Bochum | ❌ | Lizenz laut Open.NRW „andere geschlossene Lizenz“ – nicht nutzbar; früher notiert: | ArcGIS-REST `https://geoservicekkm.bochum.de/arcgis/rest/services/maponline/Baustellen/MapServer` |
 | 17 | Wuppertal | ❓ | |
 | 18 | Bielefeld | ⚠️ | „Verkehrsmeldungen“ (CSV/XML) bei open-data.bielefeld.de, ungeprüft |
 | 19 | **Bonn** | ⚠️ | GeoJSON tagesaktuell + Planung ([Open.NRW](https://ckan.open.nrw.de/dataset/baustellen-tagesaktuell-mit-ortsangabe-in-bonn-bn)), Endpunkt ungeprüft |
-| 20 | **Münster** | ✅ | GeoJSON ([Open Data](https://opendata.stadt-muenster.de/dataset/baustellen)) |
+| 20 | **Münster** – **umgesetzt in 0.3.0** | ✅ | GeoJSON ([Open Data](https://opendata.stadt-muenster.de/dataset/baustellen)) |
 | 21 | Mannheim | ⚠️ | nur über MobiData BW (teilweise) |
 | 22 | **Karlsruhe** | ✅ | WFS `https://mobil.trk.de/geoserver/TBA/ows` (aktuell + Vorschau), DATEX, GraphQL; CC BY 4.0 |
 | 23–26 | Augsburg, Wiesbaden, Mönchengladbach, Gelsenkirchen | ❓ | |
-| 27 | **Aachen** | ✅ | WFS `https://bsis.aachen.de/geoserver/ows` (`BSIS:PUNKTE_ALLE`, GeoJSON) |
+| 27 | **Aachen** – **umgesetzt in 0.3.0** | ✅ | WFS `https://bsis.aachen.de/geoserver/ows` (`BSIS:PUNKTE_ALLE`, GeoJSON) |
 | 28 | Braunschweig | ❓ | |
 | 29 | **Kiel** | ✅ | ArcGIS-WFS `https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer`, Layer `Baustellen`, `Baustellen_L_-_Aktuell`, `…_Zukunft` u. a., `outputFormat=geoJSON` (Layer `Baustellen` beim Test leer – Teil-Layer prüfen); zusätzlich im norddeutschen WFS |
 | 30 | Chemnitz | ⚠️ | über Sachsen landesweit |

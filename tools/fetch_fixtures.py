@@ -105,7 +105,20 @@ FRANKFURT_URL = (
 DORTMUND_URL = (
     "https://open-data.dortmund.de/api/v2/catalog/datasets/{}/exports/geojson"
 )
+AACHEN_URL = (
+    "https://bsis.aachen.de/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature"
+    "&typeNames=BSIS:PUNKTE_ALLE&outputFormat=application/json&srsName=EPSG:4326"
+)
+DUISBURG_URL = (
+    "https://geoportal2.duisburg.de/arcgisserver/rest/services/Masterportal/"
+    "MP_Verkehrsportal/MapServer/2/query?where=1%3D1&outFields=*&f=geojson&outSR=4326"
+)
+MUENSTER_URL = (
+    "https://geo.stadt-muenster.de/mapserv/odbaustellen_serv?SERVICE=WFS&VERSION=1.1.0"
+    "&REQUEST=GetFeature&TYPENAME=baustellen&OUTPUTFORMAT=geojson&SRSNAME=EPSG:4326"
+)
 CITY_EXCERPTS = {
+    "aachen": (50.765, 6.07, 50.785, 6.10),
     "muenchen": (48.134, 11.566, 48.142, 11.582),
     "frankfurt": (50.09, 8.64, 50.13, 8.71),
 }
@@ -280,6 +293,32 @@ def staedte() -> None:
         url = DORTMUND_URL.format(name)
         s, b, c = get(url)
         save(f"dortmund_{name.removeprefix('fb66-')}.geojson.json", url, s, b, c)
+    s, b, c = get(AACHEN_URL)
+    if s == 200:
+        b = _excerpt(b, CITY_EXCERPTS["aachen"])
+    save("aachen_innenstadt.geojson.json", AACHEN_URL, s, b, c)
+    s, b, c = get(DUISBURG_URL)
+    save("duisburg_baustellen.geojson.json", DUISBURG_URL, s, b, c)
+    s, b, c = get(MUENSTER_URL)
+    if s == 200:
+        # Contact names and phone numbers are not needed for the tests.
+        data = json.loads(b)
+        for feature in data["features"]:
+            props = feature["properties"]
+            for key in list(props):
+                if key.startswith(
+                    (
+                        "telefon",
+                        "gesamtname",
+                        "vorname",
+                        "nachname",
+                        "mobil",
+                        "firmenname",
+                    )
+                ):
+                    props[key] = ""
+        b = json.dumps(data, ensure_ascii=False).encode()
+    save("muenster_baustellen.geojson.json", MUENSTER_URL, s, b, c)
 
 
 def main() -> int:

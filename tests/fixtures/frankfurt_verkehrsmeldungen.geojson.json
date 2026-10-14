@@ -3,7 +3,7 @@
   "features": [
     {
       "type": "Feature",
-      "id": "Verkehrsmeldungen.fid--6fa13ce5_1a139cae0d5_-2fc4",
+      "id": "Verkehrsmeldungen.fid--6fa13ce5_1a13b089110_6e75",
       "geometry": {
         "type": "MultiLineString",
         "coordinates": [
@@ -22,9 +22,9 @@
       "geometry_name": "the_geom",
       "properties": {
         "startevent": "2026-10-24T22:00:01Z",
-        "endevent": "2026-10-25T21:00:01Z",
+        "endevent": "2026-10-25T19:00:00Z",
         "name": "43. Mainova Frankfurt Marathon",
-        "textlong": "Stadtgebiet Frankfurt, 43. Mainova Frankfurt Marathon findet am 25.10.2026 statt.",
+        "textlong": "Stadtgebiet Frankfurt, 43. Mainova Frankfurt Marathon findet am 25.10.2026 statt. Am Sonntag kommt es wegen einer Laufveranstaltung zu Straßensperrungen im Innenstadtbereich von ca. 5 - 17 Uhr. Nutzen Sie zur Anreise in die Innenstadt U- und S-Bahnen! Aufgrund der Streckenführung insbesondere die Bereiche Innenstadt, Sachsenhausen, Schwanheim, Nied, Höchst und Gallus werden sperrbedingte Verkehrsbehinderungen im Laufe des gesamten Tages auftreten. Es wird gebeten die betreffenden Bereiche weiträumig zu umfahren. Wir bitten Verkehrsteilnehmer auf nicht notwendige Fahrten zu verzichten und auf öffentliche Verkehrsmittel (S- und U-Bahnen) auszuweichen. Informationen zur Veranstaltung finden Sie auf www.mainziel.de.",
         "textlong_en": "",
         "textshort": "",
         "sperrung": 0,
@@ -39,7 +39,7 @@
     },
     {
       "type": "Feature",
-      "id": "Verkehrsmeldungen.fid--6fa13ce5_1a139cae0d5_-2fc1",
+      "id": "Verkehrsmeldungen.fid--6fa13ce5_1a13b089110_6e7b",
       "geometry": {
         "type": "MultiLineString",
         "coordinates": [
@@ -428,12 +428,466 @@
         "meldung3_en": "closed",
         "comment": ""
       }
+    },
+    {
+      "type": "Feature",
+      "id": "Verkehrsmeldungen.fid--6fa13ce5_1a13b089110_6e7c",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              8.68103946,
+              50.09514723
+            ],
+            [
+              8.68028749,
+              50.09474059
+            ],
+            [
+              8.67943818,
+              50.09426177
+            ],
+            [
+              8.67938252,
+              50.09422565
+            ],
+            [
+              8.67929897,
+              50.09418047
+            ],
+            [
+              8.67837557,
+              50.09369384
+            ],
+            [
+              8.67732414,
+              50.09311486
+            ],
+            [
+              8.6765077,
+              50.092662
+            ],
+            [
+              8.67463628,
+              50.09166185
+            ],
+            [
+              8.67280187,
+              50.09064776
+            ],
+            [
+              8.67226092,
+              50.09035226
+            ],
+            [
+              8.67205598,
+              50.09024852
+            ],
+            [
+              8.67192404,
+              50.09017191
+            ],
+            [
+              8.67152111,
+              50.0899667
+            ],
+            [
+              8.67124341,
+              50.08980236
+            ],
+            [
+              8.67111174,
+              50.0896758
+            ],
+            [
+              8.67110012,
+              50.08961289
+            ],
+            [
+              8.67113535,
+              50.08955012
+            ],
+            [
+              8.67127703,
+              50.08946816
+            ],
+            [
+              8.67141297,
+              50.0894404
+            ],
+            [
+              8.67150472,
+              50.08865005
+            ],
+            [
+              8.67146625,
+              50.08810414
+            ],
+            [
+              8.67138507,
+              50.08779662
+            ],
+            [
+              8.6714024,
+              50.08769391
+            ],
+            [
+              8.67167012,
+              50.08765358
+            ],
+            [
+              8.67157625,
+              50.0871779
+            ],
+            [
+              8.67133152,
+              50.08640943
+            ],
+            [
+              8.67125259,
+              50.08616135
+            ],
+            [
+              8.67113071,
+              50.08577864
+            ],
+            [
+              8.67104845,
+              50.08538301
+            ],
+            [
+              8.67103106,
+              50.08510633
+            ],
+            [
+              8.67102564,
+              50.08502081
+            ],
+            [
+              8.67108052,
+              50.08490284
+            ],
+            [
+              8.67127388,
+              50.08484405
+            ],
+            [
+              8.67190785,
+              50.08479702
+            ],
+            [
+              8.67251853,
+              50.08470425
+            ],
+            [
+              8.67275891,
+              50.08465467
+            ],
+            [
+              8.67293913,
+              50.08461751
+            ],
+            [
+              8.67514011,
+              50.08417587
+            ],
+            [
+              8.67570532,
+              50.08402641
+            ],
+            [
+              8.67680661,
+              50.08373522
+            ],
+            [
+              8.67689832,
+              50.08370716
+            ],
+            [
+              8.67724232,
+              50.08360203
+            ],
+            [
+              8.67748341,
+              50.08352835
+            ],
+            [
+              8.67774537,
+              50.08344825
+            ],
+            [
+              8.67786384,
+              50.08342961
+            ],
+            [
+              8.67796986,
+              50.08341291
+            ],
+            [
+              8.67818735,
+              50.08337872
+            ],
+            [
+              8.67832073,
+              50.08336668
+            ],
+            [
+              8.67896858,
+              50.08330842
+            ],
+            [
+              8.67932008,
+              50.08325041
+            ],
+            [
+              8.67961461,
+              50.08314567
+            ],
+            [
+              8.6800219,
+              50.08295683
+            ],
+            [
+              8.68026814,
+              50.0828427
+            ],
+            [
+              8.68083491,
+              50.08258003
+            ],
+            [
+              8.68106759,
+              50.08261501
+            ],
+            [
+              8.68128673,
+              50.08287894
+            ],
+            [
+              8.68151946,
+              50.08294943
+            ],
+            [
+              8.68178124,
+              50.08291464
+            ]
+          ],
+          [
+            [
+              8.69148661,
+              50.08709111
+            ],
+            [
+              8.69100658,
+              50.0881871
+            ],
+            [
+              8.69102367,
+              50.08841982
+            ],
+            [
+              8.69120087,
+              50.08903709
+            ],
+            [
+              8.69125139,
+              50.08939904
+            ],
+            [
+              8.69128587,
+              50.08990908
+            ],
+            [
+              8.69125121,
+              50.09007321
+            ],
+            [
+              8.69130795,
+              50.09017427
+            ],
+            [
+              8.69133922,
+              50.09093399
+            ],
+            [
+              8.69130619,
+              50.09138736
+            ],
+            [
+              8.691257,
+              50.09194349
+            ],
+            [
+              8.69108368,
+              50.09321993
+            ],
+            [
+              8.69101954,
+              50.09351317
+            ],
+            [
+              8.69089058,
+              50.09459991
+            ],
+            [
+              8.69081082,
+              50.09470057
+            ],
+            [
+              8.69086611,
+              50.09485234
+            ],
+            [
+              8.6908948,
+              50.09555713
+            ],
+            [
+              8.69090518,
+              50.09573397
+            ],
+            [
+              8.69094059,
+              50.09610798
+            ],
+            [
+              8.69099695,
+              50.09682414
+            ],
+            [
+              8.69102794,
+              50.09716078
+            ],
+            [
+              8.69104929,
+              50.09776693
+            ],
+            [
+              8.69112372,
+              50.098719
+            ],
+            [
+              8.69115626,
+              50.09927829
+            ],
+            [
+              8.69133266,
+              50.09972861
+            ],
+            [
+              8.69152979,
+              50.10049937
+            ],
+            [
+              8.69154836,
+              50.10059991
+            ],
+            [
+              8.69144442,
+              50.10066656
+            ],
+            [
+              8.69118691,
+              50.10057316
+            ],
+            [
+              8.69021332,
+              50.1002107
+            ],
+            [
+              8.68985247,
+              50.10006904
+            ],
+            [
+              8.68924863,
+              50.09977521
+            ],
+            [
+              8.68919353,
+              50.09972435
+            ],
+            [
+              8.68681305,
+              50.09836375
+            ],
+            [
+              8.68521029,
+              50.09758767
+            ],
+            [
+              8.68452108,
+              50.09701772
+            ],
+            [
+              8.68286695,
+              50.09581733
+            ],
+            [
+              8.68104601,
+              50.09515066
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "startevent": "2026-10-14T10:01:36.216Z",
+        "endevent": "2099-12-31T11:00:00Z",
+        "name": "Sperrung mit Umleitungsempfehlung",
+        "textlong": "Sperrung mit Umleitungsempfehlung",
+        "textlong_en": "",
+        "textshort": null,
+        "sperrung": null,
+        "meldung": null,
+        "meldung_en": null,
+        "meldung2": null,
+        "meldung2_en": null,
+        "meldung3": null,
+        "meldung3_en": null,
+        "comment": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "Verkehrsmeldungen.fid--6fa13ce5_1a13b089110_6e7e",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              8.68425417,
+              50.11085278
+            ],
+            [
+              8.68425417,
+              50.11085278
+            ]
+          ]
+        ]
+      },
+      "geometry_name": "the_geom",
+      "properties": {
+        "startevent": "2026-11-23T17:00:00Z",
+        "endevent": "2026-12-22T22:00:00Z",
+        "name": "Weihnachtsmarkt 23.11. - 22.12.",
+        "textlong": "Stadtgebiet Frankfurt, Frankfurter Weihnachtsmarkt vom 23.11. bis 22.12.2026. Bequem und stressfrei mit öffentlichen Verkehrsmittel erreichbar. Im Bereich Römer, Paulsplatz und Hauptwache kann es zu Verkehrsbehinderungen kommen! Kurzfristige Straßensperrungen sind möglich.\r\n\r\n",
+        "textlong_en": "",
+        "textshort": "",
+        "sperrung": 0,
+        "meldung": "Veranstaltung",
+        "meldung_en": "major event",
+        "meldung2": null,
+        "meldung2_en": null,
+        "meldung3": null,
+        "meldung3_en": null,
+        "comment": ""
+      }
     }
   ],
-  "totalFeatures": 6,
-  "numberMatched": 6,
-  "numberReturned": 6,
-  "timeStamp": "2026-10-14T09:44:33.607Z",
+  "totalFeatures": 10,
+  "numberMatched": 10,
+  "numberReturned": 10,
+  "timeStamp": "2026-10-14T15:33:46.148Z",
   "crs": {
     "type": "name",
     "properties": {

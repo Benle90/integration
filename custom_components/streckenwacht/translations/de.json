@@ -122,7 +122,10 @@
         "muenchen": "München (Baustellen auf der Fahrbahn)",
         "koeln": "Köln (Verkehrskalender)",
         "frankfurt": "Frankfurt am Main (Baustellen, Verkehrsmeldungen)",
-        "dortmund": "Dortmund (Baustellen)"
+        "dortmund": "Dortmund (Baustellen)",
+        "aachen": "Aachen (Baustellen)",
+        "duisburg": "Duisburg (Baustellen)",
+        "muenster": "Münster (Baustellen)"
       }
     }
   },

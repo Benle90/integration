@@ -38,6 +38,11 @@ from custom_components.streckenwacht.providers.muenchen import MuenchenProvider
 from custom_components.streckenwacht.providers.norddeutschland import (
     NorddeutschlandProvider,
 )
+from custom_components.streckenwacht.providers.nrw import (
+    AachenProvider,
+    DuisburgProvider,
+    MuensterProvider,
+)
 from custom_components.streckenwacht.providers.rheinland_pfalz import (
     RheinlandPfalzProvider,
 )
@@ -90,6 +95,9 @@ async def main(args: argparse.Namespace) -> int:
             KoelnProvider(session),
             FrankfurtProvider(session),
             DortmundProvider(session),
+            AachenProvider(session),
+            DuisburgProvider(session),
+            MuensterProvider(session),
         )
         for provider in providers:
             print(f"{provider.source}:")
