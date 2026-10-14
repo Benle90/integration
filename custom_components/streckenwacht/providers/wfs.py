@@ -46,6 +46,8 @@ class Layer:
     # Returns (key, event) or None to skip the feature. The key holds the fields
     # that identify the record (not its OBJECTID); the event id is derived from it.
     parse: Callable[[dict[str, Any]], tuple[str, StreckenwachtEvent] | None]
+    # Optional step before parsing, e.g. to merge sections of one roadworks site.
+    prepare: Callable[[list[Any]], list[Any]] | None = None
 
 
 class WfsProvider(Provider):
@@ -53,6 +55,9 @@ class WfsProvider(Provider):
 
     url: ClassVar[str]
     layers: ClassVar[tuple[Layer, ...]]
+    output_format: ClassVar[str] = "GEOJSON"
+    # Small layers are fetched whole: simpler, and the server learns nothing.
+    filter_by_bbox: ClassVar[bool] = True
 
     def __init__(self, session: aiohttp.ClientSession, url: str | None = None) -> None:
         super().__init__(session)
@@ -80,23 +85,27 @@ class WfsProvider(Provider):
     async def _fetch_layer(
         self, layer: Layer, bbox: Bounds
     ) -> list[StreckenwachtEvent]:
-        south, west, north, east = snap_to_grid(bbox, GRID_DEGREES)
-        data = await self._get_json(
-            self._url,
-            params={
-                "SERVICE": "WFS",
-                "VERSION": "2.0.0",
-                "REQUEST": "GetFeature",
-                "TYPENAMES": layer.name,
-                "OUTPUTFORMAT": "GEOJSON",
-                "SRSNAME": "EPSG:4326",
-                # This CRS name means latitude first (WFS 2.0 axis order).
-                "BBOX": f"{south},{west},{north},{east},urn:ogc:def:crs:EPSG::4326",
-            },
-        )
+        params = {
+            "SERVICE": "WFS",
+            "VERSION": "2.0.0",
+            "REQUEST": "GetFeature",
+            "TYPENAMES": layer.name,
+            "OUTPUTFORMAT": self.output_format,
+            "SRSNAME": "EPSG:4326",
+        }
+        if self.filter_by_bbox:
+            south, west, north, east = snap_to_grid(bbox, GRID_DEGREES)
+            # This CRS name means latitude first (WFS 2.0 axis order).
+            params["BBOX"] = f"{south},{west},{north},{east},urn:ogc:def:crs:EPSG::4326"
+        data = await self._get_json(self._url, params=params)
         features = data.get("features") if isinstance(data, dict) else None
+        if features is None and isinstance(data, dict):
+            # Some servers (Brandenburg) omit "features" when nothing matches.
+            features = [] if data.get("type") == "FeatureCollection" else None
         if not isinstance(features, list):
             raise ProviderError(f"Unexpected format of layer {layer.name}")
+        if layer.prepare:
+            features = layer.prepare(features)
         return parse_layer(self.source, layer, features)
 
 
@@ -205,7 +214,8 @@ _GERMAN_DATE = re.compile(
     r"(\d{1,2})\.(\d{1,2})\.(\d{4})(?:,?\s*(?:um\s*)?(?:ca\.\s*)?(\d{1,2}):(\d{2}))?"
 )
 _TIME = re.compile(r"(\d{1,2}):(\d{2})")
-_ISO_DATETIME = re.compile(r"(\d{4})-(\d{2})-(\d{2}),?\s+(\d{2}):(\d{2})")
+_ISO_DATETIME = re.compile(r"(\d{4})-(\d{2})-(\d{2})(?:,?\s+|T)(\d{2}):(\d{2})")
+_ISO_DATE = re.compile(r"^\s*(\d{4})-(\d{2})-(\d{2})\s*$")
 
 
 def text(value: Any) -> str | None:
@@ -271,6 +281,17 @@ def iso_local(value: str | None, shift: timedelta = timedelta()) -> datetime | N
     return datetime(year, month, day, hour, minute, tzinfo=LOCAL_TZ) + shift
 
 
+def iso_date(value: str | None, *, end: bool = False) -> datetime | None:
+    """ "2026-10-19" as local midnight; as end, the midnight after that day."""
+    match = _ISO_DATE.match(value or "")
+    if not match:
+        return None
+    day = date(*(int(g) for g in match.groups()))
+    if end:
+        day += timedelta(days=1)
+    return datetime.combine(day, time(), LOCAL_TZ)
+
+
 def iso_utc(value: str | None) -> datetime | None:
     """ "2026-10-13, 05:00:00" given in UTC."""
     match = _ISO_DATETIME.search(value or "")
@@ -282,6 +303,12 @@ def iso_utc(value: str | None) -> datetime | None:
 
 def first_position(geometry: Any) -> tuple[float | None, float | None]:
     """(lat, lon) of the first position of a GeoJSON geometry."""
+    if isinstance(geometry, dict) and geometry.get("type") == "GeometryCollection":
+        for part in geometry.get("geometries") or []:
+            lat, lon = first_position(part)
+            if lat is not None:
+                return lat, lon
+        return None, None
     coords = geometry.get("coordinates") if isinstance(geometry, dict) else None
     while isinstance(coords, list) and coords and isinstance(coords[0], list):
         coords = coords[0]

@@ -57,6 +57,9 @@ class Source(StrEnum):
     MOBIDATA_BW = "mobidata_bw"
     STUTTGART = "stuttgart"
     NORDDEUTSCHLAND = "norddeutschland"
+    BERLIN = "berlin"
+    BRANDENBURG = "brandenburg"
+    SACHSEN_ANHALT = "sachsen_anhalt"
 
 
 # Proper names, used as translation placeholders (not translatable).
@@ -65,6 +68,9 @@ SOURCE_NAMES: Final[dict[Source, str]] = {
     Source.MOBIDATA_BW: "MobiData BW",
     Source.STUTTGART: "Stadt Stuttgart",
     Source.NORDDEUTSCHLAND: "Baustelleninformationen Norddeutschland",
+    Source.BERLIN: "VIZ Berlin",
+    Source.BRANDENBURG: "Landesbetrieb Straßenwesen Brandenburg",
+    Source.SACHSEN_ANHALT: "Sperrinfo Sachsen-Anhalt",
 }
 
 # Attribution required by the data licenses (see docs/ENTWICKLUNG.md, section 4).
@@ -73,6 +79,16 @@ ATTRIBUTION: Final[dict[Source, str]] = {
     Source.MOBIDATA_BW: "MobiData BW, Datenlizenz Deutschland – Namensnennung 2.0",
     Source.STUTTGART: "© Landeshauptstadt Stuttgart, CC BY 4.0",
     Source.NORDDEUTSCHLAND: "LBV.SH Baustelleninformationen, © Geokompetenz/LVermGeo SH/CC BY 4.0",
+    Source.BERLIN: (
+        "Digitale Plattform Stadtverkehr Berlin / Baustellen, Sperrungen und sonstige "
+        "Störungen von besonderem verkehrlichem Interesse, dl-de/by-2-0"
+    ),
+    Source.BRANDENBURG: "© Landesbetrieb Straßenwesen Brandenburg, dl-de/by-2-0",
+    # The service allows non-commercial use only (WFS AccessConstraints).
+    Source.SACHSEN_ANHALT: (
+        "Sperrinfo, Ministerium für Landesentwicklung und Verkehr Sachsen-Anhalt; "
+        "nur nichtkommerzielle Nutzung"
+    ),
 }
 
 # Additional attribution for data the source got from a third party.
@@ -88,6 +104,9 @@ BADEN_WUERTTEMBERG: Final[Bounds] = (47.5, 7.5, 49.8, 10.5)
 SCHLESWIG_HOLSTEIN_HAMBURG: Final[Bounds] = (53.35, 7.8, 55.1, 11.4)
 MECKLENBURG_VORPOMMERN: Final[Bounds] = (53.1, 10.5, 54.7, 14.5)
 NIEDERSACHSEN: Final[Bounds] = (51.29, 6.6, 53.9, 11.6)
+BERLIN: Final[Bounds] = (52.33, 13.08, 52.68, 13.77)
+BRANDENBURG: Final[Bounds] = (51.35, 11.26, 53.56, 14.77)
+SACHSEN_ANHALT: Final[Bounds] = (50.93, 10.56, 53.05, 13.19)
 
 # Rough regions of the regional sources, to preselect them by the home location.
 # Sources without a region (the Autobahn) cover all of Germany.
@@ -99,4 +118,7 @@ SOURCE_REGIONS: Final[dict[Source, tuple[Bounds, ...]]] = {
         MECKLENBURG_VORPOMMERN,
         NIEDERSACHSEN,
     ),
+    Source.BERLIN: (BERLIN,),
+    Source.BRANDENBURG: (BRANDENBURG,),
+    Source.SACHSEN_ANHALT: (SACHSEN_ANHALT,),
 }

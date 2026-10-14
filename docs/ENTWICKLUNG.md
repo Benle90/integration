@@ -92,6 +92,29 @@ Betrieben vom LBV.SH, Lizenz laut GDI-DE-Metadatenkatalog CC BY 4.0 („© Geoko
 - `Verkehrsstoerungen` (SH, live): Unfälle („Unfall“ im Ereignis), Sperrungen, Warnungen; `Dauer` als Freitext („am 18.10.2026 von ca. 07:00 Uhr bis ca. 18:00 Uhr“), sonst Beginn = `Datenerzeugungszeit`.
 - **Ausgelassen:** Autobahn-Layer (deckt die Autobahn-API ab), Punkt-Zwillinge der Linien-Layer, `Baustellenpunkte_Norderstedt` (nicht gepflegt, alles 2023–2025 beendet), Umleitungen, Verkehrslage.
 
+### Berlin (VIZ, `https://api.viz.berlin.de/daten/baustellen_sperrungen_viz.json`)
+
+Redaktionell gepflegte Datei der Verkehrsinformationszentrale („von besonderem verkehrlichem Interesse“), ~550 KB mit ETag, stabile Kennung `id` („17/2025“). Lizenz dl-de-by-2.0, Namensnennung „Digitale Plattform Stadtverkehr Berlin / [Titel]“ (Datenregister Berlin). Geprüft 2026-10-14.
+
+- `subtype` Baustelle/Bauarbeiten/Sperrung/Störung/Gefahr, `severity` Vollsperrung/Fahrtrichtungssperrung/keine Sperrung → `closure` bei den beiden Sperrgraden; Störung mit „Unfall“ → `accident`, sonst `warning`.
+- `validity.from/to` als Ortszeit ohne Zone („2026-10-15T17:00“). Geometrie ist eine `GeometryCollection` (Punkt + Linien).
+- Autobahn-Baustellen und -Sperrungen (`street` „A100 …“) werden ausgelassen, die Autobahn-API liefert sie; Störungen und Gefahren dort bleiben.
+- Daneben gibt es einen ungefilterten Rohdaten-Feed `…/tic3/baustellen_sperrungen_tic.json` (~390 Einträge, weniger Details) – bewusst nicht genutzt.
+
+### Brandenburg (WFS `https://isk.geobasis-bb.de/ows/baustelleninfo_wfs`)
+
+Layer `app:baustelleninfo`, `OUTPUTFORMAT=application/geo+json`, ~1,4 MB ohne ETag → grobes Raster. Lizenz dl-de-by-2.0 („© Landesbetrieb Straßenwesen Brandenburg“, im Dienst selbst angegeben). Kennung `ID` stabil. Bundes-, Landes- und Kreisstraßen.
+
+- Datumsangaben ohne Uhrzeit (`Baustellen_Beginn`/`_Ende`). `Art` „Sperrung“ (= Fahrstreifen gesperrt) → `closure`, „Bauabschnitt“ → `roadworks`. Die erste Zeile von `Verkehrsinformation` nennt die Maßnahme.
+- **Leere Treffer kommen als `FeatureCollection` ganz ohne `features`** – die WFS-Basis wertet das als leer.
+
+### Sachsen-Anhalt (WFS `https://service.ifak.eu/sperrinfo/wfs`)
+
+Layer `ms:roadworks`, `OUTPUTFORMAT=geojson`, ~200 KB → komplett geladen (`filter_by_bbox = False`). **Der Dienst erlaubt laut `AccessConstraints` nur nichtkommerzielle Nutzung** – passt zu Streckenwacht (privat, jede Instanz ruft selbst ab), steht in der Namensnennung und in der README. Alle Straßenklassen inkl. Gemeindestraßen.
+
+- Eine Baustelle besteht aus mehreren Abschnitten mit gleicher `feature_id` (bis zu 7) → `merge_sections()` fasst sie zu einer Meldung zusammen, die schwerste `kind` gewinnt (D Vollsperrung, F Sperrung einer Fahrtrichtung → `closure`; C halbseitig, B Einschränkung).
+- `location` enthält oft nur „außerhalb der Ortschaft“/„freie Strecke“ → dann ohne Ort im Titel. Autobahnfelder (`bab_*`) sind leer.
+
 ## 3. Entscheidungen
 
 - **Eine Integration mit Providern** statt mehrerer: gemeinsame Entities pro Bereich, ein Config-Flow, ein HACS-Eintrag.
@@ -104,7 +127,7 @@ Betrieben vom LBV.SH, Lizenz laut GDI-DE-Metadatenkatalog CC BY 4.0 („© Geoko
 
 ## 4. Risiken, Lizenzen, Recht (keine Rechtsberatung)
 
-- **Namensnennung** je Quelle in `const.ATTRIBUTION` und im Attribut `attribution`: Stuttgart CC BY 4.0, MobiData BW DL-DE-BY-2.0, Norddeutschland CC BY 4.0, Autobahn GmbH (keine erklärte Lizenz, Nennung als gute Praxis), zusätzlich „Verkehrslage: INRIX“.
+- **Namensnennung** je Quelle in `const.ATTRIBUTION` und im Attribut `attribution`: Stuttgart CC BY 4.0, MobiData BW DL-DE-BY-2.0, Norddeutschland CC BY 4.0, Berlin und Brandenburg DL-DE-BY-2.0, Sachsen-Anhalt nur nichtkommerziell, Autobahn GmbH (keine erklärte Lizenz, Nennung als gute Praxis), zusätzlich „Verkehrslage: INRIX“.
 - **INRIX** (entschieden 2026-10-02): keine erklärten Nutzungsbedingungen; die Daten werden offen und auch kommerziell genutzt. Streckenwacht verbreitet nichts weiter – jede Instanz ruft den öffentlichen Endpunkt selbst ab; Risiko gering. Vorsorge: `upstream="inrix"` und die abschaltbare Option. **Warnungs-Fixtures (echte INRIX-Daten) nur lokal, nie committen** (`.gitignore`; aus der Historie entfernt); Tests nutzen ein eingebettetes Beispiel.
 - **Zurückgestellt** (Entscheidung des Projektinhabers): Impressumsfrage und Anfrage bei der Autobahn GmbH zu INRIX – erst beim öffentlichen Bewerben wieder aufgreifen. Bis dahin keine Spenden-Links oder Werbung.
 - **API-Stabilität:** keine Quelle ist versioniert oder hat ein SLA, Rate Limits sind unbekannt → defensiv parsen, konservativ pollen, ETag nutzen.

@@ -10,7 +10,7 @@
           "include_inrix": "Staumeldungen einbeziehen (INRIX)"
         },
         "data_description": {
-          "sources": "Bis auf die Autobahn GmbH decken die Quellen nur ihre Region ab (Baden-Württemberg, Stuttgart, Norddeutschland).",
+          "sources": "Bis auf die Autobahn GmbH decken die Quellen nur das genannte Land bzw. die genannte Stadt ab.",
           "scan_interval": "Wie oft die Quellen abgefragt werden. Sie ändern sich nicht im Minutentakt.",
           "include_inrix": "Staudaten der Autobahn-API stammen vom kommerziellen Anbieter INRIX."
         }
@@ -33,7 +33,7 @@
           "include_inrix": "Staumeldungen einbeziehen (INRIX)"
         },
         "data_description": {
-          "sources": "Bis auf die Autobahn GmbH decken die Quellen nur ihre Region ab (Baden-Württemberg, Stuttgart, Norddeutschland).",
+          "sources": "Bis auf die Autobahn GmbH decken die Quellen nur das genannte Land bzw. die genannte Stadt ab.",
           "scan_interval": "Wie oft die Quellen abgefragt werden. Sie ändern sich nicht im Minutentakt.",
           "include_inrix": "Staudaten der Autobahn-API stammen vom kommerziellen Anbieter INRIX."
         }
@@ -117,7 +117,10 @@
         "autobahn": "Autobahn GmbH (Autobahnen, bundesweit)",
         "mobidata_bw": "MobiData BW (Bundes-, Landes-, Kreisstraßen in BW)",
         "stuttgart": "Stadt Stuttgart (Hauptstraßennetz)",
-        "norddeutschland": "Norddeutschland (SH, HH, MV, NI; LBV.SH)"
+        "norddeutschland": "Norddeutschland (SH, HH, MV, NI; LBV.SH)",
+        "berlin": "Berlin (VIZ, Hauptstraßen inkl. Störungen)",
+        "brandenburg": "Brandenburg (Bundes-, Landes-, Kreisstraßen)",
+        "sachsen_anhalt": "Sachsen-Anhalt (alle Straßen; nur nichtkommerziell)"
       }
     }
   },

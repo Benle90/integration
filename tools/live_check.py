@@ -28,9 +28,14 @@ from custom_components.streckenwacht.providers import ProviderError
 from custom_components.streckenwacht.providers.autobahn import (
     AutobahnProvider,
 )
+from custom_components.streckenwacht.providers.berlin import BerlinProvider
+from custom_components.streckenwacht.providers.brandenburg import BrandenburgProvider
 from custom_components.streckenwacht.providers.mobidata_bw import MobiDataBWProvider
 from custom_components.streckenwacht.providers.norddeutschland import (
     NorddeutschlandProvider,
+)
+from custom_components.streckenwacht.providers.sachsen_anhalt import (
+    SachsenAnhaltProvider,
 )
 from custom_components.streckenwacht.providers.stuttgart import StuttgartProvider
 
@@ -68,6 +73,9 @@ async def main(args: argparse.Namespace) -> int:
             MobiDataBWProvider(session),
             StuttgartProvider(session),
             NorddeutschlandProvider(session),
+            BerlinProvider(session),
+            BrandenburgProvider(session),
+            SachsenAnhaltProvider(session),
         )
         for provider in providers:
             print(f"{provider.source}:")

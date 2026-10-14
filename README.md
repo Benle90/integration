@@ -35,6 +35,9 @@ Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein
 | [MobiData BW](https://mobidata-bw.de/dataset/baustelleninformationen-baden-wurttemberg) | Bundes-, Landes- und Kreisstraßen in Baden-Württemberg, vereinzelt Gemeindestraßen | Datenlizenz Deutschland – Namensnennung 2.0 |
 | [Stadt Stuttgart – Baustellenkalender](https://www.stuttgart.de/baustellenkalender) | Hauptverkehrsstraßen (Vorbehaltsstraßennetz) in Stuttgart | CC BY 4.0, © Landeshauptstadt Stuttgart |
 | [Baustelleninformationen Norddeutschland (LBV.SH)](https://dienste.gdi-sh.de/WFS_SH_Baustelleninformationen?SERVICE=WFS&REQUEST=GetCapabilities) | Schleswig-Holstein (alle Straßenklassen, dazu aktuelle Verkehrsstörungen und Unfälle), Hamburg, Mecklenburg-Vorpommern, Bundesstraßen in Niedersachsen | CC BY 4.0, © Geokompetenz/LVermGeo SH |
+| [VIZ Berlin](https://daten.berlin.de/datensaetze/baustellen-sperrungen-und-sonstige-storungen-von-besonderem-verkehrlichem-interesse) | Berliner Hauptstraßen: Baustellen, Sperrungen, Störungen (Autobahn-Baustellen kommen über die Autobahn GmbH) | Digitale Plattform Stadtverkehr Berlin, dl-de/by-2-0 |
+| [Landesbetrieb Straßenwesen Brandenburg](https://isk.geobasis-bb.de/ows/baustelleninfo_wfs?SERVICE=WFS&REQUEST=GetCapabilities) | Bundes-, Landes- und Kreisstraßen in Brandenburg | © Landesbetrieb Straßenwesen Brandenburg, dl-de/by-2-0 |
+| [Sperrinfo Sachsen-Anhalt](https://service.ifak.eu/sperrinfo/wfs?SERVICE=WFS&REQUEST=GetCapabilities) | Alle Straßenklassen in Sachsen-Anhalt inkl. Gemeindestraßen | Ministerium für Landesentwicklung und Verkehr; laut Dienst **nur nichtkommerzielle Nutzung** |
 
 Alle Entitäten tragen die jeweilige Namensnennung im Attribut `attribution`.
 
@@ -46,7 +49,7 @@ Die Quellen sind nicht vollständig:
 - MobiData BW deckt Bundes-, Landes- und Kreisstraßen in Baden-Württemberg ab, kommunale Straßen nur vereinzelt.
 - Der Stuttgarter Baustellenkalender deckt nur das „Vorbehaltsstraßennetz“ ab – Wohnstraßen, Notreparaturen und nicht verkehrsrelevante Arbeiten von Versorgern fehlen bewusst.
 - Die norddeutschen Daten sind je Land unterschiedlich ausführlich: In Niedersachsen sind es nur Bundesstraßen, in Mecklenburg-Vorpommern fehlen oft Straßennamen.
-- Außerhalb von Baden-Württemberg und Norddeutschland stehen nur die Autobahnen zur Verfügung.
+- In den übrigen Ländern stehen bisher nur die Autobahnen zur Verfügung.
 - Unfälle haben in keiner Quelle eine eigene Kategorie; Streckenwacht erkennt sie am Wort „Unfall“ in den Warnungen und Verkehrsstörungen.
 - Keine der Quellen garantiert Vollständigkeit oder eine feste Aktualisierungsfrequenz; alle Angaben stammen ungefiltert von den jeweiligen Behörden und Betreibern.
 
@@ -56,7 +59,7 @@ Kurz: Streckenwacht eignet sich gut, um größere Störungen auf Hauptstrecken i
 
 Dein Standort verlässt Home Assistant nicht. Streckenwacht lädt die Meldungen ganzer Autobahnen bzw. die landesweite MobiData-Datei und die Stuttgarter Liste herunter und filtert erst lokal auf deine Bereiche. Unveränderte Daten werden dank ETag nicht erneut übertragen.
 
-Einzige Ausnahme ist die Quelle Norddeutschland: Sie ist zu groß, um bei jedem Abruf komplett geladen zu werden. Streckenwacht fragt dort deshalb einen groben Kartenausschnitt ab – auf ein Raster von etwa 55 × 35 km gerundet. Der Server erfährt so nur die ungefähre Region, nicht deinen Bereich.
+Ausnahme sind große Landesquellen ohne ETag (Norddeutschland, Brandenburg): Sie sind zu groß, um bei jedem Abruf komplett geladen zu werden. Streckenwacht fragt dort deshalb einen groben Kartenausschnitt ab – auf ein Raster von etwa 55 × 35 km gerundet. Der Server erfährt so nur die ungefähre Region, nicht deinen Bereich.
 
 Die Abrufe enthalten keine persönlichen Daten, nur eine Kennung der Integration (User-Agent).
 
@@ -80,7 +83,7 @@ Hinweis: Im HACS-Dashboard fehlt das Icon derzeit ([HACS-Issue #5171](https://gi
 
 ### Datenquellen und Optionen
 
-Beim Hinzufügen wählst du die Datenquellen. Vorausgewählt sind die Autobahn und die regionalen Quellen für deinen Home-Assistant-Standort (Baden-Württemberg bzw. Norddeutschland).
+Beim Hinzufügen wählst du die Datenquellen. Vorausgewählt sind die Autobahn und die regionalen Quellen für deinen Home-Assistant-Standort (z. B. Baden-Württemberg oder Berlin und Brandenburg).
 
 <a id="optionen"></a>Später änderbar über **Geräte & Dienste → Streckenwacht → Konfigurieren**:
 

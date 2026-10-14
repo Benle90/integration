@@ -30,8 +30,11 @@ from .coordinator import (
 from .known_events import KnownEvents
 from .providers import Provider
 from .providers.autobahn import AutobahnProvider
+from .providers.berlin import BerlinProvider
+from .providers.brandenburg import BrandenburgProvider
 from .providers.mobidata_bw import MobiDataBWProvider
 from .providers.norddeutschland import NorddeutschlandProvider
+from .providers.sachsen_anhalt import SachsenAnhaltProvider
 from .providers.stuttgart import StuttgartProvider
 
 PLATFORMS: list[Platform] = [
@@ -46,6 +49,9 @@ PROVIDERS: dict[Source, type[Provider]] = {
     Source.MOBIDATA_BW: MobiDataBWProvider,
     Source.STUTTGART: StuttgartProvider,
     Source.NORDDEUTSCHLAND: NorddeutschlandProvider,
+    Source.BERLIN: BerlinProvider,
+    Source.BRANDENBURG: BrandenburgProvider,
+    Source.SACHSEN_ANHALT: SachsenAnhaltProvider,
 }
 
 

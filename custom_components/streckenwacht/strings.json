@@ -10,7 +10,7 @@
           "include_inrix": "Include traffic jams (INRIX)"
         },
         "data_description": {
-          "sources": "Except for Autobahn GmbH, the sources only cover their region (Baden-Württemberg, Stuttgart, northern Germany).",
+          "sources": "Except for Autobahn GmbH, the sources only cover the state or city named.",
           "scan_interval": "How often the sources are polled. They do not change by the minute.",
           "include_inrix": "Traffic jam data in the Autobahn API comes from the commercial provider INRIX."
         }
@@ -33,7 +33,7 @@
           "include_inrix": "Include traffic jams (INRIX)"
         },
         "data_description": {
-          "sources": "Except for Autobahn GmbH, the sources only cover their region (Baden-Württemberg, Stuttgart, northern Germany).",
+          "sources": "Except for Autobahn GmbH, the sources only cover the state or city named.",
           "scan_interval": "How often the sources are polled. They do not change by the minute.",
           "include_inrix": "Traffic jam data in the Autobahn API comes from the commercial provider INRIX."
         }
@@ -117,7 +117,10 @@
         "autobahn": "Autobahn GmbH (motorways, Germany-wide)",
         "mobidata_bw": "MobiData BW (federal, state, district roads in BW)",
         "stuttgart": "City of Stuttgart (main road network)",
-        "norddeutschland": "Northern Germany (SH, HH, MV, NI; LBV.SH)"
+        "norddeutschland": "Northern Germany (SH, HH, MV, NI; LBV.SH)",
+        "berlin": "Berlin (VIZ, main roads incl. incidents)",
+        "brandenburg": "Brandenburg (federal, state, district roads)",
+        "sachsen_anhalt": "Saxony-Anhalt (all roads; non-commercial use)"
       }
     }
   },

@@ -37,6 +37,9 @@ The integration's UI is available in German and English and follows your Home As
 | [MobiData BW](https://mobidata-bw.de/dataset/baustelleninformationen-baden-wurttemberg) | Federal, state and district roads in Baden-Württemberg, some municipal roads | Datenlizenz Deutschland – Namensnennung 2.0 |
 | [City of Stuttgart – roadworks calendar](https://www.stuttgart.de/baustellenkalender) | Main roads (Vorbehaltsstraßennetz) in Stuttgart | CC BY 4.0, © Landeshauptstadt Stuttgart |
 | [Roadworks information northern Germany (LBV.SH)](https://dienste.gdi-sh.de/WFS_SH_Baustelleninformationen?SERVICE=WFS&REQUEST=GetCapabilities) | Schleswig-Holstein (all road classes, plus current traffic disruptions and accidents), Hamburg, Mecklenburg-Vorpommern, federal roads in Lower Saxony | CC BY 4.0, © Geokompetenz/LVermGeo SH |
+| [VIZ Berlin](https://daten.berlin.de/datensaetze/baustellen-sperrungen-und-sonstige-storungen-von-besonderem-verkehrlichem-interesse) | Berlin's main roads: roadworks, closures, incidents (motorway works come from Autobahn GmbH) | Digitale Plattform Stadtverkehr Berlin, dl-de/by-2-0 |
+| [Landesbetrieb Straßenwesen Brandenburg](https://isk.geobasis-bb.de/ows/baustelleninfo_wfs?SERVICE=WFS&REQUEST=GetCapabilities) | Federal, state and district roads in Brandenburg | © Landesbetrieb Straßenwesen Brandenburg, dl-de/by-2-0 |
+| [Sperrinfo Sachsen-Anhalt](https://service.ifak.eu/sperrinfo/wfs?SERVICE=WFS&REQUEST=GetCapabilities) | All road classes in Saxony-Anhalt incl. municipal roads | Ministerium für Landesentwicklung und Verkehr; according to the service **non-commercial use only** |
 
 Every entity carries the required attribution in its `attribution` attribute.
 
@@ -48,7 +51,7 @@ The sources are not complete:
 - MobiData BW covers federal, state and district roads in Baden-Württemberg, municipal roads only occasionally.
 - The Stuttgart roadworks calendar only covers the main road network – residential streets, emergency repairs and utility works without traffic impact are deliberately missing.
 - The northern German data differs per state: Lower Saxony only has federal roads, Mecklenburg-Vorpommern often lacks road names.
-- Outside Baden-Württemberg and northern Germany only motorways are available.
+- In the other states only motorways are available so far.
 - No source has a dedicated accident category; Streckenwacht recognizes accidents by the word "Unfall" in warnings and traffic disruptions.
 - None of the sources guarantees completeness or a fixed update frequency; all information comes unfiltered from the respective authorities and operators.
 
@@ -58,7 +61,7 @@ In short: Streckenwacht is well suited to keep an eye on major disruptions on ma
 
 Your location never leaves Home Assistant. Streckenwacht downloads the reports of whole motorways, the statewide MobiData file and the Stuttgart list, and filters them locally to your areas. Unchanged data is not transferred again thanks to ETags.
 
-The only exception is the northern Germany source: it is too large to download completely on every poll. Streckenwacht therefore requests a coarse map section there, rounded to a grid of about 55 × 35 km. The server only learns the rough region, not your area.
+The exception are large state sources without ETag (northern Germany, Brandenburg): they are too large to download completely on every poll. Streckenwacht therefore requests a coarse map section there, rounded to a grid of about 55 × 35 km. The server only learns the rough region, not your area.
 
 The requests contain no personal data, only an identifier of the integration (user agent).
 
@@ -82,7 +85,7 @@ Note: the icon is currently missing in the HACS dashboard ([HACS issue #5171](ht
 
 ### Data sources and options
 
-When adding the integration you choose the data sources. Preselected are the motorways and the regional sources for your Home Assistant location (Baden-Württemberg or northern Germany).
+When adding the integration you choose the data sources. Preselected are the motorways and the regional sources for your Home Assistant location (e.g. Baden-Württemberg, or Berlin and Brandenburg).
 
 <a id="options"></a>Change them later via **Devices & services → Streckenwacht → Configure**:
 

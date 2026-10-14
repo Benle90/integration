@@ -53,6 +53,21 @@ NORD_LAYERS = {
     "Baustellen_Niedersachsen": (52.0, 9.0, 53.0, 10.5),  # Raum Hannover
 }
 
+# Ostdeutsche Quellen: Berlin komplett (mit ETag), Brandenburg per Ausschnitt
+# (Raum Potsdam), Sachsen-Anhalt komplett (klein).
+BERLIN_URL = "https://api.viz.berlin.de/daten/baustellen_sperrungen_viz.json"
+BRANDENBURG_URL = (
+    "https://isk.geobasis-bb.de/ows/baustelleninfo_wfs?SERVICE=WFS&VERSION=2.0.0"
+    "&REQUEST=GetFeature&TYPENAMES=app:baustelleninfo"
+    "&OUTPUTFORMAT=application/geo%2Bjson&SRSNAME=EPSG:4326"
+    "&BBOX=52.0,12.5,52.6,13.5,urn:ogc:def:crs:EPSG::4326"
+)
+SACHSEN_ANHALT_URL = (
+    "https://service.ifak.eu/sperrinfo/wfs?SERVICE=WFS&VERSION=2.0.0"
+    "&REQUEST=GetFeature&TYPENAMES=ms:roadworks&OUTPUTFORMAT=geojson"
+    "&SRSNAME=EPSG:4326"
+)
+
 index: list[dict] = []
 
 
@@ -138,12 +153,24 @@ def norddeutschland() -> None:
         save(f"norddeutschland_{layer}.geojson.json", url, s, b, c)
 
 
+def osten() -> None:
+    print("Berlin, Brandenburg, Sachsen-Anhalt")
+    for name, url in (
+        ("berlin_viz.geojson.json", BERLIN_URL),
+        ("brandenburg_potsdam.geojson.json", BRANDENBURG_URL),
+        ("sachsen_anhalt_roadworks.geojson.json", SACHSEN_ANHALT_URL),
+    ):
+        s, b, c = get(url)
+        save(name, url, s, b, c)
+
+
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     autobahn()
     mobidata()
     stuttgart()
     norddeutschland()
+    osten()
     (OUT / "_index.json").write_text(
         json.dumps(
             {
