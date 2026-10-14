@@ -41,6 +41,7 @@ The integration's UI is available in German and English and follows your Home As
 | [Landesbetrieb Straßenwesen Brandenburg](https://isk.geobasis-bb.de/ows/baustelleninfo_wfs?SERVICE=WFS&REQUEST=GetCapabilities) | Federal, state and district roads in Brandenburg | © Landesbetrieb Straßenwesen Brandenburg, dl-de/by-2-0 |
 | [Sperrinfo Sachsen-Anhalt](https://service.ifak.eu/sperrinfo/wfs?SERVICE=WFS&REQUEST=GetCapabilities) | All road classes in Saxony-Anhalt incl. municipal roads | Ministerium für Landesentwicklung und Verkehr; according to the service **non-commercial use only** |
 | [Baustelleninformationssystem Sachsen](https://www.baustellen.sachsen.de/baustellendaten-dienste-3997.html) | All road classes in Saxony incl. municipal roads (motorways come from Autobahn GmbH) | Baustelleninformationssystem Sachsen, CC BY 4.0 |
+| [Mobilitätsatlas Rheinland-Pfalz](https://verkehr.rlp.de) | All road classes in Rhineland-Palatinate (reports of state and local authorities) | Landesbetrieb Mobilität Rheinland-Pfalz; published openly, no license declared |
 
 Every entity carries the required attribution in its `attribution` attribute.
 

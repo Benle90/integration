@@ -58,6 +58,8 @@ class WfsProvider(Provider):
     output_format: ClassVar[str] = "GEOJSON"
     # Small layers are fetched whole: simpler, and the server learns nothing.
     filter_by_bbox: ClassVar[bool] = True
+    # Extra query parameters, e.g. a CQL_FILTER on GeoServer.
+    query: ClassVar[dict[str, str]] = {}
 
     def __init__(self, session: aiohttp.ClientSession, url: str | None = None) -> None:
         super().__init__(session)
@@ -92,6 +94,7 @@ class WfsProvider(Provider):
             "TYPENAMES": layer.name,
             "OUTPUTFORMAT": self.output_format,
             "SRSNAME": "EPSG:4326",
+            **self.query,
         }
         if self.filter_by_bbox:
             south, west, north, east = snap_to_grid(bbox, GRID_DEGREES)

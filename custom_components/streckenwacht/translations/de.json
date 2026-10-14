@@ -121,7 +121,8 @@
         "berlin": "Berlin (VIZ, Hauptstraßen inkl. Störungen)",
         "brandenburg": "Brandenburg (Bundes-, Landes-, Kreisstraßen)",
         "sachsen_anhalt": "Sachsen-Anhalt (alle Straßen; nur nichtkommerziell)",
-        "sachsen": "Sachsen (alle Straßen)"
+        "sachsen": "Sachsen (alle Straßen)",
+        "rheinland_pfalz": "Rheinland-Pfalz (alle Straßen)"
       }
     }
   },

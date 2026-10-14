@@ -39,6 +39,7 @@ Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein
 | [Landesbetrieb Straßenwesen Brandenburg](https://isk.geobasis-bb.de/ows/baustelleninfo_wfs?SERVICE=WFS&REQUEST=GetCapabilities) | Bundes-, Landes- und Kreisstraßen in Brandenburg | © Landesbetrieb Straßenwesen Brandenburg, dl-de/by-2-0 |
 | [Sperrinfo Sachsen-Anhalt](https://service.ifak.eu/sperrinfo/wfs?SERVICE=WFS&REQUEST=GetCapabilities) | Alle Straßenklassen in Sachsen-Anhalt inkl. Gemeindestraßen | Ministerium für Landesentwicklung und Verkehr; laut Dienst **nur nichtkommerzielle Nutzung** |
 | [Baustelleninformationssystem Sachsen](https://www.baustellen.sachsen.de/baustellendaten-dienste-3997.html) | Alle Straßenklassen in Sachsen inkl. Gemeindestraßen (Autobahnen kommen über die Autobahn GmbH) | Baustelleninformationssystem Sachsen, CC BY 4.0 |
+| [Mobilitätsatlas Rheinland-Pfalz](https://verkehr.rlp.de) | Alle Straßenklassen in Rheinland-Pfalz (Meldungen der Landes- und Kommunalbehörden) | Landesbetrieb Mobilität Rheinland-Pfalz; öffentlich bereitgestellt, ohne erklärte Lizenz |
 
 Alle Entitäten tragen die jeweilige Namensnennung im Attribut `attribution`.
 

@@ -34,6 +34,9 @@ from custom_components.streckenwacht.providers.mobidata_bw import MobiDataBWProv
 from custom_components.streckenwacht.providers.norddeutschland import (
     NorddeutschlandProvider,
 )
+from custom_components.streckenwacht.providers.rheinland_pfalz import (
+    RheinlandPfalzProvider,
+)
 from custom_components.streckenwacht.providers.sachsen import SachsenProvider
 from custom_components.streckenwacht.providers.sachsen_anhalt import (
     SachsenAnhaltProvider,
@@ -78,6 +81,7 @@ async def main(args: argparse.Namespace) -> int:
             BrandenburgProvider(session),
             SachsenAnhaltProvider(session),
             SachsenProvider(session),
+            RheinlandPfalzProvider(session),
         )
         for provider in providers:
             print(f"{provider.source}:")

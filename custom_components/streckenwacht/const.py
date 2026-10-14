@@ -61,6 +61,7 @@ class Source(StrEnum):
     BRANDENBURG = "brandenburg"
     SACHSEN_ANHALT = "sachsen_anhalt"
     SACHSEN = "sachsen"
+    RHEINLAND_PFALZ = "rheinland_pfalz"
 
 
 # Proper names, used as translation placeholders (not translatable).
@@ -73,6 +74,7 @@ SOURCE_NAMES: Final[dict[Source, str]] = {
     Source.BRANDENBURG: "Landesbetrieb Straßenwesen Brandenburg",
     Source.SACHSEN_ANHALT: "Sperrinfo Sachsen-Anhalt",
     Source.SACHSEN: "Baustelleninformationssystem Sachsen",
+    Source.RHEINLAND_PFALZ: "Mobilitätsatlas Rheinland-Pfalz",
 }
 
 # Attribution required by the data licenses (see docs/ENTWICKLUNG.md, section 4).
@@ -92,6 +94,8 @@ ATTRIBUTION: Final[dict[Source, str]] = {
         "nur nichtkommerzielle Nutzung"
     ),
     Source.SACHSEN: "Baustelleninformationssystem Sachsen, CC BY 4.0",
+    # Published without a license on the Mobilithek (rights: NO_LICENSE).
+    Source.RHEINLAND_PFALZ: "Landesbetrieb Mobilität Rheinland-Pfalz (Mobilitätsatlas)",
 }
 
 # Additional attribution for data the source got from a third party.
@@ -111,6 +115,7 @@ BERLIN: Final[Bounds] = (52.33, 13.08, 52.68, 13.77)
 BRANDENBURG: Final[Bounds] = (51.35, 11.26, 53.56, 14.77)
 SACHSEN_ANHALT: Final[Bounds] = (50.93, 10.56, 53.05, 13.19)
 SACHSEN: Final[Bounds] = (50.17, 11.87, 51.69, 15.04)
+RHEINLAND_PFALZ: Final[Bounds] = (48.96, 6.11, 50.95, 8.51)
 
 # Rough regions of the regional sources, to preselect them by the home location.
 # Sources without a region (the Autobahn) cover all of Germany.
@@ -126,4 +131,5 @@ SOURCE_REGIONS: Final[dict[Source, tuple[Bounds, ...]]] = {
     Source.BRANDENBURG: (BRANDENBURG,),
     Source.SACHSEN_ANHALT: (SACHSEN_ANHALT,),
     Source.SACHSEN: (SACHSEN,),
+    Source.RHEINLAND_PFALZ: (RHEINLAND_PFALZ,),
 }

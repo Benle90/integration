@@ -75,6 +75,16 @@ SACHSEN_ANHALT_URL = (
 SACHSEN_URL = "https://www.list.smwa.sachsen.de/gdi/download/baustelleninfo/Baustelleninfo_Sachsen_geojson.zip"
 SACHSEN_EXCERPT = (300_000, 5_665_000, 330_000, 5_700_000)  # UTM: Ost/Nord min/max
 
+# Rheinland-Pfalz: nur die Meldungen der Landesbehörden (CQL-Filter), davon
+# ein Auszug rund um Mainz und Koblenz.
+RLP_URL = (
+    "https://maps.mobilitaetsatlas.de/geoserver/ows?service=WFS&version=2.0.0"
+    "&request=GetFeature&typeNames=mwvlw:baustelle&outputFormat=application/json"
+    "&srsName=EPSG:4326&CQL_FILTER="
+    + urllib.parse.quote("quelle='Verkehrsbehörden in Rheinland-Pfalz'")
+)
+RLP_EXCERPT = (49.9, 7.4, 50.5, 8.4)  # Süd, West, Nord, Ost
+
 index: list[dict] = []
 
 
@@ -191,6 +201,22 @@ def sachsen() -> None:
     save("sachsen_sperrungen_leipzig.geojson.json", SACHSEN_URL, s, body, c)
 
 
+def rheinland_pfalz() -> None:
+    print("Rheinland-Pfalz")
+    s, b, c = get(RLP_URL)
+    if s == 200:
+        data = json.loads(b)
+        south, west, north, east = RLP_EXCERPT
+        data["features"] = [
+            f
+            for f in data["features"]
+            if south <= f["geometry"]["coordinates"][1] <= north
+            and west <= f["geometry"]["coordinates"][0] <= east
+        ]
+        b = json.dumps(data, ensure_ascii=False).encode()
+    save("rheinland_pfalz_mainz_koblenz.geojson.json", RLP_URL, s, b, c)
+
+
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     autobahn()
@@ -199,6 +225,7 @@ def main() -> int:
     norddeutschland()
     osten()
     sachsen()
+    rheinland_pfalz()
     (OUT / "_index.json").write_text(
         json.dumps(
             {

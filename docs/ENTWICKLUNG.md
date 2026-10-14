@@ -124,6 +124,16 @@ Kein WFS (nur ein WMS für Kartenbilder). ZIP mit `Baustelleninfo_Sperrungen_Sac
 - Eine Sperrung (`ID`) hat bis zu 13 Abschnitte → zusammengefasst, die schwerste `Sperrung_Art` gewinnt (D Vollsperrung, G Richtungsfahrbahn, F Fahrtrichtung, J Anschlussstelle → `closure`). `Strassenklasse` „A“ (Autobahn) und `Sperrung_Art` „O“ (Halte-/Parkverbot) werden ausgelassen. `Sperrung_Typ` „V“ = Veranstaltung.
 - `Ort` kann eine mehrzeilige Liste sein (erste Zeile wird verwendet). Datumsangaben `dd.mm.yyyy` ohne Uhrzeit. Enthält auch Thüringer Grenzgebiet.
 
+### Rheinland-Pfalz (WFS `https://maps.mobilitaetsatlas.de/geoserver/ows`, Mobilitätsatlas)
+
+Layer `mwvlw:baustelle` (GeoServer, `outputFormat=application/json`, **gzip**). Enthält mehrere Herkünfte (`quelle`: Autobahn GmbH, Verkehrsministerium BW, Stadt Karlsruhe, Straßenbauverwaltung Luxemburg, **Verkehrsbehörden in Rheinland-Pfalz**) → `CQL_FILTER=quelle='Verkehrsbehörden in Rheinland-Pfalz'`; so ~1.050 Meldungen, ~90 KB übertragen, daher komplett ohne Ausschnitt. Geprüft 2026-10-14.
+
+- **Lizenz:** In der Mobilithek vom Landesbetrieb Mobilität als öffentliches Angebot ohne Freigabe eingestellt („Arbeitsstellen des klassifizierten Straßennetzes in Rheinland-Pfalz - WFS“), aber mit `rights = NO_LICENSE`; der Dienst selbst nennt keine. Gleiche Abwägung wie bei der Autobahn-API: jede Instanz ruft den öffentlichen Dienst selbst ab, Namensnennung des Landesbetriebs.
+- Nur Punkte, **kein Ortsname** – Titel aus Straßennummer (`strasse`, „G“ = Gemeindestraße) und dem ersten Satz von `beschreibung` (oft leer → `art_der_arbeiten`). Kennung = Feature-ID (enthält das Aktenzeichen).
+- `typ` wie SPERRINFOSYS (G Vollsperrung, F Fahrtrichtung → `closure`; B, C, N sonst), Suffix `_GEPLANT` für geplante.
+- **Zeiten tragen „Z“, sind aber Ortszeit** (Tage laufen von 00:00 bis 23:59).
+- Gehweg- und Halteverbots-Meldungen werden ausgelassen. Vereinzelt kaputte Umlaute in den Quelldaten („Straï¿½e“, 4 von 1.058) – nicht rekonstruierbar, bleiben so.
+
 ## 3. Entscheidungen
 
 - **Eine Integration mit Providern** statt mehrerer: gemeinsame Entities pro Bereich, ein Config-Flow, ein HACS-Eintrag.
@@ -136,7 +146,7 @@ Kein WFS (nur ein WMS für Kartenbilder). ZIP mit `Baustelleninfo_Sperrungen_Sac
 
 ## 4. Risiken, Lizenzen, Recht (keine Rechtsberatung)
 
-- **Namensnennung** je Quelle in `const.ATTRIBUTION` und im Attribut `attribution`: Stuttgart CC BY 4.0, MobiData BW DL-DE-BY-2.0, Norddeutschland CC BY 4.0, Berlin und Brandenburg DL-DE-BY-2.0, Sachsen CC BY 4.0, Sachsen-Anhalt nur nichtkommerziell, Autobahn GmbH (keine erklärte Lizenz, Nennung als gute Praxis), zusätzlich „Verkehrslage: INRIX“.
+- **Namensnennung** je Quelle in `const.ATTRIBUTION` und im Attribut `attribution`: Stuttgart CC BY 4.0, MobiData BW DL-DE-BY-2.0, Norddeutschland CC BY 4.0, Berlin und Brandenburg DL-DE-BY-2.0, Sachsen CC BY 4.0, Sachsen-Anhalt nur nichtkommerziell, Rheinland-Pfalz ohne erklärte Lizenz, Autobahn GmbH (keine erklärte Lizenz, Nennung als gute Praxis), zusätzlich „Verkehrslage: INRIX“.
 - **INRIX** (entschieden 2026-10-02): keine erklärten Nutzungsbedingungen; die Daten werden offen und auch kommerziell genutzt. Streckenwacht verbreitet nichts weiter – jede Instanz ruft den öffentlichen Endpunkt selbst ab; Risiko gering. Vorsorge: `upstream="inrix"` und die abschaltbare Option. **Warnungs-Fixtures (echte INRIX-Daten) nur lokal, nie committen** (`.gitignore`; aus der Historie entfernt); Tests nutzen ein eingebettetes Beispiel.
 - **Zurückgestellt** (Entscheidung des Projektinhabers): Impressumsfrage und Anfrage bei der Autobahn GmbH zu INRIX – erst beim öffentlichen Bewerben wieder aufgreifen. Bis dahin keine Spenden-Links oder Werbung.
 - **API-Stabilität:** keine Quelle ist versioniert oder hat ein SLA, Rate Limits sind unbekannt → defensiv parsen, konservativ pollen, ETag nutzen.
