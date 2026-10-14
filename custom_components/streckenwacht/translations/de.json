@@ -46,11 +46,13 @@
           "description": "Ereignisse innerhalb des Kreises werden angezeigt.",
           "data": {
             "name": "Name",
-            "location": "Bereich"
+            "location": "Bereich",
+            "types": "Meldungsarten"
           },
           "data_description": {
             "name": "Zum Beispiel „Arbeitsweg“. Wird für die Entity-Namen verwendet.",
-            "location": "Markierung verschieben und Kreis aufziehen. Maximaler Radius: 100 km."
+            "location": "Markierung verschieben und Kreis aufziehen. Maximaler Radius: 100 km.",
+            "types": "Welche Meldungen in diesem Bereich angezeigt werden, z. B. ohne normale Baustellen, damit der Kalender in einer Stadt übersichtlich bleibt."
           }
         },
         "reconfigure": {
@@ -58,11 +60,13 @@
           "description": "Ereignisse innerhalb des Kreises werden angezeigt.",
           "data": {
             "name": "Name",
-            "location": "Bereich"
+            "location": "Bereich",
+            "types": "Meldungsarten"
           },
           "data_description": {
             "name": "Zum Beispiel „Arbeitsweg“. Wird für die Entity-Namen verwendet.",
-            "location": "Markierung verschieben und Kreis aufziehen. Maximaler Radius: 100 km."
+            "location": "Markierung verschieben und Kreis aufziehen. Maximaler Radius: 100 km.",
+            "types": "Welche Meldungen in diesem Bereich angezeigt werden, z. B. ohne normale Baustellen, damit der Kalender in einer Stadt übersichtlich bleibt."
           }
         },
         "sources": {
@@ -99,7 +103,8 @@
         "name_required": "Bitte einen Namen angeben.",
         "radius_too_large": "Der Radius darf höchstens 100 km betragen.",
         "no_sources": "Wähle mindestens eine Datenquelle.",
-        "no_roads": "Wähle mindestens eine Autobahn oder entferne im vorigen Schritt die Quelle „Autobahn GmbH“."
+        "no_roads": "Wähle mindestens eine Autobahn oder entferne im vorigen Schritt die Quelle „Autobahn GmbH“.",
+        "no_types": "Wähle mindestens eine Meldungsart."
       },
       "abort": {
         "cannot_connect": "Die Autobahnliste konnte nicht geladen werden. Bitte später erneut versuchen.",
@@ -126,6 +131,15 @@
         "aachen": "Aachen (Baustellen)",
         "duisburg": "Duisburg (Baustellen)",
         "muenster": "Münster (Baustellen)"
+      }
+    },
+    "types": {
+      "options": {
+        "roadworks": "Baustellen",
+        "closure": "Sperrungen",
+        "traffic_jam": "Staus",
+        "accident": "Unfälle",
+        "warning": "Warnungen und Veranstaltungen"
       }
     }
   },

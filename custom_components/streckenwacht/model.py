@@ -127,6 +127,8 @@ class ObservationArea:
     sources: frozenset[Source] | None = None
     # Autobahn directions to keep ("Singen -> Stuttgart"); empty means all.
     directions: frozenset[str] = frozenset()
+    # Kinds of events shown (e.g. without plain roadworks); None means all.
+    types: frozenset[EventType] | None = None
 
     def uses(self, source: Source) -> bool:
         """Return True if events of this source are shown in the area."""
@@ -135,6 +137,8 @@ class ObservationArea:
     def contains(self, event: StreckenwachtEvent) -> bool:
         """Return True if the event lies within this area."""
         if not self.uses(event.source):
+            return False
+        if self.types is not None and event.event_type not in self.types:
             return False
         if event.source is Source.AUTOBAHN:
             if event.road not in self.roads:

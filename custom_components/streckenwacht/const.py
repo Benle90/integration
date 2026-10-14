@@ -36,6 +36,7 @@ CONF_RADIUS: Final = "radius"  # meters, as returned by the location selector
 CONF_ROADS: Final = "roads"
 CONF_AREA_SOURCES: Final = "sources"  # per area (since entry minor version 2)
 CONF_DIRECTIONS: Final = "directions"
+CONF_TYPES: Final = "types"  # per area; None/missing means all
 CONF_JAM_THRESHOLD: Final = "jam_threshold"  # minutes
 
 DEFAULT_RADIUS: Final = 10_000

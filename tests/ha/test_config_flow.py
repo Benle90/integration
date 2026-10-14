@@ -24,6 +24,7 @@ from custom_components.streckenwacht.const import (
     CONF_RADIUS,
     CONF_ROADS,
     CONF_SCAN_INTERVAL,
+    CONF_TYPES,
     DOMAIN,
     SUBENTRY_AREA,
     Source,
@@ -125,7 +126,8 @@ DIRECTION_EVENTS = [
     )
 ]
 STUTTGART = {"latitude": 48.78, "longitude": 9.18, CONF_RADIUS: 15000}
-AREA_INPUT = {"name": "Arbeitsweg", CONF_LOCATION: STUTTGART}
+ALL_TYPES = ["roadworks", "closure", "traffic_jam", "accident", "warning"]
+AREA_INPUT = {"name": "Arbeitsweg", CONF_LOCATION: STUTTGART, CONF_TYPES: ALL_TYPES}
 SOURCES_INPUT = {CONF_AREA_SOURCES: ["autobahn", "mobidata_bw"]}
 
 
@@ -175,7 +177,8 @@ async def test_add_area_wizard(
     result = await start_area_flow(hass, entry)
     assert result["type"] is FlowResultType.FORM
     assert result["step_id"] == "user"
-    assert set(result["data_schema"].schema) == {"name", CONF_LOCATION}
+    assert set(result["data_schema"].schema) == {"name", CONF_LOCATION, CONF_TYPES}
+    assert suggested(result, CONF_TYPES) == ALL_TYPES
 
     # step 2: the sources covering Stuttgart, all preselected
     result = await configure(hass, result, AREA_INPUT)
@@ -212,6 +215,7 @@ async def test_add_area_wizard(
         CONF_ROADS: ["A8", "A81"],
         CONF_JAM_THRESHOLD: 10,
         CONF_DIRECTIONS: ["Singen -> Stuttgart"],
+        CONF_TYPES: None,  # all kinds
     }
 
 
@@ -236,7 +240,11 @@ async def test_sources_offered_by_location(
     result = await configure(
         hass,
         result,
-        {"name": "Test", CONF_LOCATION: location | {CONF_RADIUS: 5000}},
+        {
+            "name": "Test",
+            CONF_LOCATION: location | {CONF_RADIUS: 5000},
+            CONF_TYPES: ALL_TYPES,
+        },
     )
     assert result["step_id"] == "sources"
     assert options_of(result, CONF_AREA_SOURCES) == offered
@@ -249,7 +257,9 @@ async def test_only_autobahn_skips_the_sources_step(
     entry.add_to_hass(hass)
     result = await start_area_flow(hass, entry)
     nuremberg = {"latitude": 49.45, "longitude": 11.08, CONF_RADIUS: 5000}
-    result = await configure(hass, result, {"name": "A9", CONF_LOCATION: nuremberg})
+    result = await configure(
+        hass, result, AREA_INPUT | {"name": "A9", CONF_LOCATION: nuremberg}
+    )
     assert result["step_id"] == "roads"
 
 
@@ -284,6 +294,7 @@ async def test_a_source_is_required(hass: HomeAssistant) -> None:
     ("changes", "errors"),
     [
         ({"name": "   "}, {"name": "name_required"}),
+        ({CONF_TYPES: []}, {CONF_TYPES: "no_types"}),
         (
             {CONF_LOCATION: STUTTGART | {CONF_RADIUS: 150000}},
             {CONF_LOCATION: "radius_too_large"},
@@ -410,7 +421,9 @@ async def test_reconfigure_keeps_stored_sources_selectable_after_moving(
     entry.add_to_hass(hass)
     result = await start_reconfigure(hass, entry)
     magdeburg = {"latitude": 52.13, "longitude": 11.63, CONF_RADIUS: 5000}
-    result = await configure(hass, result, {"name": "Neu", CONF_LOCATION: magdeburg})
+    result = await configure(
+        hass, result, AREA_INPUT | {"name": "Neu", CONF_LOCATION: magdeburg}
+    )
     # Stuttgart is far away now, but can still be deselected.
     assert options_of(result, CONF_AREA_SOURCES) == [
         "autobahn",
@@ -460,3 +473,25 @@ async def test_no_jam_threshold_without_inrix(
     result = await configure(hass, result, AREA_INPUT)
     result = await configure(hass, result, SOURCES_INPUT)
     assert CONF_JAM_THRESHOLD not in result["data_schema"].schema
+
+
+async def test_area_with_some_kinds_of_reports(
+    hass: HomeAssistant, roads: AsyncMock
+) -> None:
+    entry = entry_with(OPTIONS)
+    entry.add_to_hass(hass)
+    result = await start_area_flow(hass, entry)
+    result = await configure(
+        hass, result, AREA_INPUT | {CONF_TYPES: ["closure", "accident"]}
+    )
+    result = await configure(hass, result, {CONF_AREA_SOURCES: ["mobidata_bw"]})
+    assert result["type"] is FlowResultType.CREATE_ENTRY
+    (subentry,) = entry.subentries.values()
+    assert subentry.data[CONF_TYPES] == ["accident", "closure"]
+
+
+async def test_reconfigure_preselects_stored_kinds(hass: HomeAssistant) -> None:
+    entry = entry_with(OPTIONS, [stored_area(types=["closure"])])
+    entry.add_to_hass(hass)
+    result = await start_reconfigure(hass, entry)
+    assert suggested(result, CONF_TYPES) == ["closure"]

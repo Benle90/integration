@@ -46,11 +46,13 @@
           "description": "Events within the circle are shown.",
           "data": {
             "name": "Name",
-            "location": "Area"
+            "location": "Area",
+            "types": "Kinds of reports"
           },
           "data_description": {
             "name": "For example “Commute”. Used in entity names.",
-            "location": "Move the marker and drag the circle. Maximum radius: 100 km."
+            "location": "Move the marker and drag the circle. Maximum radius: 100 km.",
+            "types": "Which reports to show in this area, e.g. without plain roadworks to keep the calendar short in a city."
           }
         },
         "reconfigure": {
@@ -58,11 +60,13 @@
           "description": "Events within the circle are shown.",
           "data": {
             "name": "Name",
-            "location": "Area"
+            "location": "Area",
+            "types": "Kinds of reports"
           },
           "data_description": {
             "name": "For example “Commute”. Used in entity names.",
-            "location": "Move the marker and drag the circle. Maximum radius: 100 km."
+            "location": "Move the marker and drag the circle. Maximum radius: 100 km.",
+            "types": "Which reports to show in this area, e.g. without plain roadworks to keep the calendar short in a city."
           }
         },
         "sources": {
@@ -99,7 +103,8 @@
         "name_required": "Please enter a name.",
         "radius_too_large": "The radius must not exceed 100 km.",
         "no_sources": "Select at least one data source.",
-        "no_roads": "Select at least one motorway, or deselect the “Autobahn GmbH” source in the previous step."
+        "no_roads": "Select at least one motorway, or deselect the “Autobahn GmbH” source in the previous step.",
+        "no_types": "Select at least one kind of report."
       },
       "abort": {
         "cannot_connect": "Could not load the list of motorways. Please try again later.",
@@ -126,6 +131,15 @@
         "aachen": "Aachen (roadworks)",
         "duisburg": "Duisburg (roadworks)",
         "muenster": "Münster (roadworks)"
+      }
+    },
+    "types": {
+      "options": {
+        "roadworks": "Roadworks",
+        "closure": "Closures",
+        "traffic_jam": "Traffic jams",
+        "accident": "Accidents",
+        "warning": "Warnings and events"
       }
     }
   },

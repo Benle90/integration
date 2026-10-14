@@ -110,7 +110,7 @@ When adding the integration, Streckenwacht only asks for the update interval and
 
 On the Streckenwacht page choose **Add observation area**. The dialog guides you through up to four steps:
 
-1. **Area** – name (becomes part of the entity IDs, e.g. "Commute") and circle on the map (max. 100 km).
+1. **Area** – name (becomes part of the entity IDs, e.g. "Commute"), circle on the map (max. 100 km) and the **kinds of reports** (roadworks, closures, traffic jams, accidents, warnings). To see only closures and accidents in a city, deselect roadworks – this then applies to the calendar, sensors, map and notifications of this area.
 2. **Data sources** – offered are the motorways and every source whose region touches the circle, all preselected. Deselect what you don't need, e.g. everything but the motorways for a commute. If only the motorways are available, this step is skipped.
 3. **Motorways** – only if "Autobahn GmbH" is selected. Only their events within the circle are shown. The selection is needed because the Autobahn API always returns a whole motorway and cannot search by area. Here you also set **from how many minutes of travel time loss a traffic jam counts as a disruption** (default 10, 0 = every jam).
 4. **Directions of travel** – you can choose from the directions currently used on the selected motorways. Leave empty for all directions. Events at junction ramps and events without a direction are always shown.

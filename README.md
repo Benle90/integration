@@ -108,7 +108,7 @@ Beim Hinzufügen fragt Streckenwacht nur nach Abrufintervall und Staumeldungen. 
 
 Auf der Streckenwacht-Seite **Beobachtungsbereich hinzufügen**. Der Dialog führt in bis zu vier Schritten durch die Einrichtung:
 
-1. **Bereich** – Name (wird Teil der Entity-IDs, z. B. „Arbeitsweg“) und Kreis auf der Karte (max. 100 km).
+1. **Bereich** – Name (wird Teil der Entity-IDs, z. B. „Arbeitsweg“), Kreis auf der Karte (max. 100 km) und die **Meldungsarten** (Baustellen, Sperrungen, Staus, Unfälle, Warnungen). Wer in einer Stadt nur Sperrungen und Unfälle sehen will, wählt die Baustellen ab – das gilt dann für Kalender, Sensoren, Karte und Benachrichtigungen dieses Bereichs.
 2. **Datenquellen** – angeboten werden die Autobahn und alle Quellen, deren Gebiet den Kreis berührt, alle vorausgewählt. Abwählen, was du nicht brauchst, z. B. alles außer der Autobahn für einen Arbeitsweg. Gibt es nur die Autobahn, entfällt der Schritt.
 3. **Autobahnen** – nur wenn „Autobahn GmbH“ gewählt ist. Angezeigt werden nur ihre Meldungen innerhalb des Kreises. Die Auswahl ist nötig, weil die Autobahn-API immer eine ganze Autobahn liefert und keine Umkreissuche kennt. Hier stellst du auch ein, **ab wie vielen Minuten Reisezeitverlust ein Stau als Störung zählt** (Standard 10, 0 = jeder Stau).
 4. **Fahrtrichtungen** – zur Auswahl stehen die Richtungen, die auf den gewählten Autobahnen aktuell vorkommen. Leer lassen für alle Richtungen. Meldungen an Anschlussstellen und ohne Richtung werden immer angezeigt.

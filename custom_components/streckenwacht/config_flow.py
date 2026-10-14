@@ -32,6 +32,7 @@ from .const import (
     CONF_ROADS,
     CONF_SCAN_INTERVAL,
     CONF_SOURCES,
+    CONF_TYPES,
     DEFAULT_INCLUDE_INRIX,
     DEFAULT_JAM_THRESHOLD,
     DEFAULT_RADIUS,
@@ -43,7 +44,7 @@ from .const import (
     SUBENTRY_AREA,
     Source,
 )
-from .model import ObservationArea, is_route_direction, sources_for_circle
+from .model import EventType, ObservationArea, is_route_direction, sources_for_circle
 from .providers import ProviderError
 from .providers.autobahn import AutobahnProvider
 
@@ -174,10 +175,13 @@ class AreaSubentryFlow(ConfigSubentryFlow):
             name = user_input[CONF_NAME].strip()
             location = user_input[CONF_LOCATION]
             radius = float(location.get(CONF_RADIUS) or DEFAULT_RADIUS)
+            types = sorted(user_input.get(CONF_TYPES, []))
             if not name:
                 errors[CONF_NAME] = "name_required"
             elif radius > MAX_RADIUS:
                 errors[CONF_LOCATION] = "radius_too_large"
+            elif not types:
+                errors[CONF_TYPES] = "no_types"
             else:
                 self._title = name
                 self._data = {
@@ -187,6 +191,8 @@ class AreaSubentryFlow(ConfigSubentryFlow):
                     CONF_AREA_SOURCES: [],
                     CONF_ROADS: [],
                     CONF_DIRECTIONS: [],
+                    # None: all kinds, including ones added in later versions
+                    CONF_TYPES: None if len(types) == len(EventType) else types,
                 }
                 return await self.async_step_sources()
 
@@ -196,6 +202,14 @@ class AreaSubentryFlow(ConfigSubentryFlow):
                 vol.Required(CONF_LOCATION): selector.LocationSelector(
                     selector.LocationSelectorConfig(
                         radius=True, icon="mdi:road-variant"
+                    )
+                ),
+                vol.Required(CONF_TYPES): selector.SelectSelector(
+                    selector.SelectSelectorConfig(
+                        options=[t.value for t in EventType],
+                        multiple=True,
+                        mode=selector.SelectSelectorMode.LIST,
+                        translation_key=CONF_TYPES,
                     )
                 ),
             }
@@ -219,6 +233,7 @@ class AreaSubentryFlow(ConfigSubentryFlow):
                     CONF_LONGITUDE: data[CONF_LONGITUDE],
                     CONF_RADIUS: data.get(CONF_RADIUS, DEFAULT_RADIUS),
                 },
+                CONF_TYPES: data.get(CONF_TYPES) or [t.value for t in EventType],
             }
         return {
             CONF_NAME: "",
@@ -227,6 +242,7 @@ class AreaSubentryFlow(ConfigSubentryFlow):
                 CONF_LONGITUDE: self.hass.config.longitude,
                 CONF_RADIUS: DEFAULT_RADIUS,
             },
+            CONF_TYPES: [t.value for t in EventType],
         }
 
     async def async_step_sources(

@@ -205,3 +205,22 @@ def test_sources_for_circle(
     lat: float, lon: float, radius_km: float, expected: list[str]
 ) -> None:
     assert [s.value for s in sources_for_circle(lat, lon, radius_km)] == expected
+
+
+def test_area_filters_kinds_of_reports() -> None:
+    area = ObservationArea(
+        "Stadt", 48.78, 9.18, 10, types=frozenset({EventType.CLOSURE})
+    )
+
+    def at_centre(event_type: EventType) -> StreckenwachtEvent:
+        return StreckenwachtEvent(
+            id="x",
+            source=Source.STUTTGART,
+            event_type=event_type,
+            title="x",
+            latitude=48.78,
+            longitude=9.18,
+        )
+
+    assert area.contains(at_centre(EventType.CLOSURE))
+    assert not area.contains(at_centre(EventType.ROADWORKS))

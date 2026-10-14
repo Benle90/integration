@@ -18,6 +18,7 @@ from .const import (
     CONF_JAM_THRESHOLD,
     CONF_RADIUS,
     CONF_ROADS,
+    CONF_TYPES,
     DEFAULT_INCLUDE_INRIX,
     DEFAULT_JAM_THRESHOLD,
     Source,
@@ -62,6 +63,7 @@ def fingerprint(entry: StreckenwachtConfigEntry, subentry: ConfigSubentry) -> st
             ",".join(sorted(data.get(CONF_ROADS, ()))),
             ",".join(sorted(data.get(CONF_AREA_SOURCES) or ())),
             ",".join(sorted(data.get(CONF_DIRECTIONS, ()))),
+            ",".join(sorted(data.get(CONF_TYPES) or ())),
             entry.options.get(CONF_INCLUDE_INRIX, DEFAULT_INCLUDE_INRIX),
             data.get(CONF_JAM_THRESHOLD, DEFAULT_JAM_THRESHOLD),
         )

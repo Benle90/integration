@@ -18,6 +18,7 @@ from .const import (
     CONF_DIRECTIONS,
     CONF_RADIUS,
     CONF_ROADS,
+    CONF_TYPES,
     DEFAULT_RADIUS,
     DOMAIN,
     FAILURES_BEFORE_ISSUE,
@@ -26,7 +27,7 @@ from .const import (
     UPSTREAM_INRIX,
     Source,
 )
-from .model import ObservationArea, StreckenwachtEvent
+from .model import EventType, ObservationArea, StreckenwachtEvent
 from .providers import Provider, ProviderError
 
 _LOGGER = logging.getLogger(__name__)
@@ -65,6 +66,11 @@ def area_from_subentry(subentry: ConfigSubentry) -> ObservationArea:
             else None
         ),
         directions=frozenset(data.get(CONF_DIRECTIONS, ())),
+        types=(
+            frozenset(EventType(t) for t in data[CONF_TYPES])
+            if data.get(CONF_TYPES) is not None
+            else None
+        ),
     )
 
 

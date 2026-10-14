@@ -9,6 +9,7 @@ Wie Streckenwacht gebaut ist, was man über die Datenquellen wissen muss und war
 - **Ein Config-Entry** „Streckenwacht“ (`single_config_entry`): Abrufintervall (10–60 min, Standard 15), Option „Staumeldungen (INRIX) einbeziehen“ (Standard an). Nur UI, kein YAML. Abgefragt werden die Quellen, die irgendein Bereich nutzt.
 - **Ein Config-Subentry `area` je Beobachtungsbereich**, eingerichtet als Assistent `user`/`reconfigure` → `sources` → `roads` → `directions`:
   - Mittelpunkt und Radius per Karte (Standard 10 km, höchstens 100 km – `geo.py` rechnet flach, das ist bis ~100 km genau).
+  - Meldungsarten (`types`, seit 0.3.0): gefiltert wird in `ObservationArea.contains()`, also für alle Entities des Bereichs; alle gewählt wird als `None` gespeichert, damit später hinzukommende Arten automatisch dabei sind.
   - Quellen pro Bereich: angeboten werden die Autobahn und die Quellen, deren Region (`const.SOURCE_REGIONS`, je Land ein paar Rechtecke) den Kreis berührt (`model.sources_for_circle`), alle vorausgewählt; beim Ändern bleiben gespeicherte Quellen wählbar. Nur Autobahn verfügbar → Schritt entfällt.
   - **Migration (Entry-Minor-Version 2, ab 0.2.1):** Bis 0.2.0 hielt der Entry eine globale Quellenliste und Bereiche ohne eigene Liste zeigten alle. `async_migrate_entry` schreibt diese Liste in solche Bereiche und entfernt sie aus den Optionen. Der Fingerprint der Ereignisänderung ändert sich dadurch einmal → still neu gelernt.
   - Autobahnen (nur wenn die Autobahn-Quelle aktiv ist) und Stau-Schwelle in Minuten (nur mit INRIX, Standard 10).
