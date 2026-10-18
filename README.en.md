@@ -236,6 +236,60 @@ actions:
            | map(attribute='title') | join(', ') }}
 ```
 
+### Dashboard with travel time loss
+
+One status card per route (green, orange, red) with the current delay, the reports below, plus the history of the travel time loss:
+
+<img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/dashboard_strecken.png" alt="Two routes with status card and list of reports" width="720">
+<img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/dashboard_verlauf.png" alt="Travel time loss over 24 hours" width="360">
+
+The list of reports is a standard Markdown card. The status card uses [Mushroom](https://github.com/piitaya/lovelace-mushroom), the history in the picture [ApexCharts](https://github.com/RomRider/apexcharts-card) (both via HACS); without extra cards, the built-in history graph (`history-graph`) does the job. Example for an area named "Commute":
+
+```yaml
+type: vertical-stack
+cards:
+  - type: custom:mushroom-template-card  # Mushroom (HACS)
+    entity: sensor.streckenwacht_commute_events
+    icon: mdi:car-clock
+    primary: >-
+      {% set d = states('sensor.streckenwacht_commute_travel_time_loss') | int(0) %}
+      {{ 'Clear' if d == 0 else '+' ~ d ~ ' min delay' }}
+    secondary: >-
+      {% set ent = 'sensor.streckenwacht_commute_events' %}
+      {% set labels = {'accident': ['accident', 'accidents'], 'traffic_jam': ['traffic jam', 'traffic jams'],
+         'closure': ['closure', 'closures'], 'warning': ['warning', 'warnings'],
+         'roadworks': ['roadworks', 'roadworks']} %}
+      {% set ns = namespace(p=[]) %}
+      {% for k, v in labels.items() %}{% set n = state_attr(ent, k) | int(0) %}
+      {% if n > 0 %}{% set ns.p = ns.p + [n ~ ' ' ~ (v[0] if n == 1 else v[1])] %}{% endif %}{% endfor %}
+      {{ ns.p | join(' · ') if ns.p else 'No reports' }}
+    icon_color: >-
+      {% set d = states('sensor.streckenwacht_commute_travel_time_loss') | int(0) %}
+      {% if is_state('binary_sensor.streckenwacht_commute_disruption_active', 'on') or d >= 15 %}red
+      {% elif d > 0 %}orange{% else %}green{% endif %}
+    tap_action:
+      action: more-info
+  - type: markdown
+    content: |
+      {% set events = state_attr('sensor.streckenwacht_commute_events', 'events') or [] %}
+      {% set meta = {'accident': ['mdi:car-emergency', 'Accident'], 'traffic_jam': ['mdi:car-multiple', 'Traffic jam'],
+         'closure': ['mdi:road-variant', 'Closure'], 'warning': ['mdi:alert-outline', 'Warning'],
+         'roadworks': ['mdi:sign-caution', 'Roadworks']} %}
+      {% for e in events %}
+      <ha-icon icon="{{ meta[e.type][0] }}"></ha-icon> **{{ e.title }}**{% if e.delay_minutes %} · **+{{ e.delay_minutes }} min**{% endif %}<br>
+      <small>{{ meta[e.type][1] }}{% if e.direction %} · {{ e.direction }}{% endif %} · {{ 'until ' ~ (as_datetime(e.end) | as_local).strftime('%Y-%m-%d') if e.end else 'open end' }}</small>
+
+      {% else %}
+      <ha-icon icon="mdi:check-circle-outline"></ha-icon> No reports – clear road.
+      {% endfor %}
+  - type: history-graph
+    title: Travel time loss (24 h)
+    hours_to_show: 24
+    entities:
+      - entity: sensor.streckenwacht_commute_travel_time_loss
+        name: Commute
+```
+
 ### Calendar on the dashboard
 
 ```yaml

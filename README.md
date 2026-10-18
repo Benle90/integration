@@ -234,6 +234,60 @@ actions:
            | map(attribute='title') | join(', ') }}
 ```
 
+### Dashboard mit Reisezeitverlust
+
+Pro Strecke eine Statuskarte (grün, orange, rot) mit der aktuellen Verzögerung, darunter die Meldungen, dazu der Verlauf des Reisezeitverlusts:
+
+<img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/dashboard_strecken.png" alt="Zwei Strecken mit Statuskarte und Meldungsliste" width="720">
+<img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/dashboard_verlauf.png" alt="Verlauf des Reisezeitverlusts über 24 Stunden" width="360">
+
+Die Meldungsliste ist eine normale Markdown-Karte. Die Statuskarte nutzt [Mushroom](https://github.com/piitaya/lovelace-mushroom), der Verlauf im Bild [ApexCharts](https://github.com/RomRider/apexcharts-card) (beide über HACS); ohne Zusatzkarten tut es die eingebaute Verlaufskarte (`history-graph`). Beispiel für den Bereich „Arbeitsweg“:
+
+```yaml
+type: vertical-stack
+cards:
+  - type: custom:mushroom-template-card  # Mushroom (HACS)
+    entity: sensor.streckenwacht_arbeitsweg_events
+    icon: mdi:car-clock
+    primary: >-
+      {% set d = states('sensor.streckenwacht_arbeitsweg_travel_time_loss') | int(0) %}
+      {{ 'Freie Fahrt' if d == 0 else '+' ~ d ~ ' min Verzögerung' }}
+    secondary: >-
+      {% set ent = 'sensor.streckenwacht_arbeitsweg_events' %}
+      {% set labels = {'accident': ['Unfall', 'Unfälle'], 'traffic_jam': ['Stau', 'Staus'],
+         'closure': ['Sperrung', 'Sperrungen'], 'warning': ['Warnung', 'Warnungen'],
+         'roadworks': ['Baustelle', 'Baustellen']} %}
+      {% set ns = namespace(p=[]) %}
+      {% for k, v in labels.items() %}{% set n = state_attr(ent, k) | int(0) %}
+      {% if n > 0 %}{% set ns.p = ns.p + [n ~ ' ' ~ (v[0] if n == 1 else v[1])] %}{% endif %}{% endfor %}
+      {{ ns.p | join(' · ') if ns.p else 'Keine Meldungen' }}
+    icon_color: >-
+      {% set d = states('sensor.streckenwacht_arbeitsweg_travel_time_loss') | int(0) %}
+      {% if is_state('binary_sensor.streckenwacht_arbeitsweg_disruption_active', 'on') or d >= 15 %}red
+      {% elif d > 0 %}orange{% else %}green{% endif %}
+    tap_action:
+      action: more-info
+  - type: markdown
+    content: |
+      {% set events = state_attr('sensor.streckenwacht_arbeitsweg_events', 'events') or [] %}
+      {% set meta = {'accident': ['mdi:car-emergency', 'Unfall'], 'traffic_jam': ['mdi:car-multiple', 'Stau'],
+         'closure': ['mdi:road-variant', 'Sperrung'], 'warning': ['mdi:alert-outline', 'Warnung'],
+         'roadworks': ['mdi:sign-caution', 'Baustelle']} %}
+      {% for e in events %}
+      <ha-icon icon="{{ meta[e.type][0] }}"></ha-icon> **{{ e.title }}**{% if e.delay_minutes %} · **+{{ e.delay_minutes }} min**{% endif %}<br>
+      <small>{{ meta[e.type][1] }}{% if e.direction %} · {{ e.direction }}{% endif %} · {{ 'bis ' ~ (as_datetime(e.end) | as_local).strftime('%d.%m.%Y') if e.end else 'Ende offen' }}</small>
+
+      {% else %}
+      <ha-icon icon="mdi:check-circle-outline"></ha-icon> Keine Meldungen – freie Fahrt.
+      {% endfor %}
+  - type: history-graph
+    title: Reisezeitverlust (24 h)
+    hours_to_show: 24
+    entities:
+      - entity: sensor.streckenwacht_arbeitsweg_travel_time_loss
+        name: Arbeitsweg
+```
+
 ### Kalender im Dashboard
 
 ```yaml
