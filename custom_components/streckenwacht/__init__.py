@@ -34,6 +34,7 @@ from .providers.autobahn import AutobahnProvider
 from .providers.berlin import BerlinProvider
 from .providers.brandenburg import BrandenburgProvider
 from .providers.cities import (
+    FreiburgProvider,
     IngolstadtProvider,
     KarlsruheProvider,
     KielProvider,
@@ -42,6 +43,7 @@ from .providers.cities import (
 from .providers.dortmund import DortmundProvider
 from .providers.frankfurt import FrankfurtProvider
 from .providers.koeln import KoelnProvider
+from .providers.lms_bw import LmsBwProvider
 from .providers.luxemburg import LuxemburgProvider
 from .providers.mobidata_bw import MobiDataBWProvider
 from .providers.muenchen import MuenchenProvider
@@ -82,6 +84,8 @@ PROVIDERS: dict[Source, type[Provider]] = {
     Source.ROSTOCK: RostockProvider,
     Source.KIEL: KielProvider,
     Source.INGOLSTADT: IngolstadtProvider,
+    Source.FREIBURG: FreiburgProvider,
+    Source.LMS_BW: LmsBwProvider,
 }
 
 

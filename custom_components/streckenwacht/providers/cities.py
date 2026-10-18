@@ -1,4 +1,4 @@
-"""More city sources: Karlsruhe (region), Rostock, Kiel, Ingolstadt.
+"""More city sources: Karlsruhe (region), Rostock, Kiel, Freiburg, Ingolstadt.
 
 Each fills in municipal streets that the statewide sources miss (MobiData BW,
 Norddeutschland) or covers a state without one (Bavaria). All small enough to
@@ -11,15 +11,17 @@ import re
 from datetime import datetime
 from typing import Any, ClassVar
 
-from ..const import INGOLSTADT, KARLSRUHE, KIEL, ROSTOCK, Source
+from ..const import FREIBURG, INGOLSTADT, KARLSRUHE, KIEL, ROSTOCK, Source
 from ..geo import utm_to_wgs84
 from ..model import EventType, Period, StreckenwachtEvent
 from .wfs import (
     GeoJsonProvider,
     Layer,
     WfsProvider,
+    closes_road,
     first_position,
     german_period,
+    iso_date,
     iso_utc,
     merge_features,
     shorten,
@@ -277,6 +279,63 @@ def parse_ingolstadt(feature: dict[str, Any]) -> tuple[str, StreckenwachtEvent] 
         ),
     )
     return str(props["AKZ"]), event
+
+
+# --- Freiburg (Garten- und Tiefbauamt, WFS) ----------------------------------
+
+_FR_CLOSED = re.compile(r"Vollsperrung|voll gesperrt")
+
+
+def parse_freiburg(feature: dict[str, Any]) -> tuple[str, StreckenwachtEvent] | None:
+    """Major roadworks on main roads, maintained by hand (~20)."""
+    props = feature["properties"]
+    name = text(props.get("name")) or "Baustelle"
+    what = text(props.get("bezeichnung"))
+    hint = text(props.get("verkehrshinweis"))
+    start = iso_date(text(props.get("zeitraum_von")))
+    end = iso_date(text(props.get("zeitraum_bis")), end=True)
+    event = _event(
+        feature,
+        Source.FREIBURG,
+        closed=bool(hint and (_FR_CLOSED.search(hint) or closes_road(hint))),
+        title=f"{name}: {shorten(what, 60)}" if what and what != name else name,
+        description=[
+            text(props.get("lage")),
+            what if what and len(what) > 60 else None,
+            hint,
+            text(props.get("umfahrung")),
+        ],
+        road=None,
+        period=Period(start, end) if start or end else None,
+    )
+    return str(props.get("fid") or f"{name}|{start}"), event
+
+
+def merge_freiburg(features: list[Any]) -> list[Any]:
+    """Some sites are drawn as several areas: one feature per site."""
+    return merge_features(
+        features,
+        lambda f: tuple(
+            f["properties"].get(k) for k in ("name", "zeitraum_von", "zeitraum_bis")
+        ),
+    )
+
+
+class FreiburgProvider(GeoJsonProvider):
+    """Major roadworks in Freiburg (~35 KB)."""
+
+    source = Source.FREIBURG
+    urls = ("https://geoportal.freiburg.de/wfs/gut_baustellen/gut_baustellen",)
+    params: ClassVar[dict[str, str]] = {
+        "service": "WFS",
+        "version": "2.0.0",
+        "request": "GetFeature",
+        "typeNames": "baustellenumgriffe",
+        "outputFormat": "GEOJSON",
+        "srsName": "EPSG:4326",
+    }
+    region = FREIBURG
+    layer = Layer("freiburg", FREIBURG, parse_freiburg, merge_freiburg)
 
 
 class IngolstadtProvider(GeoJsonProvider):

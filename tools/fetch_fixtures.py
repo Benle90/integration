@@ -151,6 +151,16 @@ INGOLSTADT_URL = (
     "https://www.ingolstadt.de/openbydata/VMS/Baustellen_14_Tage_Ingolstadt.geojson"
 )
 KARLSRUHE_EXCERPT = (48.995, 8.38, 49.02, 8.43)
+# Freiburg (WFS, ~20 Baustellen) und Verkehrsmeldungen der Landesmeldestelle BW
+# (DATEX II, redaktionell, keine INRIX-Daten).
+FREIBURG_URL = (
+    "https://geoportal.freiburg.de/wfs/gut_baustellen/gut_baustellen?service=WFS"
+    "&version=2.0.0&request=GetFeature&typeNames=baustellenumgriffe"
+    "&outputFormat=GEOJSON&srsName=EPSG:4326"
+)
+LMS_BW_URL = (
+    "https://api.mobidata-bw.de/datasets/traffic/incidents/incidents_lmsbw.datex2.xml"
+)
 
 index: list[dict] = []
 
@@ -396,6 +406,38 @@ def staedte_2() -> None:
     save("ingolstadt_baustellen.geojson.json", INGOLSTADT_URL, s, b, c)
 
 
+def bw_meldungen() -> None:
+    import gzip
+    import re
+    import xml.etree.ElementTree as ET
+
+    print("Freiburg und LMS BW")
+    s, b, c = get(FREIBURG_URL)
+    save("freiburg_baustellen.geojson.json", FREIBURG_URL, s, b, c)
+    s, b, c = get(LMS_BW_URL)
+    if s == 200 and b[:2] == b"\x1f\x8b":
+        b = gzip.decompress(b)
+    if s == 200:
+        # Klein halten: die ersten 6 Meldungen plus erledigte und Autobahn-
+        # Meldungen (beide werden im Provider ausgefiltert).
+        ET.register_namespace("", "http://datex2.eu/schema/2/2_0")
+        ET.register_namespace("xsi", "http://www.w3.org/2001/XMLSchema-instance")
+        root = ET.fromstring(b)
+        for publication in root.iter():
+            situations = [e for e in publication if e.tag.endswith("}situation")]
+            for index, situation in enumerate(situations):
+                xml = ET.tostring(situation, encoding="unicode")
+                keep = (
+                    index < 6
+                    or "suspended" in xml
+                    or re.search(r'lang="de-DE">A\d+ ', xml)
+                )
+                if not keep:
+                    publication.remove(situation)
+        b = ET.tostring(root, encoding="utf-8", xml_declaration=True)
+    save("lms_bw_meldungen.datex2.xml", LMS_BW_URL, s, b, c)
+
+
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     autobahn()
@@ -408,6 +450,7 @@ def main() -> int:
     staedte()
     luxemburg()
     staedte_2()
+    bw_meldungen()
     (OUT / "_index.json").write_text(
         json.dumps(
             {

@@ -31,6 +31,7 @@ from custom_components.streckenwacht.providers.autobahn import (
 from custom_components.streckenwacht.providers.berlin import BerlinProvider
 from custom_components.streckenwacht.providers.brandenburg import BrandenburgProvider
 from custom_components.streckenwacht.providers.cities import (
+    FreiburgProvider,
     IngolstadtProvider,
     KarlsruheProvider,
     KielProvider,
@@ -39,6 +40,7 @@ from custom_components.streckenwacht.providers.cities import (
 from custom_components.streckenwacht.providers.dortmund import DortmundProvider
 from custom_components.streckenwacht.providers.frankfurt import FrankfurtProvider
 from custom_components.streckenwacht.providers.koeln import KoelnProvider
+from custom_components.streckenwacht.providers.lms_bw import LmsBwProvider
 from custom_components.streckenwacht.providers.luxemburg import LuxemburgProvider
 from custom_components.streckenwacht.providers.mobidata_bw import MobiDataBWProvider
 from custom_components.streckenwacht.providers.muenchen import MuenchenProvider
@@ -110,6 +112,8 @@ async def main(args: argparse.Namespace) -> int:
             RostockProvider(session),
             KielProvider(session),
             IngolstadtProvider(session),
+            FreiburgProvider(session),
+            LmsBwProvider(session),
         )
         for provider in providers:
             print(f"{provider.source}:")

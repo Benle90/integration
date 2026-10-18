@@ -56,7 +56,7 @@ BW-Städte sind teilweise schon über MobiData BW abgedeckt (Gemeindestraßen nu
 | 15 | **Duisburg** – **umgesetzt in 0.3.0** | ✅ | ArcGIS-REST `https://geoportal2.duisburg.de/arcgisserver/rest/services/Masterportal/MP_Verkehrsportal/MapServer/2/query` („nächste 7 Tage“) |
 | 16 | Bochum | ❌ | Lizenz laut Open.NRW „andere geschlossene Lizenz“ – nicht nutzbar; früher notiert: | ArcGIS-REST `https://geoservicekkm.bochum.de/arcgis/rest/services/maponline/Baustellen/MapServer` |
 | 17 | Wuppertal | ❓ | |
-| 18 | Bielefeld | ⚠️ | „Verkehrsmeldungen“ (CSV/XML) bei open-data.bielefeld.de, ungeprüft |
+| 18 | Bielefeld – geschlossene Lizenz | ❌ | „Verkehrsmeldungen“ (CSV/XML) bei open-data.bielefeld.de, ungeprüft |
 | 19 | **Bonn** – Datensatz 2026-10-18 nicht auffindbar | ⚠️ | GeoJSON tagesaktuell + Planung ([Open.NRW](https://ckan.open.nrw.de/dataset/baustellen-tagesaktuell-mit-ortsangabe-in-bonn-bn)), Endpunkt ungeprüft |
 | 20 | **Münster** – **umgesetzt in 0.3.0** | ✅ | GeoJSON ([Open Data](https://opendata.stadt-muenster.de/dataset/baustellen)) |
 | 21 | Mannheim | ⚠️ | nur über MobiData BW (teilweise) |
@@ -68,7 +68,7 @@ BW-Städte sind teilweise schon über MobiData BW abgedeckt (Gemeindestraßen nu
 | 30 | Chemnitz | ⚠️ | über Sachsen landesweit |
 | 31 | **Halle (Saale)** | ✅ | über Sachsen-Anhalt landesweit (inkl. Gemeindestraßen) |
 | 32 | **Magdeburg** | ✅ | über Sachsen-Anhalt landesweit (inkl. Gemeindestraßen) |
-| 33 | Freiburg | ⚠️ | nur über MobiData BW (teilweise) |
+| 33 | **Freiburg** – **umgesetzt in 0.5.0** | ✅ 🔎 | WFS `https://geoportal.freiburg.de/wfs/gut_baustellen/gut_baustellen` (`baustellenumgriffe`), dl-de/by-2.0 |
 | 34–35 | Krefeld, Mainz | ❓ | |
 | 36 | Lübeck | ⚠️ | Datensatz „Baustellen/Maßnahmen“ erwähnt, maschinenlesbarer Zugang nicht bestätigt |
 | 37 | Erfurt | ❌ | Thüringen nur Mobilithek |
@@ -124,9 +124,21 @@ Alle vier sind sauber strukturiert und kommen ohne Freitext-Datumsparsing aus.
 3. **ArcGIS-REST-Adapter** für Duisburg, Bochum und Kölns Verkehrskalender.
 4. **Mobilithek-Länder mit Freigabepflicht** (Bayern, Hessen, NRW, Thüringen, Bremen, Saarland) erst, wenn ein Zugang ohne Zertifikat und Freigabe je Nutzer existiert. Alternativen für diese Lücken siehe nächster Abschnitt.
 
+## Städte-Sweep 2026-10-18
+
+Katalogsuche über GovData (`https://ckan.govdata.de/api/3/action/package_search?q=baustellen`, auch `baustelle`, `sperrungen`, `verkehrsbehinderungen`) und Open.NRW, dazu Websuche je Stadt. Ergebnis:
+
+- **Umgesetzt in 0.5.0:** **Freiburg** (WFS, dl-de/by-2.0) und als Nebenfund die **Verkehrsmeldungen der Landesmeldestelle BW** (DATEX II über MobiData BW, dl-de/by-2.0).
+- **Geschlossene Lizenz** („andere geschlossene Lizenz“ laut Katalog): Bielefeld (Verkehrsmeldungen), Bochum, Gelsenkirchen, Wesel, Soest (alle über RVR bzw. Stadt).
+- **Nicht erreichbar:** Heidelberg (`…/BSTXC/1254509/data.json` → 404, auch in der Mobilithek so gelistet), Herne (Serverfehler 500), Region Frankfurt RheinMain/ivm (Timeout).
+- **Keine offenen Baustellendaten gefunden:** Düsseldorf, Essen, Wuppertal, Nürnberg, Augsburg, Regensburg, Würzburg, Erlangen, Hannover, Bremen, Braunschweig, Wiesbaden, Darmstadt, Kassel, Mainz, Erfurt, Jena, Saarbrücken. Hannover, Bremen, Rüsselsheim, Kreis Unna u. a. nur über die Mobilithek mit Freigabe bzw. „Geonutzungsbedingungen“.
+- Nicht lohnend: Trebbin (Kleinstadt), „Anträge Baustellen“ bei offenesdatenportal.de (Antragsliste seit 2008, keine aktuelle Lage), Berliner TIC-Feed (schon früher verworfen).
+
+Fazit: Die offenen Stadtquellen sind weitgehend ausgeschöpft. Die großen Lücken (Bayern, Hessen, NRW-Landesstraßen, Thüringen, Bremen, Saarland) lassen sich mit offenen Daten derzeit nicht schließen.
+
 ## Weitere Ideen für mehr Abdeckung
 
-- **Eigener API-Schlüssel des Nutzers für kommerzielle Verkehrsdienste** (z. B. TomTom Traffic Incidents, HERE Traffic): bundesweit inkl. Staus, Sperrungen und Baustellen per Umkreisabfrage; kostenlose Kontingente vorhanden; viele HA-Nutzer haben durch die Fahrzeit-Integrationen bereits einen Schlüssel. Wäre der größte Hebel für Bayern, Hessen, NRW und Thüringen – Lizenz- und Nutzungsbedingungen je Anbieter prüfen, optionaler Provider.
+- **Eigener API-Schlüssel des Nutzers für kommerzielle Verkehrsdienste** (z. B. TomTom Traffic Incidents, HERE Traffic): bundesweit inkl. Staus, Sperrungen und Baustellen per Umkreisabfrage; kostenlose Kontingente vorhanden; viele HA-Nutzer haben durch die Fahrzeit-Integrationen bereits einen Schlüssel. Wäre der größte Hebel für Bayern, Hessen, NRW und Thüringen. **Geprüft 2026-10-18, TomTom: ungeeignet.** Kostenlos sind nur 2.500 Abfragen pro Monat (ohne Kreditkarte), und die Entwicklerbedingungen erlauben das kostenlose Kontingent nur zur **Evaluierung** („for Evaluation Use only“, Ziffer 2.2). Ziffer 11.4 verbietet das Zwischenspeichern und Speichern von Ergebnissen über die Cache-Header hinaus – Streckenwacht speichert bekannte Meldungen über Neustarts, und der HA-Recorder schreibt Titel in die Datenbank. Außerdem müsste jeder Nutzer einen Endnutzer-Lizenzvertrag annehmen (Ziffer 12). HERE nennt keine öffentlichen Freikontingente; ähnliche Bedingungen sind zu erwarten – erst prüfen, wenn sich die Lage ändert.
 - **Nachbarländer für Grenzpendler:** Luxemburg **umgesetzt in 0.4.0** (Originalquelle Ponts et Chaussées, DATEX II, CC0); Niederlande (NDW, offene DATEX-II-Feeds), Österreich, Schweiz, Frankreich, Dänemark haben nationale Open-Data-Zugangspunkte – je Land prüfen.
 - **Landkreise:** einzelne offene Quellen (Lüneburg); andere (Böblingen, Heidekreis, Hohenlohekreis, Kreis Unna) nur Mobilithek mit Freigabe.
 - **Verworfen:** OpenStreetMap-Baustellentags (statisch, unvollständig), Polizei-Verkehrsmeldungen (unstrukturiert), eigener Server als Mobilithek-Abnehmer zum Weiterverteilen (Serverbetrieb, rechtliche und organisatorische Pflichten – widerspricht dem Ansatz ohne Server).

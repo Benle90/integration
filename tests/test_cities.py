@@ -9,11 +9,14 @@ import pytest
 from custom_components.streckenwacht.const import LOCAL_TZ, Source
 from custom_components.streckenwacht.model import EventType, Period
 from custom_components.streckenwacht.providers.cities import (
+    FreiburgProvider,
     IngolstadtProvider,
     KarlsruheProvider,
     KielProvider,
     RostockProvider,
+    merge_freiburg,
     merge_karlsruhe,
+    parse_freiburg,
     parse_ingolstadt,
     parse_karlsruhe,
     parse_kiel,
@@ -175,6 +178,51 @@ def test_kiel_fetches_lines_and_areas_now_and_later() -> None:
     ]
 
 
+# --- Freiburg ---------------------------------------------------------------
+
+FR = {
+    "fid": 43,
+    "name": "Tunnelwartung",
+    "lage": "B31 Tunnel",
+    "bezeichnung": "Tunnelwartung",
+    "zeitraum_von": "2026-10-19",
+    "zeitraum_bis": "2026-10-23",
+    "verkehrshinweis": "Sperrungen nachts von 20 Uhr bis 6 Uhr",
+    "umfahrung": "",
+}
+
+
+def test_freiburg() -> None:
+    key, event = parse_freiburg(feature(**FR))
+    assert key == "43"
+    assert event.source is Source.FREIBURG
+    assert event.event_type is EventType.ROADWORKS
+    assert event.title == "Tunnelwartung"  # name and kind of work are the same
+    assert event.description == "B31 Tunnel\nSperrungen nachts von 20 Uhr bis 6 Uhr"
+    assert event.periods == (Period(local(2026, 10, 19), local(2026, 10, 24)),)
+
+
+@pytest.mark.parametrize(
+    ("hint", "closed"),
+    [
+        ("Vollsperrung der Rathausgasse in verschiedenen Abschnitten", True),
+        ("der Bereich Okenstraße ist voll gesperrt", True),
+        ("Halbseitige Sperrung der Elsässer Straße mit Ampelregelung", False),
+        ("Einspurige Verkehrsführung in beide Fahrtrichtungen", False),
+    ],
+)
+def test_freiburg_closures(hint: str, closed: bool) -> None:
+    props = FR | {"name": "Zähringer Straße", "verkehrshinweis": hint}
+    _, event = parse_freiburg(feature(**props))
+    assert (event.event_type is EventType.CLOSURE) is closed
+    assert event.title == "Zähringer Straße: Tunnelwartung"
+
+
+def test_freiburg_areas_of_one_site_are_merged() -> None:
+    merged = merge_freiburg([feature(**FR), feature(**(FR | {"fid": 44}))])
+    assert len(merged) == 1
+
+
 # --- Ingolstadt -------------------------------------------------------------
 
 IN = {
@@ -238,6 +286,7 @@ def test_ingolstadt_keeps_only_road_closures(impacts: str, kept: bool) -> None:
         ("rostock_baustellen", RostockProvider.layer, (54.0, 54.3)),
         ("kiel_linien_aktuell", KielProvider.layers[0], (54.2, 54.5)),
         ("ingolstadt_baustellen", IngolstadtProvider.layer, (48.6, 48.9)),
+        ("freiburg_baustellen", FreiburgProvider.layer, (47.9, 48.1)),
     ],
 )
 def test_fixture_invariants(name: str, layer, bounds: tuple[float, float]) -> None:

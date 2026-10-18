@@ -183,7 +183,7 @@ async def test_add_area_wizard(
     # step 2: the sources covering Stuttgart, all preselected
     result = await configure(hass, result, AREA_INPUT)
     assert result["step_id"] == "sources"
-    offered = ["autobahn", "mobidata_bw", "stuttgart"]
+    offered = ["autobahn", "mobidata_bw", "stuttgart", "lms_bw"]
     assert options_of(result, CONF_AREA_SOURCES) == offered
     assert suggested(result, CONF_AREA_SOURCES) == offered
     roads.assert_not_awaited()

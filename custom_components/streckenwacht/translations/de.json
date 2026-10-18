@@ -135,7 +135,9 @@
         "karlsruhe": "Region Karlsruhe (Baustellen)",
         "rostock": "Rostock (Baustellen)",
         "kiel": "Kiel (Baustellen)",
-        "ingolstadt": "Ingolstadt (Baustellen)"
+        "ingolstadt": "Ingolstadt (Baustellen)",
+        "freiburg": "Freiburg (größere Baustellen)",
+        "lms_bw": "Baden-Württemberg Verkehrsmeldungen (Landesmeldestelle, ohne Autobahnen)"
       }
     },
     "types": {

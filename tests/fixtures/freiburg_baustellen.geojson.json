@@ -1,0 +1,1820 @@
+{
+  "type": "FeatureCollection",
+  "numberMatched": 21,
+  "name": "baustellenumgriffe",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 22,
+        "name": "Rathausgasse Umgestaltung",
+        "lage": "Zwischen dem Rotteckring und dem Rathausplatz",
+        "bezeichnung": "Verschiedene Leitungsverlegungen und Umgestaltung der Rathausgasse",
+        "zeitraum_von": "2026-01-12",
+        "zeitraum_bis": "2027-11-07",
+        "verkehrshinweis": "Vollsperrung der Rathausgasse in verschiedenen Abschnitten, Zu-Fuß-Gehende können passieren",
+        "link": "https://www.freiburg.de/pb/site/Freiburg/node/2531687?QUERYSTRING=rathausgasse",
+        "umfahrung": "",
+        "bauherr": "Garten- und Tiefbauamt, BadenovaNETZE GmbH",
+        "ist_zukuenftig": false,
+        "zeitraum": "12.01.2026 - 07.11.2027",
+        "umfahrung_link": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.847007331238609,
+              47.99654128457122
+            ],
+            [
+              7.847101171097715,
+              47.99661295575987
+            ],
+            [
+              7.847255838585634,
+              47.996542444386456
+            ],
+            [
+              7.847232638657401,
+              47.996512852241985
+            ],
+            [
+              7.847414629886394,
+              47.99646530161725
+            ],
+            [
+              7.847627270012389,
+              47.996380691819695
+            ],
+            [
+              7.847995760797191,
+              47.996261613000584
+            ],
+            [
+              7.848430589831105,
+              47.99610983527662
+            ],
+            [
+              7.84861263794486,
+              47.996059614297366
+            ],
+            [
+              7.849021977689002,
+              47.99598097708068
+            ],
+            [
+              7.849205745537919,
+              47.99594278301975
+            ],
+            [
+              7.849168808202012,
+              47.99590504654316
+            ],
+            [
+              7.848821566012646,
+              47.99596295445348
+            ],
+            [
+              7.848542294293388,
+              47.996004194057086
+            ],
+            [
+              7.848440797661428,
+              47.996008514566036
+            ],
+            [
+              7.848126307147041,
+              47.99611345672023
+            ],
+            [
+              7.84793117303003,
+              47.99621559171389
+            ],
+            [
+              7.847470143471948,
+              47.996383118813476
+            ],
+            [
+              7.847343989779288,
+              47.99642322280878
+            ],
+            [
+              7.847007331238609,
+              47.99654128457122
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 43,
+        "name": "Tunnelwartung",
+        "lage": "B31 Tunnel",
+        "bezeichnung": "Tunnelwartung",
+        "zeitraum_von": "2026-10-19",
+        "zeitraum_bis": "2026-10-23",
+        "verkehrshinweis": "Sperrungen nachts von 20 Uhr bis 6 Uhr: Montag, 19. Oktober, auf Dienstag, 20. Oktober: stadtauswärts; Dienstag, 20. Oktober, auf Mittwoch, 21. Oktober: stadteinwärts; Mittwoch, 21. Oktober, auf Donnerstag, 22. Oktober: beide Röhren; Donnerstag, 22. Oktober, auf Freitag, 23. Oktober: beide Röhren",
+        "link": "https://www.freiburg.de/pb/2654640.html",
+        "umfahrung": "",
+        "bauherr": "Garten- und Tiefbauamt",
+        "ist_zukuenftig": true,
+        "zeitraum": "19.10.2026 - 23.10.2026",
+        "umfahrung_link": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.863481368065757,
+              47.988160748538185
+            ],
+            [
+              7.863559357574585,
+              47.988275621254736
+            ],
+            [
+              7.865913031719421,
+              47.98782446551986
+            ],
+            [
+              7.87234666966065,
+              47.98610423211163
+            ],
+            [
+              7.881122992011149,
+              47.98482085096212
+            ],
+            [
+              7.887963316979529,
+              47.98369823079019
+            ],
+            [
+              7.891199553879429,
+              47.98294882775096
+            ],
+            [
+              7.897760922532003,
+              47.98146261205525
+            ],
+            [
+              7.902883994760869,
+              47.980298589430625
+            ],
+            [
+              7.905668626750269,
+              47.97973663431711
+            ],
+            [
+              7.908641832154749,
+              47.97956074400512
+            ],
+            [
+              7.910433607832671,
+              47.9794216176037
+            ],
+            [
+              7.910295330822323,
+              47.9791921037256
+            ],
+            [
+              7.907679087978233,
+              47.97940746419104
+            ],
+            [
+              7.904738864082443,
+              47.979715761067254
+            ],
+            [
+              7.888149400319718,
+              47.9833637345955
+            ],
+            [
+              7.878256462619621,
+              47.985009081849725
+            ],
+            [
+              7.873373020601058,
+              47.98580202778772
+            ],
+            [
+              7.86830163541248,
+              47.98700127610034
+            ],
+            [
+              7.864974070232895,
+              47.987809185049144
+            ],
+            [
+              7.863481368065757,
+              47.988160748538185
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 48,
+        "name": "Zähringer Straße",
+        "lage": "Zwischen der Isfahanallee und der Hornusstraße",
+        "bezeichnung": "Gleiserneuerung der VAG",
+        "zeitraum_von": "2026-05-26",
+        "zeitraum_bis": "2026-10-18",
+        "verkehrshinweis": "Einspurige Verkehrsführung in beide Fahrtrichtungen, SEV ist eingerichtet",
+        "link": "https://www.vag-freiburg.de/aktuelles/baustellen/gleisarbeiten-bruehl-zaehringen",
+        "umfahrung": "",
+        "bauherr": "VAG Freiburg",
+        "ist_zukuenftig": false,
+        "zeitraum": "26.05.2026 - 18.10.2026",
+        "umfahrung_link": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.857652786689219,
+              48.0209935180628
+            ],
+            [
+              7.857556087537193,
+              48.02104860570699
+            ],
+            [
+              7.857217396403743,
+              48.02017246855487
+            ],
+            [
+              7.856796961051239,
+              48.019215446251266
+            ],
+            [
+              7.8565274076543,
+              48.0184520935138
+            ],
+            [
+              7.85611822193762,
+              48.01752720859234
+            ],
+            [
+              7.855435627956717,
+              48.0160150831465
+            ],
+            [
+              7.855164515458844,
+              48.01532377469367
+            ],
+            [
+              7.855225058027277,
+              48.015284342803426
+            ],
+            [
+              7.856241328209,
+              48.01755946176854
+            ],
+            [
+              7.856968043916708,
+              48.01923716640124
+            ],
+            [
+              7.857652621732962,
+              48.02093346356992
+            ],
+            [
+              7.857652786689219,
+              48.0209935180628
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 56,
+        "name": "Elsässer Straße ",
+        "lage": "Zwischen der Mühlhauser Straße und der Falkenberger Straße",
+        "bezeichnung": "Fernwärmeleitungsleitungsverlegung",
+        "zeitraum_von": "2026-06-15",
+        "zeitraum_bis": "2026-12-18",
+        "verkehrshinweis": "Halbseitige Sperrung der Elsässer Straße mit Ampelregelung",
+        "link": "https://www.freiburg.de/pb/2600238.html?QUERYSTRING=els%C3%A4sser",
+        "umfahrung": "",
+        "bauherr": "BadenovaWÄRMEPLUS",
+        "ist_zukuenftig": false,
+        "zeitraum": "15.06.2026 - 18.12.2026",
+        "umfahrung_link": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.82730508753643,
+              48.012502657251474
+            ],
+            [
+              7.827490696376127,
+              48.01265655703494
+            ],
+            [
+              7.826142395290059,
+              48.01364363382211
+            ],
+            [
+              7.82594199357125,
+              48.013497623382236
+            ],
+            [
+              7.82730508753643,
+              48.012502657251474
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 69,
+        "name": "Erneuerung Tullastraße Gesamtprojekt",
+        "lage": "Zwischen der Engesserstraße und der Zähringer Straße",
+        "bezeichnung": "Erneuerung und Umgestaltung der Fahrbahn inklusive Kanalerneuerung und Fernwärmeleitungsverlegung",
+        "zeitraum_von": "2026-08-24",
+        "zeitraum_bis": "2028-10-31",
+        "verkehrshinweis": "abschnittsweise Teil- und Vollsperrungen",
+        "link": "https://www.freiburg.de/tullastrasse",
+        "umfahrung": "",
+        "bauherr": "Garten- und Tiefbauamt, BadenovaWÄRMEPLUS GmbH, Eigenbetrieb Stadtentwässerung ",
+        "ist_zukuenftig": false,
+        "zeitraum": "24.08.2026 - 31.10.2028",
+        "umfahrung_link": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.851503886265881,
+              48.02158755916107
+            ],
+            [
+              7.851669699667184,
+              48.0216452662147
+            ],
+            [
+              7.85417384260286,
+              48.02013291902243
+            ],
+            [
+              7.855238782741879,
+              48.019470944749905
+            ],
+            [
+              7.856521022147414,
+              48.0192354975663
+            ],
+            [
+              7.856451730707201,
+              48.01913071612901
+            ],
+            [
+              7.855060862686592,
+              48.019421129202186
+            ],
+            [
+              7.852907087676736,
+              48.020744825954765
+            ],
+            [
+              7.851503886265881,
+              48.02158755916107
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 66,
+        "name": "Sanierung Brücke Schlüsselstraße",
+        "lage": "Kreuzungsbereich der Schlüssel- und der Hauptstraße",
+        "bezeichnung": "Erneuerung des Brückenbauwerks über dem Glasbach",
+        "zeitraum_von": "2026-08-24",
+        "zeitraum_bis": "2027-04-30",
+        "verkehrshinweis": "Vollsperrung des Brückenbereichs für PKW und Busse, Busumleitung inkl. Ersatzhaltestellen werden eingerichtet, Zu-Fuß-Gehende und Radfahrende können passieren",
+        "link": "",
+        "umfahrung": "hauptstrassebruecke210726",
+        "bauherr": "Garten- und Tiefbauamt",
+        "ist_zukuenftig": false,
+        "zeitraum": "24.08.2026 - 30.04.2027",
+        "umfahrung_link": "<a href=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/hauptstrassebruecke210726.jpg\" target=\"_blank\"><img src=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/hauptstrassebruecke210726.jpg\" height=\"200\" title=\"Klicken, um Bild in neuem Tab zu laden.\" alt=\"Vorschau kann nicht geladen werden\"></a>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.861519948690745,
+              48.00684819065959
+            ],
+            [
+              7.861620282685942,
+              48.006987974203845
+            ],
+            [
+              7.861476043365736,
+              48.00703592150284
+            ],
+            [
+              7.861644409731058,
+              48.00724710840107
+            ],
+            [
+              7.861482216773733,
+              48.007297546798355
+            ],
+            [
+              7.861309933186014,
+              48.00708365180884
+            ],
+            [
+              7.861049729211898,
+              48.00715980815008
+            ],
+            [
+              7.860979131799506,
+              48.007024322521
+            ],
+            [
+              7.861519948690745,
+              48.00684819065959
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 67,
+        "name": "Kappler Straße BA3",
+        "lage": "zwischen der östlichen und der westlichen Einfahrt in die Reinhold-Schneider-Straße",
+        "bezeichnung": "Sanierung und Umbau der Kappler Straße, inklusive Kanalerneuerung in der Reinhold-Schneider-Straße",
+        "zeitraum_von": "2026-07-31",
+        "zeitraum_bis": "2027-03-05",
+        "verkehrshinweis": "Vollsperrung der Kappler Straße, sowie Vollsperrung der östlichen Einfahrt in die Reinhold-Schneider-Straße. Umleitungen werden ausgeschildert.",
+        "link": "https://www.freiburg.de/pb/2332255.html",
+        "umfahrung": "kapplerstrasse24072026",
+        "bauherr": "Garten- und Tiefbauamt, Eigenbetrieb Stadtentwässerung",
+        "ist_zukuenftig": false,
+        "zeitraum": "31.07.2026 - 05.03.2027",
+        "umfahrung_link": "<a href=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/kapplerstrasse24072026.jpg\" target=\"_blank\"><img src=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/kapplerstrasse24072026.jpg\" height=\"200\" title=\"Klicken, um Bild in neuem Tab zu laden.\" alt=\"Vorschau kann nicht geladen werden\"></a>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.89904324084188,
+              47.98220307364813
+            ],
+            [
+              7.899485654719599,
+              47.98197180199108
+            ],
+            [
+              7.900356911953607,
+              47.98171388729383
+            ],
+            [
+              7.901265181502408,
+              47.98155382294451
+            ],
+            [
+              7.901852402789347,
+              47.98145225588578
+            ],
+            [
+              7.901933222119954,
+              47.981843211298724
+            ],
+            [
+              7.902065232395715,
+              47.98180443787564
+            ],
+            [
+              7.90197494872439,
+              47.981431059646525
+            ],
+            [
+              7.902284879072731,
+              47.98137745167424
+            ],
+            [
+              7.902273293973242,
+              47.98124248093807
+            ],
+            [
+              7.900693193075212,
+              47.981528216860866
+            ],
+            [
+              7.899995432724974,
+              47.98163917282469
+            ],
+            [
+              7.899306318130431,
+              47.98188307937647
+            ],
+            [
+              7.898944700337835,
+              47.98209617865308
+            ],
+            [
+              7.89904324084188,
+              47.98220307364813
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 72,
+        "name": "Auffahrten Anschlussstelle Autobahn Freiburg Süd",
+        "lage": "Autobahn Anschlussstelle Süd",
+        "bezeichnung": "Instandsetzung des Brückenbauwerks",
+        "zeitraum_von": "2026-08-13",
+        "zeitraum_bis": "2026-12-18",
+        "verkehrshinweis": "Sperrung der Auffahrten von der B31 auf die A5 in beide Fahrrichtungen, Umleitung in Richtung Süden über B3 und die Anschlussstelle Bad Krozingen, Umleitung in Richtung Norden über die Besanconallee und die Anschlussstelle Freiburg Mitte",
+        "link": "https://www.autobahn.de/betrieb-verkehr/verkehrsmeldung/a5-instandsetzung-bruecke-an-der-anschlussstelle-freiburg-sued",
+        "umfahrung": "anschlussstellesued10082026",
+        "bauherr": "Autobahn GmbH",
+        "ist_zukuenftig": false,
+        "zeitraum": "13.08.2026 - 18.12.2026",
+        "umfahrung_link": "<a href=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/anschlussstellesued10082026.jpg\" target=\"_blank\"><img src=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/anschlussstellesued10082026.jpg\" height=\"200\" title=\"Klicken, um Bild in neuem Tab zu laden.\" alt=\"Vorschau kann nicht geladen werden\"></a>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.732741354186764,
+              47.980283149430875
+            ],
+            [
+              7.73277241973056,
+              47.98047566355155
+            ],
+            [
+              7.732863491171887,
+              47.98065282544445
+            ],
+            [
+              7.732933264518661,
+              47.98072565948705
+            ],
+            [
+              7.73321490620791,
+              47.980912930529534
+            ],
+            [
+              7.733697476517179,
+              47.981174480685475
+            ],
+            [
+              7.734006492835003,
+              47.98121792310652
+            ],
+            [
+              7.73430515242857,
+              47.98119719345744
+            ],
+            [
+              7.73455807690048,
+              47.98109588774099
+            ],
+            [
+              7.73465737289427,
+              47.980936839013616
+            ],
+            [
+              7.734674382547323,
+              47.980728840824945
+            ],
+            [
+              7.73450082387968,
+              47.98051073580908
+            ],
+            [
+              7.734552219696232,
+              47.980847601928396
+            ],
+            [
+              7.734440022287047,
+              47.98104654409283
+            ],
+            [
+              7.734103833392642,
+              47.98113892468125
+            ],
+            [
+              7.733735007321906,
+              47.981102830244204
+            ],
+            [
+              7.733357588401759,
+              47.98093051850228
+            ],
+            [
+              7.732947538248198,
+              47.98062973129446
+            ],
+            [
+              7.732940121485878,
+              47.98044548527235
+            ],
+            [
+              7.73315845205261,
+              47.980295758133344
+            ],
+            [
+              7.732741354186764,
+              47.980283149430875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 73,
+        "name": "Auffahrten Anschlussstelle Autobahn Freiburg Süd",
+        "lage": "Autobahn Anschlussstelle Süd",
+        "bezeichnung": "Instandsetzung des Brückenbauwerks",
+        "zeitraum_von": "2026-08-13",
+        "zeitraum_bis": "2026-12-18",
+        "verkehrshinweis": "Sperrung der Auffahrten von der B31 auf die A5 in beide Fahrrichtungen, Umleitung in Richtung Süden über B3 und die Anschlussstelle Bad Krozingen, Umleitung in Richtung Norden über die Besanconallee und die Anschlussstelle Freiburg Mitte",
+        "link": "https://www.autobahn.de/betrieb-verkehr/verkehrsmeldung/a5-instandsetzung-bruecke-an-der-anschlussstelle-freiburg-sued",
+        "umfahrung": "anschlussstellesued10082026",
+        "bauherr": "Autobahn GmbH",
+        "ist_zukuenftig": false,
+        "zeitraum": "13.08.2026 - 18.12.2026",
+        "umfahrung_link": "<a href=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/anschlussstellesued10082026.jpg\" target=\"_blank\"><img src=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/anschlussstellesued10082026.jpg\" height=\"200\" title=\"Klicken, um Bild in neuem Tab zu laden.\" alt=\"Vorschau kann nicht geladen werden\"></a>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.735302094611456,
+              47.980175255111384
+            ],
+            [
+              7.735778805761306,
+              47.9801885107327
+            ],
+            [
+              7.735796201540587,
+              47.97996450233428
+            ],
+            [
+              7.735717825668984,
+              47.97975545396537
+            ],
+            [
+              7.73540139107023,
+              47.97952777023432
+            ],
+            [
+              7.734823838799909,
+              47.97924916658685
+            ],
+            [
+              7.734383686669446,
+              47.979204281301165
+            ],
+            [
+              7.733998841182352,
+              47.979336161087275
+            ],
+            [
+              7.733874331016304,
+              47.97955098129973
+            ],
+            [
+              7.733869632720612,
+              47.979743100862215
+            ],
+            [
+              7.734115309035429,
+              47.97993798037006
+            ],
+            [
+              7.734013682124608,
+              47.9797046531235
+            ],
+            [
+              7.734029715173742,
+              47.97953667991819
+            ],
+            [
+              7.734164777120505,
+              47.97937802581969
+            ],
+            [
+              7.734416910200244,
+              47.97930874023952
+            ],
+            [
+              7.734810351434526,
+              47.97931307512937
+            ],
+            [
+              7.735153169465974,
+              47.97943695825746
+            ],
+            [
+              7.735445952837568,
+              47.97965637512778
+            ],
+            [
+              7.73564453085369,
+              47.97982671134695
+            ],
+            [
+              7.735628502930951,
+              47.979994684815516
+            ],
+            [
+              7.73556673928202,
+              47.98008208336935
+            ],
+            [
+              7.735302094611456,
+              47.980175255111384
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 82,
+        "name": "B 294 Zubringer Nord Schutzplankenumrüstung",
+        "lage": "B 294 von Anschlussstelle A5 bis B3",
+        "bezeichnung": "Schutzplankenumrüstung",
+        "zeitraum_von": "2026-10-12",
+        "zeitraum_bis": "2026-10-31",
+        "verkehrshinweis": "Nächtliche kurzzeitige Einschränkungen mit Ampelregelung entlang der B294 mit Restbreite von 3,50m",
+        "link": "",
+        "umfahrung": "",
+        "bauherr": "Garten- und Tiefbauamt",
+        "ist_zukuenftig": false,
+        "zeitraum": "12.10.2026 - 31.10.2026",
+        "umfahrung_link": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.815949424520469,
+              48.06100551016242
+            ],
+            [
+              7.817332127033401,
+              48.060869620987866
+            ],
+            [
+              7.818788258076196,
+              48.06065640186199
+            ],
+            [
+              7.821445416829736,
+              48.060023112967144
+            ],
+            [
+              7.825513579237298,
+              48.05879166019457
+            ],
+            [
+              7.830135601427726,
+              48.057223405168585
+            ],
+            [
+              7.835764816384152,
+              48.05546700211259
+            ],
+            [
+              7.843136239369537,
+              48.05309132325425
+            ],
+            [
+              7.851093846873586,
+              48.05050484614838
+            ],
+            [
+              7.850902595357229,
+              48.05064705950848
+            ],
+            [
+              7.846743572267227,
+              48.05199259861776
+            ],
+            [
+              7.842647625134372,
+              48.0533115990367
+            ],
+            [
+              7.839805622384019,
+              48.05422575843058
+            ],
+            [
+              7.836598192355409,
+              48.05525325004054
+            ],
+            [
+              7.835118074744207,
+              48.05574569586795
+            ],
+            [
+              7.832479072160997,
+              48.05658366395315
+            ],
+            [
+              7.828237272089933,
+              48.05798173948806
+            ],
+            [
+              7.826179250926966,
+              48.05866935051546
+            ],
+            [
+              7.823766319351221,
+              48.05940133360711
+            ],
+            [
+              7.821619512738033,
+              48.06004891980515
+            ],
+            [
+              7.819565646888742,
+              48.06054728955293
+            ],
+            [
+              7.818004875929756,
+              48.060831505045854
+            ],
+            [
+              7.815973952482921,
+              48.06110785227205
+            ],
+            [
+              7.815949424520469,
+              48.06100551016242
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 81,
+        "name": "Haslacher Straße Kreuzung Markgrafenstraße",
+        "lage": "Haslacher Straße zwischen der Markgrafenstraße und Egertenstraße",
+        "bezeichnung": "Erneuerung und Erweiterung des Mischwasserkanals",
+        "zeitraum_von": "2026-09-28",
+        "zeitraum_bis": "2026-12-18",
+        "verkehrshinweis": "Vollsperrung der Haslacher Straße mit Umleitung über die Eschholzstraße, Carl-Kistner-Straße, Staufener Straße, Markgrafenstraße, Opfinger Straße und Binzengrün",
+        "link": "https://www.freiburg.de/pb/2637435.html?QUERYSTRING=Markgrafenstra%C3%9Fe",
+        "umfahrung": "haslacherstrasse21092026",
+        "bauherr": "Eigenbetrieb Stadtentwässerung",
+        "ist_zukuenftig": false,
+        "zeitraum": "28.09.2026 - 18.12.2026",
+        "umfahrung_link": "<a href=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/haslacherstrasse21092026.jpg\" target=\"_blank\"><img src=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/haslacherstrasse21092026.jpg\" height=\"200\" title=\"Klicken, um Bild in neuem Tab zu laden.\" alt=\"Vorschau kann nicht geladen werden\"></a>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.825288328906131,
+              47.99516535008758
+            ],
+            [
+              7.825193643464948,
+              47.99513235364163
+            ],
+            [
+              7.825324187451693,
+              47.99489948124346
+            ],
+            [
+              7.825550699266758,
+              47.99490580115267
+            ],
+            [
+              7.825759911832013,
+              47.99488592071173
+            ],
+            [
+              7.825882385030408,
+              47.99487716387831
+            ],
+            [
+              7.826137592713793,
+              47.994801703279876
+            ],
+            [
+              7.826615162883944,
+              47.99465244661418
+            ],
+            [
+              7.826687570173724,
+              47.99474726962687
+            ],
+            [
+              7.826092808350768,
+              47.9949353643478
+            ],
+            [
+              7.826104144613385,
+              47.99496150325619
+            ],
+            [
+              7.82633857464335,
+              47.995276175536915
+            ],
+            [
+              7.826299541009272,
+              47.995287787306005
+            ],
+            [
+              7.826099755578943,
+              47.99502351335455
+            ],
+            [
+              7.826003571813043,
+              47.995056560408685
+            ],
+            [
+              7.825963191261756,
+              47.994996094476384
+            ],
+            [
+              7.825853052966017,
+              47.99498696153673
+            ],
+            [
+              7.82556916325582,
+              47.99501208391027
+            ],
+            [
+              7.825440241842412,
+              47.99503129379608
+            ],
+            [
+              7.825288328906131,
+              47.99516535008758
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 75,
+        "name": "Regenwasserbehandlungsanlage B31a",
+        "lage": "B31a stadteinwärts Höhe Berliner Allee",
+        "bezeichnung": "Neubau Regenwasserbehandlungsanlage",
+        "zeitraum_von": "2026-08-24",
+        "zeitraum_bis": "2027-07-23",
+        "verkehrshinweis": "Einengung der Fahrspuren auf der B31a Höhe der Berliner Allee. Die B31a bleibt weiterhin zweispurig befahrbar.",
+        "link": "https://rpf.baden-wuerttemberg.de/service/presse/medienmitteilungen/artikel/warnung-vor-staus-am-montag-24-august-stadteinwaerts-am-zubringer-mitte-in-freiburg/",
+        "umfahrung": "",
+        "bauherr": "Regierungspräsidium Freiburg",
+        "ist_zukuenftig": false,
+        "zeitraum": "24.08.2026 - 23.07.2027",
+        "umfahrung_link": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.81027768486266,
+              48.001936981270916
+            ],
+            [
+              7.815043905431533,
+              48.00012059993785
+            ],
+            [
+              7.815021699932457,
+              48.000048307188585
+            ],
+            [
+              7.812061228649496,
+              48.001162739356865
+            ],
+            [
+              7.81182635013393,
+              48.00100016812361
+            ],
+            [
+              7.810083573993198,
+              48.001655389681694
+            ],
+            [
+              7.81027768486266,
+              48.001936981270916
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 77,
+        "name": "Lörracher Straße",
+        "lage": "Lörracher Straße zwischen Wiesentalstraße und Schopfheimer Straße",
+        "bezeichnung": "Ausbauarbeiten der Radvorrangroute FR3, Straßenbauarbeiten in der Lörracher Straße",
+        "zeitraum_von": "2026-09-07",
+        "zeitraum_bis": "2027-02-01",
+        "verkehrshinweis": "Vollsperrung der Lörracher Straße mit Umleitung über die Wiesentalstraße und Basler Straße, Gehwegsperrungen in der Lörracher Straße",
+        "link": "https://www.freiburg.de/pb/2637167.html",
+        "umfahrung": "loerracherstrasse20082026",
+        "bauherr": "Garten- und Tiefbauamt",
+        "ist_zukuenftig": false,
+        "zeitraum": "07.09.2026 - 01.02.2027",
+        "umfahrung_link": "<a href=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/loerracherstrasse20082026.jpg\" target=\"_blank\"><img src=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/loerracherstrasse20082026.jpg\" height=\"200\" title=\"Klicken, um Bild in neuem Tab zu laden.\" alt=\"Vorschau kann nicht geladen werden\"></a>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.821598096179734,
+              47.98028238148249
+            ],
+            [
+              7.821712665983744,
+              47.98009538979998
+            ],
+            [
+              7.821887118944666,
+              47.98015923454422
+            ],
+            [
+              7.822234411194902,
+              47.98022685334494
+            ],
+            [
+              7.822816775657669,
+              47.9803148967369
+            ],
+            [
+              7.823412896552719,
+              47.98041336463762
+            ],
+            [
+              7.823669054673819,
+              47.980466433126374
+            ],
+            [
+              7.824199015212457,
+              47.98060840186829
+            ],
+            [
+              7.824484055147368,
+              47.9807103441639
+            ],
+            [
+              7.824595570247725,
+              47.98076184261205
+            ],
+            [
+              7.824467650442383,
+              47.98088064074525
+            ],
+            [
+              7.824123988565028,
+              47.98074979847009
+            ],
+            [
+              7.823587094225762,
+              47.9806017708963
+            ],
+            [
+              7.822888979590699,
+              47.980470942110664
+            ],
+            [
+              7.821598096179734,
+              47.98028238148249
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 79,
+        "name": "Breisgauer Straße",
+        "lage": "Breisgauer Straße zwischen Kirchbergstraße und Ziegelhofstraße",
+        "bezeichnung": "Barrierefreier Umbau der Bushaltestellen \"Kirchbergstraße\"",
+        "zeitraum_von": "2026-09-21",
+        "zeitraum_bis": "2026-12-18",
+        "verkehrshinweis": "Vollsperrung der Breisgauer Straße zwischen Kirchbergstraße und Ziegelhofstraße, Umleitung über B31a und Paduaallee",
+        "link": "https://www.freiburg.de/pb/2643301.html",
+        "umfahrung": "breisgauerstr14092026",
+        "bauherr": "Garten- und Tiefbauamt",
+        "ist_zukuenftig": false,
+        "zeitraum": "21.09.2026 - 18.12.2026",
+        "umfahrung_link": "<a href=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/breisgauerstr14092026.jpg\" target=\"_blank\"><img src=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/breisgauerstr14092026.jpg\" height=\"200\" title=\"Klicken, um Bild in neuem Tab zu laden.\" alt=\"Vorschau kann nicht geladen werden\"></a>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.798573734672523,
+              48.016824427145785
+            ],
+            [
+              7.799684190971623,
+              48.01680000458251
+            ],
+            [
+              7.800653140829194,
+              48.016702030244794
+            ],
+            [
+              7.801120970232432,
+              48.01659881856176
+            ],
+            [
+              7.800997640087253,
+              48.016513457048134
+            ],
+            [
+              7.80045822309205,
+              48.01661592066803
+            ],
+            [
+              7.798612318796648,
+              48.01670472465026
+            ],
+            [
+              7.798612318796648,
+              48.01670472465026
+            ],
+            [
+              7.798573734672523,
+              48.016824427145785
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 83,
+        "name": "Elsässer Straße Knoten Nord BA 3",
+        "lage": "Auwaldstraße im Bereich der nördlichen Ein- und Ausfahrt zur Elsässer Straße",
+        "bezeichnung": "Barrierefreier Umbau des gesamten Kreuzungsbereichs, Verbesserungen für den Fuß- und Radverkehr, Erneuerung der Ampelanlage inklusiver einer Wasserleitungssanierung",
+        "zeitraum_von": "2026-10-06",
+        "zeitraum_bis": "2026-11-06",
+        "verkehrshinweis": "Vollsperrung der Auwaldstraße. Umleitungen werden ausgeschildert.",
+        "link": "https://www.freiburg.de/pb/2615908.html?QUERYSTRING=Els%C3%A4sser",
+        "umfahrung": "elsaesserstr05102026",
+        "bauherr": "Garten- und Tiefbauamt",
+        "ist_zukuenftig": false,
+        "zeitraum": "06.10.2026 - 06.11.2026",
+        "umfahrung_link": "<a href=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/elsaesserstr05102026.jpg\" target=\"_blank\"><img src=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/elsaesserstr05102026.jpg\" height=\"200\" title=\"Klicken, um Bild in neuem Tab zu laden.\" alt=\"Vorschau kann nicht geladen werden\"></a>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.809379237514965,
+              48.02789487557787
+            ],
+            [
+              7.809136786821592,
+              48.02805606188313
+            ],
+            [
+              7.809024957496928,
+              48.027930293109186
+            ],
+            [
+              7.808929402669855,
+              48.02784656283046
+            ],
+            [
+              7.808872736384677,
+              48.02780193647305
+            ],
+            [
+              7.809120149455013,
+              48.02768439589827
+            ],
+            [
+              7.809172745627324,
+              48.027732983467345
+            ],
+            [
+              7.809233082718019,
+              48.027790992815746
+            ],
+            [
+              7.809303457137913,
+              48.027845102647454
+            ],
+            [
+              7.809379237514965,
+              48.02789487557787
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 80,
+        "name": "Fehrenbachallee Kreuzung Lehener Straße",
+        "lage": "Kreuzungbereich Fehrenbachallee und Lehener Straße",
+        "bezeichnung": "Umbau des Kreuzungsbereichs Lehener Straße und Fehrenbachallee",
+        "zeitraum_von": "2026-09-21",
+        "zeitraum_bis": "2026-12-30",
+        "verkehrshinweis": "Vollsperrung der Lehener Straße und Sundgauallee. Zeitweise Vollsperrung der Fehrenbachallee. Umleitungen sind ausgeschildert. ",
+        "link": "https://www.freiburg.de/pb/2646869.html",
+        "umfahrung": "fehrenbachallee16092026",
+        "bauherr": "Garten- und Tiefbauamt",
+        "ist_zukuenftig": false,
+        "zeitraum": "21.09.2026 - 30.12.2026",
+        "umfahrung_link": "<a href=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/fehrenbachallee16092026.jpg\" target=\"_blank\"><img src=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/fehrenbachallee16092026.jpg\" height=\"200\" title=\"Klicken, um Bild in neuem Tab zu laden.\" alt=\"Vorschau kann nicht geladen werden\"></a>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.835348179739741,
+              48.002696368280375
+            ],
+            [
+              7.834854222984331,
+              48.002379082622234
+            ],
+            [
+              7.833825509132982,
+              48.00249675606352
+            ],
+            [
+              7.833791889923073,
+              48.00240032978009
+            ],
+            [
+              7.83403099560337,
+              48.00237873598027
+            ],
+            [
+              7.834655771068011,
+              48.002184899474535
+            ],
+            [
+              7.834413395687237,
+              48.00182212158949
+            ],
+            [
+              7.834521289521651,
+              48.001799195185505
+            ],
+            [
+              7.834672567917488,
+              48.00196887875324
+            ],
+            [
+              7.834873543146762,
+              48.0020509883705
+            ],
+            [
+              7.834942588103587,
+              48.00216378783254
+            ],
+            [
+              7.835163635730192,
+              48.002414249183985
+            ],
+            [
+              7.835421731806668,
+              48.00260903618827
+            ],
+            [
+              7.835421731806668,
+              48.00260903618827
+            ],
+            [
+              7.835348179739741,
+              48.002696368280375
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 84,
+        "name": "Radabstellplätze Bismarckallee",
+        "lage": "Bismarkallee Fahrrichtung Süden zwischen der Kreuzung Zur Unterführung und der Rosastraße",
+        "bezeichnung": "Arbeiten an den Radabstellanlagen",
+        "zeitraum_von": "2026-10-19",
+        "zeitraum_bis": "2026-10-20",
+        "verkehrshinweis": "Einspurige Verkehrsführung auf der Bismarckallee in südliche Richtung",
+        "link": "https://www.freiburg.de/pb/2654673.html",
+        "umfahrung": "",
+        "bauherr": "Garten- und Tiefbauamt",
+        "ist_zukuenftig": true,
+        "zeitraum": "19.10.2026 - 20.10.2026",
+        "umfahrung_link": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.843578848749708,
+              47.999304826271725
+            ],
+            [
+              7.843686102315378,
+              47.999272788453894
+            ],
+            [
+              7.843479195783269,
+              47.999021700863715
+            ],
+            [
+              7.843012061058853,
+              47.99839281040283
+            ],
+            [
+              7.842899333174749,
+              47.9984211480728
+            ],
+            [
+              7.843578848749708,
+              47.999304826271725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 85,
+        "name": "Kanalsanierung B3",
+        "lage": "B3 zwischen der Zinkmattenstraße und der Hans-Bunte-Straße",
+        "bezeichnung": "Kanalsanierung",
+        "zeitraum_von": "2026-10-21",
+        "zeitraum_bis": "2026-12-18",
+        "verkehrshinweis": "Einsprigkeit auf der B3 in beide Fahrtrichtungen",
+        "link": "https://www.freiburg.de/pb/2655436.html",
+        "umfahrung": "b3kanal15102026",
+        "bauherr": "Garten- und Tiefbauamt",
+        "ist_zukuenftig": true,
+        "zeitraum": "21.10.2026 - 18.12.2026",
+        "umfahrung_link": "<a href=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/b3kanal15102026.jpg\" target=\"_blank\"><img src=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/b3kanal15102026.jpg\" height=\"200\" title=\"Klicken, um Bild in neuem Tab zu laden.\" alt=\"Vorschau kann nicht geladen werden\"></a>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.861059244911185,
+              48.03414233658797
+            ],
+            [
+              7.861170159200473,
+              48.03415171721726
+            ],
+            [
+              7.861166573019635,
+              48.033754192729994
+            ],
+            [
+              7.861057365853931,
+              48.033107190460925
+            ],
+            [
+              7.860954848068511,
+              48.03271696600626
+            ],
+            [
+              7.860758692885911,
+              48.032093944230006
+            ],
+            [
+              7.86060662271024,
+              48.03171150897897
+            ],
+            [
+              7.860405181106944,
+              48.03132858372717
+            ],
+            [
+              7.860214625047982,
+              48.03101201429012
+            ],
+            [
+              7.859988319894533,
+              48.03063712257664
+            ],
+            [
+              7.859786704284361,
+              48.03026247545268
+            ],
+            [
+              7.85945132764548,
+              48.02979540866783
+            ],
+            [
+              7.858974239109794,
+              48.02903709739929
+            ],
+            [
+              7.858424571251688,
+              48.02821181455142
+            ],
+            [
+              7.858044239778492,
+              48.027545551990436
+            ],
+            [
+              7.857577704631927,
+              48.02687014977245
+            ],
+            [
+              7.857243650782023,
+              48.02634512213265
+            ],
+            [
+              7.857501424209528,
+              48.026750261941565
+            ],
+            [
+              7.857480046074699,
+              48.02671666241048
+            ],
+            [
+              7.857243650782023,
+              48.02634512213265
+            ],
+            [
+              7.857119313468393,
+              48.02638529030714
+            ],
+            [
+              7.85827719092507,
+              48.02817722572164
+            ],
+            [
+              7.859064940448021,
+              48.029402363464335
+            ],
+            [
+              7.859673423877757,
+              48.03036072330238
+            ],
+            [
+              7.860209695106549,
+              48.03123555301529
+            ],
+            [
+              7.860633431677733,
+              48.03217551213924
+            ],
+            [
+              7.860959345108177,
+              48.03307309450049
+            ],
+            [
+              7.860999596547704,
+              48.03348754462804
+            ],
+            [
+              7.861059244911185,
+              48.03414233658797
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 86,
+        "name": "Gleisarbeiten am Bertholdsbrunnen und Stadttheater",
+        "lage": "Platz der alten Synagoge (Am Stadttheather) und in der Bertholdstraße",
+        "bezeichnung": "Instandhaltungsarbeiten an den Gleisen",
+        "zeitraum_von": "2026-10-26",
+        "zeitraum_bis": "2026-11-08",
+        "verkehrshinweis": "Stadtbahnunterbrechung im Innenstadtbereich vom 28.10.2026 bis 29.10.2026. Änderungen auf den Linien 1-5.",
+        "link": "https://www.vag-freiburg.de/aktuelles/meldung/gleisarbeiten-am-bertoldsbrunnen-und-stadttheater-stadtbahnverkehr-unterbrochen",
+        "umfahrung": "",
+        "bauherr": "VAG Freiburg",
+        "ist_zukuenftig": true,
+        "zeitraum": "26.10.2026 - 08.11.2026",
+        "umfahrung_link": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.849616807384924,
+              47.99491032166118
+            ],
+            [
+              7.849677376485217,
+              47.99496061474819
+            ],
+            [
+              7.849649071296754,
+              47.99498517449595
+            ],
+            [
+              7.849285520011806,
+              47.99510574897391
+            ],
+            [
+              7.848657782286586,
+              47.9952474824964
+            ],
+            [
+              7.848430739763444,
+              47.995262803686
+            ],
+            [
+              7.847836991674531,
+              47.99526306005278
+            ],
+            [
+              7.847055300164649,
+              47.995254180992404
+            ],
+            [
+              7.846538663748158,
+              47.99532352355448
+            ],
+            [
+              7.846526997986579,
+              47.99529338749457
+            ],
+            [
+              7.845888965556401,
+              47.99541222954595
+            ],
+            [
+              7.845778138007277,
+              47.9950570998021
+            ],
+            [
+              7.845849080894484,
+              47.99512613158616
+            ],
+            [
+              7.845927317719794,
+              47.9952138690388
+            ],
+            [
+              7.846029444065563,
+              47.99526768700821
+            ],
+            [
+              7.846203303107558,
+              47.99528599577504
+            ],
+            [
+              7.846527136399494,
+              47.99528717807634
+            ],
+            [
+              7.846513928809699,
+              47.99525702653098
+            ],
+            [
+              7.84692081715541,
+              47.99519900397425
+            ],
+            [
+              7.847060020977089,
+              47.9951807338159
+            ],
+            [
+              7.847486903478257,
+              47.995194334246825
+            ],
+            [
+              7.848067924368837,
+              47.9952115493388
+            ],
+            [
+              7.848481345405173,
+              47.995206378640546
+            ],
+            [
+              7.848674467143894,
+              47.995190717339064
+            ],
+            [
+              7.849268145613408,
+              47.995054853309036
+            ],
+            [
+              7.849596234377251,
+              47.99493392370412
+            ],
+            [
+              7.849616807384924,
+              47.99491032166118
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 87,
+        "name": "Kreuzung Habsburgerstraße, Okenstraße, Händelstraße",
+        "lage": "Kreuzungsbereich Habsburgerstraße, Okenstraße, Händelstraße, Stefan-Meier-Straße",
+        "bezeichnung": "Umgestaltung des Knotenpunktes",
+        "zeitraum_von": "2026-10-19",
+        "zeitraum_bis": "2027-04-16",
+        "verkehrshinweis": "Im Zeitraum von Oktober 2026 bis Januar 2027 ist der Bereich Okenstraße, Händelstraße voll gesperrt gesperrt. Die Umleitung wird entsprechend ausgeschildert. Im Zeitraum von März 2027 bis April 2027 ist der Bereich zur Stefan-Meier-Straße voll gesperrt. Die Umleitung wird entsprechend ausgeschildert.",
+        "link": "https://www.freiburg.de/pb/2654654.html",
+        "umfahrung": "okenstr15102026",
+        "bauherr": "Garten- und Tiefbauamt",
+        "ist_zukuenftig": true,
+        "zeitraum": "19.10.2026 - 16.04.2027",
+        "umfahrung_link": "<a href=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/okenstr15102026.jpg\" target=\"_blank\"><img src=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/okenstr15102026.jpg\" height=\"200\" title=\"Klicken, um Bild in neuem Tab zu laden.\" alt=\"Vorschau kann nicht geladen werden\"></a>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.854795223998813,
+              48.01164220341602
+            ],
+            [
+              7.854847205098634,
+              48.011663424283405
+            ],
+            [
+              7.854945639658816,
+              48.01167682716119
+            ],
+            [
+              7.855054519689978,
+              48.01163650723185
+            ],
+            [
+              7.855178242135579,
+              48.01176195617416
+            ],
+            [
+              7.855031887520513,
+              48.011822605315054
+            ],
+            [
+              7.855173706119852,
+              48.0119668670029
+            ],
+            [
+              7.854960968380154,
+              48.01209931362091
+            ],
+            [
+              7.854836924848811,
+              48.01198835309198
+            ],
+            [
+              7.854636557406701,
+              48.01198014455336
+            ],
+            [
+              7.85471905121821,
+              48.01187745394371
+            ],
+            [
+              7.854795223998813,
+              48.01164220341602
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fid": 88,
+        "name": "Kreuzung Habsburgerstraße, Okenstraße, ",
+        "lage": "Kreuzungsbereich Habsburgerstraße, Okenstraße, Händelstraße, Stefan-Meier-Straße",
+        "bezeichnung": "Umgestaltung des Knotenpunktes",
+        "zeitraum_von": "2026-10-19",
+        "zeitraum_bis": "2027-04-16",
+        "verkehrshinweis": "Im Zeitraum von Oktober 2026 bis Januar 2027 ist der Bereich Okenstraße, Händelstraße voll gesperrt gesperrt. Die Umleitung wird entsprechend ausgeschildert. Im Zeitraum von März 2027 bis April 2027 ist der Bereich zur Stefan-Meier-Straße voll gesperrt. Die Umleitung wird entsprechend ausgeschildert.",
+        "link": "https://www.freiburg.de/pb/2654654.html",
+        "umfahrung": "okenstr15102026",
+        "bauherr": "Garten- und Tiefbauamt",
+        "ist_zukuenftig": true,
+        "zeitraum": "19.10.2026 - 16.04.2027",
+        "umfahrung_link": "<a href=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/okenstr15102026.jpg\" target=\"_blank\"><img src=\"https://geoportal.freiburg.de/files/baustellen/umfahrung/okenstr15102026.jpg\" height=\"200\" title=\"Klicken, um Bild in neuem Tab zu laden.\" alt=\"Vorschau kann nicht geladen werden\"></a>"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.854471955496403,
+              48.011889481829456
+            ],
+            [
+              7.854484248392814,
+              48.01189167468571
+            ],
+            [
+              7.854528396723802,
+              48.011848639428244
+            ],
+            [
+              7.854531284900013,
+              48.01171824165573
+            ],
+            [
+              7.854459715463035,
+              48.01146702608509
+            ],
+            [
+              7.85435449070278,
+              48.01120305321205
+            ],
+            [
+              7.854215440110533,
+              48.01107330994022
+            ],
+            [
+              7.854006751455014,
+              48.011162319667825
+            ],
+            [
+              7.854350881188259,
+              48.011505275645035
+            ],
+            [
+              7.85449840790992,
+              48.0116702977425
+            ],
+            [
+              7.854502193313486,
+              48.01177798917383
+            ],
+            [
+              7.854498100036917,
+              48.01182349414133
+            ],
+            [
+              7.854471955496403,
+              48.011889481829456
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

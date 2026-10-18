@@ -135,7 +135,9 @@
         "karlsruhe": "Karlsruhe region (roadworks)",
         "rostock": "Rostock (roadworks)",
         "kiel": "Kiel (roadworks)",
-        "ingolstadt": "Ingolstadt (roadworks)"
+        "ingolstadt": "Ingolstadt (roadworks)",
+        "freiburg": "Freiburg (major roadworks)",
+        "lms_bw": "Baden-Württemberg traffic messages (Landesmeldestelle, without motorways)"
       }
     },
     "types": {

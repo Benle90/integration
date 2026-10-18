@@ -169,7 +169,18 @@ Füllen kommunale Straßen auf, die die Landesquellen (MobiData BW, Norddeutschl
 - **Rostock** (GeoJSON `https://geo.sv.rostock.de/download/opendata/baustellen/baustellen.json`, ETag; CC0). Nur Einträge, deren `verkehrsbeeintraechtigungen` Vollsperrung, halbseitige Sperrung oder Verkehrsraumeinschränkungen nennt (der Rest sichert Gehwege und Fassaden). `von`/`nach` sind Hausnummern oder Querstraßen mit Straßenschlüssel („Borwinstr. (01500)“). Kennung `uuid`.
 - **Kiel** (ArcGIS-WFS `https://ims.kiel.de/…/LHKielWmsWfs/MapServer/WFSServer`, `outputFormat=geoJSON`; CC BY 4.0). Layer `lhkiel:Baustellen_{L,F}_-_{Aktuell,Zukunft}` (Linien, Flächen); die Punkt-Layer liefen beim Test in Timeouts, der Sammellayer `Baustellen` ist leer. `Legende` „Voll_…“ → `closure`. Zeitraum als Text „06.07.2026 bis 30.10.2026“. Leere Felder kommen als Text „null“. Kiel steht zusätzlich im norddeutschen WFS (keine Deduplizierung).
 - **Ingolstadt** (GeoJSON `https://www.ingolstadt.de/openbydata/VMS/Baustellen_14_Tage_Ingolstadt.geojson`, ETag; CC BY 4.0 laut open.bydata). Nächste 14 Tage, Punkte in **UTM 32N** (`geo.utm_to_wgs84`). Nur `ART_VB` mit „Gesamtsperrung“ (→ `closure`) oder „halbseitige Sperrung“. `ART_ARB` mit „;“ und Zeilenumbrüchen getrennt; `SONDERINFO` ist manchmal eine ganze Pressemitteilung → gekürzt. `AUFTRAGGEBER_EMAIL` wird nicht übernommen (auch nicht in die Fixture).
+- **Freiburg** (WFS `https://geoportal.freiburg.de/wfs/gut_baustellen/gut_baustellen`, Layer `baustellenumgriffe`, `outputFormat=GEOJSON`, `srsName=EPSG:4326`; dl-de/by-2.0 laut GovData). ~20 redaktionell gepflegte Baustellen auf Hauptverkehrsstraßen (Flächen), Datum ISO ohne Uhrzeit, Kennung `fid`. Manche Baustelle ist mehrfach gezeichnet → zusammengefasst nach Name und Zeitraum. „Vollsperrung“/„voll gesperrt“ im `verkehrshinweis` → `closure`.
 - Nicht umgesetzt: **Leipzig** (Lizenz des WFS unklar, Hauptstraßen über Sachsen abgedeckt), **Herne** (WFS antwortete mit Serverfehler 500), **Bonn** (Datensatz bei Open.NRW nicht mehr auffindbar), **Bayern landesweit** (open.bydata hat nur eine statische Referenz-ZIP, aktuelle Daten nur über die Mobilithek mit Freigabe).
+
+### Landesmeldestelle Baden-Württemberg (DATEX II, `https://api.mobidata-bw.de/datasets/traffic/incidents/incidents_lmsbw.datex2.xml`)
+
+Verkehrsmeldungen der LMS BW über MobiData BW, **dl-de/by-2.0**, ~75 KB gzip, ETag. Geprüft 2026-10-18: ~35 Meldungen, überwiegend von der Integrierten Verkehrsleitzentrale Stuttgart (Sperrungen mit Umleitung, auch auf Stadtstraßen), dazu Autobahnen und Umland. Ergänzt den Stuttgarter WFS, der seit dem Umzug keine Sperrungen mehr erkennen lässt.
+
+- Eine `situation` → eine Meldung. Text aus `generalPublicComment` mit `commentType=description`: 1. Zeile Ort („B14 Stuttgart, Cannstatter Straße“, „Kreis Ludwigsburg, L1100“), 2. Zeile Abschnitt, 3. Zeile Meldung.
+- **Autobahn-Meldungen** (Ort beginnt mit „A<Nummer>“) werden ausgelassen – die kommen über die Autobahn-API. **Erledigte** Meldungen bleiben eine Weile in der Datei (`validityStatus=suspended`, `cancel=true`, Text „Unfallstelle geräumt“) → ausgelassen.
+- Art: `Accident` → `accident`; `roadClosed` → `closure`; `stationaryTraffic` oder „Stau“ im Text → `traffic_jam`; `MaintenanceWorks`/`ConstructionWorks` → `roadworks`; sonst `warning` (Titel dann aus der Meldung, z. B. „Ölspur“).
+- `validPeriod` nennt oft nur das Ende; der Beginn steht in `overallStartTime` (gilt jetzt für alle DATEX-Quellen, `providers/datex.py`). Ort als Linie `from` → `to`, sonst `locationForDisplay`.
+- Nicht genutzt: der ältere TIC3-Feed derselben Stelle (`…/incidents-bw/TIC3-Meldungen.xml`).
 
 ## 3. Entscheidungen
 

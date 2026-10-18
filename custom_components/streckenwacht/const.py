@@ -75,6 +75,8 @@ class Source(StrEnum):
     ROSTOCK = "rostock"
     KIEL = "kiel"
     INGOLSTADT = "ingolstadt"
+    FREIBURG = "freiburg"
+    LMS_BW = "lms_bw"
 
 
 # Proper names, used as translation placeholders (not translatable).
@@ -100,6 +102,8 @@ SOURCE_NAMES: Final[dict[Source, str]] = {
     Source.ROSTOCK: "Hanse- und Universitätsstadt Rostock",
     Source.KIEL: "Landeshauptstadt Kiel",
     Source.INGOLSTADT: "Stadt Ingolstadt",
+    Source.FREIBURG: "Stadt Freiburg im Breisgau",
+    Source.LMS_BW: "Landesmeldestelle Baden-Württemberg",
 }
 
 # Attribution required by the data licenses (see docs/ENTWICKLUNG.md, section 4).
@@ -134,6 +138,8 @@ ATTRIBUTION: Final[dict[Source, str]] = {
     Source.ROSTOCK: "Hanse- und Universitätsstadt Rostock, CC0",
     Source.KIEL: "Landeshauptstadt Kiel, CC BY 4.0",
     Source.INGOLSTADT: "Stadt Ingolstadt, CC BY 4.0",
+    Source.FREIBURG: "Stadt Freiburg i. Br. – Garten- und Tiefbauamt, Datenlizenz Deutschland – Namensnennung 2.0",
+    Source.LMS_BW: "Landesmeldestelle Baden-Württemberg / MobiData BW, Datenlizenz Deutschland – Namensnennung 2.0",
 }
 
 # Additional attribution for data the source got from a third party.
@@ -189,6 +195,7 @@ KARLSRUHE: Final[Bounds] = (48.75, 7.85, 49.30, 8.75)
 ROSTOCK: Final[Bounds] = (54.03, 11.95, 54.25, 12.30)
 KIEL: Final[Bounds] = (54.25, 10.03, 54.43, 10.25)
 INGOLSTADT: Final[Bounds] = (48.70, 11.30, 48.83, 11.52)
+FREIBURG: Final[Bounds] = (47.90, 7.66, 48.08, 7.94)
 
 # Rough regions of the regional sources: an area is offered the sources whose
 # region its circle touches. Sources without a region (the Autobahn) cover all
@@ -218,4 +225,6 @@ SOURCE_REGIONS: Final[dict[Source, tuple[Bounds, ...]]] = {
     Source.ROSTOCK: (ROSTOCK,),
     Source.KIEL: (KIEL,),
     Source.INGOLSTADT: (INGOLSTADT,),
+    Source.FREIBURG: (FREIBURG,),
+    Source.LMS_BW: (BADEN_WUERTTEMBERG,),
 }

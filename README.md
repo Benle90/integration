@@ -34,6 +34,7 @@ Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein
 | [Autobahn GmbH – Autobahn-API](https://verkehr.autobahn.de/o/autobahn) | Bundesautobahnen, bundesweit: Baustellen, Sperrungen, Warnungen inkl. Staus | Die Autobahn GmbH des Bundes |
 | ↳ Staumeldungen darin | Verkehrslage aus Fahrzeugdaten | Verkehrslage: INRIX (abschaltbar, siehe [Optionen](#optionen)) |
 | [MobiData BW](https://mobidata-bw.de/dataset/baustelleninformationen-baden-wurttemberg) | Bundes-, Landes- und Kreisstraßen in Baden-Württemberg, vereinzelt Gemeindestraßen | Datenlizenz Deutschland – Namensnennung 2.0 |
+| [Landesmeldestelle Baden-Württemberg](https://mobidata-bw.de/dataset/f5459a52-a06e-4a1b-bf68-75d3788c716f) | Verkehrsmeldungen aus dem Verkehrsfunk außerhalb der Autobahnen: Sperrungen mit Umleitung, Unfälle, Staus und Gefahren – vor allem im Raum Stuttgart | Landesmeldestelle Baden-Württemberg / MobiData BW, dl-de/by-2-0 |
 | [Stadt Stuttgart – Baustellenkalender](https://www.stuttgart.de/baustellenkalender) | Hauptverkehrsstraßen (Vorbehaltsstraßennetz) in Stuttgart | CC BY 4.0, © Landeshauptstadt Stuttgart |
 | [Baustelleninformationen Norddeutschland (LBV.SH)](https://dienste.gdi-sh.de/WFS_SH_Baustelleninformationen?SERVICE=WFS&REQUEST=GetCapabilities) | Schleswig-Holstein (alle Straßenklassen, dazu aktuelle Verkehrsstörungen und Unfälle), Hamburg, Mecklenburg-Vorpommern, Bundesstraßen in Niedersachsen | CC BY 4.0, © Geokompetenz/LVermGeo SH |
 | [VIZ Berlin](https://daten.berlin.de/datensaetze/baustellen-sperrungen-und-sonstige-storungen-von-besonderem-verkehrlichem-interesse) | Berliner Hauptstraßen: Baustellen, Sperrungen, Störungen (Autobahn-Baustellen kommen über die Autobahn GmbH) | Digitale Plattform Stadtverkehr Berlin, dl-de/by-2-0 |
@@ -53,6 +54,7 @@ Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein
 | [Hanse- und Universitätsstadt Rostock](https://www.opendata-hro.de/dataset/baustellen) | Baustellen in Rostock (ohne reine Gehweg- und Fassadensicherungen) | Hanse- und Universitätsstadt Rostock, CC0 |
 | [Landeshauptstadt Kiel](https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities) | Aktuelle und geplante Baustellen in Kiel | Landeshauptstadt Kiel, CC BY 4.0 |
 | [Stadt Ingolstadt](https://open.bydata.de/datasets/baustellen_stadt_ingolstadt) | Baustellen mit Voll- oder halbseitiger Sperrung in Ingolstadt (nächste 14 Tage) | Stadt Ingolstadt, CC BY 4.0 |
+| [Stadt Freiburg im Breisgau](https://geoportal.freiburg.de/wfs/gut_baustellen/gut_baustellen?SERVICE=WFS&REQUEST=GetCapabilities) | Größere Baustellen auf Freiburgs Hauptverkehrsstraßen | Stadt Freiburg i. Br. – Garten- und Tiefbauamt, dl-de/by-2-0 |
 
 Alle Entitäten tragen die jeweilige Namensnennung im Attribut `attribution`.
 

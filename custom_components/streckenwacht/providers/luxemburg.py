@@ -12,15 +12,14 @@ from __future__ import annotations
 import asyncio
 import logging
 import xml.etree.ElementTree as ET
-from collections.abc import Iterable, Sequence
-from datetime import datetime
-from typing import Any
+from collections.abc import Sequence
 
 import aiohttp
 
 from ..const import LUXEMBURG, Source
-from ..model import EventType, ObservationArea, Period, StreckenwachtEvent
+from ..model import EventType, ObservationArea, StreckenwachtEvent
 from . import Provider, ProviderError
+from .datex import children, descendants, geometry, periods, texts
 from .wfs import layer_bbox
 
 _LOGGER = logging.getLogger(__name__)
@@ -77,24 +76,6 @@ class LuxemburgProvider(Provider):
         return self._parsed.get(url, [])
 
 
-def _local(tag: str) -> str:
-    return tag.rsplit("}", 1)[-1]
-
-
-def _children(element: ET.Element, name: str) -> list[ET.Element]:
-    return [e for e in element if _local(e.tag) == name]
-
-
-def _all(element: ET.Element, name: str) -> Iterable[ET.Element]:
-    return (e for e in element.iter() if _local(e.tag) == name)
-
-
-def _texts(element: ET.Element, name: str) -> list[str]:
-    return [
-        (e.text or "").strip() for e in _all(element, name) if (e.text or "").strip()
-    ]
-
-
 def parse_datex(data: bytes) -> list[StreckenwachtEvent]:
     """Map the situations of a DATEX II publication to events."""
     try:
@@ -102,7 +83,7 @@ def parse_datex(data: bytes) -> list[StreckenwachtEvent]:
     except ET.ParseError as err:
         raise ProviderError(f"Invalid Luxembourg DATEX II: {err}") from err
     events = []
-    for situation in _all(root, "situation"):
+    for situation in descendants(root, "situation"):
         try:
             event = parse_situation(situation)
         except (AttributeError, LookupError, TypeError, ValueError) as err:
@@ -116,25 +97,26 @@ def parse_datex(data: bytes) -> list[StreckenwachtEvent]:
 def parse_situation(situation: ET.Element) -> StreckenwachtEvent | None:
     """One event from all records of a situation."""
     identifier = situation.get("id")
-    records = _children(situation, "situationRecord")
+    records = children(situation, "situationRecord")
     if not identifier or not records:
         return None
-    restrictions = set(_texts(situation, "trafficConstrictionType"))
-    works = [WORKS[w] for w in _texts(situation, "roadMaintenanceType") if w in WORKS]
+    restrictions = set(texts(situation, "trafficConstrictionType"))
+    works = [WORKS[w] for w in texts(situation, "roadMaintenanceType") if w in WORKS]
     measures = [
         MEASURES[m]
-        for m in _texts(situation, "generalNetworkManagementType")
+        for m in texts(situation, "generalNetworkManagementType")
         if m in MEASURES
     ]
     # The location points are named after the road ("CR129", "N10", "A1").
     road = next(
-        (v for d in _all(situation, "descriptor") for v in _texts(d, "value")), None
+        (v for d in descendants(situation, "descriptor") for v in texts(d, "value")),
+        None,
     )
     label = works[0] if works else "Baustelle"
     restriction = next(
         (RESTRICTIONS[r] for r in RESTRICTIONS if r in restrictions), None
     )
-    geometry, lat, lon = _geometry(records[0])
+    shape, lat, lon = geometry(records[0])
     return StreckenwachtEvent(
         id=f"{Source.LUXEMBURG}:{identifier}",
         source=Source.LUXEMBURG,
@@ -148,57 +130,6 @@ def parse_situation(situation: ET.Element) -> StreckenwachtEvent | None:
         road=road,
         latitude=lat,
         longitude=lon,
-        geometry=geometry,
-        periods=_periods(records),
+        geometry=shape,
+        periods=periods(records),
     )
-
-
-def _periods(records: list[ET.Element]) -> tuple[Period, ...]:
-    windows: set[tuple[datetime | None, datetime | None]] = set()
-    for record in records:
-        for period in _all(record, "validPeriod"):
-            start = _time(_texts(period, "startOfPeriod"))
-            end = _time(_texts(period, "endOfPeriod"))
-            if start or end:
-                windows.add((start, end))
-        if not windows:
-            start = _time(_texts(record, "overallStartTime"))
-            end = _time(_texts(record, "overallEndTime"))
-            if start or end:
-                windows.add((start, end))
-    return tuple(
-        Period(start, end)
-        for start, end in sorted(windows, key=lambda w: w[0].timestamp() if w[0] else 0)
-    )
-
-
-def _time(values: list[str]) -> datetime | None:
-    if not values:
-        return None
-    try:
-        moment = datetime.fromisoformat(values[0])
-    except ValueError:
-        return None
-    return moment if moment.tzinfo else None
-
-
-def _geometry(
-    record: ET.Element,
-) -> tuple[dict[str, Any] | None, float | None, float | None]:
-    """A line from the "from" to the "to" point (or a single point)."""
-    points = []
-    for name in ("from", "to", "pointByCoordinates"):
-        for element in _all(record, name):
-            lat = _texts(element, "latitude")
-            lon = _texts(element, "longitude")
-            if lat and lon:
-                points.append([float(lon[0]), float(lat[0])])
-                break
-    if not points:
-        return None, None, None
-    geometry = (
-        {"type": "LineString", "coordinates": points}
-        if len(points) > 1
-        else {"type": "Point", "coordinates": points[0]}
-    )
-    return geometry, points[0][1], points[0][0]
