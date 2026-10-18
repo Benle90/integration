@@ -130,7 +130,8 @@
         "dortmund": "Dortmund (Baustellen)",
         "aachen": "Aachen (Baustellen)",
         "duisburg": "Duisburg (Baustellen)",
-        "muenster": "Münster (Baustellen)"
+        "muenster": "Münster (Baustellen)",
+        "luxemburg": "Luxemburg (Nationalstraßen, für Grenzpendler)"
       }
     },
     "types": {

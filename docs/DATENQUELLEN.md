@@ -127,7 +127,7 @@ Alle vier sind sauber strukturiert und kommen ohne Freitext-Datumsparsing aus.
 ## Weitere Ideen für mehr Abdeckung
 
 - **Eigener API-Schlüssel des Nutzers für kommerzielle Verkehrsdienste** (z. B. TomTom Traffic Incidents, HERE Traffic): bundesweit inkl. Staus, Sperrungen und Baustellen per Umkreisabfrage; kostenlose Kontingente vorhanden; viele HA-Nutzer haben durch die Fahrzeit-Integrationen bereits einen Schlüssel. Wäre der größte Hebel für Bayern, Hessen, NRW und Thüringen – Lizenz- und Nutzungsbedingungen je Anbieter prüfen, optionaler Provider.
-- **Nachbarländer für Grenzpendler:** Luxemburg ist im RLP-Layer bereits enthalten; Niederlande (NDW, offene DATEX-II-Feeds), Österreich, Schweiz, Frankreich, Dänemark haben nationale Open-Data-Zugangspunkte – je Land prüfen.
+- **Nachbarländer für Grenzpendler:** Luxemburg **umgesetzt in 0.4.0** (Originalquelle Ponts et Chaussées, DATEX II, CC0); Niederlande (NDW, offene DATEX-II-Feeds), Österreich, Schweiz, Frankreich, Dänemark haben nationale Open-Data-Zugangspunkte – je Land prüfen.
 - **Landkreise:** einzelne offene Quellen (Lüneburg); andere (Böblingen, Heidekreis, Hohenlohekreis, Kreis Unna) nur Mobilithek mit Freigabe.
 - **Verworfen:** OpenStreetMap-Baustellentags (statisch, unvollständig), Polizei-Verkehrsmeldungen (unstrukturiert), eigener Server als Mobilithek-Abnehmer zum Weiterverteilen (Serverbetrieb, rechtliche und organisatorische Pflichten – widerspricht dem Ansatz ohne Server).
 

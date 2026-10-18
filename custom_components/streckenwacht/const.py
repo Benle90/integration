@@ -70,6 +70,7 @@ class Source(StrEnum):
     AACHEN = "aachen"
     DUISBURG = "duisburg"
     MUENSTER = "muenster"
+    LUXEMBURG = "luxemburg"
 
 
 # Proper names, used as translation placeholders (not translatable).
@@ -90,6 +91,7 @@ SOURCE_NAMES: Final[dict[Source, str]] = {
     Source.AACHEN: "Stadt Aachen",
     Source.DUISBURG: "Stadt Duisburg",
     Source.MUENSTER: "Stadt Münster",
+    Source.LUXEMBURG: "Ponts et Chaussées Luxemburg",
 }
 
 # Attribution required by the data licenses (see docs/ENTWICKLUNG.md, section 4).
@@ -119,6 +121,7 @@ ATTRIBUTION: Final[dict[Source, str]] = {
     Source.AACHEN: "Stadt Aachen, dl-de/by-2-0",
     Source.DUISBURG: "Stadt Duisburg, CC BY 3.0 DE",
     Source.MUENSTER: "Stadt Münster, dl-de/by-2-0",
+    Source.LUXEMBURG: "Administration des Ponts et Chaussées, Luxemburg, CC0",
 }
 
 # Additional attribution for data the source got from a third party.
@@ -169,6 +172,7 @@ DORTMUND: Final[Bounds] = (51.41, 7.30, 51.60, 7.64)
 AACHEN: Final[Bounds] = (50.68, 5.97, 50.86, 6.22)
 DUISBURG: Final[Bounds] = (51.33, 6.62, 51.56, 6.83)
 MUENSTER: Final[Bounds] = (51.84, 7.47, 52.06, 7.78)
+LUXEMBURG: Final[Bounds] = (49.44, 5.73, 50.19, 6.53)
 
 # Rough regions of the regional sources: an area is offered the sources whose
 # region its circle touches. Sources without a region (the Autobahn) cover all
@@ -193,4 +197,5 @@ SOURCE_REGIONS: Final[dict[Source, tuple[Bounds, ...]]] = {
     Source.AACHEN: (AACHEN,),
     Source.DUISBURG: (DUISBURG,),
     Source.MUENSTER: (MUENSTER,),
+    Source.LUXEMBURG: (LUXEMBURG,),
 }

@@ -48,6 +48,7 @@ Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein
 | [Stadt Aachen](https://bsis.aachen.de) | Baustellen in Aachen (ohne reine Gehweg- und Parkeinschränkungen) | Stadt Aachen, dl-de/by-2-0 |
 | [Stadt Duisburg](https://opendata-duisburg.de/dataset/baustellen-duisburg) | Aktuelle Baustellen in Duisburg | Stadt Duisburg, CC BY 3.0 DE |
 | [Stadt Münster](https://opendata.stadt-muenster.de/dataset/baustellen) | Größere Baustellen in Münster | Stadt Münster, dl-de/by-2-0 |
+| [Ponts et Chaussées Luxemburg](https://data.public.lu/fr/datasets/pch-les-chantiers-actuels/) | Aktuelle und geplante Baustellen auf Luxemburgs Straßen – für Grenzpendler aus Trier, dem Saarland und der Eifel | Administration des Ponts et Chaussées, CC0 |
 
 Alle Entitäten tragen die jeweilige Namensnennung im Attribut `attribution`.
 

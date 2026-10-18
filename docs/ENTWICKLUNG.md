@@ -152,6 +152,14 @@ Alle klein genug für den Komplettabruf ohne Ausschnitt.
 - **Bochum:** ArcGIS-Dienst vorhanden, laut Open.NRW aber „andere geschlossene Lizenz“ → nicht umgesetzt.
 - Nicht genutzt: Kölner Baustellen-WFS (15 Layer nach Arbeitsart, viel Kleinkram), Frankfurter Region (ivm, Mobilithek, nicht erreichbar).
 
+### Luxemburg (DATEX II, `https://www.cita.lu/info_trafic/datex/chantierActuelDatex.xml` und `…/chantierFuturDatex.xml`)
+
+Administration des Ponts et Chaussées, **CC0** auf data.public.lu. Zwei Dateien (aktuell, geplant), je ~0,5 MB, gzip und ETag. Die gleichen Meldungen stehen auch im Mobilitätsatlas-Layer von Rheinland-Pfalz (ohne Lizenz, ohne Details) – die Originalquelle ist besser. Geprüft 2026-10-18.
+
+- Eine `situation` hat mehrere `situationRecord`s (`MaintenanceWorks`, `GeneralNetworkManagement` = Baustellenampel, `SpeedManagement`) → eine Meldung; `trafficConstrictionType` `roadBlocked` → `closure`. Zeitfenster aus `validPeriod` (mit Zeitzone), Ort als Linie von `from` nach `to`, Straße aus dem Ortsnamen (`descriptor`, z. B. „CR129“, „A7N-F“).
+- Die Kommentare (`generalPublicComment`) sind französisch und in der Quelle ohne Akzente („chausse rtrcie“) → nicht übernommen. Die KML-Variante enthält dieselben Angaben nur als HTML.
+- Gleiche Situation in beiden Dateien → die aktuelle gewinnt. XML-Auswertung per `xml.etree` im Thread (expat begrenzt Entity-Expansion).
+
 ## 3. Entscheidungen
 
 - **Eine Integration mit Providern** statt mehrerer: gemeinsame Entities pro Bereich, ein Config-Flow, ein HACS-Eintrag.

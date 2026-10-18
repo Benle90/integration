@@ -123,6 +123,14 @@ CITY_EXCERPTS = {
     "frankfurt": (50.09, 8.64, 50.13, 8.71),
 }
 
+# Luxemburg (Ponts et Chaussées, CC0): DATEX II, gekürzt auf die ersten
+# Situationen, damit die Fixture klein bleibt.
+LUXEMBURG_URLS = {
+    "luxemburg_aktuell.xml": "https://www.cita.lu/info_trafic/datex/chantierActuelDatex.xml",
+    "luxemburg_geplant.xml": "https://www.cita.lu/info_trafic/datex/chantierFuturDatex.xml",
+}
+LUXEMBURG_SITUATIONS = 20
+
 index: list[dict] = []
 
 
@@ -321,6 +329,27 @@ def staedte() -> None:
     save("muenster_baustellen.geojson.json", MUENSTER_URL, s, b, c)
 
 
+def luxemburg() -> None:
+    import gzip
+    import xml.etree.ElementTree as ET
+
+    print("Luxemburg")
+    for name, url in LUXEMBURG_URLS.items():
+        s, b, c = get(url)
+        if s == 200:
+            if b[:2] == b"\x1f\x8b":
+                b = gzip.decompress(b)
+            ET.register_namespace("", "http://datex2.eu/schema/2/2_0")
+            ET.register_namespace("xsi", "http://www.w3.org/2001/XMLSchema-instance")
+            root = ET.fromstring(b)
+            for publication in root.iter():
+                situations = [e for e in publication if e.tag.endswith("}situation")]
+                for situation in situations[LUXEMBURG_SITUATIONS:]:
+                    publication.remove(situation)
+            b = ET.tostring(root, encoding="utf-8", xml_declaration=True)
+        save(name, url, s, b, c)
+
+
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     autobahn()
@@ -331,6 +360,7 @@ def main() -> int:
     sachsen()
     rheinland_pfalz()
     staedte()
+    luxemburg()
     (OUT / "_index.json").write_text(
         json.dumps(
             {

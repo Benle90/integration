@@ -50,6 +50,7 @@ The integration's UI is available in German and English and follows your Home As
 | [City of Aachen](https://bsis.aachen.de) | Roadworks in Aachen (without footpath- and parking-only restrictions) | Stadt Aachen, dl-de/by-2-0 |
 | [City of Duisburg](https://opendata-duisburg.de/dataset/baustellen-duisburg) | Current roadworks in Duisburg | Stadt Duisburg, CC BY 3.0 DE |
 | [City of Münster](https://opendata.stadt-muenster.de/dataset/baustellen) | Major roadworks in Münster | Stadt Münster, dl-de/by-2-0 |
+| [Ponts et Chaussées Luxembourg](https://data.public.lu/fr/datasets/pch-les-chantiers-actuels/) | Current and planned roadworks on Luxembourg's roads – for commuters from Trier, Saarland and the Eifel | Administration des Ponts et Chaussées, CC0 |
 
 Every entity carries the required attribution in its `attribution` attribute.
 
