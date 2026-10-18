@@ -10,7 +10,7 @@
 
 🇩🇪 [Deutsch](https://github.com/streckenwacht/integration/blob/main/README.md) · 🇬🇧 **English**
 
-> ℹ️ **Young project.** Version 0.4 – the core runs stably, new data sources and features were just added. Feedback is very welcome – see [Reporting issues](#reporting-issues).
+> ℹ️ **Young project.** Version 0.5 – the core runs stably, new data sources and features were just added. Feedback is very welcome – see [Reporting issues](#reporting-issues).
 
 Streckenwacht ("route watch") keeps an eye on your route – motorway, federal road or your daily commute. Roadworks, closures, traffic jams and accidents in Germany, right in your Home Assistant: as a calendar, sensors and events for automations.
 
