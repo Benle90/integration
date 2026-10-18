@@ -109,7 +109,7 @@ Beim Hinzufügen fragt Streckenwacht nur nach Abrufintervall und Staumeldungen. 
 | Abrufintervall | 15 min | 10–60 Minuten |
 | Staumeldungen einbeziehen (INRIX) | an | Staus und Reisezeitverlust aus der Autobahn-API |
 
-<img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/optionen.png" alt="Optionen: Datenquellen, Abrufintervall, Staumeldungen" width="400">
+<img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/optionen.png" alt="Optionen: Abrufintervall, Staumeldungen" width="400">
 
 ### Beobachtungsbereiche
 
@@ -122,14 +122,16 @@ Auf der Streckenwacht-Seite **Beobachtungsbereich hinzufügen**. Der Dialog füh
 
 <table>
   <tr>
-    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_1_bereich.png" alt="Schritt 1: Name, Kreis auf der Karte, Datenquellen" width="260"></td>
-    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_2_autobahnen.png" alt="Schritt 2: Autobahnen und Stau-Schwelle" width="260"></td>
-    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_3_richtungen.png" alt="Schritt 3: Fahrtrichtungen" width="260"></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_1_bereich.png" alt="Schritt 1: Name, Kreis auf der Karte, Meldungsarten" width="200"></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_2_quellen.png" alt="Schritt 2: Datenquellen passend zum Kreis" width="200"></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_3_autobahnen.png" alt="Schritt 3: Autobahnen und Stau-Schwelle" width="200"></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_4_richtungen.png" alt="Schritt 4: Fahrtrichtungen" width="200"></td>
   </tr>
   <tr>
-    <td>1. Bereich und Quellen</td>
-    <td>2. Autobahnen</td>
-    <td>3. Fahrtrichtungen</td>
+    <td>1. Bereich und Meldungsarten</td>
+    <td>2. Datenquellen</td>
+    <td>3. Autobahnen</td>
+    <td>4. Fahrtrichtungen</td>
   </tr>
 </table>
 

@@ -111,7 +111,7 @@ When adding the integration, Streckenwacht only asks for the update interval and
 | Update interval | 15 min | 10–60 minutes |
 | Include traffic jams (INRIX) | on | Traffic jams and travel time loss from the Autobahn API |
 
-<img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/optionen.png" alt="Options: data sources, update interval, traffic jams" width="400">
+<img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/optionen.png" alt="Options: update interval, traffic jams" width="400">
 
 ### Observation areas
 
@@ -124,14 +124,16 @@ On the Streckenwacht page choose **Add observation area**. The dialog guides you
 
 <table>
   <tr>
-    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_1_bereich.png" alt="Step 1: name, circle on the map, data sources" width="260"></td>
-    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_2_autobahnen.png" alt="Step 2: motorways and traffic jam threshold" width="260"></td>
-    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_3_richtungen.png" alt="Step 3: directions of travel" width="260"></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_1_bereich.png" alt="Step 1: name, circle on the map, kinds of reports" width="200"></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_2_quellen.png" alt="Step 2: data sources matching the circle" width="200"></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_3_autobahnen.png" alt="Step 3: motorways and traffic jam threshold" width="200"></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/bereich_4_richtungen.png" alt="Step 4: directions of travel" width="200"></td>
   </tr>
   <tr>
-    <td>1. Area and sources</td>
-    <td>2. Motorways</td>
-    <td>3. Directions</td>
+    <td>1. Area and kinds of reports</td>
+    <td>2. Data sources</td>
+    <td>3. Motorways</td>
+    <td>4. Directions</td>
   </tr>
 </table>
 
