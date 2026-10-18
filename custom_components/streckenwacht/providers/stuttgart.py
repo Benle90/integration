@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import asyncio
 import calendar
+import hashlib
 import logging
 import re
 from collections.abc import Iterable, Sequence
@@ -23,11 +24,16 @@ from . import Provider, ProviderError
 
 _LOGGER = logging.getLogger(__name__)
 
-WFS_URL = "https://geoserver.stuttgart.de/geoserver/wfs"
+WFS_URL = "https://geoserver.stuttgart.de/gdc/Verkehr_Mobilitaet/ows"
 # Order matters: on duplicates (status changed between layers) the first wins.
 LAYERS = (
-    "GEOLINE_FLEX:A66_BAUM_BAUSTELLEN_DATE_im_Bau_EPSG25832",
-    "GEOLINE_FLEX:A66_BAUM_BAUSTELLEN_DATE_geplant_EPSG25832",
+    "Verkehr_Mobilitaet:A66_BAUM_BAUSTELLEN_DATE_WEB_im_Bau_EPSG25832",
+    "Verkehr_Mobilitaet:A66_BAUM_BAUSTELLEN_DATE_WEB_geplant_EPSG25832",
+)
+# The in-progress layer declares VERKEHRSAUSWIRKUNG but fails on it ("Attribute
+# not found", checked 2026-10-18): ask only for the fields both layers have.
+PROPERTIES = (
+    "SHAPE,STRASSENNAME,DETAILS_STANDORT,ANFANG,ENDE,ZEITL_REGELUNG,ART_ARBEIT,STATUS"
 )
 
 _FULL_DATE = re.compile(r"^(\d{1,2})\.(\d{1,2})\.(\d{2}|\d{4})$")
@@ -84,6 +90,7 @@ class StuttgartProvider(Provider):
                 "typeNames": layer,
                 "outputFormat": "application/json",
                 "srsName": "EPSG:4326",
+                "propertyName": PROPERTIES,
             },
         )
         features = data.get("features") if isinstance(data, dict) else None
@@ -104,12 +111,21 @@ def parse_features(features: Iterable[Any]) -> Iterable[StreckenwachtEvent]:
 def parse_feature(feature: dict[str, Any]) -> StreckenwachtEvent:
     """Map one GeoJSON feature to a StreckenwachtEvent."""
     props = feature["properties"]
-    # BAUSTELLENNUMMER ("7374/2026") is stable; the GeoServer feature id may not be.
-    identifier = _text(props.get("BAUSTELLENNUMMER")) or _text(feature.get("id"))
-    if not identifier:
-        raise ValueError("no id")
     street = _text(props.get("STRASSENNAME"))
     work = _text(props.get("ART_ARBEIT"))
+    # BAUSTELLENNUMMER ("7374/2026") was stable but is gone since the move to
+    # /gdc (2026-09). Feature ids name the layer, so they change when planned
+    # works start: key from street, location and kind of work instead.
+    content = "|".join(
+        part or "" for part in (street, _text(props.get("DETAILS_STANDORT")), work)
+    )
+    identifier = _text(props.get("BAUSTELLENNUMMER")) or (
+        hashlib.sha1(content.encode()).hexdigest()[:12]
+        if content.strip("|")
+        else _text(feature.get("id"))
+    )
+    if not identifier:
+        raise ValueError("no id")
     impact = _text(props.get("VERKEHRSAUSWIRKUNG_GESAMT")) or _text(
         props.get("VERKEHRSAUSWIRKUNG")
     )

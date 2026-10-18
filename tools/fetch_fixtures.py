@@ -38,10 +38,10 @@ MOBIDATA_URL = (
 )
 
 # GeoServer liefert die Layer direkt als GeoJSON in WGS84 – kein GML-Parsing, keine Reprojektion.
-STUTTGART_WFS = "https://geoserver.stuttgart.de/geoserver/wfs"
+STUTTGART_WFS = "https://geoserver.stuttgart.de/gdc/Verkehr_Mobilitaet/ows"
 STUTTGART_LAYERS = {
-    "geplant": "GEOLINE_FLEX:A66_BAUM_BAUSTELLEN_DATE_geplant_EPSG25832",
-    "im_bau": "GEOLINE_FLEX:A66_BAUM_BAUSTELLEN_DATE_im_Bau_EPSG25832",
+    "geplant": "Verkehr_Mobilitaet:A66_BAUM_BAUSTELLEN_DATE_WEB_geplant_EPSG25832",
+    "im_bau": "Verkehr_Mobilitaet:A66_BAUM_BAUSTELLEN_DATE_WEB_im_Bau_EPSG25832",
 }
 
 # Norddeutscher WFS (LBV.SH, CC BY 4.0): je Layer ein kleiner Ausschnitt per BBOX
@@ -214,6 +214,9 @@ def stuttgart() -> None:
             "typeNames": layer,
             "outputFormat": "application/json",
             "srsName": "EPSG:4326",
+            # wie im Provider: "im Bau" scheitert sonst an VERKEHRSAUSWIRKUNG
+            "propertyName": "SHAPE,STRASSENNAME,DETAILS_STANDORT,ANFANG,ENDE,"
+            "ZEITL_REGELUNG,ART_ARBEIT,STATUS",
         }
         url = STUTTGART_WFS + "?" + urllib.parse.urlencode(params)
         s, b, c = get(url)

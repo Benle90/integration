@@ -75,10 +75,11 @@ Die Fixtures in `tests/fixtures/` (`tools/fetch_fixtures.py`) sind die Wahrheit 
 - **`Point`-Features haben vertauschte Koordinaten** (`[lat, lon]`) → der Provider repariert sie über die Wertebereiche.
 - `description` oft generisch („Bauphase“, „keine Beschreibung vorhanden“) → Titel aus `street` + `description`. Viele Langläufer (2015–2037). Webcams sind nicht öffentlich.
 
-### Stadt Stuttgart (WFS `https://geoserver.stuttgart.de/geoserver/wfs`)
+### Stadt Stuttgart (WFS `https://geoserver.stuttgart.de/gdc/Verkehr_Mobilitaet/ows`)
 
-- Layer `GEOLINE_FLEX:A66_BAUM_BAUSTELLEN_DATE_im_Bau_EPSG25832` und `…_geplant_EPSG25832`; mit `outputFormat=application/json&srsName=EPSG:4326` liefert der Server GeoJSON in WGS84 – kein GML, kein `pyproj`.
-- Nur „Vorbehaltsstraßennetz“, ~60 Punkte. Stabile ID ist `BAUSTELLENNUMMER` (GeoServer-Feature-IDs nicht). Gleiche Nummer in beiden Layern → „im Bau“ gewinnt.
+- **Umzug (bemerkt 2026-10-18):** Der alte Endpunkt `…/geoserver/wfs` (Layer `GEOLINE_FLEX:…`) antwortet nicht mehr (Timeout); das Open-Data-Portal nennt seit 2026-09-16 den neuen. Dort fehlen `BAUSTELLENNUMMER`, `BEGINN_UHRZEIT`/`ENDE_UHRZEIT`, `STADTTEIL`, `ZUSAETZL_INFO` und jede Angabe zur Verkehrsauswirkung → keine Sperrungen mehr erkennbar, alles `roadworks`. Der Layer „im Bau“ deklariert `VERKEHRSAUSWIRKUNG`, scheitert aber daran („Attribute not found“) → Abfrage mit `propertyName` (nur gemeinsame Felder). Der Parser versteht die alten Felder weiterhin, falls sie zurückkommen.
+- Layer `Verkehr_Mobilitaet:A66_BAUM_BAUSTELLEN_DATE_WEB_im_Bau_EPSG25832` und `…_geplant_EPSG25832`; mit `outputFormat=application/json&srsName=EPSG:4326` liefert der Server GeoJSON in WGS84 – kein GML, kein `pyproj`.
+- Nur „Vorbehaltsstraßennetz“, ~60 Punkte. Ohne `BAUSTELLENNUMMER` ist die Kennung ein Hash aus Straße, Standort und Art der Arbeit (Feature-IDs enthalten den Layernamen und ändern sich beim Baubeginn). Gleiche Kennung in beiden Layern → „im Bau“ gewinnt.
 - `ANFANG`/`ENDE` sind Freitext: meist `dd.mm.yyyy`, daneben „Ende Dez. 2026“, „Mitte Okt. 2026“ (Anfang = 1., Mitte = 15., Ende = Monatsletzter). Bei Fehlschlag bleibt die Meldung erhalten. `BEGINN_UHRZEIT`/`ENDE_UHRZEIT` ergänzen Start bzw. Ende zu einem durchgehenden Zeitraum; `ZEITL_REGELUNG: werktags` wird nicht in Einzeltage zerlegt, sondern in der Beschreibung genannt. „Vollsperrung“ in der Auswirkung → `closure`.
 - Qualität: am schwächsten (nur Hauptachsen, bekannte Koordinationsprobleme mit Versorgern).
 

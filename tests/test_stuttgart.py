@@ -89,8 +89,26 @@ def test_event_type(impact: str | None, expected: EventType) -> None:
     assert parse_feature(feature).event_type is expected
 
 
-def test_feature_id_as_fallback() -> None:
-    event = parse_feature(with_props(BAUSTELLENNUMMER=None))
+def test_content_key_without_number() -> None:
+    """Since 2026-09 there is no BAUSTELLENNUMMER; planned and started agree."""
+    started = parse_feature(with_props(BAUSTELLENNUMMER=None))
+    planned = with_props(BAUSTELLENNUMMER=None, STATUS="geplant", ANFANG="01.06.2026")
+    planned["id"] = "A66_BAUM_BAUSTELLEN_DATE_WEB_geplant_EPSG25832.10804"
+    assert started.id.startswith("stuttgart:")
+    assert parse_feature(planned).id == started.id
+    other = parse_feature(with_props(BAUSTELLENNUMMER=None, ART_ARBEIT="Leitungen"))
+    assert other.id != started.id
+
+
+def test_feature_id_as_last_fallback() -> None:
+    event = parse_feature(
+        with_props(
+            BAUSTELLENNUMMER=None,
+            STRASSENNAME=None,
+            DETAILS_STANDORT=None,
+            ART_ARBEIT=None,
+        )
+    )
     assert event.id == "stuttgart:A66_BAUM_BAUSTELLEN_DATE_im_Bau_EPSG25832.65523"
 
 
@@ -189,6 +207,7 @@ async def server(socket_enabled: None) -> AsyncIterator[TestServer]:
         query = request.query
         assert query["outputFormat"] == "application/json"
         assert query["srsName"] == "EPSG:4326"
+        assert "VERKEHRSAUSWIRKUNG" not in query["propertyName"]
         if query["typeNames"] == LAYERS[0]:  # in progress
             return web.json_response({"features": [FEATURE]})
         planned = with_props(STATUS="geplant", STRASSENNAME="Andere Straße")
