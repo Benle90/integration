@@ -131,7 +131,11 @@
         "aachen": "Aachen (Baustellen)",
         "duisburg": "Duisburg (Baustellen)",
         "muenster": "Münster (Baustellen)",
-        "luxemburg": "Luxemburg (Nationalstraßen, für Grenzpendler)"
+        "luxemburg": "Luxemburg (Nationalstraßen, für Grenzpendler)",
+        "karlsruhe": "Region Karlsruhe (Baustellen)",
+        "rostock": "Rostock (Baustellen)",
+        "kiel": "Kiel (Baustellen)",
+        "ingolstadt": "Ingolstadt (Baustellen)"
       }
     },
     "types": {

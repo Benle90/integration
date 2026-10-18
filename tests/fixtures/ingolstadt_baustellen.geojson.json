@@ -1,0 +1,5024 @@
+{
+  "type": "FeatureCollection",
+  "name": "Ingolstadt_baustellen",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:25832"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          672870.193347894,
+          5403128.53088482
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1119",
+        "BEGINN": "19.10.2026",
+        "ENDE": "04.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Falkenstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "10",
+        "SBOD_HNR_2": "16",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Schwanenstr.",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          673945.271962823,
+          5405289.47873621
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1116",
+        "BEGINN": "24.08.2026",
+        "ENDE": "18.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Riebel-Ring",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "12",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Deub-Ring 28",
+        "ART_ARB": "Kabelbrücke",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Sperrung der Grünfläche; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          672842.791642744,
+          5403061.88887631
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1120",
+        "BEGINN": "28.09.2026",
+        "ENDE": "21.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Schwanenstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "BA 1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "Sanddornstr.",
+        "SBOD_QSTR_2": "Falkenstr.",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678918.009885395,
+          5404815.78370792
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0981",
+        "BEGINN": "12.10.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Goethestr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "Heydeckstr.",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Aufstellung einer Hubarbeitsbühne",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676085.430404199,
+          5406945.73321478
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1335",
+        "BEGINN": "05.10.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Auweg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Ettinger Str.",
+        "ART_ARB": "Arbeiten am Gasversorgungsnetz",
+        "ART_VB": "Sperrung der Grünfläche;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677364.584920265,
+          5404635.71478656
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1731",
+        "BEGINN": "19.10.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Heppstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "4",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677352.869398269,
+          5404626.27915464
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1730",
+        "BEGINN": "19.10.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Heppstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679634.944416087,
+          5401404.50106716
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1588",
+        "BEGINN": "26.10.2026",
+        "ENDE": "06.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Albrecht-Dürer-Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "6a",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Hausanschluss, Strom, Wasser",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678731.645257058,
+          5400941.88924462
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1573",
+        "BEGINN": "26.10.2026",
+        "ENDE": "06.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Wallensteinstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "73",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Hausanschluss, Strom, Wasser",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679740.982571167,
+          5402274.64881246
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1620",
+        "BEGINN": "26.10.2026",
+        "ENDE": "06.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Gensöderstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679759.452244327,
+          5402216.73107228
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1618",
+        "BEGINN": "26.10.2026",
+        "ENDE": "06.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Merianstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "ggü. 21",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679903.700349613,
+          5401628.64000116
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1596",
+        "BEGINN": "19.10.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Geisenfelder Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "ggüb. 23",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680377.849640038,
+          5403772.62525585
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1632",
+        "BEGINN": "26.10.2026",
+        "ENDE": "20.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Karlsbader Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "20",
+        "SBOD_HNR_2": "22",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Wasserversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung Parkbucht / Seitenstreifen; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677995.466373429,
+          5403723.91068252
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1702",
+        "BEGINN": "16.10.2026",
+        "ENDE": "19.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Wagnerwirtsgasse",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "20",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678456.763557877,
+          5404138.33579303
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1727",
+        "BEGINN": "13.10.2026",
+        "ENDE": "20.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Ludwigstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "1",
+        "SBOD_HNR_2": "45",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          681218.40681259,
+          5403183.09770739
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1724",
+        "BEGINN": "15.10.2026",
+        "ENDE": "21.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Am Auwaldsee",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "20",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677393.683847367,
+          5397985.41787171
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1721",
+        "BEGINN": "14.10.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Taubenstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "42",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Wasserversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677058.261638431,
+          5404834.81254697
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1720",
+        "BEGINN": "14.10.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Schönbergstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "6e",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Gasversorgungsnetz - Störungsbeseitigung -",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678834.725236404,
+          5402672.65346542
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1626",
+        "BEGINN": "19.10.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Windbergerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": "Umleitung über südliche Ringstr. und Asamstr. sowie Martin-Hemm-Str."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679689.051962662,
+          5406047.94647472
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1714",
+        "BEGINN": "13.10.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Claudiusstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "9",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Wasserversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679983.31581786,
+          5406739.13933571
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1552",
+        "BEGINN": "21.10.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Krautbuckelweg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "4",
+        "SBOD_HNR_2": "18",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung der Grünfläche; Sperrung Parkbucht / Seitenstreifen; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679841.916863139,
+          5401219.29831613
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1600",
+        "BEGINN": "22.10.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Klein-Salvator-Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "29",
+        "SBOD_HNR_2": "31",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677501.617214742,
+          5401418.27764142
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1484",
+        "BEGINN": "19.10.2026",
+        "ENDE": "26.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Schrobenhausener Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "27 + 27a",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Hausanschluss, Wasser, Strom",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676173.072755136,
+          5400439.38821066
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1571",
+        "BEGINN": "19.10.2026",
+        "ENDE": "27.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Hackenschwaige",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "BA 1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Wasserversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676862.436433459,
+          5398583.57777313
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1561",
+        "BEGINN": "19.10.2026",
+        "ENDE": "20.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Alte Mühle",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "16",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676885.068159283,
+          5398459.31699741
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1553",
+        "BEGINN": "19.10.2026",
+        "ENDE": "22.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Reitergaßl",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "3, 6, 2A",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676887.300679248,
+          5398504.71530301
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1633",
+        "BEGINN": "19.10.2026",
+        "ENDE": "20.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Reitergaßl",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "5",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678313.140860778,
+          5404173.90915332
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1710",
+        "BEGINN": "16.10.2026",
+        "ENDE": "19.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Ziegelbräustr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "Milchstr. 25",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678431.498848297,
+          5401521.92389892
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1567",
+        "BEGINN": "19.10.2026",
+        "ENDE": "13.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Aldringenstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "7",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Straßenbau, Fahrbahn und Gehwegerneuerung",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679314.182269244,
+          5403263.86360569
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1636",
+        "BEGINN": "19.10.2026",
+        "ENDE": "06.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Wertingerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "18",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Schwäblstr.",
+        "ART_ARB": "Arbeiten am Gasversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678849.537609219,
+          5406322.08485177
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1604",
+        "BEGINN": "12.10.2026",
+        "ENDE": "13.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Beilngrieser Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "Am Augraben",
+        "SBOD_QSTR_2": "Schnellerweg",
+        "ART_ARB": "",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": "Vollsperrung der Beilngrieser Str. zwischen dem Schneller Weg und der Straße Am Augraben."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679293.847385361,
+          5404473.75502997
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1499",
+        "BEGINN": "21.10.2026",
+        "ENDE": "28.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Feldkirchener Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "16c",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Hausanschluss",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679854.114921786,
+          5403996.79029866
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1603",
+        "BEGINN": "20.10.2026",
+        "ENDE": "22.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Peisserstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "12",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Wasserversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          683004.683284904,
+          5405093.70901825
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1503",
+        "BEGINN": "19.10.2026",
+        "ENDE": "13.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Bergengruenstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "7",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Gasversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          681134.96037094,
+          5404730.9863861
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1506",
+        "BEGINN": "19.10.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Regensburger Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "163a",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Hausanschluss",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677455.791501607,
+          5404921.98710114
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1569",
+        "BEGINN": "21.10.2026",
+        "ENDE": "22.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Regerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Schützstr. Ecke",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677993.757308457,
+          5404406.57493212
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1529",
+        "BEGINN": "21.10.2026",
+        "ENDE": "05.02.2027",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Harderstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "25",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kranaufstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung Parkbucht / Seitenstreifen; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678752.033321194,
+          5401207.1948323
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1494",
+        "BEGINN": "26.10.2026",
+        "ENDE": "04.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Schwedenstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "BA 5",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Gasversorgungsnetz, Arbeiten am Wasserversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677661.22881058,
+          5401889.82085721
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1474",
+        "BEGINN": "28.10.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Wickstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "4",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Baumaterialllager, Hausaufstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          682333.742082276,
+          5402514.47588905
+        ]
+      },
+      "properties": {
+        "AKZ": "2021/2225",
+        "BEGINN": "01.01.2022",
+        "ENDE": "31.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Eriagstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "34",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Überführung \nWasserhaltung\nStromleitung",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678154.413020598,
+          5403829.68105057
+        ]
+      },
+      "properties": {
+        "AKZ": "2016/2148",
+        "BEGINN": "02.11.2016",
+        "ENDE": "31.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Spitalstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "3",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "Technisches Rathaus - Vorderseite",
+        "SBOD_QSTR_2": "Rückseite/Hinterhof zur Josef-Ponschab-Str.",
+        "ART_ARB": "Gerüst",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678118.456310472,
+          5403796.84373117
+        ]
+      },
+      "properties": {
+        "AKZ": "2016/1867",
+        "BEGINN": "28.09.2016",
+        "ENDE": "31.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Spitalstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "3",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "Schäffbräustr.",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Aufbau Gerüst nur Giebel zur Schäffbräustr.",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676856.089363178,
+          5401430.36324967
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1677",
+        "BEGINN": "07.10.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Hagauer Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "44",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kranaufstellung, Hochbaumaßnahme",
+        "ART_VB": "",
+        "SPERR_ART": "0",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679168.949557032,
+          5406895.78387222
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1446",
+        "BEGINN": "12.10.2026",
+        "ENDE": "14.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Gratzerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "22 a",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Baumaterialllager, Containerstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678873.373533647,
+          5402247.2040203
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1684",
+        "BEGINN": "15.10.2026",
+        "ENDE": "13.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Lindberghstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Abdichtungsarbeiten an der Außenwand, Störungsbeseitigung",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680267.760230052,
+          5406049.795607
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1675",
+        "BEGINN": "08.10.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Tengstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "17",
+        "SBOD_HNR_2": "18",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          674665.069815068,
+          5404435.13960493
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1630",
+        "BEGINN": "08.10.2026",
+        "ENDE": "18.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Krumenauerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "An der Hochstr.",
+        "ART_ARB": "Straßenbau, Baustellenausfahrt",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": "Vollsperrung An der Hochstr., Baustellenausfahrt über Krumenauerstr."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679949.500019617,
+          5403736.24136788
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1572",
+        "BEGINN": "15.10.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Glogauer Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "4 BA 2",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Gasversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679012.858094513,
+          5407023.71975752
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1535",
+        "BEGINN": "15.10.2026",
+        "ENDE": "28.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Mühlwiesenweg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "4",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676969.2732464,
+          5397953.03773697
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1559",
+        "BEGINN": "19.10.2026",
+        "ENDE": "20.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Karlskroner Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "24, 30",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung der Grünfläche; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676954.803592937,
+          5397864.09845357
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1560",
+        "BEGINN": "19.10.2026",
+        "ENDE": "20.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Am Funkturm",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Sperrung der Grünfläche;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676898.539247597,
+          5398298.82088146
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1555",
+        "BEGINN": "19.10.2026",
+        "ENDE": "20.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Kirchplatz",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "5",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676956.171218965,
+          5398036.79273518
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1554",
+        "BEGINN": "19.10.2026",
+        "ENDE": "20.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Oberstimmer Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "17",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "",
+        "SPERR_ART": "0",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676949.403801463,
+          5398240.30650961
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1556",
+        "BEGINN": "19.10.2026",
+        "ENDE": "20.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Kirchplatz",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "13",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676918.685512706,
+          5398280.83615979
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1557",
+        "BEGINN": "19.10.2026",
+        "ENDE": "20.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Kirchplatz",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "11a, 19",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Sperrung Parkbucht / Seitenstreifen;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676957.00138224,
+          5397773.24244196
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1558",
+        "BEGINN": "19.10.2026",
+        "ENDE": "20.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Karlskroner Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "32",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung Parkbucht / Seitenstreifen; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677596.088541663,
+          5402037.27991772
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0965",
+        "BEGINN": "12.10.2026",
+        "ENDE": "19.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Immelmannstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "8",
+        "SBOD_HNR_2": "8c",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680554.895630321,
+          5401330.0548493
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1431",
+        "BEGINN": "12.10.2026",
+        "ENDE": "26.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Am Stadtweg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "51",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677942.011028351,
+          5403822.92600343
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1450",
+        "BEGINN": "12.10.2026",
+        "ENDE": "31.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Eckiusstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Gerüstaufstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677392.211217826,
+          5403982.76169674
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1579",
+        "BEGINN": "05.10.2026",
+        "ENDE": "30.04.2027",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Westliche Ringstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Künettegraben",
+        "ART_ARB": "Baustellenausfahrt, Baumaterialllager",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          672357.835395306,
+          5402751.89772122
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1577",
+        "BEGINN": "08.10.2026",
+        "ENDE": "31.03.2027",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Eichenwaldstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "81",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680272.25150195,
+          5405044.99629664
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1607",
+        "BEGINN": "30.09.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Goethestr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "147",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Wasserversorgungsnetz - Störungsbeseitigung -",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678027.052412575,
+          5403789.90099985
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1492",
+        "BEGINN": "05.10.2026",
+        "ENDE": "28.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Bei der Schleifmühle",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "34",
+        "SBOD_HNR_2": "34b",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Gerüstaufstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          674611.114513072,
+          5405249.51546821
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1605",
+        "BEGINN": "02.10.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Schultheißstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "75",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678320.682368212,
+          5401970.28846928
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1599",
+        "BEGINN": "27.10.2026",
+        "ENDE": "29.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Plümelstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "14",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679626.85361655,
+          5401724.27241433
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1595",
+        "BEGINN": "20.10.2026",
+        "ENDE": "22.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Geisenfelder Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "22",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678959.927160647,
+          5403168.67890132
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0978",
+        "BEGINN": "05.10.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Südliche Ringstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten mit Hubarbeitsbühne",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678307.804225872,
+          5404100.91583494
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1383",
+        "BEGINN": "28.09.2026",
+        "ENDE": "25.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Ludwigstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "1",
+        "SBOD_HNR_2": "45",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Straßenbau",
+        "ART_VB": "Verkehrsbeschränkung(en); Fahrbahneinengung; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "11",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677270.399411404,
+          5405780.54537799
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1471",
+        "BEGINN": "28.09.2026",
+        "ENDE": "27.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Markus-Koch-Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Wasserversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677267.97944874,
+          5405784.10490483
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1395",
+        "BEGINN": "28.09.2026",
+        "ENDE": "27.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Gundekarstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "BA 1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Markus-Koch-Str. BA 1",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "20",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679739.051661222,
+          5405835.34227138
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1576",
+        "BEGINN": "12.10.2026",
+        "ENDE": "02.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Unterhaunstädter Weg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "8, 8a",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677775.252601436,
+          5401863.19880988
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1380",
+        "BEGINN": "08.10.2026",
+        "ENDE": "19.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Lilienthalstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "63",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          671320.461301061,
+          5405253.42511371
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1411",
+        "BEGINN": "28.09.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "An der Breite",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "11",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Dacharbeiten",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678122.917095127,
+          5398953.10525231
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1549",
+        "BEGINN": "05.10.2026",
+        "ENDE": "02.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Döblinstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "13",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kranaufstellung",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676288.25383025,
+          5400308.89395949
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1548",
+        "BEGINN": "05.10.2026",
+        "ENDE": "02.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Spiesmacherstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Hans-Böckler-Str. Ecke",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676600.22830656,
+          5400364.72120418
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1547",
+        "BEGINN": "05.10.2026",
+        "ENDE": "02.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Herrenlettenstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "13",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          682451.177497437,
+          5400938.29399766
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1546",
+        "BEGINN": "05.10.2026",
+        "ENDE": "02.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Flurweg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "4",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677349.806573696,
+          5401908.63691465
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1545",
+        "BEGINN": "05.10.2026",
+        "ENDE": "02.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Tutschekstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Udetstr. Ecke",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677609.866501234,
+          5401224.75385782
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1544",
+        "BEGINN": "05.10.2026",
+        "ENDE": "02.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Stresemannstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "3",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          675770.299506037,
+          5406402.37088896
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1542",
+        "BEGINN": "05.10.2026",
+        "ENDE": "02.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Dr.-Ludwig-Kraus-Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676101.102955723,
+          5406069.93347232
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1541",
+        "BEGINN": "05.10.2026",
+        "ENDE": "02.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Pascalstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "3",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          675941.538811997,
+          5406254.58144039
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1540",
+        "BEGINN": "05.10.2026",
+        "ENDE": "02.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Rasmussenstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "2",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676618.82774516,
+          5406271.37387666
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1539",
+        "BEGINN": "05.10.2026",
+        "ENDE": "02.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Maria-Goeppert-Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677191.2621638,
+          5404654.26810594
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1538",
+        "BEGINN": "05.10.2026",
+        "ENDE": "02.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Heppstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "8 1/2",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "",
+        "SPERR_ART": "",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          674881.555912794,
+          5404379.0912878
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1481",
+        "BEGINN": "23.09.2026",
+        "ENDE": "21.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Krumenauerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanal- und Wassernetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Fahrbahneinengung; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679976.978628307,
+          5405785.27611678
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1377",
+        "BEGINN": "05.10.2026",
+        "ENDE": "06.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Ziegeleistr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "7 - 24",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679141.704325994,
+          5408118.343953
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1447",
+        "BEGINN": "28.09.2026",
+        "ENDE": "31.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Wettstettener Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          681886.795193032,
+          5402816.0006977
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1438",
+        "BEGINN": "14.10.2026",
+        "ENDE": "19.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Am Franziskanerwasser",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "BA 3",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "Altwasserweg 1",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Hausanschluss",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679928.982737441,
+          5403696.84051824
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1250",
+        "BEGINN": "28.09.2026",
+        "ENDE": "31.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Glogauer Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "4 BA1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Gasversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "20",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679298.812693708,
+          5405330.87729583
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1353",
+        "BEGINN": "14.09.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Körnerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "BA 4",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Punktuelle Arbeiten zur Umbindung der Wasserhausanschlüsse",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679084.358824737,
+          5403226.81999073
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1419",
+        "BEGINN": "14.09.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Südliche Ringstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Bauwerkssicherung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          681874.623217175,
+          5401876.61995434
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1441",
+        "BEGINN": "21.09.2026",
+        "ENDE": "13.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Manchinger Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "142",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Bunsenstr. Ecke",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung der Grünfläche; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          681278.160075206,
+          5402289.45260108
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1440",
+        "BEGINN": "21.09.2026",
+        "ENDE": "13.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Manchinger Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "97",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Telekommunikationsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          682957.101190878,
+          5405155.08192549
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1424",
+        "BEGINN": "15.09.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Hadergasse",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "6",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kranaufstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679318.982487029,
+          5404933.01071602
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1393",
+        "BEGINN": "09.09.2026",
+        "ENDE": "20.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Pestalozzistr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "35",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Ecke Friedrich-Ebert-Str.",
+        "ART_ARB": "Gerüstaufstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678295.873379834,
+          5403851.77766551
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1362",
+        "BEGINN": "07.09.2026",
+        "ENDE": "11.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Manggasse",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Containerstellung\nHubarbeitsbühne\nBaumateriallager",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679969.712456966,
+          5405840.28257071
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1369",
+        "BEGINN": "21.09.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Freytagstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "BA 1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Gasversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678904.450595856,
+          5405174.27580106
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1355",
+        "BEGINN": "08.10.2026",
+        "ENDE": "20.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Minucciweg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "4",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679848.276649048,
+          5406720.71835929
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1341",
+        "BEGINN": "07.10.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Maurerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "BA 2",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Leitungsverlegung Strom",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679630.424261709,
+          5400284.72176082
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0973",
+        "BEGINN": "28.09.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Klein-Salvator-Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten mit einer Hubarbeitsbühne",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679701.859128352,
+          5401371.72056721
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1292",
+        "BEGINN": "22.09.2026",
+        "ENDE": "18.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Spitzwegstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "12",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kranaufstellung, Baumateriallager, Containeraufstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679380.191331425,
+          5406712.84140503
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1298",
+        "BEGINN": "14.10.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Nobelstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "BA1 + BA2",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "Fischerstr.",
+        "SBOD_QSTR_2": "Max-Born-Str.",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680159.274118207,
+          5403891.2893361
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1285",
+        "BEGINN": "12.10.2026",
+        "ENDE": "21.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Egerlandstr. STORNO",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678352.81752515,
+          5404106.88707385
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1268",
+        "BEGINN": "02.09.2026",
+        "ENDE": "18.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Ludwigstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "25",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Reparaturarbeiten nach Wasserschaden",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680446.211271012,
+          5406441.99860901
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1229",
+        "BEGINN": "01.09.2026",
+        "ENDE": "01.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Friedensstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "53",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "bis Siegertstr.",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679285.874658644,
+          5406742.05763024
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1299",
+        "BEGINN": "26.10.2026",
+        "ENDE": "13.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Fischerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "2",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Nobelstr. 17",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "23",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678235.198614183,
+          5405207.89121428
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1278",
+        "BEGINN": "19.10.2026",
+        "ENDE": "28.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Ringlerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "14",
+        "SBOD_HNR_2": "18",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679427.515211198,
+          5407588.11849238
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0954",
+        "BEGINN": "28.09.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Hegnenbergstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "BA 1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679711.239173691,
+          5401368.92772042
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1293",
+        "BEGINN": "28.09.2026",
+        "ENDE": "30.09.2027",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Spitzwegstr. STORNO",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "12",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "",
+        "ART_VB": "",
+        "SPERR_ART": "20",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677660.905213798,
+          5401154.70332795
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1294",
+        "BEGINN": "28.09.2026",
+        "ENDE": "30.09.2027",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Stresemannstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "12",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kabelbrücke",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677293.311643446,
+          5397665.3878945
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1328",
+        "BEGINN": "21.09.2026",
+        "ENDE": "21.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Karlskroner Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Oberstimmer Str.",
+        "ART_ARB": "",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678749.39936616,
+          5405604.60993022
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1279",
+        "BEGINN": "19.10.2026",
+        "ENDE": "28.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Freybergerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "22",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680410.799370146,
+          5405019.03588694
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1281",
+        "BEGINN": "19.10.2026",
+        "ENDE": "28.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Goethestr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "146",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680076.963432762,
+          5404957.28258355
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1284",
+        "BEGINN": "19.10.2026",
+        "ENDE": "28.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Oberer Taubentalweg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "68",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung der Grünfläche; Sperrung Parkbucht / Seitenstreifen; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          681469.060087262,
+          5402378.12991544
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1261",
+        "BEGINN": "14.09.2026",
+        "ENDE": "20.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Eriagstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "5",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676083.396195737,
+          5404307.5974904
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1251",
+        "BEGINN": "14.09.2026",
+        "ENDE": "23.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Samhofer Weg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "42",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kranaufstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678635.558367635,
+          5405038.38456038
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1220",
+        "BEGINN": "07.09.2026",
+        "ENDE": "18.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Am Nordbahnhof",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Gerüstaufstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677302.211184736,
+          5401586.80878698
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1276",
+        "BEGINN": "14.09.2026",
+        "ENDE": "04.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Langobardenstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "7",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Baustelleneinrichtungsfläche",
+        "ART_VB": "Sperrung Parkbucht / Seitenstreifen;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679852.449264713,
+          5399623.80856073
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0972",
+        "BEGINN": "21.09.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Sandrachweg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten mit Hubarbeitsbühne",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679406.538346615,
+          5407600.20046726
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1144",
+        "BEGINN": "13.10.2026",
+        "ENDE": "20.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Hegnenbergstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "BA 2",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Leitungsverlegung Strom",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678293.021358981,
+          5403671.12248118
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0920",
+        "BEGINN": "17.08.2026",
+        "ENDE": "27.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Am Bachl",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "BA 4.2",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Am Münzbergtor",
+        "ART_ARB": "Verlegung Wasserleitung",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          682622.794527264,
+          5405062.61200527
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1185",
+        "BEGINN": "31.08.2026",
+        "ENDE": "27.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Hainbuchenstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Hochbaumaßnahme; Kranstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678835.247099889,
+          5402485.88661536
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1025",
+        "BEGINN": "31.08.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Münchener Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "41",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Dachsanierung, Aufstellung Gerüst",
+        "ART_VB": "",
+        "SPERR_ART": "0",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676402.260085081,
+          5400202.22604964
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1212",
+        "BEGINN": "27.08.2026",
+        "ENDE": "04.06.2027",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Lechermannstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "47",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678232.366642579,
+          5404237.32576654
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0959",
+        "BEGINN": "03.08.2026",
+        "ENDE": "18.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Schrannenstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "3",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Proviantstr.",
+        "ART_ARB": "Gerüststellung",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676885.128815496,
+          5403264.33035952
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1058",
+        "BEGINN": "23.07.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Probierlweg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "42",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kranaufstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          675137.387253874,
+          5404650.76443693
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0560",
+        "BEGINN": "15.07.2026",
+        "ENDE": "30.04.2028",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Albertus-Magnus-Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "42",
+        "SBOD_HNR_2": "44",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Hochbaumaßnahme\nContainerstellung \nBaumateriallager",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679560.223383363,
+          5402043.24907591
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0896",
+        "BEGINN": "27.07.2026",
+        "ENDE": "31.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Martin-Hemm-Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "2",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kranaufstellung, Bauzaunaufstellung, Dachsanierung",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678757.891051371,
+          5405132.09511973
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0979",
+        "BEGINN": "14.09.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Nürnberger Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Aufstellung einer Hubarbeitsbühne",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678502.306016743,
+          5407675.77810867
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/1021",
+        "BEGINN": "13.07.2026",
+        "ENDE": "31.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Am Mühlbach",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "Ziegelberg, Roßlaufweg, Im Fürst, Im Haunstädter Weg",
+        "SBOD_QSTR_2": "Ochsenwiesen, Retzgraben, Gernwiesen, Gemeindewiesenweg",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          681307.267385694,
+          5404580.12979992
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0910",
+        "BEGINN": "13.07.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Brittingstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          681335.39256866,
+          5404584.48067268
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0908",
+        "BEGINN": "13.07.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Am Roding",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          681157.876982502,
+          5404661.63764463
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0909",
+        "BEGINN": "13.07.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Bert-Brecht-Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          681015.668329521,
+          5404617.71016893
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0911",
+        "BEGINN": "13.07.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Gozbaldstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "23",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          681193.046160624,
+          5404609.81634097
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0912",
+        "BEGINN": "13.07.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Niederaltaicher Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          681284.64593401,
+          5404709.36975523
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0914",
+        "BEGINN": "13.07.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Schellingstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          681164.831308795,
+          5404595.06976083
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0913",
+        "BEGINN": "13.07.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Reichenaustr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kanalsanierung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678313.734535486,
+          5403590.9961366
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0957",
+        "BEGINN": "27.06.2026",
+        "ENDE": "19.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Am Münzbergtor",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Baumateriallager",
+        "ART_VB": "Sperrung der Grünfläche;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677962.346593166,
+          5403962.85208519
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0807",
+        "BEGINN": "01.07.2026",
+        "ENDE": "31.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Hohe-Schul-Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "5",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Baumateriallager\nContainerstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679305.782202598,
+          5400253.326198
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0821",
+        "BEGINN": "18.06.2026",
+        "ENDE": "30.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Sperlingstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "2b/2c",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Aufstellung Kabelbrücke",
+        "ART_VB": "Verkehrsbeschränkung(en); Fahrbahneinengung; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "11",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680266.704838093,
+          5406426.08945547
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0782",
+        "BEGINN": "01.07.2026",
+        "ENDE": "18.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Hochweg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680295.017341434,
+          5406502.50092957
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0781",
+        "BEGINN": "01.07.2026",
+        "ENDE": "18.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Friedensstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "22",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680360.901085793,
+          5406439.12457477
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0779",
+        "BEGINN": "01.07.2026",
+        "ENDE": "18.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Nusserstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "1",
+        "SBOD_HNR_2": "7",
+        "SBOD_QSTR_1": "Hochweg 31",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680455.908206806,
+          5406421.14962225
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0778",
+        "BEGINN": "01.07.2026",
+        "ENDE": "18.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Siegertstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "1",
+        "SBOD_HNR_2": "10",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677979.76757797,
+          5404117.9259327
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0855",
+        "BEGINN": "21.05.2026",
+        "ENDE": "31.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Schulstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "22",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Gerüststellung",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          672621.303141866,
+          5402614.40503765
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0797",
+        "BEGINN": "17.09.2026",
+        "ENDE": "23.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Gerolfstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "BA3",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "Am Burggraben",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Stromversorgungsnetz: Leitungsverlegung",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678846.390828023,
+          5405793.80527647
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0677",
+        "BEGINN": "26.05.2026",
+        "ENDE": "31.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Theodor-Heuss-Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Nürnberger Str.",
+        "ART_ARB": "Straßenbau",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": "Umbau der Marktkaufkreuzung beginnt:\nVerkehrsbehinderungen und Umleitungen ab 26. Mai\nMit der Freigabe des Unterhaunstädter Wegs zum Ende dieser Woche (weitere Pressemitteilung folgt) kann der Umbau der sogenannten Marktkaufkreuzung starten. Die Arbeiten zur Anbindung des Schneller Weg an die Theodor-Heuss-Straße beginnen am Dienstag, 26. Mai, in den Pfingstferien.\nDie Baustelle wird ab 9 Uhr eingerichtet. Mit größeren Verkehrsbehinderungen ist ab etwa 10 Uhr zu rechnen. Dann wird die bisherige Ampelanlage an der Kreuzung außer Betrieb genommen und die Polizei regelt vorübergehend den Verkehr.\nDer Umbau der neuen Verkehrsführung dauert voraussichtlich bis in die Abendstunden.\nWährend der Bauzeit bleibt die Theodor-Heuss-Straße in Ost-West-Richtung mit jeweils einer Fahrspur pro Richtung befahrbar. Die Nord-Süd-Verbindung über die\nMarktkaufkreuzung entfällt dagegen vollständig  ein Durchfahren der Kreuzung in diese Richtung ist nicht mehr möglich.\nDie Stadt empfiehlt daher, den Bereich weiträumig zu umfahren.\nGleichzeitig steht der Unterhaunstädter Weg wieder ohne Einschränkungen zur Verfügung. \nAus westlicher Richtung erfolgt die Umleitung nach Norden über die Ettinger Straße und nach Süden über Nördliche Ringstraße und Goethestraße. Die Ampelschaltungen auf den Umleitungsstrecken werden angepasst, um den Verkehr besser abfließen zu lassen.\nWer aus Richtung Schillerbrücke kommt, wird in Richtung Norden bereits über die Friedrich-Ebert-Straße und den Unterhaunstädter Weg geführt.\nVerkehr, der von Süden aus der Nürnberger Straße an der Marktkaufkreuzung ankommt, wird nach links und rechts in die Theodor-Heuss-Straße geführt. Kurz vor der Theodor-Heuss-Brücke besteht die Möglichkeit, in die Siemensstraße abzubiegen, zur neuen Brücke am Schneller Weg.\nEs wurden Haltverbote für die Durchlässigkeit des Umleitungs- und Linienverkehrs in folgenden Straßenzügen errichtet:\nAm Augraben, Siemensstr., Lena-Christ-Str..\n\nWer von Osten (aus Richtung Autobahn) kommt, kann an der Marktkaufkreuzung künftig nur noch geradeaus fahren und nicht mehr nach Süden, in Richtung Schillerbrücke abbiegen.\nDie Stadt bittet alle Verkehrsteilnehmer, Kreuzungsbereiche bei Rückstau freizuhalten.\nFußgänger und Radfahrer werden sicher durch das Baufeld an der Marktkaufkreuzung geführt. Die Querung der Bahnlinie erfolgt im weiteren Verlauf über einen gemeinsamen Geh- und Radweg über die neue Bahnbrücke.\nDiese Verkehrsführung in der aktuellen Bauphase wird voraussichtlich bis Ende des Jahres bestehen."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679814.517581251,
+          5402343.70080631
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0651",
+        "BEGINN": "08.06.2026",
+        "ENDE": "18.10.2027",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Kothauer Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "85",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kranaufstellung, Baustellenzufahrt",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          667064.489984241,
+          5405637.93383152
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0740",
+        "BEGINN": "18.05.2026",
+        "ENDE": "31.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Steinäckerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Baustellenausfahrt",
+        "ART_VB": "",
+        "SPERR_ART": "0",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680101.513829398,
+          5404518.83036126
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0574",
+        "BEGINN": "11.05.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Viehmarktplatz",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kanalsanierung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679672.874485761,
+          5404423.39338273
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0634",
+        "BEGINN": "11.05.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Flexstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kanalsanierung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679840.612431947,
+          5404414.93008575
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0632",
+        "BEGINN": "11.05.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Sudermannstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kanalsanierung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679995.26677541,
+          5404357.99360961
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0633",
+        "BEGINN": "11.05.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Gerhart-Hauptmann-Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kanalsanierung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679832.026599033,
+          5404466.54525315
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0631",
+        "BEGINN": "11.05.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Watzlikstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kanalsanierung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679957.616988304,
+          5404421.07680915
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0628",
+        "BEGINN": "11.05.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Wiechertstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kanalsanierung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678544.065629082,
+          5402093.41173935
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0615",
+        "BEGINN": "18.05.2026",
+        "ENDE": "31.05.2027",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Aventinstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "49",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kabelbrücke",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677007.431602045,
+          5400141.38262451
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0535",
+        "BEGINN": "18.05.2026",
+        "ENDE": "15.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Kirchstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "27",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Hausanschluss, Strom, Wasser",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680211.992760868,
+          5406448.04878856
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0525",
+        "BEGINN": "27.04.2026",
+        "ENDE": "15.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Hochweg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Arbeiten am Kanalnetz",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          671205.768941893,
+          5405291.90124422
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0594",
+        "BEGINN": "20.04.2026",
+        "ENDE": "15.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Heindlmühlenweg",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "4",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kabelbrücke",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679787.678910033,
+          5402547.31163247
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0108",
+        "BEGINN": "02.03.2026",
+        "ENDE": "18.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Holznerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "13",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kranaufstellung, Baumateriallager, Hochbaumaßnahme",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677221.698261749,
+          5397886.39061069
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0258",
+        "BEGINN": "30.03.2026",
+        "ENDE": "30.06.2027",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Am Zwischenwerk",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "15",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kabelbrücke",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677035.379504291,
+          5403542.20430427
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0177",
+        "BEGINN": "23.03.2026",
+        "ENDE": "31.10.2027",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Große Zellgasse",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "8",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kabelbrücke",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung der Grünfläche; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          677484.486899769,
+          5405793.54974899
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0202",
+        "BEGINN": "09.03.2026",
+        "ENDE": "31.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Hindemithstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "35",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Containerstellung",
+        "ART_VB": "Sperrung der Grünfläche; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676784.589002748,
+          5401175.65087364
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0183",
+        "BEGINN": "09.03.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Savignystr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "6",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Baumateriallager, Hochbaumaßnahme, Kranaufstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678529.750911264,
+          5402226.98163445
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0152",
+        "BEGINN": "09.03.2026",
+        "ENDE": "31.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Lindberghstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "20",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Hochbaumaßnahme",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676702.752145964,
+          5409320.64820022
+        ]
+      },
+      "properties": {
+        "AKZ": "2026/0193",
+        "BEGINN": "23.02.2026",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Hepberger Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Straßenbau",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": "Vollsperrung der Hepberger Str. ab der Einmündung von der Kipfenberger Str. aus.\nUmleitung über Kipfenberger Str. und St.-Michael-Str."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679295.668452217,
+          5404127.90090177
+        ]
+      },
+      "properties": {
+        "AKZ": "2025/2136",
+        "BEGINN": "02.02.2026",
+        "ENDE": "18.10.2027",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Schillerbrücke",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Brückensanierung\nBA 0 und BA Ia und Ib",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679793.399627218,
+          5402556.22437363
+        ]
+      },
+      "properties": {
+        "AKZ": "2025/2039",
+        "BEGINN": "01.12.2025",
+        "ENDE": "30.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Holznerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "13",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kabelbrücke",
+        "ART_VB": "Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "0",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678835.259715311,
+          5401613.42767856
+        ]
+      },
+      "properties": {
+        "AKZ": "2025/1907",
+        "BEGINN": "24.11.2025",
+        "ENDE": "18.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Bittlmairstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "11",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Hochbaumaßnahme",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680287.873274459,
+          5402103.57775317
+        ]
+      },
+      "properties": {
+        "AKZ": "2025/1844",
+        "BEGINN": "27.10.2025",
+        "ENDE": "31.05.2027",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Am Mühlanger",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Odilostr. 2",
+        "ART_ARB": "Haltverbot",
+        "ART_VB": "Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "0",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678403.542451002,
+          5404987.55830341
+        ]
+      },
+      "properties": {
+        "AKZ": "2025/1772",
+        "BEGINN": "10.11.2025",
+        "ENDE": "30.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Händelstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "1",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "Nördliche Ringstr. 39",
+        "ART_ARB": "Baumaterialllager, Kranaufstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); Gesamtsperrung des Verkehrs; Fahrbahneinengung; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "13",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": "Vollsperrung inkl. Sperrung einer Gehwegseite in der Händelstraße, Wegnahme einer Fahrspur auf der Nördlichen Ringstr."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678737.801958312,
+          5400947.68956061
+        ]
+      },
+      "properties": {
+        "AKZ": "2025/1422",
+        "BEGINN": "19.09.2025",
+        "ENDE": "15.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Wallensteinstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "73",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kranaufstellung; Hochbaumaßnahme",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678742.205791445,
+          5400940.05902549
+        ]
+      },
+      "properties": {
+        "AKZ": "2025/1487",
+        "BEGINN": "02.09.2025",
+        "ENDE": "31.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Wallensteinstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "73",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kabelbrücke",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676716.519886536,
+          5401424.66936426
+        ]
+      },
+      "properties": {
+        "AKZ": "2025/1109",
+        "BEGINN": "22.07.2025",
+        "ENDE": "31.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Merowingerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "7",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Hochbaumaßnahme",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          679685.500067631,
+          5405626.84598648
+        ]
+      },
+      "properties": {
+        "AKZ": "2025/0300",
+        "BEGINN": "14.04.2025",
+        "ENDE": "31.10.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Friedrich-Ebert-Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "91",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Hochbaumaßnahme",
+        "ART_VB": "Verkehrsbeschränkung(en); Sperrung des Fußgängerverkehrs im Gehwegbereich; Sperrung für Fahrradverkehr; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs; Sicherungsmaßnahmen entlang des Radweges;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678426.270707736,
+          5401531.37608032
+        ]
+      },
+      "properties": {
+        "AKZ": "2025/0397",
+        "BEGINN": "01.04.2025",
+        "ENDE": "18.12.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Aldringenstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "7",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Hochbaumaßnahme;\nKabelbrücke, Kranaufstellung",
+        "ART_VB": "Verkehrsbeschränkung(en); halbseitige Sperrung des Verkehrs; Sperrung des Fußgängerverkehrs im Gehwegbereich; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "12",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          676887.094978099,
+          5401157.13853464
+        ]
+      },
+      "properties": {
+        "AKZ": "2024/2100",
+        "BEGINN": "13.01.2025",
+        "ENDE": "31.03.2027",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Habsburgerstr.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Baustellenausfahrt - Hochbaumaßnahme -",
+        "ART_VB": "Verkehrsbeschränkung(en); Fahrbahneinengung; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße; Sicherungsmaßnahmen entlang des Gehwegs;",
+        "SPERR_ART": "11",
+        "VORGNAME": "Sondernutzung allgemein",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          678998.958377143,
+          5404186.85479246
+        ]
+      },
+      "properties": {
+        "AKZ": "2024/1917",
+        "BEGINN": "07.11.2024",
+        "ENDE": "15.11.2026",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Schloßlände",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Baustellenzufahrt\nAnkeilung Bordstein",
+        "ART_VB": "Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "0",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          680924.913957004,
+          5404703.85852506
+        ]
+      },
+      "properties": {
+        "AKZ": "2024/1338",
+        "BEGINN": "20.08.2024",
+        "ENDE": "31.08.2028",
+        "ORT": "Ingolstadt",
+        "STRASSE": "Regensburger Str.",
+        "SBOD_TYPE": "1",
+        "SBOD_HNR_1": "143",
+        "SBOD_HNR_2": "",
+        "SBOD_QSTR_1": "",
+        "SBOD_QSTR_2": "",
+        "ART_ARB": "Kabelbrücke",
+        "ART_VB": "Sperrung der Grünfläche; Verkehrssicherung(en); Sicherungsmaßnahmen entlang der Straße;",
+        "SPERR_ART": "10",
+        "VORGNAME": "Baustellen",
+        "AUFTRAGGEBER_EMAIL": "",
+        "SONDERINFO": ""
+      }
+    }
+  ]
+}

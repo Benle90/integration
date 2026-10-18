@@ -160,6 +160,16 @@ Administration des Ponts et Chaussées, **CC0** auf data.public.lu. Zwei Dateien
 - Die Kommentare (`generalPublicComment`) sind französisch und in der Quelle ohne Akzente („chausse rtrcie“) → nicht übernommen. Die KML-Variante enthält dieselben Angaben nur als HTML.
 - Gleiche Situation in beiden Dateien → die aktuelle gewinnt. XML-Auswertung per `xml.etree` im Thread (expat begrenzt Entity-Expansion).
 
+### Weitere Städte (geprüft 2026-10-18, `providers/cities.py`)
+
+Füllen kommunale Straßen auf, die die Landesquellen (MobiData BW, Norddeutschland) nicht kennen, bzw. Bayern ohne Landesquelle. Alle komplett ohne Ausschnitt.
+
+- **Karlsruhe** (WFS `https://mobil.trk.de/geoserver/TBA/ows`, Layer `TBA:baustellen` = aktuell + Vorschau, ~180 KB gzip; CC BY 4.0). Deckt die ganze Technologieregion ab (auch Pfalz und Elsass). `CQL_FILTER` auf `sperrung` (Vollsperrung, eine Fahrtrichtung, Verkehrsbehinderung). Eine Baustelle steht oft doppelt (Punkt und Fläche) → `merge_features` nach Lage/Art/Zeitraum. Feature-IDs werden neu nummeriert, `vorgangsnummer` teils „---“ → Schlüssel aus Vorgangsnummer, Lage, Art und Beginn. Zeiten UTC. Elsässer Einträge haben interne Codes als `art` („AK5_encours“) → als „Baustelle“ angezeigt.
+- **Rostock** (GeoJSON `https://geo.sv.rostock.de/download/opendata/baustellen/baustellen.json`, ETag; CC0). Nur Einträge, deren `verkehrsbeeintraechtigungen` Vollsperrung, halbseitige Sperrung oder Verkehrsraumeinschränkungen nennt (der Rest sichert Gehwege und Fassaden). `von`/`nach` sind Hausnummern oder Querstraßen mit Straßenschlüssel („Borwinstr. (01500)“). Kennung `uuid`.
+- **Kiel** (ArcGIS-WFS `https://ims.kiel.de/…/LHKielWmsWfs/MapServer/WFSServer`, `outputFormat=geoJSON`; CC BY 4.0). Layer `lhkiel:Baustellen_{L,F}_-_{Aktuell,Zukunft}` (Linien, Flächen); die Punkt-Layer liefen beim Test in Timeouts, der Sammellayer `Baustellen` ist leer. `Legende` „Voll_…“ → `closure`. Zeitraum als Text „06.07.2026 bis 30.10.2026“. Leere Felder kommen als Text „null“. Kiel steht zusätzlich im norddeutschen WFS (keine Deduplizierung).
+- **Ingolstadt** (GeoJSON `https://www.ingolstadt.de/openbydata/VMS/Baustellen_14_Tage_Ingolstadt.geojson`, ETag; CC BY 4.0 laut open.bydata). Nächste 14 Tage, Punkte in **UTM 32N** (`geo.utm_to_wgs84`). Nur `ART_VB` mit „Gesamtsperrung“ (→ `closure`) oder „halbseitige Sperrung“. `ART_ARB` mit „;“ und Zeilenumbrüchen getrennt; `SONDERINFO` ist manchmal eine ganze Pressemitteilung → gekürzt. `AUFTRAGGEBER_EMAIL` wird nicht übernommen (auch nicht in die Fixture).
+- Nicht umgesetzt: **Leipzig** (Lizenz des WFS unklar, Hauptstraßen über Sachsen abgedeckt), **Herne** (WFS antwortete mit Serverfehler 500), **Bonn** (Datensatz bei Open.NRW nicht mehr auffindbar), **Bayern landesweit** (open.bydata hat nur eine statische Referenz-ZIP, aktuelle Daten nur über die Mobilithek mit Freigabe).
+
 ## 3. Entscheidungen
 
 - **Eine Integration mit Providern** statt mehrerer: gemeinsame Entities pro Bereich, ein Config-Flow, ein HACS-Eintrag.

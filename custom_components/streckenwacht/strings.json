@@ -131,7 +131,11 @@
         "aachen": "Aachen (roadworks)",
         "duisburg": "Duisburg (roadworks)",
         "muenster": "Münster (roadworks)",
-        "luxemburg": "Luxembourg (national roads, CC0)"
+        "luxemburg": "Luxembourg (national roads, CC0)",
+        "karlsruhe": "Karlsruhe region (roadworks)",
+        "rostock": "Rostock (roadworks)",
+        "kiel": "Kiel (roadworks)",
+        "ingolstadt": "Ingolstadt (roadworks)"
       }
     },
     "types": {

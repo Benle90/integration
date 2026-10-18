@@ -33,6 +33,12 @@ from .providers import Provider
 from .providers.autobahn import AutobahnProvider
 from .providers.berlin import BerlinProvider
 from .providers.brandenburg import BrandenburgProvider
+from .providers.cities import (
+    IngolstadtProvider,
+    KarlsruheProvider,
+    KielProvider,
+    RostockProvider,
+)
 from .providers.dortmund import DortmundProvider
 from .providers.frankfurt import FrankfurtProvider
 from .providers.koeln import KoelnProvider
@@ -72,6 +78,10 @@ PROVIDERS: dict[Source, type[Provider]] = {
     Source.DUISBURG: DuisburgProvider,
     Source.MUENSTER: MuensterProvider,
     Source.LUXEMBURG: LuxemburgProvider,
+    Source.KARLSRUHE: KarlsruheProvider,
+    Source.ROSTOCK: RostockProvider,
+    Source.KIEL: KielProvider,
+    Source.INGOLSTADT: IngolstadtProvider,
 }
 
 

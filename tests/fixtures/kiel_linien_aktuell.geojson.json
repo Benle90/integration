@@ -1,0 +1,3861 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.17886222,
+              54.29461222
+            ],
+            [
+              10.1788828,
+              54.29447884
+            ],
+            [
+              10.17897078,
+              54.29428536
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.2",
+        "OBJECTID": 2,
+        "Straße": "Rüsterstraße",
+        "Auswirkung": "Sperrung von Behindertenparkplätzen",
+        "Grund": "Verlegung der Behindertenparkplätze für die Erstellung einer Baustellenausfahrt",
+        "Bereich": "Rüsterstraße 30",
+        "Zeitraum__voraussichtlich_": "31.01.2024 bis 31.12.2026",
+        "Dauer__voraussichtlich_": "noch 75 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "In der Rüsterstraße 30 müssen die zwei allgemeinen Behindertenparkplätze gesperrt werden, um  eine Baustellenzufahrt zu dem Kindergarten einzurichten. Direkt daneben werden zwei Ersatzparkplätze ausgewiesen.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.07461314,
+              54.36887148
+            ],
+            [
+              10.07739606,
+              54.36661479
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.3",
+        "OBJECTID": 3,
+        "Straße": "Eckernförder Straße",
+        "Auswirkung": "Vollsperrung,Sperrung Gehweg",
+        "Grund": "Erneuerung der Alten Levensauer Hochbrücke",
+        "Bereich": "Eckernförder Straße bei Alte Levensauer Hochbrücke",
+        "Zeitraum__voraussichtlich_": "04.05.2026 bis 15.01.2027",
+        "Dauer__voraussichtlich_": "noch 90 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "Die Alte Levensauer Hochbrücke wird ab dem 10.08.2026 bis voraussichtlich Ende 2027 für den Kraftfahrzeugverkehr gesperrt. Der Verkehr wird während dieser Zeit über die Neue Levensauer Hochbrücke umgeleitet.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13478976,
+              54.31803101
+            ],
+            [
+              10.13523736,
+              54.31842336
+            ],
+            [
+              10.13562416,
+              54.31866006
+            ],
+            [
+              10.13612092,
+              54.31897083
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.4",
+        "OBJECTID": 4,
+        "Straße": "Kaistraße",
+        "Auswirkung": "Einengung Geh-und Radweg",
+        "Grund": "Aufstellung eines Gerüstes",
+        "Bereich": "Kaistraße zwischen Stresemannplatz u. Hafenstraße (Neues Rathaus)",
+        "Zeitraum__voraussichtlich_": "08.07.2025 bis 31.12.2026",
+        "Dauer__voraussichtlich_": "noch 75 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.12299617,
+              54.31698244
+            ],
+            [
+              10.12228815,
+              54.31670422
+            ],
+            [
+              10.12282834,
+              54.31623426
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.6",
+        "OBJECTID": 6,
+        "Straße": "Kirchhofallee",
+        "Auswirkung": "Fahrbahneinengung, halbseitige Sperrung, Sperrung Gehweg",
+        "Grund": "Entstehung einens Neubaues",
+        "Bereich": "Kirchhofallee 43-51, bei Von-der-Tann-Straße",
+        "Zeitraum__voraussichtlich_": "27.08.2025 bis 15.02.2027",
+        "Dauer__voraussichtlich_": "noch 121 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "Kieler Woche Sperrzone vom 12.06.2026 bis 03.07.2026 / Für die Entstehung eines Neubaus in der Kirchhofallee, wird die Kirchhofallee und die Von-Der-Tann-Straße eingeengt.Die Fußgängersignale an der LSA 157 sind in der Von-Der-Tann-Straße und im unteren Bereich der Kirchhofallee abzuhängen.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.10785684,
+              54.35584323
+            ],
+            [
+              10.10828904,
+              54.35571261
+            ],
+            [
+              10.10879984,
+              54.35559298
+            ],
+            [
+              10.10896177,
+              54.35556687
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.9",
+        "OBJECTID": 9,
+        "Straße": "Charles-Roß-Ring",
+        "Auswirkung": "Fahrbahneinengung",
+        "Grund": "Freilegung des Kellers + Fassadenarbeiten",
+        "Bereich": "Charles-Roß-Ring 29-31",
+        "Zeitraum__voraussichtlich_": "02.09.2025 bis 31.12.2026",
+        "Dauer__voraussichtlich_": "noch 75 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "Aufgrund der Freilegung des Kellers für spätere Fassadenarbeiten, wird der Seitenstreifen, im oben genannten Bereich, voll gesperrt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13115042,
+              54.35791276
+            ],
+            [
+              10.13149698,
+              54.35790471
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.12",
+        "OBJECTID": 12,
+        "Straße": "Knorrstraße",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Gehweg ",
+        "Grund": "Fassadenarbeiten",
+        "Bereich": "Knorrstraße 8",
+        "Zeitraum__voraussichtlich_": "27.10.2025 bis 01.06.2027",
+        "Dauer__voraussichtlich_": "noch 227 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.12888457,
+              54.33587017
+            ],
+            [
+              10.12924692,
+              54.33584411
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.14",
+        "OBJECTID": 14,
+        "Straße": "Waitzstraße",
+        "Auswirkung": "Sperrung Gehweg",
+        "Grund": "Abriss eines Hauses, Haussanierung",
+        "Bereich": "Waitzstraße 84",
+        "Zeitraum__voraussichtlich_": "19.01.2026 bis 18.12.2026",
+        "Dauer__voraussichtlich_": "noch 62 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.17426852,
+              54.34570115
+            ],
+            [
+              10.17501939,
+              54.34468466
+            ],
+            [
+              10.17487184,
+              54.34487771
+            ],
+            [
+              10.17606766,
+              54.34515136
+            ],
+            [
+              10.17633408,
+              54.34478257
+            ],
+            [
+              10.17703173,
+              54.3444564
+            ],
+            [
+              10.17825688,
+              54.34397179
+            ],
+            [
+              10.17896374,
+              54.34371366
+            ],
+            [
+              10.18047873,
+              54.34342632
+            ],
+            [
+              10.18105735,
+              54.34327163
+            ],
+            [
+              10.18160779,
+              54.34315127
+            ],
+            [
+              10.18261561,
+              54.34271558
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.17",
+        "OBJECTID": 17,
+        "Straße": "Zum Kesselort",
+        "Auswirkung": "Sperrung Geh- und Radweg",
+        "Grund": "Unterhaltung Fördewanderweg",
+        "Bereich": "Zum Kesselort, Fördewanderweg `Hasselfelde`",
+        "Zeitraum__voraussichtlich_": "12.01.2026 bis 31.12.2026",
+        "Dauer__voraussichtlich_": "noch 75 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "Der Fördewanderweg wird zwischen dem Zugang zum Strand Hasselfelde und Mönkeberg voll gesperrt.Eine Umleitung erfolgt über Heikendorfer Weg/ Gänsekrugredder/ Stubenrauchstr.Die Beschilderung auf dem Gemeindegebiet Mönkeberg wurde mit den dortigen Behörden abgestimmt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13807254,
+              54.30351836
+            ],
+            [
+              10.13820471,
+              54.30373351
+            ],
+            [
+              10.13952438,
+              54.30344356
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.19",
+        "OBJECTID": 19,
+        "Straße": "Heischstraße ",
+        "Auswirkung": "Einengung Gehweg ",
+        "Grund": "Neubau",
+        "Bereich": "Heischstraße und Sörensenstraße ",
+        "Zeitraum__voraussichtlich_": "01.10.2024 bis 30.11.2026",
+        "Dauer__voraussichtlich_": "noch 44 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "Wegen des Neubauvorhabens wird der Gehweg im o.g. Bereich während der Absicherungsmaßnahmeeingeengt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13181119,
+              54.36588412
+            ],
+            [
+              10.1326354,
+              54.36577778
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.21",
+        "OBJECTID": 21,
+        "Straße": "Uferstraße",
+        "Auswirkung": "Kurzfristige Sperrungen der Fahrbahn",
+        "Grund": "Bootstransporte",
+        "Bereich": "Uferstraße zwischen Schleusenstraße und Am Kiel- Kanal",
+        "Zeitraum__voraussichtlich_": "09.09.2026 bis 04.01.2027",
+        "Dauer__voraussichtlich_": "noch 79 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "Die Uferstraße wird im oben genannten Bereich täglich für Bootstransporte für einen kurzen Zeitraum von ca. 3 Minuten voll gesperrt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.10615998,
+              54.34625079
+            ],
+            [
+              10.10677586,
+              54.34581209
+            ],
+            [
+              10.10728556,
+              54.34542675
+            ],
+            [
+              10.10775596,
+              54.34513606
+            ],
+            [
+              10.10820899,
+              54.34486648
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.22",
+        "OBJECTID": 22,
+        "Straße": "Olshausenstraße",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Radweg, Sperrung Gehweg",
+        "Grund": "Einrichtung Anlieferzone und 2 Baustellenzufahrten",
+        "Bereich": "Olshausenstraße 78",
+        "Zeitraum__voraussichtlich_": "02.11.2023 bis 31.12.2026",
+        "Dauer__voraussichtlich_": "noch 75 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "Hierfür wird die Fahrbahn eingeengt und der Schutzstreifen für Radfahrende entfällt. Zudem werden der Gehweg und der bauliche Radweg gesperrt. Die Fußgänger werden zum einen an der LSA Leibnitzstraße auf der andere Straße Seite geführt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13745177,
+              54.30969664
+            ],
+            [
+              10.13734514,
+              54.30956091
+            ],
+            [
+              10.1368852,
+              54.30882324
+            ],
+            [
+              10.13678903,
+              54.30872752
+            ],
+            [
+              10.1363837,
+              54.30804767
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.25",
+        "OBJECTID": 25,
+        "Straße": "Werftbahnstraße ",
+        "Auswirkung": "Einengung Gehweg, Sperrung Seitenstreifen",
+        "Grund": "Baustellenzufahrt",
+        "Bereich": "Werftbahnstraße 8 bis Ecke Gablenzstraße",
+        "Zeitraum__voraussichtlich_": "15.02.2026 bis 31.12.2026",
+        "Dauer__voraussichtlich_": "noch 75 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.09695452,
+              54.30600459
+            ],
+            [
+              10.09685767,
+              54.3058022
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.34",
+        "OBJECTID": 34,
+        "Straße": "Hasseer Straße",
+        "Auswirkung": "Fahrbahneinengung",
+        "Grund": "Hausbau",
+        "Bereich": "Hasseer Straße 44",
+        "Zeitraum__voraussichtlich_": "07.04.2026 bis 31.12.2027",
+        "Dauer__voraussichtlich_": "noch 440 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.14984745,
+              54.31618385
+            ],
+            [
+              10.15018691,
+              54.3161289
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.35",
+        "OBJECTID": 35,
+        "Straße": "Hügelstraße",
+        "Auswirkung": "Fahreneinengung, Sperrung Gehweg",
+        "Grund": "Neubau Studierendenwohnheim ",
+        "Bereich": "Hügelstraße 1",
+        "Zeitraum__voraussichtlich_": "07.04.2026 bis 31.01.2027",
+        "Dauer__voraussichtlich_": "noch 106 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11849558,
+              54.32808247
+            ],
+            [
+              10.11949901,
+              54.32880346
+            ],
+            [
+              10.1202041,
+              54.32940645
+            ],
+            [
+              10.12080085,
+              54.3300047
+            ],
+            [
+              10.12194726,
+              54.33127637
+            ],
+            [
+              10.12244539,
+              54.33186403
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.37",
+        "OBJECTID": 37,
+        "Straße": "Westring ",
+        "Auswirkung": "Halbseitige Sperrung, Sperrung Geh- und Radweg, Gegenverkehrsregelung, Einrichtung einer Sperrfläche",
+        "Grund": "Sanierung des Westrings in 4 Bauphasen",
+        "Bereich": "Westring von Eckernförder Straße bis Gutenbergstraße",
+        "Zeitraum__voraussichtlich_": "07.04.2026 bis 31.10.2026",
+        "Dauer__voraussichtlich_": "noch 14 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "Bauphase 0:  07.04.-13.04.2026 Bauphase 1a: 13.04.-01.10.2026",
+        "Internet": "www.kiel.de/westring ",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.12907927,
+              54.32428686
+            ],
+            [
+              10.12937001,
+              54.32446516
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.42",
+        "OBJECTID": 42,
+        "Straße": "Muhliusstraße",
+        "Auswirkung": "Vollsperrung Fahrbahn, Sperrung Gehweg",
+        "Grund": "Umbauarbeiten am Gebäude",
+        "Bereich": "Muhliusstraße 87-89",
+        "Zeitraum__voraussichtlich_": "04.07.2026 bis 27.11.2026",
+        "Dauer__voraussichtlich_": "noch 41 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "In der o.g. Maßnahme sind einseitig der Gehweg und die Fahrbahn voll zu sperren. Es werden Umbauarbeiten am Gebäude durchgeführt. Der gegenüberliegende Gehweg ist frei zu halten. ",
+        "Internet": "null",
+        "Legende": "Voll_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.1278592,
+              54.34342164
+            ],
+            [
+              10.12786892,
+              54.34342622
+            ],
+            [
+              10.12799916,
+              54.3436901
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.53",
+        "OBJECTID": 53,
+        "Straße": "Westring ",
+        "Auswirkung": "Wegfall Fahrspur, Sperrung Geh- und Radweg, Sperrung Seitenstreifen",
+        "Grund": "Neubau Doppelstocksporthalle",
+        "Bereich": "Westring 470",
+        "Zeitraum__voraussichtlich_": "11.05.2026 bis 17.03.2028",
+        "Dauer__voraussichtlich_": "noch 517 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "Aufgrund des Neubaus einer Doppelstocksporthalle, im oben genannten Bereich, wird der Geh- und Radweg, der Seitenstreifen und eine Fahrspur voll gesperrt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.12569267,
+              54.30829614
+            ],
+            [
+              10.12542347,
+              54.30724516
+            ],
+            [
+              10.12526896,
+              54.30668124
+            ],
+            [
+              10.12520744,
+              54.3064143
+            ],
+            [
+              10.12519914,
+              54.30619651
+            ],
+            [
+              10.12516837,
+              54.30575968
+            ],
+            [
+              10.1251648,
+              54.30511024
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.55",
+        "OBJECTID": 55,
+        "Straße": "Alte Lübecker Chaussee",
+        "Auswirkung": "Wegfall Fahrspur, Halbseitige Sperrung, Sperrung Geh- und Radweg",
+        "Grund": "Arbeiten an der Eisenbahnbrücke",
+        "Bereich": "Alte Lübecker Chaussee zwischen Stormarnstraße und Rondeel",
+        "Zeitraum__voraussichtlich_": "22.05.2026 bis 31.12.2026",
+        "Dauer__voraussichtlich_": "noch 75 Tag/e",
+        "Verantwortlich": "DB Regio AG",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13866953,
+              54.30811102
+            ],
+            [
+              10.13821521,
+              54.3081265
+            ],
+            [
+              10.13821017,
+              54.30811722
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.59",
+        "OBJECTID": 59,
+        "Straße": "Werftstraße ",
+        "Auswirkung": "Einengung Geh- und Radweg",
+        "Grund": "Einrichtung einer Kabelbrücke (Standzeit)",
+        "Bereich": "Werftstraße 247",
+        "Zeitraum__voraussichtlich_": "03.06.2026 bis 03.06.2027",
+        "Dauer__voraussichtlich_": "noch 229 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "In der Werfstraße wird in Höhe der Hausnr. 247 (Einkaufsmarkt PENNY) über alle Fahrbahnen derWerftstraße hinweg eine Kabelbrücke für die Baustromversorgung des Neubauvorhabens „KoolKiel“ eingerichtet.Es ist unterhalb der Kabelbrückenelemente eine Durchfahrtshöhe von mindestens 5,50m sicherzustelle",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.10354794,
+              54.31045561
+            ],
+            [
+              10.10469439,
+              54.31093459
+            ],
+            [
+              10.10583553,
+              54.31141054
+            ],
+            [
+              10.10638339,
+              54.31168171
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.76",
+        "OBJECTID": 76,
+        "Straße": "Dudweilerstraße ",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Gehweg ",
+        "Grund": "Erneuerung Gehweg",
+        "Bereich": "Dudweilerstraße 4-40",
+        "Zeitraum__voraussichtlich_": "11.06.2026 bis 06.12.2026",
+        "Dauer__voraussichtlich_": "noch 50 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "In der o.g. Maßnahme ist der Gehweg zu erneuern.Dafür ist der Gehweg zu sperren und die Fahrbahn einzuengen.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13597183,
+              54.34068213
+            ],
+            [
+              10.13567857,
+              54.34045399
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.97",
+        "OBJECTID": 97,
+        "Straße": "Gneisenaustraße ",
+        "Auswirkung": "Sperrung Seitenstreifen, Einengung Gehweg",
+        "Grund": "Haussanierung",
+        "Bereich": "Gneisenaustraße 19",
+        "Zeitraum__voraussichtlich_": "03.08.2026 bis 06.11.2026",
+        "Dauer__voraussichtlich_": "noch 20 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "Aufgrund einer Haussanierung im oben genannten Bereich, wird der Seitenstreifen auf beiden Seiten voll gesperrt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13100067,
+              54.33754565
+            ],
+            [
+              10.13125788,
+              54.33778154
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.98",
+        "OBJECTID": 98,
+        "Straße": "Von-der-Horst-Straße",
+        "Auswirkung": "Fahreneinengung, Einengung Gehweg",
+        "Grund": "Haussanierung",
+        "Bereich": "Von-der-Horst-Straße",
+        "Zeitraum__voraussichtlich_": "06.07.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "Aufgrund einer Haussanierung im oben genannten Bereich, wird die Fahrbahn eingeengt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.12853242,
+              54.32909094
+            ],
+            [
+              10.12847636,
+              54.3292911
+            ],
+            [
+              10.12880679,
+              54.32933387
+            ],
+            [
+              10.12904557,
+              54.32940088
+            ],
+            [
+              10.12900415,
+              54.32946152
+            ],
+            [
+              10.12935594,
+              54.32955355
+            ],
+            [
+              10.12974176,
+              54.32965245
+            ],
+            [
+              10.13010889,
+              54.32974254
+            ],
+            [
+              10.13023278,
+              54.32977195
+            ],
+            [
+              10.13032075,
+              54.32978192
+            ],
+            [
+              10.13058445,
+              54.32985948
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.100",
+        "OBJECTID": 100,
+        "Straße": "Teichstraße",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Gehweg, Sperrung Seitenstreifen,Einengung Geh-und Radweg",
+        "Grund": "Stromnetzsanierung 1kV und 10kV",
+        "Bereich": "Teichstraße 6-20 und Haus 21, Knooper Weg 99",
+        "Zeitraum__voraussichtlich_": "06.07.2026 bis 26.10.2026",
+        "Dauer__voraussichtlich_": "noch 9 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "Zwecks Stromnetzsanierung werden im o.g. Bereich der Geh-und Radweg, sowie die Fahrbahneingeengt. Zudem werden der Gehweg und der Seitenstreifen gesperrt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.14323447,
+              54.30994016
+            ],
+            [
+              10.14343005,
+              54.30975365
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.103",
+        "OBJECTID": 103,
+        "Straße": "Kirchenweg ",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Gehweg",
+        "Grund": "Dacharbeiten",
+        "Bereich": "Kirchenweg 6",
+        "Zeitraum__voraussichtlich_": "29.06.2026 bis 30.11.2026",
+        "Dauer__voraussichtlich_": "noch 44 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11472562,
+              54.35616064
+            ],
+            [
+              10.11472323,
+              54.35573861
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.104",
+        "OBJECTID": 104,
+        "Straße": "Gurlittplatz",
+        "Auswirkung": "Einengung Gehweg ",
+        "Grund": "Hausanierung und Krangestellung",
+        "Bereich": "Gurlittplatz 6-8",
+        "Zeitraum__voraussichtlich_": "23.06.2026 bis 06.11.2026",
+        "Dauer__voraussichtlich_": "noch 20 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "Aufgrund einer Haussanierung und einer Krangestellung im oben genannten Bereich wird der Seitenstreifen voll gesperrt sowie der Gehweg eingeengt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13552864,
+              54.33943907
+            ],
+            [
+              10.13560871,
+              54.33940468
+            ],
+            [
+              10.13560172,
+              54.33918985
+            ],
+            [
+              10.13528401,
+              54.33918848
+            ],
+            [
+              10.135251,
+              54.33922865
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.121",
+        "OBJECTID": 121,
+        "Straße": "Gerhardstraße 93",
+        "Auswirkung": "g Fahrbahneinengung, Sperrung Gehweg",
+        "Grund": "Dacharbeiten",
+        "Bereich": "Gerhardstraße 93 Ecke Wrangelstraße 56 ",
+        "Zeitraum__voraussichtlich_": "06.07.2026 bis 30.11.2026",
+        "Dauer__voraussichtlich_": "noch 44 Tag/e",
+        "Verantwortlich": "Maßnahmen Dritter",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.12189036,
+              54.32055871
+            ],
+            [
+              10.12207016,
+              54.32052915
+            ],
+            [
+              10.12216542,
+              54.32027328
+            ],
+            [
+              10.12210491,
+              54.32017823
+            ],
+            [
+              10.12190058,
+              54.32055861
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.123",
+        "OBJECTID": 123,
+        "Straße": "Hermann-Weigmann",
+        "Auswirkung": "Wegfall 2 Fahrspuren, Sperrung Geh- und Radweg",
+        "Grund": "Neubau eines Fernwärmebauwerks / Kranstellung",
+        "Bereich": "e Hermann-Weigmann-Straße von Zastrowstr. bis Schützenwall ",
+        "Zeitraum__voraussichtlich_": "06.07.2026 bis 18.12.2026",
+        "Dauer__voraussichtlich_": "noch 62 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.17815057,
+              54.3267741
+            ],
+            [
+              10.18036387,
+              54.32555583
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.127",
+        "OBJECTID": 127,
+        "Straße": "Wischhofstr.",
+        "Auswirkung": "Halbseitige Sperrung",
+        "Grund": "Arbeiten an der Fernwärme",
+        "Bereich": "Wischhofstraße zw. Langenkampweg und Schönberger Straße ",
+        "Zeitraum__voraussichtlich_": "13.07.2026 bis 02.11.2026",
+        "Dauer__voraussichtlich_": "noch 16 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11980492,
+              54.32683136
+            ],
+            [
+              10.12008658,
+              54.32660144
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.137",
+        "OBJECTID": 137,
+        "Straße": "Eckernförder Straße",
+        "Auswirkung": "Einengung Geh- und Radweg, Sperrung Seitenstreifen",
+        "Grund": "Baustelleneinrichtungsfläche",
+        "Bereich": "Eckernförder Straße 68",
+        "Zeitraum__voraussichtlich_": "15.07.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "Aufgrund der Einrichtung einer Baustelleneinrichtungsfläche und von Sanierungsarbeiten im oben genannten Bereich, wird der Gehweg – und Radweg eingeengt. Zusätzlich wird der Seitenstreifen voll gesperrt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.14011447,
+              54.32252173
+            ],
+            [
+              10.13931974,
+              54.32289363
+            ],
+            [
+              10.13778755,
+              54.32227342
+            ],
+            [
+              10.13737477,
+              54.32257413
+            ],
+            [
+              10.13732445,
+              54.32254565
+            ],
+            [
+              10.13770814,
+              54.32223797
+            ],
+            [
+              10.137002,
+              54.32193091
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.142",
+        "OBJECTID": 142,
+        "Straße": "Holstenstraße",
+        "Auswirkung": "Einengung Fußgängerzone, Sperrung Radweg, Einschränkung Lieferverkehr, Sperrung Parkplatz",
+        "Grund": "Straßenbauarbeiten - Umgestaltung der Holstenstraße BP 3.1/3.2/3.3 ",
+        "Bereich": "Holstenstraße, Faulstraße, Schumacherstraße, Anna-Pogwisch-Platz",
+        "Zeitraum__voraussichtlich_": "01.09.2026 bis 30.11.2026",
+        "Dauer__voraussichtlich_": "noch 44 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "",
+        "Internet": "https://www.kiel.de/de/kiel_zukunft/kiel_plant_baut/innenstadt/holstenstrasse.php",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13833075,
+              54.34225499
+            ],
+            [
+              10.13834221,
+              54.34186024
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.150",
+        "OBJECTID": 150,
+        "Straße": "Blücherplatz",
+        "Auswirkung": "Sperrung Parplätze",
+        "Grund": "BE-Fläche",
+        "Bereich": "Blücherplatz 17+18",
+        "Zeitraum__voraussichtlich_": "27.07.2026 bis 27.11.2026",
+        "Dauer__voraussichtlich_": "noch 41 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.12850488,
+              54.35703386
+            ],
+            [
+              10.12955126,
+              54.35696073
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.151",
+        "OBJECTID": 151,
+        "Straße": "Flensburger Straße",
+        "Auswirkung": "Fahrbahneinengung, Einengung Gehweg",
+        "Grund": "Materiallagerung",
+        "Bereich": "Flensburger Straße 5-11",
+        "Zeitraum__voraussichtlich_": "27.07.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "In der o.g. Maßnahme ist Material zu lagern.Dafür sind die Fahrbahn und der Gehweg einzuengen.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.05065396,
+              54.31170128
+            ],
+            [
+              10.05074712,
+              54.31169267
+            ],
+            [
+              10.05092313,
+              54.31164433
+            ],
+            [
+              10.05105195,
+              54.31161424
+            ],
+            [
+              10.05132144,
+              54.31156955
+            ],
+            [
+              10.05197139,
+              54.31149813
+            ],
+            [
+              10.05379034,
+              54.31130731
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.152",
+        "OBJECTID": 152,
+        "Straße": "Roskilder Weg ",
+        "Auswirkung": "Fahrbahneinengung,Sperrung Gehweg",
+        "Grund": "Sanierung der Wasser- und Stromleitung",
+        "Bereich": "Roskilder Weg 1-36",
+        "Zeitraum__voraussichtlich_": "23.07.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "In der o.g. Maßnahme ist die Sanierung der Wasser- und Stromleitung durchzuführen.Die Absicherung erfolgt in 50 Meter Abschnitten.Die Restbreite der Fahrbahn darf 3 Meter nicht unterschreiten.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13644155,
+              54.34391687
+            ],
+            [
+              10.13652653,
+              54.34379995
+            ],
+            [
+              10.13663011,
+              54.34362872
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.153",
+        "OBJECTID": 153,
+        "Straße": "Blücherstraße ",
+        "Auswirkung": "Sperrung Gehweg, Sperrung Seitenstreifen",
+        "Grund": "Neubau eines Hauses",
+        "Bereich": "Blücherstraße 14",
+        "Zeitraum__voraussichtlich_": "23.07.2026 bis 28.07.2028",
+        "Dauer__voraussichtlich_": "noch 650 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "Aufgrund der Herstellung einer Baustellenzufahrt für einen Neubau, im oben genannten Bereich,wird der Gehweg sowie der Seitenstreifen voll gesperrt. ",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.05007601,
+              54.31216583
+            ],
+            [
+              10.0503232,
+              54.31226918
+            ],
+            [
+              10.0504745,
+              54.31235505
+            ],
+            [
+              10.05058823,
+              54.31242905
+            ],
+            [
+              10.05076701,
+              54.31259838
+            ],
+            [
+              10.05092625,
+              54.31258566
+            ],
+            [
+              10.05116748,
+              54.31257223
+            ],
+            [
+              10.05138671,
+              54.31257293
+            ],
+            [
+              10.05229939,
+              54.31257544
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.157",
+        "OBJECTID": 157,
+        "Straße": "Korsörweg",
+        "Auswirkung": "Fahrbahneinengung, Vollsperrung, Einengung Gehweg",
+        "Grund": "Erneuerung Strom- und Wassernetz",
+        "Bereich": "Korsörweg 2-28 bis Jütlandring 28",
+        "Zeitraum__voraussichtlich_": "10.08.2026 bis 27.11.2026",
+        "Dauer__voraussichtlich_": "noch 41 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "In der o. g. Maßnahme ist das Strom- und Wassernetz zu erneuern.Dafür ist der Gehweg beidseitig im Jütlandring auf max. 1,30 m einzuengen.Die Radwege sind frei zu halten.",
+        "Internet": "null",
+        "Legende": "Voll_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.14625086,
+              54.30820827
+            ],
+            [
+              10.14682626,
+              54.30807912
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.160",
+        "OBJECTID": 160,
+        "Straße": "Kirchenweg ",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Gehweg ",
+        "Grund": "Haussanierung, BE-Fläche, Gerüststellung",
+        "Bereich": "Kirchenweg 34",
+        "Zeitraum__voraussichtlich_": "17.08.2026 bis 01.08.2027",
+        "Dauer__voraussichtlich_": "noch 288 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "Aufgrund einer Haussanierung, der Herstellung einer Baustelleneinrichtungsfläche sowie der Aufstellung eines Gerüsts wird im oben genannten Bereich der Gehweg vollständig gesperrt und die Fahrbahn eingeengt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13590452,
+              54.35361786
+            ],
+            [
+              10.13699085,
+              54.35201172
+            ],
+            [
+              10.13738511,
+              54.35144297
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.169",
+        "OBJECTID": 169,
+        "Straße": "Feldstraße ",
+        "Auswirkung": "Vollsperrung Fahrbahn, Sperrung Geh- und Radweg",
+        "Grund": "Sanierungsarbeiten am Fernwärmenetz- Bauphase 2",
+        "Bereich": "Feldstraße 223 bis Homannstraße",
+        "Zeitraum__voraussichtlich_": "10.08.2026 bis 20.11.2026",
+        "Dauer__voraussichtlich_": "noch 34 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Voll_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.1313348,
+              54.29839011
+            ],
+            [
+              10.13168119,
+              54.29848563
+            ],
+            [
+              10.13178198,
+              54.29853231
+            ],
+            [
+              10.13181105,
+              54.29860259
+            ],
+            [
+              10.13174821,
+              54.29873017
+            ],
+            [
+              10.13174669,
+              54.29878486
+            ],
+            [
+              10.13179978,
+              54.29885139
+            ],
+            [
+              10.13227198,
+              54.29924557
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.170",
+        "OBJECTID": 170,
+        "Straße": "Hofteichstraße ",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Gehweg,Vollsperrung,Einengung Gehweg",
+        "Grund": "Straßenausbau (Bauphase 1a bis 1c)",
+        "Bereich": "Hofteichstraße zw. Höhe Hausnr. 36 und der Flintbeker Straße",
+        "Zeitraum__voraussichtlich_": "14.08.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "Der Fuß- und Radverkehr nutzt derzeit in der Durchlässigkeit eine Wegeverbindung auf unbefestigter Fläche, um so von der Hofteichstraße in die Flintbeker Straße zu gelangen. ",
+        "Internet": "null",
+        "Legende": "Voll_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11257683,
+              54.33050042
+            ],
+            [
+              10.1137606,
+              54.33129914
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.175",
+        "OBJECTID": 175,
+        "Straße": "Alte Weide ",
+        "Auswirkung": "Wegfall Fahrspur,Vollsperrung, Sperrung Gehweg",
+        "Grund": "Fernwärme-Erneuerung",
+        "Bereich": "Alte Weide zwischen Eckernförder Straße und Eichkamp",
+        "Zeitraum__voraussichtlich_": "10.08.2026 bis 18.12.2026",
+        "Dauer__voraussichtlich_": "noch 62 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "In der o. g. Maßnahme ist die Erneuerung von Fernwärmeleitung notwendig.Dafür ist die Straße voll zu sperren.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.10599641,
+              54.31039074
+            ],
+            [
+              10.10556285,
+              54.3102101
+            ],
+            [
+              10.10527149,
+              54.31006508
+            ],
+            [
+              10.10500518,
+              54.30992469
+            ],
+            [
+              10.1047787,
+              54.30978199
+            ],
+            [
+              10.10466528,
+              54.30970432
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.187",
+        "OBJECTID": 187,
+        "Straße": "Saarbrückenstraße",
+        "Auswirkung": "Fahrbahneinengung,Wegfall Fahrspur, Sperrung Gehweg",
+        "Grund": "Erneuerung Geh-und Radweg (2.Bauabschitt-BP 4 bis 6)",
+        "Bereich": "Saarbrückenstraße zwischen Hausnr. 118 und 138",
+        "Zeitraum__voraussichtlich_": "12.10.2026 bis 20.12.2026",
+        "Dauer__voraussichtlich_": "noch 64 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "In der Saarbrückenstraße wird zwischen dem Mühlenweg und der Straße Stadtrade die Erneuerung des Geh- und Radweges vorgenommen. Die Gesamtmaßnahme unterteilt sich in mehrere Bauphasen. Vorliegend sind die Bauphasen 4 bis 6 des 2. Bauabschnittes durchzuführen.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.08258106,
+              54.35803995
+            ],
+            [
+              10.0832368,
+              54.35759901
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.191",
+        "OBJECTID": 191,
+        "Straße": "Eckernförder Straße",
+        "Auswirkung": "Sperrung Straßenbegleitgrün, Gehwegeinengung",
+        "Grund": "Baustelleneinrichtungsfläche",
+        "Bereich": "Eckernförder Straße 427",
+        "Zeitraum__voraussichtlich_": "14.08.2026 bis 21.12.2026",
+        "Dauer__voraussichtlich_": "noch 65 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.07202598,
+              54.36999737
+            ],
+            [
+              10.07226849,
+              54.36992673
+            ],
+            [
+              10.07273367,
+              54.36977422
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.196",
+        "OBJECTID": 196,
+        "Straße": "Eckernförder Straße",
+        "Auswirkung": "Halbseitige Sperrung, Sperrung Gehweg ",
+        "Grund": " Asphaltierungsarbeiten Vormontageplatz Nordseite ",
+        "Bereich": "Eckernförder Straße / Levensauer Hochbrücke",
+        "Zeitraum__voraussichtlich_": "18.08.2026 bis 04.01.2027",
+        "Dauer__voraussichtlich_": "noch 79 Tag/e",
+        "Verantwortlich": "WSV Bund",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.16690041,
+              54.42968126
+            ],
+            [
+              10.16702364,
+              54.42953824
+            ],
+            [
+              10.16710024,
+              54.42944679
+            ],
+            [
+              10.16712744,
+              54.42940859
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.199",
+        "OBJECTID": 199,
+        "Straße": "Drachenbahn",
+        "Auswirkung": "Sperrung Gehweg ",
+        "Grund": "Dacharbeiten",
+        "Bereich": "Drachenbahn 20",
+        "Zeitraum__voraussichtlich_": "24.09.2026 bis 26.02.2027",
+        "Dauer__voraussichtlich_": "noch 132 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "In der o. g. Maßnahme ist der Gehweg voll zu sperren. Es sind Dacharbeiten durchzuführen. ",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.12068284,
+              54.33029599
+            ],
+            [
+              10.12120842,
+              54.33092029
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.209",
+        "OBJECTID": 209,
+        "Straße": "Westring ",
+        "Auswirkung": "Sperrung Geh- und Radweg",
+        "Grund": "Neubau Trinkwasserbehälter",
+        "Bereich": "Westring von Gutenbergstraße bis Freiligrathstraße",
+        "Zeitraum__voraussichtlich_": "02.10.2026 bis 31.12.2026",
+        "Dauer__voraussichtlich_": "noch 75 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "Im Bereich des Westrings zwischen der Kreuzung Gutenbergstraße und der Freiligrathstraße erfolgen auf dem Grundstück der Stadtwerke Kiel neben dem Professor-Peters-Platz bis voraussichtlich April 2028 Arbeiten zur Erneuerung des Trinkwasserbehälters.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.17132173,
+              54.41622869
+            ],
+            [
+              10.1715872,
+              54.41562435
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.212",
+        "OBJECTID": 212,
+        "Straße": "Langenfelde",
+        "Auswirkung": "Fahrbahneinengung,Sperrung Seitenstreifen",
+        "Grund": "Materiallager/BE-Fläche",
+        "Bereich": "Langenfelde 125-139",
+        "Zeitraum__voraussichtlich_": "24.08.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "In der o.g. Maßnahme ist eine Baustelleneinrichtungsfläche aufzustellen um Material zu lagern.Dafür ist die Absicherung nach Regelplan BI/2 RSA 21 aufzustellen.Es ist der Seitenstreifen komplett zu sperren und die Fahrbahn auf max. 3 m einzuengen.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.1282334,
+              54.31544254
+            ],
+            [
+              10.12733095,
+              54.31567131
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.213",
+        "OBJECTID": 213,
+        "Straße": "Ringstraße",
+        "Auswirkung": "Halbseitige Sperrung, Sperrung Geh- und Radweg ",
+        "Grund": "Dacharbeiten",
+        "Bereich": "Ringstraße Höhe Hopfenstr. 29-31",
+        "Zeitraum__voraussichtlich_": "07.04.2026 bis 26.11.2026",
+        "Dauer__voraussichtlich_": "noch 40 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "In der o.g. Maßnahme ist der Gehweg und der Seitenstreifen voll zu sperren.Es wird ein Notweg auf dem Seitenstreifen von einer Breite von mind 1,50 m eingerichtet.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.12370877,
+              54.33314442
+            ],
+            [
+              10.12411406,
+              54.33288272
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.218",
+        "OBJECTID": 218,
+        "Straße": "Ahlmannstraße ",
+        "Auswirkung": "Sperrung Gehweg, Sperrung Seitenstreifen",
+        "Grund": "Fassadenarbeiten",
+        "Bereich": "Ahlmannstraße 14",
+        "Zeitraum__voraussichtlich_": "07.09.2026 bis 07.12.2026",
+        "Dauer__voraussichtlich_": "noch 51 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "Aufgrund von Fassadenarbeiten, im oben genannten Bereich, wird der Gehweg sowie der Seitenstreifen voll gesperrt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.19197599,
+              54.33954628
+            ],
+            [
+              10.19207351,
+              54.33995581
+            ],
+            [
+              10.19165294,
+              54.33997236
+            ],
+            [
+              10.1924257,
+              54.3399447
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.221",
+        "OBJECTID": 221,
+        "Straße": "Masurenring",
+        "Auswirkung": "Vollsperrung Fahrbahn, Einengung Gehweg, Sperrung Gehweg",
+        "Grund": "Kanal- und Fahrbahnsanierung",
+        "Bereich": "Masurenring im Kreuzungsbereich Insterburger Straße",
+        "Zeitraum__voraussichtlich_": "31.08.2026 bis 03.11.2026",
+        "Dauer__voraussichtlich_": "noch 17 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "Aufgrund einer Kanal- und Fahrbahnsanierung wird im oben genannten Bereich die vollständigeFahrbahn sowie der Gehweg auf einer Straßenseite voll gesperrt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.10890101,
+              54.36112939
+            ],
+            [
+              10.10767869,
+              54.36207074
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.229",
+        "OBJECTID": 229,
+        "Straße": "Wiesenweg",
+        "Auswirkung": "Vollsperrung",
+        "Grund": "Neulegung Netzanschluss Strom + Kabelverteilerschrank stellen",
+        "Bereich": "Wiesenweg 5-19 + 8-20",
+        "Zeitraum__voraussichtlich_": "14.09.2026 bis 20.11.2026",
+        "Dauer__voraussichtlich_": "noch 34 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "Aufgrund der Neulegung eines Netzanschlusses für Strom und der Stellung eines KVS wird die Fahrbahn im oben genannten Bereich voll gesperrt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.12549146,
+              54.32261508
+            ],
+            [
+              10.1257309,
+              54.32254381
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.231",
+        "OBJECTID": 231,
+        "Straße": "Möllingstraße",
+        "Auswirkung": "Sperrung Seitenstreifen, Einengung Gehweg",
+        "Grund": "BE-Fläche",
+        "Bereich": "Möllingstraße 9",
+        "Zeitraum__voraussichtlich_": "07.09.2026 bis 20.10.2026",
+        "Dauer__voraussichtlich_": "noch 3 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.18468752,
+              54.33614362
+            ],
+            [
+              10.18391089,
+              54.33542704
+            ],
+            [
+              10.18383802,
+              54.33536711
+            ],
+            [
+              10.18421638,
+              54.3352248
+            ],
+            [
+              10.184554,
+              54.33510887
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.234",
+        "OBJECTID": 234,
+        "Straße": "Albert-Schweitzer-Weg",
+        "Auswirkung": "Fahrbahneinengung, Vollsperrung Fahrbahn, Sperrung Gehweg",
+        "Grund": "Sanierung Fernwärme/Wasser/Strom ",
+        "Bereich": "Albert-Schweitzer-Weg 1-14",
+        "Zeitraum__voraussichtlich_": "07.09.2026 bis 13.11.2026",
+        "Dauer__voraussichtlich_": "noch 27 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "Aufgrund der Durchführung von Sanierungsarbeiten an den Fernwärme-, Wasser- und Stromleitungen wird der Gehweg im oben genannten Bereich für den Fußgängerverkehr vollständig gesperrt. Vollsperrung nur mo-fr 6:30 bis 16:30 Uhr! Außerhalb dieser Zeiten Fahrbahneinengung! ",
+        "Internet": "null",
+        "Legende": "Voll_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.14316817,
+              54.30459475
+            ],
+            [
+              10.1427424,
+              54.30381378
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.236",
+        "OBJECTID": 236,
+        "Straße": "Ascheberger Straße",
+        "Auswirkung": "Fahrbahneinengung",
+        "Grund": "Oberflächenwiederherstellung",
+        "Bereich": "Ascheberger Straße 11-19",
+        "Zeitraum__voraussichtlich_": "01.09.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.15256648,
+              54.31452842
+            ],
+            [
+              10.15282672,
+              54.31440202
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.239",
+        "OBJECTID": 239,
+        "Straße": "Johannsenweg",
+        "Auswirkung": "Fahrbahneinengung",
+        "Grund": "Rohrbruch Wasserleitung",
+        "Bereich": "Johannsenweg 3",
+        "Zeitraum__voraussichtlich_": "01.09.2026 bis 22.10.2026",
+        "Dauer__voraussichtlich_": "noch 5 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.0751341,
+              54.30780992
+            ],
+            [
+              10.07508572,
+              54.30766694
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.242",
+        "OBJECTID": 242,
+        "Straße": "Spreeallee",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Seitenstreifen",
+        "Grund": "Rohrbruch Wasserversorgungsleitung, Sanierung der Fahrbahn",
+        "Bereich": "Spreeallee 28 und ggü.",
+        "Zeitraum__voraussichtlich_": "02.09.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.12324961,
+              54.31724885
+            ],
+            [
+              10.12357072,
+              54.31737684
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.243",
+        "OBJECTID": 243,
+        "Straße": "Kirchhofallee",
+        "Auswirkung": "Sperrung Seitenstreifen ",
+        "Grund": "Baustelleneinrichtungsfläche",
+        "Bereich": "Kirchhofallee 40",
+        "Zeitraum__voraussichtlich_": "09.09.2026 bis 30.11.2026",
+        "Dauer__voraussichtlich_": "noch 44 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "Aufgrund der Einrichtung einer Baustelleneinrichtungsfläche wird der Seitenstreifen voll gesperrt. Zusätzlich wird der vor Ort befindliche Taxistand in den Bereich der Boninstraße 1 verlegt. ",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.1164555,
+              54.33316599
+            ],
+            [
+              10.11625154,
+              54.33269566
+            ],
+            [
+              10.11464855,
+              54.33283664
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.254",
+        "OBJECTID": 254,
+        "Straße": "Grasweg / Gutenbergstraße",
+        "Auswirkung": "Wegfall Fahrspur, Halbseitige Sperrung, Sperrung Geh- und Radweg ",
+        "Grund": "Verlegung von 1 kV-Leitungen ",
+        "Bereich": "Grasweg / Gutenbergstraße",
+        "Zeitraum__voraussichtlich_": "09.09.2026 bis 06.11.2026",
+        "Dauer__voraussichtlich_": "noch 20 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11532222,
+              54.32738756
+            ],
+            [
+              10.115595,
+              54.32749489
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.258",
+        "OBJECTID": 258,
+        "Straße": "Geibelplatz",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Gehweg",
+        "Grund": "Sanierung der Stromnetzstation",
+        "Bereich": "Geibelplatz ggü. Haus 8",
+        "Zeitraum__voraussichtlich_": "29.09.2026 bis 23.10.2026",
+        "Dauer__voraussichtlich_": "noch 6 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13172845,
+              54.32711367
+            ],
+            [
+              10.13214618,
+              54.32688301
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.259",
+        "OBJECTID": 259,
+        "Straße": "Legienstraße",
+        "Auswirkung": "Sperrung Gehweg, Sperrung Seitenstreifen ",
+        "Grund": "Sanierungsarbeiten am Legienhof / BE-Fläche ",
+        "Bereich": "Legienstraße 22-24",
+        "Zeitraum__voraussichtlich_": "14.09.2026 bis 31.10.2026",
+        "Dauer__voraussichtlich_": "noch 14 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "Wegen der Sanierung des Legienhofes werden im o.g. Bereich der Gehweg und der Seitenstreifen gesperrt.  ",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.14447788,
+              54.31658622
+            ],
+            [
+              10.14604143,
+              54.31720194
+            ],
+            [
+              10.14637098,
+              54.317283
+            ],
+            [
+              10.14687765,
+              54.31737769
+            ],
+            [
+              10.14733639,
+              54.31739629
+            ],
+            [
+              10.14791175,
+              54.31737168
+            ],
+            [
+              10.14834213,
+              54.31731209
+            ],
+            [
+              10.15136569,
+              54.31626437
+            ],
+            [
+              10.15230604,
+              54.31592313
+            ],
+            [
+              10.15295469,
+              54.31574843
+            ],
+            [
+              10.15346769,
+              54.31565809
+            ],
+            [
+              10.15382035,
+              54.31564048
+            ],
+            [
+              10.15379774,
+              54.31555763
+            ],
+            [
+              10.1531524,
+              54.31507349
+            ],
+            [
+              10.15379134,
+              54.31556429
+            ],
+            [
+              10.1538276,
+              54.31563819
+            ],
+            [
+              10.15436043,
+              54.31565308
+            ],
+            [
+              10.15482081,
+              54.31569723
+            ],
+            [
+              10.15659391,
+              54.31587158
+            ],
+            [
+              10.15860261,
+              54.31608648
+            ],
+            [
+              10.15922224,
+              54.31623473
+            ],
+            [
+              10.16016058,
+              54.31659982
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.262",
+        "OBJECTID": 262,
+        "Straße": "Werftstraße ",
+        "Auswirkung": "Vollsperrung Fahrbahn, Einengung Geh- und Radweg, Sperrung Geh- und Radweg ",
+        "Grund": "BV Sanierung Werftstraße (2.BA, BP 2.24) - Fahrbahndeckenerneuerung",
+        "Bereich": "Werftstraße zw. der Straße Zur Fähre und Große Ziegelstraße",
+        "Zeitraum__voraussichtlich_": "16.10.2026 bis 23.10.2026",
+        "Dauer__voraussichtlich_": "noch 6 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "In der Bauphase 2.24 wird die Werftstraße zwischen der Straße Zur Fähre und der Großen Ziegelstraße für den Kfz-Verkehr aufgrund Fahrbahndeckenerneuerung voll gesperrt. Die Vollsperrung umfasst auch die Knotenpunkte Werftstraße/Elisabethstraße und Werftstraße/Kaiserstraße.",
+        "Internet": "https://www.kiel.de/de/umwelt_verkehr/verkehrsprojekte/werftstrasse_premiumradroute.php",
+        "Legende": "Voll_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11818355,
+              54.33978386
+            ],
+            [
+              10.1187797,
+              54.33962098
+            ],
+            [
+              10.11918222,
+              54.33953348
+            ],
+            [
+              10.11968145,
+              54.33944056
+            ],
+            [
+              10.1201061,
+              54.33938341
+            ],
+            [
+              10.12050232,
+              54.33934917
+            ],
+            [
+              10.12116193,
+              54.33931248
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.265",
+        "OBJECTID": 265,
+        "Straße": "Olshausenstraße",
+        "Auswirkung": "Sperrung Gehweg",
+        "Grund": " Neubau Institut für Geowissenschaften - Baustellenzufahrt und -ausfahrt ",
+        "Bereich": "Olshausenstraße ggü 62 bis ggü. Rudolf-Höber-Str. 1",
+        "Zeitraum__voraussichtlich_": "02.04.2026 bis 30.11.2026",
+        "Dauer__voraussichtlich_": "noch 44 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.14341718,
+              54.28916683
+            ],
+            [
+              10.14359331,
+              54.28877806
+            ],
+            [
+              10.14375581,
+              54.2884389
+            ],
+            [
+              10.14392762,
+              54.28814036
+            ],
+            [
+              10.14406354,
+              54.28792517
+            ],
+            [
+              10.1441413,
+              54.28777757
+            ],
+            [
+              10.14415171,
+              54.28766094
+            ],
+            [
+              10.14413788,
+              54.28755572
+            ],
+            [
+              10.14411622,
+              54.28746334
+            ],
+            [
+              10.14407819,
+              54.28737111
+            ],
+            [
+              10.14393422,
+              54.28719689
+            ],
+            [
+              10.14372948,
+              54.2869961
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.266",
+        "OBJECTID": 266,
+        "Straße": "Kuhlacker",
+        "Auswirkung": "Vollsperrung Fahrbahn, Fahrbahneinengung, Sperrung Gehweg",
+        "Grund": "Erneuerung der Stromkabel und Hausanschlüssen ",
+        "Bereich": "Poppenbrügger Weg Weg bis Kuhlacker Hausnummer 8",
+        "Zeitraum__voraussichtlich_": "21.09.2026 bis 27.11.2026",
+        "Dauer__voraussichtlich_": "noch 41 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "Aufgrund der Erneuerung von Stromkabeln und diversen Hausanschlüssen wird die Fahrbahn imKuhlacker ab dem Einmündungsbereich zum Poppenbrügger Weg bis zum Kuhlacker Hausnummer 29 vollgesperrt.",
+        "Internet": "null",
+        "Legende": "Voll_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.04977164,
+              54.31206644
+            ],
+            [
+              10.05002147,
+              54.31214426
+            ],
+            [
+              10.05025863,
+              54.31195785
+            ],
+            [
+              10.05047543,
+              54.31182844
+            ],
+            [
+              10.05058707,
+              54.31177413
+            ],
+            [
+              10.05038715,
+              54.31163211
+            ],
+            [
+              10.05023422,
+              54.31154417
+            ],
+            [
+              10.05002563,
+              54.31145092
+            ],
+            [
+              10.0498277,
+              54.31138656
+            ],
+            [
+              10.04966616,
+              54.3113497
+            ],
+            [
+              10.04947488,
+              54.31131311
+            ],
+            [
+              10.04928999,
+              54.31129385
+            ],
+            [
+              10.04915294,
+              54.31128461
+            ],
+            [
+              10.04896841,
+              54.31127926
+            ],
+            [
+              10.04892296,
+              54.31128545
+            ],
+            [
+              10.04896628,
+              54.31150767
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.268",
+        "OBJECTID": 268,
+        "Straße": "Roskilder Weg ",
+        "Auswirkung": "Fahrbahneinengung, Einengung Geh- und Radweg, Sperrung Gehweg",
+        "Grund": "Sanierung der Stromleitung",
+        "Bereich": "Roskilder Weg von Jütlandring bis Kopenhagener Allee 8",
+        "Zeitraum__voraussichtlich_": "21.09.2026 bis 24.12.2026",
+        "Dauer__voraussichtlich_": "noch 68 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "In der o. g. Maßnahme ist die Sanierung Stromleitung durchzuführen.Die Arbeiten finden als Wanderbaustelle statt. Die Absicherung erfolgt in max. 50 Meter Abschnitten und nacheinander. ",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.1349477,
+              54.32015606
+            ],
+            [
+              10.13483607,
+              54.32005326
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.269",
+        "OBJECTID": 269,
+        "Straße": "Andreas-Gayk-Straße",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Seitenstreifen",
+        "Grund": "Container ",
+        "Bereich": "Andreas-Gayk-Straße bei Holstenplatz 1-2",
+        "Zeitraum__voraussichtlich_": "21.09.2026 bis 04.12.2026",
+        "Dauer__voraussichtlich_": "noch 48 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.19216218,
+              54.3399493
+            ],
+            [
+              10.1925869,
+              54.33993152
+            ],
+            [
+              10.19297784,
+              54.33989465
+            ],
+            [
+              10.19339485,
+              54.33984006
+            ],
+            [
+              10.19365554,
+              54.33977925
+            ],
+            [
+              10.1940153,
+              54.33969804
+            ],
+            [
+              10.1943218,
+              54.33961348
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.272",
+        "OBJECTID": 272,
+        "Straße": "Masurenring",
+        "Auswirkung": "Vollsperrung Fahrbahn",
+        "Grund": "Kanal- und Fahrbahnsanierung",
+        "Bereich": "Masurenring 104-76",
+        "Zeitraum__voraussichtlich_": "22.09.2026 bis 03.11.2026",
+        "Dauer__voraussichtlich_": "noch 17 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "Aufgrund einer Kanal- und Fahrbahnsanierung wird im oben genannten Bereich die vollständigeFahrbahn gesperrt. ",
+        "Internet": "null",
+        "Legende": "Voll_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.14391271,
+              54.33439019
+            ],
+            [
+              10.14381971,
+              54.33430355
+            ],
+            [
+              10.1437205,
+              54.33419319
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.273",
+        "OBJECTID": 273,
+        "Straße": "Niemannsweg",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Gehweg",
+        "Grund": "BE-Fläche",
+        "Bereich": "Niemannsweg 20 ",
+        "Zeitraum__voraussichtlich_": "28.09.2026 bis 08.10.2027",
+        "Dauer__voraussichtlich_": "noch 356 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "In der o. g. Maßnahme ist eine Baustelleneinrichtungsfläche für einen Hausbau einzurichten.Dafür ist der Gehweg voll zu sperren und die Fahrbahn auf max. 3 Meter einzuengen. ",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.08069295,
+              54.3022018
+            ],
+            [
+              10.08060269,
+              54.30159601
+            ],
+            [
+              10.08066939,
+              54.30130235
+            ],
+            [
+              10.08058424,
+              54.30105869
+            ],
+            [
+              10.08030183,
+              54.29988321
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.280",
+        "OBJECTID": 280,
+        "Straße": "Mühlenkamp",
+        "Auswirkung": "Vollsperrung Fahrbahn, Sperrung Gehweg",
+        "Grund": "Erneuerung der Netzleitungen von Strom und Wasser",
+        "Bereich": "Mühlenkamp von Redderkamp bis Rendsburger Landstraße",
+        "Zeitraum__voraussichtlich_": "18.09.2026 bis 31.10.2026",
+        "Dauer__voraussichtlich_": "noch 14 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "In der o.g. Maßnahme ist die Netzleitung für Strom und Wasser zu erneuern. Dafür ist die Fahrbahn und der Gehweg abschnittsweise zu sperren.Der Zutritt Eingängen und Auffahrten sind zu jederzeit gewährleisten.",
+        "Internet": "null",
+        "Legende": "Voll_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.1347775,
+              54.32717428
+            ],
+            [
+              10.13455889,
+              54.32750974
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.281",
+        "OBJECTID": 281,
+        "Straße": "Bergstraße",
+        "Auswirkung": "Wegfall Fahrspur, Einengung Gehweg, Sperrung Radweg",
+        "Grund": "Rückbau Radweg",
+        "Bereich": "Bergstraße 11-17",
+        "Zeitraum__voraussichtlich_": "21.09.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "In der Bergstraße wird im Bereich zwischen den Hausnummer 11 und 17 der bisherige, nicht benutzungspflichtige Radweg in Fahrtrichtung Innenstadt zurückgebaut. Die Arbeiten umfassen insbesondere den Belagaustausch und schließen an die bereits zuvor ausgeführten Arbeiten an.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13085637,
+              54.36902841
+            ],
+            [
+              10.13337957,
+              54.36884493
+            ],
+            [
+              10.13427247,
+              54.36911752
+            ],
+            [
+              10.13531016,
+              54.36963106
+            ],
+            [
+              10.13634271,
+              54.37014167
+            ],
+            [
+              10.13697551,
+              54.37046257
+            ],
+            [
+              10.13720203,
+              54.37052446
+            ],
+            [
+              10.13749963,
+              54.37057928
+            ],
+            [
+              10.13787905,
+              54.3706386
+            ],
+            [
+              10.13840383,
+              54.37064852
+            ],
+            [
+              10.13900769,
+              54.37057146
+            ],
+            [
+              10.14079936,
+              54.37017396
+            ],
+            [
+              10.14080462,
+              54.37017986
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.282",
+        "OBJECTID": 282,
+        "Straße": "Kanalstraße",
+        "Auswirkung": "Vollsperrung Fahrbahn, Sperrung Geh- und Radweg",
+        "Grund": "Straßen-und Kanalbauarbeiten- Bauphase 3a + b",
+        "Bereich": "Kanalstraße von Mählsweg bis Schwester-Therese-Straße",
+        "Zeitraum__voraussichtlich_": "21.09.2026 bis 23.10.2026",
+        "Dauer__voraussichtlich_": "noch 6 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "Die Baumaßnahmen in der Kanalstraße werden in der Bauphase 3 fortgeführt.Hierfür bleibt die Kanalstraße im jeweiligen Arbeitsbereich für den Kraftfahrzeugverkehr voll gesperrt. Im Zuge der Maßnahme erfolgt zudem der Umbau einer Bushaltestelle.",
+        "Internet": "www.kiel.de/kanalstrasse",
+        "Legende": "Voll_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.10573143,
+              54.35548776
+            ],
+            [
+              10.1063341,
+              54.35526897
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.286",
+        "OBJECTID": 286,
+        "Straße": "Steenbeker Weg",
+        "Auswirkung": "Fahrbahneinengung, Einengung Geh- und Radweg",
+        "Grund": "Sanierung Steenbeker Weg, Torfmoorkamp bis Rehbenitzwinkel",
+        "Bereich": "Steenbeker Weg von Kreuzung Torfmoorkamp bis Torfende ",
+        "Zeitraum__voraussichtlich_": "29.09.2026 bis 02.11.2026",
+        "Dauer__voraussichtlich_": "noch 16 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.07188766,
+              54.36165222
+            ],
+            [
+              10.07389919,
+              54.36243281
+            ],
+            [
+              10.07496913,
+              54.36153927
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.288",
+        "OBJECTID": 288,
+        "Straße": "Pellwormer Weg Ecke Alte Chaussee",
+        "Auswirkung": "Fahrbahneinengung, Einengung Gehweg, Sperrung Gehweg",
+        "Grund": "Sanierung und Wasserversorgungsnetz ",
+        "Bereich": "Pellwormer Weg 2-10 + Alte Chaussee 2-4e+ Nordseestraße ggü. 2  ",
+        "Zeitraum__voraussichtlich_": "05.10.2026 bis 18.12.2026",
+        "Dauer__voraussichtlich_": "noch 62 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "Aufgrund der Sanierung der 1kV/10kV Leitung und des Wasserversorgungsnetzes, im oben genannten Bereich, wird im Pellwormer Weg der Gehweg voll gesperrt und die Fahrbahn eingeengt. ",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11574709,
+              54.31399974
+            ],
+            [
+              10.11548902,
+              54.31424303
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.290",
+        "OBJECTID": 290,
+        "Straße": "Dubenhorst",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Gehweg",
+        "Grund": "Dacharbeiten",
+        "Bereich": "Dubenhorst 2",
+        "Zeitraum__voraussichtlich_": "12.10.2026 bis 06.11.2026",
+        "Dauer__voraussichtlich_": "noch 20 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "Aufgrund von Dacharbeiten im oben genannten Bereich, wird der Gehweg voll gesperrt sowie die Fahrbahn eingeengt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.17563336,
+              54.32687679
+            ],
+            [
+              10.17618784,
+              54.3265957
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.291",
+        "OBJECTID": 291,
+        "Straße": "Sohststraße",
+        "Auswirkung": "Sperrung Gehweg, Vollsperrung",
+        "Grund": "Neulegung Netzleitung Strom",
+        "Bereich": "Sohststraße 8-14",
+        "Zeitraum__voraussichtlich_": "28.09.2026 bis 22.12.2026",
+        "Dauer__voraussichtlich_": "noch 66 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "Aufgrund einer Neuverlegung einer Netzleitung für Strom wird im Bereich der Sohstraße von Hausnummer 8-14 der Gehweg vollgesperrt.Des Weiteren wird die Fahrbahn vollständig und der Gehweg halbseitig im Ballastberg zwischen der Brückenstraße und der Sohstraße gesperrt.",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.10926181,
+              54.3246479
+            ],
+            [
+              10.10855579,
+              54.3248257
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.292",
+        "OBJECTID": 292,
+        "Straße": "Nietzschestraße",
+        "Auswirkung": "Vollsperrung",
+        "Grund": "Fernwärmeausbau",
+        "Bereich": "Nietzschestraße Gehweg zur Hegelstraße",
+        "Zeitraum__voraussichtlich_": "05.10.2026 bis 28.10.2026",
+        "Dauer__voraussichtlich_": "noch 11 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13033267,
+              54.31768746
+            ],
+            [
+              10.12962669,
+              54.31672669
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.294",
+        "OBJECTID": 294,
+        "Straße": "Hopfenstraße",
+        "Auswirkung": "Vollsperrung",
+        "Grund": "Kanalbauarbeiten",
+        "Bereich": "Hopfenstraße 47 zwischen Lerchenstra?e und Herzog-Friedrich-Straße",
+        "Zeitraum__voraussichtlich_": "07.10.2026 bis 23.10.2026",
+        "Dauer__voraussichtlich_": "noch 6 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.12780906,
+              54.33822876
+            ],
+            [
+              10.12750715,
+              54.33757325
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.295",
+        "OBJECTID": 295,
+        "Straße": "Hansastraße",
+        "Auswirkung": "Fahrbahneinengung",
+        "Grund": "Reparatur Fernwärmerohrbruch",
+        "Bereich": "Hansastraße 76-82",
+        "Zeitraum__voraussichtlich_": "24.09.2026 bis 20.11.2026",
+        "Dauer__voraussichtlich_": "noch 34 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11449488,
+              54.32880852
+            ],
+            [
+              10.11444801,
+              54.32865649
+            ],
+            [
+              10.11433937,
+              54.32859251
+            ],
+            [
+              10.11400952,
+              54.3284131
+            ],
+            [
+              10.11350256,
+              54.32816784
+            ],
+            [
+              10.11305974,
+              54.32792199
+            ],
+            [
+              10.11284247,
+              54.32779402
+            ],
+            [
+              10.11233805,
+              54.32748375
+            ],
+            [
+              10.11193712,
+              54.32720501
+            ],
+            [
+              10.11140551,
+              54.3268375
+            ],
+            [
+              10.11095642,
+              54.32651671
+            ],
+            [
+              10.11062105,
+              54.32628985
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.297",
+        "OBJECTID": 297,
+        "Straße": "Eichendorffstraße",
+        "Auswirkung": "Fahreneinengung, Einengung Gehweg",
+        "Grund": "Verlegung Glasfaser",
+        "Bereich": "Eichendorffstraße 17 ggü. 22-64",
+        "Zeitraum__voraussichtlich_": "29.09.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11570716,
+              54.32967461
+            ],
+            [
+              10.11542893,
+              54.32950722
+            ],
+            [
+              10.11519441,
+              54.32937442
+            ],
+            [
+              10.11493316,
+              54.32920188
+            ],
+            [
+              10.11475904,
+              54.32908851
+            ],
+            [
+              10.11455805,
+              54.32893041
+            ],
+            [
+              10.11450526,
+              54.32887591
+            ],
+            [
+              10.11451273,
+              54.32883585
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.298",
+        "OBJECTID": 298,
+        "Straße": "Eichendorffstraße",
+        "Auswirkung": "Fahreneinengung, Einengung Gehweg",
+        "Grund": "Verlegung Glasfaser",
+        "Bereich": "Eichendorfstraße 2-20 + 1-15",
+        "Zeitraum__voraussichtlich_": "14.10.2026 bis 23.10.2026",
+        "Dauer__voraussichtlich_": "noch 6 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.14515596,
+              54.33575468
+            ],
+            [
+              10.14508459,
+              54.33567595
+            ],
+            [
+              10.1450631,
+              54.33561407
+            ],
+            [
+              10.14506106,
+              54.33554046
+            ],
+            [
+              10.14507227,
+              54.33541041
+            ],
+            [
+              10.14508946,
+              54.33531785
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.301",
+        "OBJECTID": 301,
+        "Straße": "Niemannsweg",
+        "Auswirkung": "Fahreneinengung, Sperrung Gehweg",
+        "Grund": "Abbrucharbeiten",
+        "Bereich": "Niemannsweg 34",
+        "Zeitraum__voraussichtlich_": "16.10.2026 bis 20.11.2026",
+        "Dauer__voraussichtlich_": "noch 34 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11173085,
+              54.32522771
+            ],
+            [
+              10.11090077,
+              54.32406062
+            ],
+            [
+              10.1104217,
+              54.3233802
+            ],
+            [
+              10.11014779,
+              54.32298516
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.302",
+        "OBJECTID": 302,
+        "Straße": "Kantstraße",
+        "Auswirkung": "Fahreneinengung, Einengung Gehweg",
+        "Grund": "Verlegung Glasfaser",
+        "Bereich": "Kantstraße 9-85 + ggü. 10-88",
+        "Zeitraum__voraussichtlich_": "30.09.2026 bis 06.11.2026",
+        "Dauer__voraussichtlich_": "noch 20 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11462559,
+              54.32863639
+            ],
+            [
+              10.1157759,
+              54.32769927
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.303",
+        "OBJECTID": 303,
+        "Straße": "Uhlandstraße",
+        "Auswirkung": "Fahreneinengung, Einengung Gehweg",
+        "Grund": "Verlegung Glasfaserausbau",
+        "Bereich": "Uhlandstraße komplett",
+        "Zeitraum__voraussichtlich_": "16.10.2026 bis 29.10.2026",
+        "Dauer__voraussichtlich_": "noch 12 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.10494515,
+              54.32802993
+            ],
+            [
+              10.10503036,
+              54.32820047
+            ],
+            [
+              10.10506789,
+              54.32826992
+            ],
+            [
+              10.10513798,
+              54.32833907
+            ],
+            [
+              10.10519511,
+              54.3283875
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.306",
+        "OBJECTID": 306,
+        "Straße": "Dehnckestraße ",
+        "Auswirkung": "Fahreneinengung, Einengung Gehweg",
+        "Grund": "Verlegung Glasfaser",
+        "Bereich": "Dehnckestraße 1a-3",
+        "Zeitraum__voraussichtlich_": "09.10.2026 bis 17.11.2026",
+        "Dauer__voraussichtlich_": "noch 31 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11217766,
+              54.3327048
+            ],
+            [
+              10.11269195,
+              54.33224782
+            ],
+            [
+              10.11337628,
+              54.33172019
+            ],
+            [
+              10.11432343,
+              54.33097656
+            ],
+            [
+              10.11522502,
+              54.33013914
+            ],
+            [
+              10.11562412,
+              54.32979628
+            ],
+            [
+              10.11642434,
+              54.3291859
+            ],
+            [
+              10.11778153,
+              54.32811184
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.307",
+        "OBJECTID": 307,
+        "Straße": "Eckernförder Straße",
+        "Auswirkung": "Fahreneinengung, Einengung Gehweg",
+        "Grund": "Verlegung Glasfaser",
+        "Bereich": "Eckernförder Straße 151-91",
+        "Zeitraum__voraussichtlich_": "05.10.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.12673345,
+              54.33137495
+            ],
+            [
+              10.12576921,
+              54.33164948
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.309",
+        "OBJECTID": 309,
+        "Straße": "Gutenbergstraße",
+        "Auswirkung": "Fahrbahneinengung,Gehwegeinschränkung, HVZ ",
+        "Grund": "Haussanierung",
+        "Bereich": "Gutenbergstraße 9-15",
+        "Zeitraum__voraussichtlich_": "06.07.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11407966,
+              54.30412358
+            ],
+            [
+              10.11469295,
+              54.30431774
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.311",
+        "OBJECTID": 311,
+        "Straße": "Hamburger Chaussee",
+        "Auswirkung": "Fahrbahneinengung, Einengung Geh- und Radweg",
+        "Grund": "Platten neu verlegen",
+        "Bereich": "Hamburger Chaussee 94",
+        "Zeitraum__voraussichtlich_": "01.09.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.06828577,
+              54.31429213
+            ],
+            [
+              10.06956971,
+              54.31433257
+            ],
+            [
+              10.07006464,
+              54.31436446
+            ],
+            [
+              10.07064798,
+              54.31447328
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.314",
+        "OBJECTID": 314,
+        "Straße": "Bormkoppel",
+        "Auswirkung": "Vollsperrung der Fahrbahn ",
+        "Grund": "Kanalbauarbeiten",
+        "Bereich": "Bormkoppel",
+        "Zeitraum__voraussichtlich_": "15.10.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "Aufgrund von Kanalbauarbeiten im oben genannten Bereich, wird die Fahrbahn voll gesperrt.",
+        "Internet": "null",
+        "Legende": "Voll_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.1741904,
+              54.32808678
+            ],
+            [
+              10.1730588,
+              54.32867378
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.315",
+        "OBJECTID": 315,
+        "Straße": "Brückenstraße ",
+        "Auswirkung": "Vollsperrung der Fahrbahn ",
+        "Grund": "Verladung der Boote",
+        "Bereich": "Brückenstraße 36-40 ",
+        "Zeitraum__voraussichtlich_": "16.10.2026 bis 25.10.2026",
+        "Dauer__voraussichtlich_": "noch 8 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Voll_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.07107574,
+              54.30071679
+            ],
+            [
+              10.07112692,
+              54.30077189
+            ],
+            [
+              10.07112967,
+              54.30087766
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.320",
+        "OBJECTID": 320,
+        "Straße": "Redderkamp",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Gehweg ",
+        "Grund": "Schiebergestänge erneuern",
+        "Bereich": "Redderkamp Ecke Rendsburger Landstraße 370",
+        "Zeitraum__voraussichtlich_": "14.10.2026 bis 04.11.2026",
+        "Dauer__voraussichtlich_": "noch 18 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.10952784,
+              54.32672294
+            ],
+            [
+              10.11022083,
+              54.32715844
+            ],
+            [
+              10.11056596,
+              54.32740702
+            ],
+            [
+              10.11060714,
+              54.32746702
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.321",
+        "OBJECTID": 321,
+        "Straße": "Max-Giese-Straße",
+        "Auswirkung": "Fahrbahneinengung, Einengung Gehweg",
+        "Grund": "Absicherung von Baumaterial",
+        "Bereich": "Max-Giese-Straße 2h-1, 10",
+        "Zeitraum__voraussichtlich_": "02.10.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13462459,
+              54.3196817
+            ],
+            [
+              10.13478252,
+              54.31980756
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.324",
+        "OBJECTID": 324,
+        "Straße": "Andreas-Gayk-Straße",
+        "Auswirkung": "Fahrbahneinengung, Wegfall Fahrspur",
+        "Grund": "Herstellung einer Verkehrsinsel",
+        "Bereich": "Andreas-Gayk-Straße 13 Ecke Fabrikstraße",
+        "Zeitraum__voraussichtlich_": "12.10.2026 bis 24.10.2026",
+        "Dauer__voraussichtlich_": "noch 7 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13771352,
+              54.32491034
+            ],
+            [
+              10.13796387,
+              54.32456722
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.326",
+        "OBJECTID": 326,
+        "Straße": "Haßstraße",
+        "Auswirkung": "Vollsperrung ",
+        "Grund": "Fernwärme Rohrbruch",
+        "Bereich": "Haßstraße 24",
+        "Zeitraum__voraussichtlich_": "05.10.2026 bis 30.11.2026",
+        "Dauer__voraussichtlich_": "noch 44 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.13306072,
+              54.32628674
+            ],
+            [
+              10.13340331,
+              54.32610038
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.327",
+        "OBJECTID": 327,
+        "Straße": "Legienstraße",
+        "Auswirkung": "Vollsperrung,Sperrung Gehweg",
+        "Grund": "Fernwärmerohrbruch",
+        "Bereich": "Legienstraße 1-7",
+        "Zeitraum__voraussichtlich_": "12.10.2026 bis 04.12.2026",
+        "Dauer__voraussichtlich_": "noch 48 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.11740079,
+              54.33521934
+            ],
+            [
+              10.11750766,
+              54.33554684
+            ],
+            [
+              10.11761133,
+              54.33604162
+            ],
+            [
+              10.11769143,
+              54.33642814
+            ],
+            [
+              10.11773778,
+              54.33690085
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.330",
+        "OBJECTID": 330,
+        "Straße": "Holzkoppelweg ",
+        "Auswirkung": "zHalbseitige Sperrung,Sperrung Gehweg",
+        "Grund": "Leitungsbau",
+        "Bereich": "Holzkoppelweg 22-28",
+        "Zeitraum__voraussichtlich_": "12.10.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "SW Kiel",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.10429739,
+              54.34854397
+            ],
+            [
+              10.10446698,
+              54.34875258
+            ],
+            [
+              10.10466658,
+              54.34889601
+            ],
+            [
+              10.10490592,
+              54.34904216
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.332",
+        "OBJECTID": 332,
+        "Straße": "Olshausenstraße",
+        "Auswirkung": "Fahrbahneinengung, Sperrung Radweg, Sperrung Gehweg",
+        "Grund": "Einrichtung einer Baustelleneinrichtungsfläche sowie Herstellung einer Baustellzufahrt",
+        "Bereich": "Olshausenstraße 106",
+        "Zeitraum__voraussichtlich_": "12.10.2026 bis 31.03.2027",
+        "Dauer__voraussichtlich_": "noch 165 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.06745554,
+              54.31424174
+            ],
+            [
+              10.06750161,
+              54.31406414
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.334",
+        "OBJECTID": 334,
+        "Straße": "Russeer Weg ",
+        "Auswirkung": "Vollsperrung,Sperrung Radweg",
+        "Grund": "Kanalsanierung",
+        "Bereich": "Russeer Weg 111",
+        "Zeitraum__voraussichtlich_": "12.10.2026 bis 26.10.2026",
+        "Dauer__voraussichtlich_": "noch 9 Tag/e",
+        "Verantwortlich": "LHK",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              10.18592749,
+              54.30149667
+            ],
+            [
+              10.18652466,
+              54.30147023
+            ],
+            [
+              10.18698539,
+              54.30139857
+            ],
+            [
+              10.18735472,
+              54.3013029
+            ],
+            [
+              10.18778337,
+              54.30114603
+            ],
+            [
+              10.18794737,
+              54.30105563
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "GmlID": "Baustellen_L_-_Aktuell.337",
+        "OBJECTID": 337,
+        "Straße": "Tiroler Ring ",
+        "Auswirkung": "Fahrbahneinengung, Einengung Gehweg",
+        "Grund": "35m TB-Trasse für GF-Ausbau",
+        "Bereich": "Tiroler Ring 319-376 und ggü.",
+        "Zeitraum__voraussichtlich_": "12.10.2026 bis 30.10.2026",
+        "Dauer__voraussichtlich_": "noch 13 Tag/e",
+        "Verantwortlich": "Privat",
+        "Bemerkung": "null",
+        "Internet": "null",
+        "Legende": "Einschr_Aktuell"
+      }
+    }
+  ]
+}

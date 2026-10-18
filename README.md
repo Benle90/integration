@@ -49,6 +49,10 @@ Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein
 | [Stadt Duisburg](https://opendata-duisburg.de/dataset/baustellen-duisburg) | Aktuelle Baustellen in Duisburg | Stadt Duisburg, CC BY 3.0 DE |
 | [Stadt Münster](https://opendata.stadt-muenster.de/dataset/baustellen) | Größere Baustellen in Münster | Stadt Münster, dl-de/by-2-0 |
 | [Ponts et Chaussées Luxemburg](https://data.public.lu/fr/datasets/pch-les-chantiers-actuels/) | Aktuelle und geplante Baustellen auf Luxemburgs Straßen – für Grenzpendler aus Trier, dem Saarland und der Eifel | Administration des Ponts et Chaussées, CC0 |
+| [Mobilitätsportal Technologieregion Karlsruhe](https://mobil.trk.de/) | Baustellen mit Sperrung oder Verkehrsbehinderung in Karlsruhe und der Region | Stadt Karlsruhe / Mobilitätsportal Technologieregion Karlsruhe, CC BY 4.0 |
+| [Hanse- und Universitätsstadt Rostock](https://www.opendata-hro.de/dataset/baustellen) | Baustellen in Rostock (ohne reine Gehweg- und Fassadensicherungen) | Hanse- und Universitätsstadt Rostock, CC0 |
+| [Landeshauptstadt Kiel](https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer?SERVICE=WFS&REQUEST=GetCapabilities) | Aktuelle und geplante Baustellen in Kiel | Landeshauptstadt Kiel, CC BY 4.0 |
+| [Stadt Ingolstadt](https://open.bydata.de/datasets/baustellen_stadt_ingolstadt) | Baustellen mit Voll- oder halbseitiger Sperrung in Ingolstadt (nächste 14 Tage) | Stadt Ingolstadt, CC BY 4.0 |
 
 Alle Entitäten tragen die jeweilige Namensnennung im Attribut `attribution`.
 

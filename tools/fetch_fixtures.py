@@ -131,6 +131,27 @@ LUXEMBURG_URLS = {
 }
 LUXEMBURG_SITUATIONS = 20
 
+# Weitere Städte (0.4.0): Karlsruhe (Ausschnitt Innenstadt), Rostock,
+# Kiel (Linien, aktuell), Ingolstadt (UTM 32N, unverändert).
+KARLSRUHE_URL = (
+    "https://mobil.trk.de/geoserver/TBA/ows?service=WFS&version=2.0.0&request=GetFeature"
+    "&typeNames=TBA:baustellen&outputFormat=application/json&srsName=EPSG:4326&CQL_FILTER="
+    + urllib.parse.quote(
+        "sperrung IN ('mit Vollsperrung', 'mit Sperrung in eine Fahrtrichtung', "
+        "'mit Verkehrsbehinderung')"
+    )
+)
+ROSTOCK_URL = "https://geo.sv.rostock.de/download/opendata/baustellen/baustellen.json"
+KIEL_URL = (
+    "https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer"
+    "?service=WFS&version=2.0.0&request=GetFeature&typeNames=lhkiel:Baustellen_L_-_Aktuell"
+    "&outputFormat=geoJSON&srsName=EPSG:4326"
+)
+INGOLSTADT_URL = (
+    "https://www.ingolstadt.de/openbydata/VMS/Baustellen_14_Tage_Ingolstadt.geojson"
+)
+KARLSRUHE_EXCERPT = (48.995, 8.38, 49.02, 8.43)
+
 index: list[dict] = []
 
 
@@ -350,6 +371,28 @@ def luxemburg() -> None:
         save(name, url, s, b, c)
 
 
+def staedte_2() -> None:
+    print("Weitere Städte")
+    s, b, c = get(KARLSRUHE_URL)
+    if s == 200:
+        b = _excerpt(b, KARLSRUHE_EXCERPT)
+    save("karlsruhe_innenstadt.geojson.json", KARLSRUHE_URL, s, b, c)
+    for name, url in (
+        ("rostock_baustellen.geojson.json", ROSTOCK_URL),
+        ("kiel_linien_aktuell.geojson.json", KIEL_URL),
+    ):
+        s, b, c = get(url)
+        save(name, url, s, b, c)
+    s, b, c = get(INGOLSTADT_URL)
+    if s == 200:
+        # Contact addresses are not needed for the tests.
+        data = json.loads(b)
+        for feature in data["features"]:
+            feature["properties"]["AUFTRAGGEBER_EMAIL"] = ""
+        b = json.dumps(data, ensure_ascii=False).encode()
+    save("ingolstadt_baustellen.geojson.json", INGOLSTADT_URL, s, b, c)
+
+
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     autobahn()
@@ -361,6 +404,7 @@ def main() -> int:
     rheinland_pfalz()
     staedte()
     luxemburg()
+    staedte_2()
     (OUT / "_index.json").write_text(
         json.dumps(
             {

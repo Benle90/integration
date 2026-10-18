@@ -46,7 +46,7 @@ BW-Städte sind teilweise schon über MobiData BW abgedeckt (Gemeindestraßen nu
 | 5 | **Frankfurt** – **umgesetzt in 0.2.0** | ✅ 🔎 | WFS `https://geowebdienste.frankfurt.de/Baustellen`, Layer `opendata_verkehr:Baustellen` und `opendata_verkehr:Verkehrsmeldungen` |
 | 6 | Stuttgart | ✅ umgesetzt | |
 | 7 | Düsseldorf | ❓ | |
-| 8 | **Leipzig** | ✅ | WFS `https://geodienste.leipzig.de/l3/OpenData/wfs` (`OpenData:verkehrsraumeinschraenkungen`, `…_point`) |
+| 8 | **Leipzig** – nicht umgesetzt (Lizenz unklar, über Sachsen abgedeckt) | ✅ | WFS `https://geodienste.leipzig.de/l3/OpenData/wfs` (`OpenData:verkehrsraumeinschraenkungen`, `…_point`) |
 | 9 | **Dortmund** – **umgesetzt in 0.2.0** | ✅ 🔎 | `https://open-data.dortmund.de/api/v2/catalog/datasets/fb66-baustellen-tagesaktuell/exports/geojson` (+ `…-geplant`, Flächen-Varianten); DL-DE-Zero |
 | 10 | Essen | ❓ | |
 | 11 | Bremen | ❌ | nur Mobilithek / Webseite VMZ (Umland über Niedersachsen-Layer) |
@@ -57,14 +57,14 @@ BW-Städte sind teilweise schon über MobiData BW abgedeckt (Gemeindestraßen nu
 | 16 | Bochum | ❌ | Lizenz laut Open.NRW „andere geschlossene Lizenz“ – nicht nutzbar; früher notiert: | ArcGIS-REST `https://geoservicekkm.bochum.de/arcgis/rest/services/maponline/Baustellen/MapServer` |
 | 17 | Wuppertal | ❓ | |
 | 18 | Bielefeld | ⚠️ | „Verkehrsmeldungen“ (CSV/XML) bei open-data.bielefeld.de, ungeprüft |
-| 19 | **Bonn** | ⚠️ | GeoJSON tagesaktuell + Planung ([Open.NRW](https://ckan.open.nrw.de/dataset/baustellen-tagesaktuell-mit-ortsangabe-in-bonn-bn)), Endpunkt ungeprüft |
+| 19 | **Bonn** – Datensatz 2026-10-18 nicht auffindbar | ⚠️ | GeoJSON tagesaktuell + Planung ([Open.NRW](https://ckan.open.nrw.de/dataset/baustellen-tagesaktuell-mit-ortsangabe-in-bonn-bn)), Endpunkt ungeprüft |
 | 20 | **Münster** – **umgesetzt in 0.3.0** | ✅ | GeoJSON ([Open Data](https://opendata.stadt-muenster.de/dataset/baustellen)) |
 | 21 | Mannheim | ⚠️ | nur über MobiData BW (teilweise) |
-| 22 | **Karlsruhe** | ✅ | WFS `https://mobil.trk.de/geoserver/TBA/ows` (aktuell + Vorschau), DATEX, GraphQL; CC BY 4.0 |
+| 22 | **Karlsruhe** – **umgesetzt in 0.4.0** | ✅ 🔎 | WFS `https://mobil.trk.de/geoserver/TBA/ows` (aktuell + Vorschau), DATEX, GraphQL; CC BY 4.0 |
 | 23–26 | Augsburg, Wiesbaden, Mönchengladbach, Gelsenkirchen | ❓ | |
 | 27 | **Aachen** – **umgesetzt in 0.3.0** | ✅ | WFS `https://bsis.aachen.de/geoserver/ows` (`BSIS:PUNKTE_ALLE`, GeoJSON) |
 | 28 | Braunschweig | ❓ | |
-| 29 | **Kiel** | ✅ | ArcGIS-WFS `https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer`, Layer `Baustellen`, `Baustellen_L_-_Aktuell`, `…_Zukunft` u. a., `outputFormat=geoJSON` (Layer `Baustellen` beim Test leer – Teil-Layer prüfen); zusätzlich im norddeutschen WFS |
+| 29 | **Kiel** – **umgesetzt in 0.4.0** | ✅ 🔎 | ArcGIS-WFS `https://ims.kiel.de/geodatenextern/services/Stadtplan/LHKielWmsWfs/MapServer/WFSServer`, Layer `Baustellen`, `Baustellen_L_-_Aktuell`, `…_Zukunft` u. a., `outputFormat=geoJSON` (Layer `Baustellen` beim Test leer – Teil-Layer prüfen); zusätzlich im norddeutschen WFS |
 | 30 | Chemnitz | ⚠️ | über Sachsen landesweit |
 | 31 | **Halle (Saale)** | ✅ | über Sachsen-Anhalt landesweit (inkl. Gemeindestraßen) |
 | 32 | **Magdeburg** | ✅ | über Sachsen-Anhalt landesweit (inkl. Gemeindestraßen) |
@@ -73,14 +73,14 @@ BW-Städte sind teilweise schon über MobiData BW abgedeckt (Gemeindestraßen nu
 | 36 | Lübeck | ⚠️ | Datensatz „Baustellen/Maßnahmen“ erwähnt, maschinenlesbarer Zugang nicht bestätigt |
 | 37 | Erfurt | ❌ | Thüringen nur Mobilithek |
 | 38 | Oberhausen | ❓ | |
-| 39 | **Rostock** | ✅ | `https://geo.sv.rostock.de/download/opendata/baustellen/baustellen.json` (auch CSV/GML) |
+| 39 | **Rostock** – **umgesetzt in 0.4.0** | ✅ 🔎 | `https://geo.sv.rostock.de/download/opendata/baustellen/baustellen.json` (auch CSV/GML) |
 | 40–41 | Kassel, Hagen | ❓ | |
 | 42 | Potsdam | ⚠️ | über Brandenburg landesweit (nur Bundes-/Landes-/Kreisstraßen); Stadt nur Webseite |
 | 43 | Saarbrücken | ❓ | |
 | 44–49 | Hamm, Ludwigshafen, Oldenburg, Mülheim, Osnabrück, Leverkusen | ❓ | |
 | 50 | Heidelberg / Darmstadt | ⚠️ / ❓ | Heidelberg-JSON-Adresse aus dem Katalog liefert 404 |
 
-Weitere offene Quellen kleinerer Städte: **Ingolstadt** (GeoJSON, 14 Tage, **EPSG:25832** – Umrechnung nötig), **Herne** (WFS), **Soest** (GeoJSON), **Wesel** (CSV/Shape), **Norderstedt** (WFS `https://geoservice.norderstedt.de/geoserver/vms/ows`, `vms:stvkinfoweb`), Trebbin (WFS).
+Weitere offene Quellen kleinerer Städte: **Ingolstadt** (GeoJSON, 14 Tage, **EPSG:25832** – **umgesetzt in 0.4.0**), **Herne** (WFS, 2026-10-18 Serverfehler 500), **Soest** (GeoJSON), **Wesel** (CSV/Shape), **Norderstedt** (WFS `https://geoservice.norderstedt.de/geoserver/vms/ows`, `vms:stvkinfoweb`), Trebbin (WFS).
 
 ## Vorerkundung Berlin, Hamburg, München (2026-10-05)
 
