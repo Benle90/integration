@@ -6,11 +6,14 @@ import asyncio
 from dataclasses import dataclass, field
 from datetime import timedelta
 
+from homeassistant.components.http import StaticPathConfig
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
+from homeassistant.helpers import config_validation as cv
 from homeassistant.helpers import issue_registry as ir
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
+from homeassistant.helpers.typing import ConfigType
 
 from .const import (
     CONF_AREA_SOURCES,
@@ -57,6 +60,14 @@ from .providers.rheinland_pfalz import RheinlandPfalzProvider
 from .providers.sachsen import SachsenProvider
 from .providers.sachsen_anhalt import SachsenAnhaltProvider
 from .providers.stuttgart import StuttgartProvider
+from .websocket import (
+    CARD_URL,
+    FRONTEND_DIR,
+    FRONTEND_URL,
+    async_setup_websocket,
+)
+
+CONFIG_SCHEMA = cv.config_entry_only_config_schema(DOMAIN)
 
 PLATFORMS: list[Platform] = [
     Platform.BINARY_SENSOR,
@@ -129,6 +140,23 @@ class StreckenwachtRuntimeData:
 
 
 type StreckenwachtConfigEntry = ConfigEntry[StreckenwachtRuntimeData]
+
+
+async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
+    """Register the map card and its WebSocket command (once, not per entry)."""
+    async_setup_websocket(hass)
+    if getattr(hass, "http", None) is not None:
+        await hass.http.async_register_static_paths(
+            [StaticPathConfig(FRONTEND_URL, str(FRONTEND_DIR), cache_headers=True)]
+        )
+        # The card registers itself; no dashboard resource needed.
+        if "frontend" in hass.config.components:
+            from homeassistant.components.frontend import (
+                add_extra_js_url,
+            )
+
+            add_extra_js_url(hass, CARD_URL)
+    return True
 
 
 async def async_setup_entry(

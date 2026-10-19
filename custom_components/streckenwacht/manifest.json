@@ -1,6 +1,10 @@
 {
   "domain": "streckenwacht",
   "name": "Streckenwacht",
+  "after_dependencies": [
+    "frontend",
+    "http"
+  ],
   "codeowners": [
     "@n42net"
   ],

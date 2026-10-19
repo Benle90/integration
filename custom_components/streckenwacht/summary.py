@@ -159,6 +159,41 @@ def listed(events: list[StreckenwachtEvent]) -> list[dict[str, Any]]:
     return [event_attributes(e) for e in events[:MAX_LISTED_EVENTS]]
 
 
+def map_features(
+    events: Iterable[StreckenwachtEvent],
+    now: datetime,
+    horizon: timedelta = NEXT_CLOSURE_HORIZON,
+) -> list[dict[str, Any]]:
+    """GeoJSON features for the map card: active events and those starting soon.
+
+    Planned ones first and the most severe last, so they are drawn on top.
+    """
+    found: list[tuple[bool, int, dict[str, Any]]] = []
+    for event in events:
+        is_active = event.is_active(now)
+        if not is_active:
+            starts = [p.start for p in event.periods if p.start and p.start > now]
+            if not starts or min(starts) > now + horizon:
+                continue
+        geometry = event.geometry
+        if not geometry and event.latitude is not None and event.longitude is not None:
+            geometry = {
+                "type": "Point",
+                "coordinates": [event.longitude, event.latitude],
+            }
+        if not geometry:
+            continue
+        properties = event_attributes(event) | {
+            "description": event.description,
+            "active": is_active,
+            "attribution": event.attribution,
+        }
+        feature = {"type": "Feature", "geometry": geometry, "properties": properties}
+        found.append((is_active, -_SEVERITY[event.event_type], feature))
+    found.sort(key=lambda f: (f[0], f[1], f[2]["properties"]["id"]))
+    return [f[2] for f in found]
+
+
 @dataclass(frozen=True, slots=True)
 class CalendarItem:
     """One calendar entry: an event period clipped to a time window."""

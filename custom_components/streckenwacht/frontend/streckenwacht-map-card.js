@@ -1,0 +1,369 @@
+/*
+ * Streckenwacht map card: the events of one observation area with their real
+ * geometry (lines and areas), coloured by type, on Home Assistant's own map
+ * tile proxy (the browser only talks to Home Assistant).
+ *
+ * type: custom:streckenwacht-map-card
+ * entity: sensor.streckenwacht_<area>_events   # any entity of the area
+ * title: optional
+ * height: 400                                   # pixels
+ * show_planned: true                            # events starting within 14 days
+ */
+
+const BASE = new URL(".", import.meta.url).pathname;
+const LEAFLET_JS = `${BASE}leaflet.js?v=1.9.4`;
+const LEAFLET_CSS = `${BASE}leaflet.css?v=1.9.4`;
+const TOKEN_REFRESH_MS = 20 * 60 * 1000;
+const DATA_REFRESH_MS = 5 * 60 * 1000;
+
+const COLORS = {
+  closure: "#d32f2f",
+  roadworks: "#f57c00",
+  traffic_jam: "#8e0000",
+  accident: "#7b1fa2",
+  warning: "#fbc02d",
+};
+
+const TEXT = {
+  de: {
+    closure: "Sperrung",
+    roadworks: "Baustelle",
+    traffic_jam: "Stau",
+    accident: "Unfall",
+    warning: "Warnung",
+    now: "aktuell",
+    from: "ab",
+    until: "bis",
+    open: "Ende offen",
+    planned: "geplant",
+    noTiles:
+      "Kartenhintergrund nicht verfügbar – er braucht Home Assistant 2026.9 oder neuer.",
+    noArea: "Kein Streckenwacht-Bereich: bitte eine Entität eines Beobachtungsbereichs wählen.",
+    entity: "Bereich (eine Entität des Beobachtungsbereichs)",
+    title: "Titel",
+    height: "Höhe",
+    show_planned: "Geplante Meldungen zeigen (nächste 14 Tage)",
+  },
+  en: {
+    closure: "Closure",
+    roadworks: "Roadworks",
+    traffic_jam: "Traffic jam",
+    accident: "Accident",
+    warning: "Warning",
+    now: "now",
+    from: "from",
+    until: "until",
+    open: "open end",
+    planned: "planned",
+    noTiles: "Map background unavailable – it needs Home Assistant 2026.9 or later.",
+    noArea: "Not a Streckenwacht area: please choose an entity of an observation area.",
+    entity: "Area (an entity of the observation area)",
+    title: "Title",
+    height: "Height",
+    show_planned: "Show planned reports (next 14 days)",
+  },
+};
+
+let leafletLoading;
+
+function loadLeaflet() {
+  if (window.L?.map) return Promise.resolve(window.L);
+  if (!leafletLoading) {
+    leafletLoading = new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = LEAFLET_JS;
+      script.onload = () => resolve(window.L);
+      script.onerror = () => reject(new Error("Leaflet could not be loaded"));
+      document.head.appendChild(script);
+    });
+  }
+  return leafletLoading;
+}
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(
+    /[&<>"']/g,
+    (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c],
+  );
+}
+
+class StreckenwachtMapCard extends HTMLElement {
+  static getConfigForm() {
+    return {
+      schema: [
+        {
+          name: "entity",
+          required: true,
+          selector: { entity: { filter: { integration: "streckenwacht" } } },
+        },
+        { name: "title", selector: { text: {} } },
+        {
+          name: "height",
+          selector: { number: { min: 150, max: 1200, step: 10, unit_of_measurement: "px" } },
+        },
+        { name: "show_planned", selector: { boolean: {} } },
+      ],
+      computeLabel: (schema, data, hass) => {
+        const lang = hass?.locale?.language?.startsWith("de") ? "de" : "en";
+        return TEXT[lang][schema.name];
+      },
+    };
+  }
+
+  static getStubConfig(hass) {
+    const entity = Object.values(hass.entities || {}).find(
+      (e) => e.platform === "streckenwacht" && e.entity_id.startsWith("sensor."),
+    );
+    return { entity: entity?.entity_id || "", show_planned: true };
+  }
+
+  setConfig(config) {
+    if (!config.entity) {
+      throw new Error("entity is required");
+    }
+    this._config = { height: 400, show_planned: true, ...config };
+    if (this._map) this._render();
+  }
+
+  set hass(hass) {
+    this._hass = hass;
+    if (!this._built) {
+      this._build();
+      return;
+    }
+    this._applyTheme();
+    const state = hass.states[this._config.entity];
+    if (state && state.last_updated !== this._lastUpdated) {
+      this._lastUpdated = state.last_updated;
+      this._refresh();
+    }
+  }
+
+  get _t() {
+    return TEXT[this._hass?.locale?.language?.startsWith("de") ? "de" : "en"];
+  }
+
+  getCardSize() {
+    return Math.ceil((this._config?.height || 400) / 50) + 1;
+  }
+
+  getGridOptions() {
+    return { columns: 12, min_columns: 4, rows: "auto" };
+  }
+
+  connectedCallback() {
+    if (this._map && !this._timers) {
+      this._startTimers();
+      this._resize?.observe(this._wrap);
+      this._refresh();
+    }
+  }
+
+  disconnectedCallback() {
+    for (const timer of this._timers || []) clearInterval(timer);
+    this._timers = undefined;
+    this._resize?.disconnect();
+  }
+
+  async _build() {
+    this._built = true;
+    const root = this.attachShadow({ mode: "open" });
+    root.innerHTML = `
+      <link rel="stylesheet" href="${LEAFLET_CSS}">
+      <style>
+        ha-card { overflow: hidden; }
+        .wrap { position: relative; }
+        #map { height: 100%; width: 100%; background: var(--secondary-background-color); }
+        .dark .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.9) contrast(.9); }
+        .legend { position: absolute; z-index: 500; bottom: 18px; left: 8px; display: flex;
+          flex-wrap: wrap; gap: 4px; max-width: calc(100% - 16px); pointer-events: none; }
+        .chip { background: var(--card-background-color); color: var(--primary-text-color);
+          border-radius: 10px; padding: 1px 8px 1px 6px; font-size: 12px; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+        .chip i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px;
+          vertical-align: -1px; }
+        .notice { position: absolute; z-index: 600; top: 8px; left: 50px; right: 8px; padding: 6px 10px;
+          font-size: 13px; background: var(--card-background-color); color: var(--primary-text-color);
+          border-left: 4px solid var(--warning-color, #ffa600); border-radius: 4px; }
+        .notice[hidden] { display: none; }
+        .leaflet-popup-content { margin: 10px 12px; font-size: 13px; line-height: 1.4; }
+        .leaflet-popup-content .meta { color: #555; }
+        .leaflet-popup-content .desc { white-space: pre-line; margin-top: 4px; }
+        .leaflet-popup-content .src { color: #777; font-size: 11px; margin-top: 6px; }
+      </style>
+      <ha-card>
+        <div class="wrap"><div id="map"></div><div class="legend"></div><div class="notice" hidden></div></div>
+      </ha-card>`;
+    this._card = root.querySelector("ha-card");
+    this._wrap = root.querySelector(".wrap");
+    this._legend = root.querySelector(".legend");
+    this._notice = root.querySelector(".notice");
+    this._render();
+    try {
+      const L = await loadLeaflet();
+      this._L = L;
+      this._map = L.map(root.querySelector("#map"), { zoomControl: true });
+      this._map.attributionControl.setPrefix("");
+      this._tiles = L.tileLayer("", {
+        maxZoom: 19,
+        attribution:
+          '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>',
+      }).addTo(this._map);
+      this._map.setView([51.2, 10.4], 6);
+      this._resize = new ResizeObserver(() => this._map.invalidateSize());
+      this._resize.observe(this._wrap);
+      this._applyTheme();
+      await this._refreshToken();
+      this._startTimers();
+      await this._refresh();
+    } catch (err) {
+      this._showNotice(String(err.message || err));
+    }
+  }
+
+  _render() {
+    if (!this._wrap) return;
+    this._wrap.style.height = `${this._config.height}px`;
+    if (this._config.title) this._card.setAttribute("header", this._config.title);
+    else this._card.removeAttribute("header");
+    this._map?.invalidateSize();
+    if (this._data) this._draw();
+  }
+
+  _applyTheme() {
+    this._wrap?.classList.toggle("dark", Boolean(this._hass?.themes?.darkMode));
+  }
+
+  _startTimers() {
+    this._timers = [
+      setInterval(() => this._refreshToken(), TOKEN_REFRESH_MS),
+      setInterval(() => this._refresh(), DATA_REFRESH_MS),
+    ];
+  }
+
+  _showNotice(text) {
+    this._notice.textContent = text;
+    this._notice.hidden = !text;
+  }
+
+  async _refreshToken() {
+    try {
+      const { token } = await this._hass.callWS({ type: "map_tiles/access_token" });
+      this._tiles.setUrl(
+        `/api/map_tiles/raster/{z}/{x}/{y}.png?token=${encodeURIComponent(token)}`,
+      );
+      if (this._notice.textContent === this._t.noTiles) this._showNotice("");
+    } catch (_err) {
+      // Older Home Assistant: no proxy. Never fall back to OSM directly, that
+      // would show the area to a third party.
+      this._showNotice(this._t.noTiles);
+    }
+  }
+
+  async _refresh() {
+    if (!this._map || !this._hass || this._loading) return;
+    this._loading = true;
+    try {
+      this._data = await this._hass.callWS({
+        type: "streckenwacht/map",
+        entity_id: this._config.entity,
+      });
+      if (this._notice.textContent === this._t.noArea) this._showNotice("");
+      this._draw();
+    } catch (_err) {
+      this._showNotice(this._t.noArea);
+    } finally {
+      this._loading = false;
+    }
+  }
+
+  _draw() {
+    const L = this._L;
+    const t = this._t;
+    const { area, features } = this._data;
+    this._layer?.remove();
+    const group = L.featureGroup();
+    // SVG attributes take no CSS variables: read the theme colour.
+    const primary =
+      getComputedStyle(this).getPropertyValue("--primary-color").trim() || "#03a9f4";
+    const circle = L.circle([area.latitude, area.longitude], {
+      radius: area.radius_km * 1000,
+      color: primary,
+      weight: 1.5,
+      dashArray: "6 6",
+      fill: false,
+      interactive: false,
+    }).addTo(group);
+
+    const shown = features.filter((f) => f.properties.active || this._config.show_planned);
+    for (const feature of shown) {
+      const p = feature.properties;
+      const color = COLORS[p.type] || "#607d8b";
+      const style = {
+        color,
+        weight: p.active ? (p.type === "closure" ? 6 : 5) : 3,
+        opacity: p.active ? 0.9 : 0.55,
+        dashArray: p.active ? null : "6 6",
+        fillColor: color,
+        fillOpacity: p.active ? 0.3 : 0.12,
+      };
+      const popup = this._popup(p);
+      L.geoJSON(feature, {
+        style: () => style,
+        pointToLayer: () => L.layerGroup(), // points get the marker below
+      })
+        .bindPopup(popup)
+        .addTo(group);
+      if (p.latitude != null && p.longitude != null) {
+        L.circleMarker([p.latitude, p.longitude], {
+          radius: p.active ? 7 : 5,
+          color: "#fff",
+          weight: 2,
+          fillColor: color,
+          fillOpacity: p.active ? 0.95 : 0.6,
+        })
+          .bindPopup(popup)
+          .addTo(group);
+      }
+    }
+    group.addTo(this._map);
+    this._layer = group;
+    if (!this._fitted) {
+      this._map.fitBounds(circle.getBounds(), { padding: [10, 10] });
+      this._fitted = true;
+    }
+
+    const types = [...new Set(shown.map((f) => f.properties.type))];
+    this._legend.innerHTML = types
+      .map((type) => `<span class="chip"><i style="background:${COLORS[type]}"></i>${t[type] || type}</span>`)
+      .join("");
+  }
+
+  _popup(p) {
+    const t = this._t;
+    const fmt = (iso) =>
+      new Date(iso).toLocaleDateString(this._hass.locale?.language || "de", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+      });
+    const when = [
+      p.active ? t.now : p.start ? `${t.planned}, ${t.from} ${fmt(p.start)}` : t.planned,
+      p.end ? `${t.until} ${fmt(p.end)}` : t.open,
+    ].join(" · ");
+    const delay = p.delay_minutes ? ` · +${p.delay_minutes} min` : "";
+    return `
+      <b>${escapeHtml(p.title)}</b>
+      <div class="meta">${escapeHtml(t[p.type] || p.type)}${delay} · ${escapeHtml(when)}</div>
+      ${p.description ? `<div class="desc">${escapeHtml(p.description)}</div>` : ""}
+      <div class="src">${escapeHtml(p.attribution)}</div>`;
+  }
+}
+
+customElements.define("streckenwacht-map-card", StreckenwachtMapCard);
+window.customCards = window.customCards || [];
+window.customCards.push({
+  type: "streckenwacht-map-card",
+  name: "Streckenwacht",
+  description: "Baustellen, Sperrungen und Staus eines Beobachtungsbereichs auf der Karte",
+  documentationURL: "https://github.com/streckenwacht/integration",
+});
