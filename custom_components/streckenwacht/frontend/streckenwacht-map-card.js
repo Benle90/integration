@@ -66,6 +66,11 @@ const TEXT = {
 
 let leafletLoading;
 
+function pageLanguage(hass) {
+  const lang = hass?.locale?.language || document.documentElement.lang || navigator.language || "";
+  return String(lang).toLowerCase().startsWith("de") ? "de" : "en";
+}
+
 function loadLeaflet() {
   if (window.L?.map) return Promise.resolve(window.L);
   if (!leafletLoading) {
@@ -99,22 +104,23 @@ class StreckenwachtMapCard extends HTMLElement {
         { name: "title", selector: { text: {} } },
         {
           name: "height",
-          selector: { number: { min: 150, max: 1200, step: 10, unit_of_measurement: "px" } },
+          selector: {
+            number: { min: 150, max: 1200, step: 10, mode: "box", unit_of_measurement: "px" },
+          },
         },
         { name: "show_planned", selector: { boolean: {} } },
       ],
-      computeLabel: (schema, data, hass) => {
-        const lang = hass?.locale?.language?.startsWith("de") ? "de" : "en";
-        return TEXT[lang][schema.name];
-      },
+      // The form passes no hass here: take the language of the page.
+      computeLabel: (schema) => TEXT[pageLanguage()][schema.name],
     };
   }
 
   static getStubConfig(hass) {
-    const entity = Object.values(hass.entities || {}).find(
-      (e) => e.platform === "streckenwacht" && e.entity_id.startsWith("sensor."),
+    const ids = Object.keys(hass?.entities || {}).filter(
+      (id) => hass.entities[id]?.platform === "streckenwacht" && id.startsWith("sensor."),
     );
-    return { entity: entity?.entity_id || "", show_planned: true };
+    const events = ids.find((id) => hass.entities[id]?.translation_key === "events");
+    return { entity: events || ids[0] || "", height: 400, show_planned: true };
   }
 
   setConfig(config) {
@@ -140,7 +146,7 @@ class StreckenwachtMapCard extends HTMLElement {
   }
 
   get _t() {
-    return TEXT[this._hass?.locale?.language?.startsWith("de") ? "de" : "en"];
+    return TEXT[pageLanguage(this._hass)];
   }
 
   getCardSize() {
