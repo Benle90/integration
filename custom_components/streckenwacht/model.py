@@ -70,14 +70,20 @@ class StreckenwachtEvent:
     # Original data supplier if it differs from the source, e.g. "inrix" for
     # traffic jams in the Autobahn API; can be switched off (docs/ENTWICKLUNG.md 4).
     upstream: str | None = None
+    # Set on the leading event when duplicates from other sources were merged
+    # into it (dedup.py): their ids and sources.
+    merged_ids: tuple[str, ...] = ()
+    merged_sources: tuple[Source, ...] = ()
 
     @property
     def attribution(self) -> str:
-        """Attribution text required by the source license."""
+        """Attribution text required by the source license(s)."""
+        parts = [ATTRIBUTION[self.source]]
         upstream = UPSTREAM_ATTRIBUTION.get(self.upstream or "")
         if upstream:
-            return f"{ATTRIBUTION[self.source]}; {upstream}"
-        return ATTRIBUTION[self.source]
+            parts.append(upstream)
+        parts.extend(ATTRIBUTION[source] for source in self.merged_sources)
+        return "; ".join(dict.fromkeys(parts))
 
     @property
     def start(self) -> datetime | None:

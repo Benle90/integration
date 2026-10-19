@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import asyncio
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import timedelta
 
 from homeassistant.config_entries import ConfigEntry
@@ -15,9 +15,11 @@ from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from .const import (
     CONF_AREA_SOURCES,
     CONF_INCLUDE_INRIX,
+    CONF_MERGE_DUPLICATES,
     CONF_SCAN_INTERVAL,
     CONF_SOURCES,
     DEFAULT_INCLUDE_INRIX,
+    DEFAULT_MERGE_DUPLICATES,
     DEFAULT_SCAN_INTERVAL,
     DOMAIN,
     Source,
@@ -28,7 +30,9 @@ from .coordinator import (
     area_subentries,
     issue_id,
 )
+from .dedup import merge_duplicates
 from .known_events import KnownEvents
+from .model import StreckenwachtEvent
 from .providers import Provider
 from .providers.autobahn import AutobahnProvider
 from .providers.berlin import BerlinProvider
@@ -95,6 +99,33 @@ class StreckenwachtRuntimeData:
 
     coordinators: dict[Source, StreckenwachtCoordinator]
     known_events: KnownEvents
+    merge_duplicates: bool = DEFAULT_MERGE_DUPLICATES
+    # Per area: the coordinator data the events were built from, and the events.
+    _area_events: dict[str, tuple[tuple[object, ...], list[StreckenwachtEvent]]] = (
+        field(default_factory=dict, repr=False)
+    )
+
+    def area_events(self, subentry_id: str) -> list[StreckenwachtEvent]:
+        """All known events of an area from every source, duplicates merged.
+
+        Entities ask every minute; the merge only reruns after new data.
+        """
+        token = tuple(c.data for c in self.coordinators.values())
+        cached = self._area_events.get(subentry_id)
+        if (
+            cached is not None
+            and len(cached[0]) == len(token)
+            and all(a is b for a, b in zip(cached[0], token, strict=True))
+        ):
+            return cached[1]
+        events: list[StreckenwachtEvent] = []
+        for data in token:
+            if data is not None:
+                events.extend(data.by_area.get(subentry_id, ()))
+        if self.merge_duplicates:
+            events = merge_duplicates(events)
+        self._area_events[subentry_id] = (token, events)
+        return events
 
 
 type StreckenwachtConfigEntry = ConfigEntry[StreckenwachtRuntimeData]
@@ -140,7 +171,11 @@ async def async_setup_entry(
     await known_events.async_load(keep=areas)
 
     entry.runtime_data = StreckenwachtRuntimeData(
-        coordinators=coordinators, known_events=known_events
+        coordinators=coordinators,
+        known_events=known_events,
+        merge_duplicates=entry.options.get(
+            CONF_MERGE_DUPLICATES, DEFAULT_MERGE_DUPLICATES
+        ),
     )
     # Options and subentry (area) changes both trigger a reload.
     entry.async_on_unload(entry.add_update_listener(_async_update_listener))

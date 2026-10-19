@@ -8,10 +8,15 @@ Traffic jams are smoothed (measured 2026-10-05, see docs/ENTWICKLUNG.md 2):
 - Most jams are minor and short-lived. Jams are only announced once their travel
   time loss reaches the area's jam threshold (as for "disruption active"), and
   only announced jams get an "ended".
+
+Duplicates from several sources (dedup.py) are announced once, by their
+leading event. A member joining a known group stays silent unless it turns
+roadworks into a closure; an event whose partner is still there ends silently.
 """
 
 from __future__ import annotations
 
+from collections.abc import Collection, Mapping
 from dataclasses import asdict, dataclass
 from typing import Any
 
@@ -36,9 +41,16 @@ class KnownEvent:
     latitude: float | None = None
     longitude: float | None = None
     announced: bool = True
+    # Ids of the events it was merged with (other sources, same works).
+    merged_with: tuple[str, ...] = ()
 
     @classmethod
-    def from_event(cls, event: StreckenwachtEvent, announced: bool) -> KnownEvent:
+    def from_event(
+        cls,
+        event: StreckenwachtEvent,
+        announced: bool,
+        merged_with: tuple[str, ...] = (),
+    ) -> KnownEvent:
         return cls(
             title=event.title,
             type=event.event_type.value,
@@ -47,6 +59,7 @@ class KnownEvent:
             latitude=event.latitude,
             longitude=event.longitude,
             announced=announced,
+            merged_with=merged_with,
         )
 
     @classmethod
@@ -61,6 +74,7 @@ class KnownEvent:
                 latitude=value.get("latitude"),
                 longitude=value.get("longitude"),
                 announced=bool(value.get("announced", True)),
+                merged_with=tuple(str(i) for i in value.get("merged_with") or ()),
             )
         if isinstance(value, list) and len(value) == 2:
             return cls(title=str(value[0]), type=str(value[1]))
@@ -85,12 +99,27 @@ def significant(event: StreckenwachtEvent, jam_threshold: int) -> bool:
     return (event.delay_minutes or 0) >= jam_threshold
 
 
+def partners(
+    event_id: str, groups: Mapping[str, StreckenwachtEvent]
+) -> tuple[str, ...]:
+    """Ids of the other events in the group of this event."""
+    merged = groups.get(event_id)
+    if merged is None:
+        return ()
+    return tuple(i for i in (merged.id, *merged.merged_ids) if i != event_id)
+
+
 def learn(
-    current: dict[str, StreckenwachtEvent], jam_threshold: int
+    current: dict[str, StreckenwachtEvent],
+    jam_threshold: int,
+    groups: Mapping[str, StreckenwachtEvent] | None = None,
 ) -> dict[str, KnownEvent]:
     """Initial state without announcements."""
+    groups = groups or {}
     return {
-        event_id: KnownEvent.from_event(event, significant(event, jam_threshold))
+        event_id: KnownEvent.from_event(
+            event, significant(event, jam_threshold), partners(event_id, groups)
+        )
         for event_id, event in current.items()
     }
 
@@ -99,8 +128,18 @@ def diff(
     known: dict[str, KnownEvent],
     current: dict[str, StreckenwachtEvent],
     jam_threshold: int,
+    groups: Mapping[str, StreckenwachtEvent] | None = None,
+    known_elsewhere: Mapping[str, KnownEvent] | None = None,
+    present: Collection[str] = (),
 ) -> tuple[list[Change], dict[str, KnownEvent]]:
-    """Changes to announce and the new known state."""
+    """Changes to announce and the new known state.
+
+    groups maps every merged event id (lead and members, all sources of the
+    area) to its merged event; known_elsewhere holds what is known of the other
+    sources, present the ids currently reported by any source.
+    """
+    groups = groups or {}
+    known_elsewhere = known_elsewhere or {}
     new_known: dict[str, KnownEvent] = {}
     announce: list[StreckenwachtEvent] = []
     gone = {i: k for i, k in known.items() if i not in current}
@@ -113,10 +152,17 @@ def diff(
             if match is not None:
                 previous = gone.pop(match)  # same jam, new identifier
         announced = previous.announced if previous is not None else False
+        merged = groups.get(event_id)
         if not announced and significant(event, jam_threshold):
-            announce.append(event)
-            announced = True
-        new_known[event_id] = KnownEvent.from_event(event, announced)
+            if merged is None or (
+                merged.id == event_id
+                and not _covered(merged, {**known_elsewhere, **known})
+            ):
+                announce.append(merged or event)
+            announced = True  # members are announced by their leading event
+        new_known[event_id] = KnownEvent.from_event(
+            event, announced, partners(event_id, groups)
+        )
 
     changes = [Change(NEW, event_attributes(event)) for event in announce]
     changes.extend(
@@ -125,9 +171,20 @@ def diff(
             {"id": event_id, "title": k.title, "type": k.type or None},
         )
         for event_id, k in sorted(gone.items())
-        if k.announced
+        if k.announced and not any(i in present for i in k.merged_with)
     )
     return changes, new_known
+
+
+def _covered(merged: StreckenwachtEvent, known: Mapping[str, KnownEvent]) -> bool:
+    """True if a member was announced already, at least as severe as the lead."""
+    closure = merged.event_type is EventType.CLOSURE
+    return any(
+        (k := known.get(member)) is not None
+        and k.announced
+        and (not closure or k.type == EventType.CLOSURE.value)
+        for member in merged.merged_ids
+    )
 
 
 def _continued_jam(

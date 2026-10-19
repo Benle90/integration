@@ -150,6 +150,7 @@ def event_attributes(event: StreckenwachtEvent) -> dict[str, Any]:
         "delay_minutes": event.delay_minutes,
         "latitude": event.latitude,
         "longitude": event.longitude,
+        "also_reported_by": [source.value for source in event.merged_sources],
     }
 
 

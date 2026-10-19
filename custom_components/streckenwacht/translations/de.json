@@ -6,11 +6,13 @@
         "description": "Die Datenquellen wählst du pro Beobachtungsbereich. Bereiche fügst du anschließend über „Beobachtungsbereich hinzufügen“ hinzu.",
         "data": {
           "scan_interval": "Abrufintervall",
-          "include_inrix": "Staumeldungen einbeziehen (INRIX)"
+          "include_inrix": "Staumeldungen einbeziehen (INRIX)",
+          "merge_duplicates": "Doppelte Meldungen zusammenfassen"
         },
         "data_description": {
           "scan_interval": "Wie oft die Quellen abgefragt werden. Sie ändern sich nicht im Minutentakt.",
-          "include_inrix": "Staudaten der Autobahn-API stammen vom kommerziellen Anbieter INRIX."
+          "include_inrix": "Staudaten der Autobahn-API stammen vom kommerziellen Anbieter INRIX.",
+          "merge_duplicates": "Dieselbe Baustelle aus mehreren Quellen (z. B. Landesmeldestelle und Stadt) erscheint nur einmal."
         }
       }
     },
@@ -24,11 +26,13 @@
         "title": "Streckenwacht",
         "data": {
           "scan_interval": "Abrufintervall",
-          "include_inrix": "Staumeldungen einbeziehen (INRIX)"
+          "include_inrix": "Staumeldungen einbeziehen (INRIX)",
+          "merge_duplicates": "Doppelte Meldungen zusammenfassen"
         },
         "data_description": {
           "scan_interval": "Wie oft die Quellen abgefragt werden. Sie ändern sich nicht im Minutentakt.",
-          "include_inrix": "Staudaten der Autobahn-API stammen vom kommerziellen Anbieter INRIX."
+          "include_inrix": "Staudaten der Autobahn-API stammen vom kommerziellen Anbieter INRIX.",
+          "merge_duplicates": "Dieselbe Baustelle aus mehreren Quellen (z. B. Landesmeldestelle und Stadt) erscheint nur einmal."
         }
       }
     }

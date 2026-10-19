@@ -28,6 +28,7 @@ from .const import (
     CONF_INCLUDE_INRIX,
     CONF_JAM_THRESHOLD,
     CONF_LOCATION,
+    CONF_MERGE_DUPLICATES,
     CONF_RADIUS,
     CONF_ROADS,
     CONF_SCAN_INTERVAL,
@@ -35,6 +36,7 @@ from .const import (
     CONF_TYPES,
     DEFAULT_INCLUDE_INRIX,
     DEFAULT_JAM_THRESHOLD,
+    DEFAULT_MERGE_DUPLICATES,
     DEFAULT_RADIUS,
     DEFAULT_SCAN_INTERVAL,
     DOMAIN,
@@ -66,6 +68,9 @@ def _options_schema(defaults: dict[str, Any]) -> vol.Schema:
             vol.Required(
                 CONF_INCLUDE_INRIX, default=defaults[CONF_INCLUDE_INRIX]
             ): selector.BooleanSelector(),
+            vol.Required(
+                CONF_MERGE_DUPLICATES, default=defaults[CONF_MERGE_DUPLICATES]
+            ): selector.BooleanSelector(),
         }
     )
 
@@ -74,6 +79,7 @@ def _clean_options(user_input: dict[str, Any]) -> dict[str, Any]:
     return {
         CONF_SCAN_INTERVAL: int(user_input[CONF_SCAN_INTERVAL]),
         CONF_INCLUDE_INRIX: bool(user_input[CONF_INCLUDE_INRIX]),
+        CONF_MERGE_DUPLICATES: bool(user_input[CONF_MERGE_DUPLICATES]),
     }
 
 
@@ -95,6 +101,7 @@ class StreckenwachtConfigFlow(ConfigFlow, domain=DOMAIN):
         defaults = {
             CONF_SCAN_INTERVAL: DEFAULT_SCAN_INTERVAL,
             CONF_INCLUDE_INRIX: DEFAULT_INCLUDE_INRIX,
+            CONF_MERGE_DUPLICATES: DEFAULT_MERGE_DUPLICATES,
         }
         return self.async_show_form(
             step_id="user", data_schema=_options_schema(defaults)
@@ -129,6 +136,9 @@ class StreckenwachtOptionsFlow(OptionsFlow):
         defaults = {
             CONF_SCAN_INTERVAL: current.get(CONF_SCAN_INTERVAL, DEFAULT_SCAN_INTERVAL),
             CONF_INCLUDE_INRIX: current.get(CONF_INCLUDE_INRIX, DEFAULT_INCLUDE_INRIX),
+            CONF_MERGE_DUPLICATES: current.get(
+                CONF_MERGE_DUPLICATES, DEFAULT_MERGE_DUPLICATES
+            ),
         }
         return self.async_show_form(
             step_id="init", data_schema=_options_schema(defaults)

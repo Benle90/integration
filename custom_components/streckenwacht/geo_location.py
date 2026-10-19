@@ -8,7 +8,6 @@ registry (like other feed integrations), so nothing piles up over time.
 from __future__ import annotations
 
 from datetime import datetime, timedelta
-from typing import Any
 
 from homeassistant.components.geo_location import GeolocationEvent
 from homeassistant.const import UnitOfLength
@@ -74,12 +73,8 @@ class MarkerManager:
 
     @callback
     def async_update(self) -> None:
-        by_area: dict[str, list[Any]] = {}
-        for coordinator in self._entry.runtime_data.coordinators.values():
-            if coordinator.data is None:
-                continue
-            for area_id, events in coordinator.data.by_area.items():
-                by_area.setdefault(area_id, []).extend(events)
+        runtime = self._entry.runtime_data
+        by_area = {area_id: runtime.area_events(area_id) for area_id in self._areas}
         wanted = {
             item.event.id: item
             for item in map_events(by_area, self._areas, dt_util.utcnow())

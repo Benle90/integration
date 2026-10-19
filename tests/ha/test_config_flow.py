@@ -21,6 +21,7 @@ from custom_components.streckenwacht.const import (
     CONF_INCLUDE_INRIX,
     CONF_JAM_THRESHOLD,
     CONF_LOCATION,
+    CONF_MERGE_DUPLICATES,
     CONF_RADIUS,
     CONF_ROADS,
     CONF_SCAN_INTERVAL,
@@ -72,14 +73,22 @@ async def test_user_flow(hass: HomeAssistant) -> None:
         DOMAIN, context={"source": SOURCE_USER}
     )
     assert result["type"] is FlowResultType.FORM
-    assert set(result["data_schema"].schema) == {CONF_SCAN_INTERVAL, CONF_INCLUDE_INRIX}
+    assert set(result["data_schema"].schema) == {
+        CONF_SCAN_INTERVAL,
+        CONF_INCLUDE_INRIX,
+        CONF_MERGE_DUPLICATES,
+    }
 
     result = await hass.config_entries.flow.async_configure(
         result["flow_id"], {CONF_SCAN_INTERVAL: 20.0, CONF_INCLUDE_INRIX: False}
     )
     assert result["type"] is FlowResultType.CREATE_ENTRY
     assert result["title"] == "Streckenwacht"
-    assert result["options"] == {CONF_SCAN_INTERVAL: 20, CONF_INCLUDE_INRIX: False}
+    assert result["options"] == {
+        CONF_SCAN_INTERVAL: 20,
+        CONF_INCLUDE_INRIX: False,
+        CONF_MERGE_DUPLICATES: True,  # default
+    }
 
 
 async def test_single_instance(hass: HomeAssistant) -> None:
@@ -98,10 +107,19 @@ async def test_options_flow(hass: HomeAssistant) -> None:
     assert result["type"] is FlowResultType.FORM
 
     result = await hass.config_entries.options.async_configure(
-        result["flow_id"], {CONF_SCAN_INTERVAL: 30, CONF_INCLUDE_INRIX: False}
+        result["flow_id"],
+        {
+            CONF_SCAN_INTERVAL: 30,
+            CONF_INCLUDE_INRIX: False,
+            CONF_MERGE_DUPLICATES: False,
+        },
     )
     assert result["type"] is FlowResultType.CREATE_ENTRY
-    assert entry.options == {CONF_SCAN_INTERVAL: 30, CONF_INCLUDE_INRIX: False}
+    assert entry.options == {
+        CONF_SCAN_INTERVAL: 30,
+        CONF_INCLUDE_INRIX: False,
+        CONF_MERGE_DUPLICATES: False,
+    }
 
 
 # --- Observation areas -------------------------------------------------------

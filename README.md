@@ -58,6 +58,10 @@ Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein
 
 Alle Entitäten tragen die jeweilige Namensnennung im Attribut `attribution`.
 
+### Doppelte Meldungen
+
+Manche Baustellen melden mehrere Quellen – in Stuttgart etwa die Landesmeldestelle die Sperrung und die Stadt die Bauarbeiten dahinter. Solche Meldungen fasst Streckenwacht zu einer zusammen: gleiche Straße, höchstens 300 m auseinander, passender Zeitraum, nur Baustellen und Sperrungen. Die Sperrung führt; die anderen Quellen stehen in der Beschreibung, in `also_reported_by` und in der Namensnennung. Benachrichtigt wird einmal. Abschalten lässt sich das unter *Konfigurieren*.
+
 ## Was Streckenwacht nicht kann
 
 Die Quellen sind nicht vollständig:
@@ -108,6 +112,7 @@ Beim Hinzufügen fragt Streckenwacht nur nach Abrufintervall und Staumeldungen. 
 |---|---|---|
 | Abrufintervall | 15 min | 10–60 Minuten |
 | Staumeldungen einbeziehen (INRIX) | an | Staus und Reisezeitverlust aus der Autobahn-API |
+| Doppelte Meldungen zusammenfassen | an | Dieselbe Baustelle aus mehreren Quellen erscheint nur einmal (siehe unten) |
 
 <img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/optionen.png" alt="Optionen: Abrufintervall, Staumeldungen" width="400">
 
@@ -158,7 +163,7 @@ Beispiel für den Bereich „Arbeitsweg“ (Gerät *Streckenwacht Arbeitsweg*). 
 
 Alle Entitäten haben das Attribut `unavailable_sources`: Ist eine Quelle gerade nicht erreichbar, steht sie dort – die angezeigten Daten sind dann der letzte bekannte Stand.
 
-Ein `new`-Event enthält `id`, `title`, `type`, `source`, `road`, `direction`, `start`, `end`, `delay_minutes`, `latitude`, `longitude`; ein `ended`-Event `id`, `title`, `type` und `source`. Nach einem Neustart oder einer Bereichsänderung werden bekannte Meldungen nicht erneut als neu gemeldet. Staus werden erst ab der Stau-Schwelle des Bereichs als neu gemeldet (und nur dann auch als beendet); vergibt die Verkehrslage für einen Stau eine neue Kennung, wird das nicht als neuer Stau gemeldet.
+Ein `new`-Event enthält `id`, `title`, `type`, `source`, `road`, `direction`, `start`, `end`, `delay_minutes`, `latitude`, `longitude`, `also_reported_by`; ein `ended`-Event `id`, `title`, `type` und `source`. Nach einem Neustart oder einer Bereichsänderung werden bekannte Meldungen nicht erneut als neu gemeldet. Staus werden erst ab der Stau-Schwelle des Bereichs als neu gemeldet (und nur dann auch als beendet); vergibt die Verkehrslage für einen Stau eine neue Kennung, wird das nicht als neuer Stau gemeldet.
 
 ## Was du damit bauen kannst
 

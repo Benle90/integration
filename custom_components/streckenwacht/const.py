@@ -23,11 +23,13 @@ REQUEST_TIMEOUT: Final = 30  # seconds
 CONF_SOURCES: Final = "sources"  # entry option up to 0.2.0, migrated to the areas
 CONF_SCAN_INTERVAL: Final = "scan_interval"  # minutes
 CONF_INCLUDE_INRIX: Final = "include_inrix"
+CONF_MERGE_DUPLICATES: Final = "merge_duplicates"
 
 DEFAULT_SCAN_INTERVAL: Final = 15
 MIN_SCAN_INTERVAL: Final = 10
 MAX_SCAN_INTERVAL: Final = 60
 DEFAULT_INCLUDE_INRIX: Final = True
+DEFAULT_MERGE_DUPLICATES: Final = True
 
 # Observation area subentries
 SUBENTRY_AREA: Final = "area"

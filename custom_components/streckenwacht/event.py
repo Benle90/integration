@@ -16,11 +16,13 @@ from .const import (
     CONF_DIRECTIONS,
     CONF_INCLUDE_INRIX,
     CONF_JAM_THRESHOLD,
+    CONF_MERGE_DUPLICATES,
     CONF_RADIUS,
     CONF_ROADS,
     CONF_TYPES,
     DEFAULT_INCLUDE_INRIX,
     DEFAULT_JAM_THRESHOLD,
+    DEFAULT_MERGE_DUPLICATES,
     Source,
 )
 from .coordinator import area_subentries
@@ -66,6 +68,7 @@ def fingerprint(entry: StreckenwachtConfigEntry, subentry: ConfigSubentry) -> st
             ",".join(sorted(data.get(CONF_TYPES) or ())),
             entry.options.get(CONF_INCLUDE_INRIX, DEFAULT_INCLUDE_INRIX),
             data.get(CONF_JAM_THRESHOLD, DEFAULT_JAM_THRESHOLD),
+            entry.options.get(CONF_MERGE_DUPLICATES, DEFAULT_MERGE_DUPLICATES),
         )
     )
 
@@ -117,6 +120,20 @@ class AreaChangeEvent(StreckenwachtEntity, EventEntity):
     @callback
     def _process(self) -> None:
         changed = False
+        # Duplicates across sources (dedup.py): announce each group once.
+        groups = {
+            member: event
+            for event in self.area_events
+            if event.merged_ids
+            for member in (event.id, *event.merged_ids)
+        }
+        present = {
+            event.id
+            for coordinator in self._coordinators.values()
+            if coordinator.data is not None
+            for event in coordinator.data.by_area.get(self._subentry_id, ())
+        }
+        known_all = {i: k for known in self._known.values() for i, k in known.items()}
         for source, coordinator in self._coordinators.items():
             if coordinator.data is None:
                 continue  # never loaded: keep what we knew
@@ -127,10 +144,12 @@ class AreaChangeEvent(StreckenwachtEntity, EventEntity):
             known = self._known.get(source)
             if known is None:
                 # First data of this source for this area: learn silently.
-                self._known[source] = learn(current, self._jam_threshold)
+                self._known[source] = learn(current, self._jam_threshold, groups)
                 changed = True
                 continue
-            changes, new_known = diff(known, current, self._jam_threshold)
+            changes, new_known = diff(
+                known, current, self._jam_threshold, groups, known_all, present
+            )
             for change in changes:
                 attributes = change.attributes
                 if change.kind == ENDED:

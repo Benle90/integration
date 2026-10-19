@@ -60,6 +60,10 @@ The integration's UI is available in German and English and follows your Home As
 
 Every entity carries the required attribution in its `attribution` attribute.
 
+### Duplicate reports
+
+Some roadworks are reported by several sources – in Stuttgart, for example, the Landesmeldestelle reports the closure and the city the works behind it. Streckenwacht merges such reports into one: same road, at most 300 m apart, matching time window, roadworks and closures only. The closure leads; the other sources are listed in the description, in `also_reported_by` and in the attribution. You are notified once. It can be switched off under *Configure*.
+
 ## What Streckenwacht cannot do
 
 The sources are not complete:
@@ -110,6 +114,7 @@ When adding the integration, Streckenwacht only asks for the update interval and
 |---|---|---|
 | Update interval | 15 min | 10–60 minutes |
 | Include traffic jams (INRIX) | on | Traffic jams and travel time loss from the Autobahn API |
+| Merge duplicate reports | on | The same roadworks from several sources are shown once (see below) |
 
 <img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/optionen.png" alt="Options: update interval, traffic jams" width="400">
 
@@ -160,7 +165,7 @@ Example for an area named "Commute" (device *Streckenwacht Commute*). Entity IDs
 
 All entities have the attribute `unavailable_sources`: if a source cannot be reached right now, it is listed there – the data shown is then the last known state.
 
-A `new` event contains `id`, `title`, `type`, `source`, `road`, `direction`, `start`, `end`, `delay_minutes`, `latitude`, `longitude`; an `ended` event `id`, `title`, `type` and `source`. After a restart or a change of the area, known reports are not announced as new again. Traffic jams are only announced as new from the area's jam threshold on (and only then as ended); when the traffic data assigns a new identifier to a jam, it is not announced as a new jam.
+A `new` event contains `id`, `title`, `type`, `source`, `road`, `direction`, `start`, `end`, `delay_minutes`, `latitude`, `longitude`, `also_reported_by`; an `ended` event `id`, `title`, `type` and `source`. After a restart or a change of the area, known reports are not announced as new again. Traffic jams are only announced as new from the area's jam threshold on (and only then as ended); when the traffic data assigns a new identifier to a jam, it is not announced as a new jam.
 
 ## What you can build with it
 

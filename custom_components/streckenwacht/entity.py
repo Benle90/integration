@@ -69,12 +69,8 @@ class StreckenwachtEntity(Entity):
 
     @property
     def area_events(self) -> list[StreckenwachtEvent]:
-        """All known events of this area, from every source."""
-        events: list[StreckenwachtEvent] = []
-        for coordinator in self._coordinators.values():
-            if coordinator.data is not None:
-                events.extend(coordinator.data.by_area.get(self._subentry_id, ()))
-        return events
+        """All known events of this area, from every source (duplicates merged)."""
+        return self._entry.runtime_data.area_events(self._subentry_id)
 
     @property
     def unavailable_sources(self) -> list[str]:

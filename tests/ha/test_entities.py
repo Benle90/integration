@@ -23,6 +23,7 @@ from pytest_homeassistant_custom_component.common import (
 from custom_components.streckenwacht.const import (
     CONF_AREA_SOURCES,
     CONF_INCLUDE_INRIX,
+    CONF_MERGE_DUPLICATES,
     CONF_RADIUS,
     CONF_ROADS,
     CONF_SCAN_INTERVAL,
@@ -104,6 +105,37 @@ async def setup(hass: HomeAssistant, entry: MockConfigEntry) -> None:
     entry.add_to_hass(hass)
     assert await hass.config_entries.async_setup(entry.entry_id)
     await hass.async_block_till_done()
+
+
+MOBIDATA_FETCH = (
+    "custom_components.streckenwacht.providers.mobidata_bw."
+    "MobiDataBWProvider.async_fetch"
+)
+SAME_WORKS = replace(
+    ROADWORKS,
+    id="mobidata_bw:1",
+    source=Source.MOBIDATA_BW,
+    title="A8 Stuttgart - Karlsruhe: Baustelle",
+)
+
+
+@pytest.mark.parametrize(("merge", "count", "roadworks"), [(True, 3, 1), (False, 4, 2)])
+async def test_same_works_from_two_sources(
+    hass: HomeAssistant, fetch: AsyncMock, merge: bool, count: int, roadworks: int
+) -> None:
+    entry = make_entry(
+        {CONF_AREA_SOURCES: ["autobahn", "mobidata_bw"]},
+        **{CONF_MERGE_DUPLICATES: merge},
+    )
+    with patch(MOBIDATA_FETCH, return_value=[SAME_WORKS]):
+        await setup(hass, entry)
+    events = hass.states.get(f"sensor.{PREFIX}_events")
+    assert events.state == str(count)
+    assert events.attributes["roadworks"] == roadworks
+    if merge:
+        (works,) = (e for e in events.attributes["events"] if e["type"] == "roadworks")
+        assert works["id"] == "mobidata_bw:1"  # statewide source before motorway
+        assert works["also_reported_by"] == ["autobahn"]
 
 
 async def test_entities_and_device(
