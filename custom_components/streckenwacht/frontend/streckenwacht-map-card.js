@@ -383,18 +383,25 @@ class StreckenwachtMapCard extends HTMLElement {
       for (const circle of circles.slice(1)) bounds.extend(circle.getBounds());
       this._circleBounds = bounds;
     }
-    if (!this._userMoved) this._fit();
 
+    // The legend first: fitting leaves room for it.
     const types = [...new Set(shown.map((f) => f.properties.type))];
     this._legend.innerHTML = types
       .map((type) => `<span class="chip"><i style="background:${COLORS[type]}"></i>${t[type] || type}</span>`)
       .join("");
+    if (!this._userMoved) this._fit();
   }
 
   _fit() {
     if (!this._circleBounds) return;
     this._fitting = true;
-    this._map.fitBounds(this._circleBounds, { padding: [10, 10], animate: false });
+    // Keep the circles above the legend in the bottom left corner.
+    const legend = this._legend.offsetHeight ? this._legend.offsetHeight + 18 : 10;
+    this._map.fitBounds(this._circleBounds, {
+      paddingTopLeft: [10, 10],
+      paddingBottomRight: [10, legend],
+      animate: false,
+    });
     this._fitting = false;
   }
 
