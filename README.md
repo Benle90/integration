@@ -10,7 +10,7 @@
 
 🇩🇪 **Deutsch** · 🇬🇧 [English](https://github.com/streckenwacht/integration/blob/main/README.en.md)
 
-> ℹ️ **Junges Projekt.** Version 0.6 – die Grundfunktionen laufen stabil, neue Datenquellen und Funktionen sind frisch dazugekommen. Rückmeldungen sind sehr willkommen – siehe [Fehler melden](#fehler-melden).
+> ℹ️ **Junges Projekt.** Version 0.7 – die Grundfunktionen laufen stabil, neue Datenquellen und Funktionen sind frisch dazugekommen. Rückmeldungen sind sehr willkommen – siehe [Fehler melden](#fehler-melden).
 
 Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein täglicher Arbeitsweg. Baustellen, Sperrungen, Staus und Unfälle, direkt in deinem Home Assistant: als Kalender, Sensoren und Events für Automationen.
 
@@ -323,15 +323,17 @@ entities:
 
 ### Streckenwacht-Kartenkarte
 
-Streckenwacht bringt eine eigene Dashboard-Karte mit: Sie zeigt die Meldungen eines Bereichs mit ihrer echten Geometrie – Baustellen und Sperrungen als Linien oder Flächen entlang der Straße, farbig je Art (Sperrung rot, Baustelle orange, Stau dunkelrot, Unfall violett, Warnung gelb). Was in den nächsten 14 Tagen beginnt, erscheint blass und gestrichelt. Ein Tipp öffnet Titel, Zeitraum, Beschreibung und Quelle(n); der Ausschnitt folgt dem Kreis des Bereichs.
+Streckenwacht bringt eine eigene Dashboard-Karte mit: Sie zeigt die Meldungen eines oder mehrerer Bereiche mit ihrer echten Geometrie – Baustellen und Sperrungen als Linien oder Flächen entlang der Straße, farbig je Art (Sperrung rot, Baustelle orange, Stau dunkelrot, Unfall violett, Warnung gelb). Was in den nächsten 14 Tagen beginnt, erscheint blass und gestrichelt. Ein Tipp öffnet Titel, Zeitraum, Beschreibung und Quelle(n); der Ausschnitt folgt den Kreisen der Bereiche. Liegt eine Meldung in mehreren Bereichen, erscheint sie einmal.
 
 <img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/streckenwacht_karte.png" alt="Streckenwacht-Kartenkarte: Stau als Linie auf der A81 mit Popup, Baustellen bei Leonberg" width="726">
 
-Die Karte ist nach dem Update einfach da: *Karte hinzufügen* → „Streckenwacht“, dann im Editor eine Entität des Bereichs wählen. Oder per YAML:
+Die Karte ist nach dem Update einfach da: *Karte hinzufügen* → „Streckenwacht“, dann im Editor einen oder mehrere Bereiche wählen (je eine Entität des Bereichs). Oder per YAML:
 
 ```yaml
 type: custom:streckenwacht-map-card
-entity: sensor.streckenwacht_arbeitsweg_events  # eine beliebige Entität des Bereichs
+entities:                    # je eine beliebige Entität pro Bereich
+  - sensor.streckenwacht_arbeitsweg_events
+  - sensor.streckenwacht_zuhause_events
 title: Arbeitsweg            # optional
 height: 400                  # optional, Pixel
 show_planned: true           # optional, geplante Meldungen zeigen

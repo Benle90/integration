@@ -1,10 +1,12 @@
 /*
- * Streckenwacht map card: the events of one observation area with their real
- * geometry (lines and areas), coloured by type, on Home Assistant's own map
- * tile proxy (the browser only talks to Home Assistant).
+ * Streckenwacht map card: the events of one or more observation areas with
+ * their real geometry (lines and areas), coloured by type, on Home Assistant's
+ * own map tile proxy (the browser only talks to Home Assistant).
  *
  * type: custom:streckenwacht-map-card
- * entity: sensor.streckenwacht_<area>_events   # any entity of the area
+ * entities:                                     # any entity of each area
+ *   - sensor.streckenwacht_<area>_events
+ * (entity: <one entity> still works, from 0.6)
  * title: optional
  * height: 400                                   # pixels
  * show_planned: true                            # events starting within 14 days
@@ -39,7 +41,7 @@ const TEXT = {
     noTiles:
       "Kartenhintergrund nicht verfügbar – er braucht Home Assistant 2026.9 oder neuer.",
     noArea: "Kein Streckenwacht-Bereich: bitte eine Entität eines Beobachtungsbereichs wählen.",
-    entity: "Bereich (eine Entität des Beobachtungsbereichs)",
+    entities: "Bereiche (je eine Entität eines Beobachtungsbereichs)",
     title: "Titel",
     height: "Höhe",
     show_planned: "Geplante Meldungen zeigen (nächste 14 Tage)",
@@ -57,7 +59,7 @@ const TEXT = {
     planned: "planned",
     noTiles: "Map background unavailable – it needs Home Assistant 2026.9 or later.",
     noArea: "Not a Streckenwacht area: please choose an entity of an observation area.",
-    entity: "Area (an entity of the observation area)",
+    entities: "Areas (an entity of each observation area)",
     title: "Title",
     height: "Height",
     show_planned: "Show planned reports (next 14 days)",
@@ -97,9 +99,8 @@ class StreckenwachtMapCard extends HTMLElement {
     return {
       schema: [
         {
-          name: "entity",
-          required: true,
-          selector: { entity: { filter: { integration: "streckenwacht" } } },
+          name: "entities",
+          selector: { entity: { multiple: true, filter: { integration: "streckenwacht" } } },
         },
         { name: "title", selector: { text: {} } },
         {
@@ -120,15 +121,30 @@ class StreckenwachtMapCard extends HTMLElement {
       (id) => hass.entities[id]?.platform === "streckenwacht" && id.startsWith("sensor."),
     );
     const events = ids.find((id) => hass.entities[id]?.translation_key === "events");
-    return { entity: events || ids[0] || "", height: 400, show_planned: true };
+    const first = events || ids[0];
+    return { entities: first ? [first] : [], height: 400, show_planned: true };
   }
 
   setConfig(config) {
-    if (!config.entity) {
-      throw new Error("entity is required");
+    // "entity" (one area, 0.6) and "entities" (several) may both be given.
+    const entities = [
+      ...(Array.isArray(config.entities) ? config.entities : []),
+      ...(config.entity ? [config.entity] : []),
+    ].filter((id, i, all) => id && all.indexOf(id) === i);
+    if (!entities.length) {
+      throw new Error("entities is required");
     }
+    const changed = entities.join() !== this._entities?.join();
+    this._entities = entities;
     this._config = { height: 400, show_planned: true, ...config };
-    if (this._map) this._render();
+    if (changed) {
+      this._lastUpdated = undefined;
+      this._userMoved = false; // new areas: fit them again
+    }
+    if (this._map) {
+      this._render();
+      if (changed) this._refresh();
+    }
   }
 
   set hass(hass) {
@@ -138,9 +154,9 @@ class StreckenwachtMapCard extends HTMLElement {
       return;
     }
     this._applyTheme();
-    const state = hass.states[this._config.entity];
-    if (state && state.last_updated !== this._lastUpdated) {
-      this._lastUpdated = state.last_updated;
+    const updated = this._entities.map((id) => hass.states[id]?.last_updated).join();
+    if (updated !== this._lastUpdated) {
+      this._lastUpdated = updated;
       this._refresh();
     }
   }
@@ -282,14 +298,27 @@ class StreckenwachtMapCard extends HTMLElement {
     if (!this._map || !this._hass || this._loading) return;
     this._loading = true;
     try {
-      this._data = await this._hass.callWS({
-        type: "streckenwacht/map",
-        entity_id: this._config.entity,
-      });
-      if (this._notice.textContent === this._t.noArea) this._showNotice("");
+      const results = await Promise.allSettled(
+        this._entities.map((entity_id) =>
+          this._hass.callWS({ type: "streckenwacht/map", entity_id }),
+        ),
+      );
+      const loaded = results.filter((r) => r.status === "fulfilled").map((r) => r.value);
+      // An event in two areas is drawn once.
+      const seen = new Set();
+      const features = [];
+      for (const data of loaded) {
+        for (const feature of data.features) {
+          if (seen.has(feature.properties.id)) continue;
+          seen.add(feature.properties.id);
+          features.push(feature);
+        }
+      }
+      this._data = { areas: loaded.map((d) => d.area), features };
+      const failed = loaded.length < results.length;
+      if (failed) this._showNotice(this._t.noArea);
+      else if (this._notice.textContent === this._t.noArea) this._showNotice("");
       this._draw();
-    } catch (_err) {
-      this._showNotice(this._t.noArea);
     } finally {
       this._loading = false;
     }
@@ -298,20 +327,22 @@ class StreckenwachtMapCard extends HTMLElement {
   _draw() {
     const L = this._L;
     const t = this._t;
-    const { area, features } = this._data;
+    const { areas, features } = this._data;
     this._layer?.remove();
     const group = L.featureGroup();
     // SVG attributes take no CSS variables: read the theme colour.
     const primary =
       getComputedStyle(this).getPropertyValue("--primary-color").trim() || "#03a9f4";
-    const circle = L.circle([area.latitude, area.longitude], {
-      radius: area.radius_km * 1000,
-      color: primary,
-      weight: 1.5,
-      dashArray: "6 6",
-      fill: false,
-      interactive: false,
-    }).addTo(group);
+    const circles = areas.map((area) =>
+      L.circle([area.latitude, area.longitude], {
+        radius: area.radius_km * 1000,
+        color: primary,
+        weight: 1.5,
+        dashArray: "6 6",
+        fill: false,
+        interactive: false,
+      }).addTo(group),
+    );
 
     const shown = features.filter((f) => f.properties.active || this._config.show_planned);
     for (const feature of shown) {
@@ -346,7 +377,12 @@ class StreckenwachtMapCard extends HTMLElement {
     }
     group.addTo(this._map);
     this._layer = group;
-    this._circleBounds = circle.getBounds();
+    // Circles know their bounds only once they are on the map.
+    if (circles.length) {
+      const bounds = circles[0].getBounds();
+      for (const circle of circles.slice(1)) bounds.extend(circle.getBounds());
+      this._circleBounds = bounds;
+    }
     if (!this._userMoved) this._fit();
 
     const types = [...new Set(shown.map((f) => f.properties.type))];

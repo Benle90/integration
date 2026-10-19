@@ -10,7 +10,7 @@
 
 🇩🇪 [Deutsch](https://github.com/streckenwacht/integration/blob/main/README.md) · 🇬🇧 **English**
 
-> ℹ️ **Young project.** Version 0.6 – the core runs stably, new data sources and features were just added. Feedback is very welcome – see [Reporting issues](#reporting-issues).
+> ℹ️ **Young project.** Version 0.7 – the core runs stably, new data sources and features were just added. Feedback is very welcome – see [Reporting issues](#reporting-issues).
 
 Streckenwacht ("route watch") keeps an eye on your route – motorway, federal road or your daily commute. Roadworks, closures, traffic jams and accidents in Germany, right in your Home Assistant: as a calendar, sensors and events for automations.
 
@@ -325,15 +325,17 @@ entities:
 
 ### Streckenwacht map card
 
-Streckenwacht ships its own dashboard card: it shows the reports of one area with their real geometry – roadworks and closures as lines or areas along the road, coloured by type (closure red, roadworks orange, traffic jam dark red, accident purple, warning yellow). Reports starting within the next 14 days are drawn pale and dashed. Tapping one shows title, period, description and source(s); the map fits the area's circle.
+Streckenwacht ships its own dashboard card: it shows the reports of one or more areas with their real geometry – roadworks and closures as lines or areas along the road, coloured by type (closure red, roadworks orange, traffic jam dark red, accident purple, warning yellow). Reports starting within the next 14 days are drawn pale and dashed. Tapping one shows title, period, description and source(s); the map fits the areas' circles. A report lying in several areas is shown once.
 
 <img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/streckenwacht_karte.png" alt="Streckenwacht map card: traffic jam as a line on the A81 with popup, roadworks near Leonberg" width="726">
 
-After the update the card is simply there: *Add card* → "Streckenwacht", then pick an entity of the area in the editor. Or in YAML:
+After the update the card is simply there: *Add card* → "Streckenwacht", then pick one or more areas in the editor (an entity of each area). Or in YAML:
 
 ```yaml
 type: custom:streckenwacht-map-card
-entity: sensor.streckenwacht_commute_events  # any entity of the area
+entities:                    # any entity of each area
+  - sensor.streckenwacht_commute_events
+  - sensor.streckenwacht_home_events
 title: Commute               # optional
 height: 400                  # optional, pixels
 show_planned: true           # optional, show planned reports

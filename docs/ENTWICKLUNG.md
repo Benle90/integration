@@ -188,7 +188,8 @@ Verkehrsmeldungen der LMS BW über MobiData BW, **dl-de/by-2.0**, ~75 KB gzip, E
 - Daten über den WebSocket-Befehl `streckenwacht/map` (`websocket.py`): Bereich über eine beliebige Entität des Bereichs (Entity-Registry → `config_subentry_id`), Antwort = Kreis + `summary.map_features()` (aktive und in 14 Tagen beginnende Meldungen als GeoJSON, zusammengefasste Dubletten). Geometrien bleiben so aus Attributen und Recorder heraus. Die Karte lädt neu, wenn sich `last_updated` der gewählten Entität ändert, sonst alle 5 Minuten.
 - Kartenhintergrund über den Kachel-Proxy des Cores (`map_tiles`, seit HA 2026.9): Token per WebSocket `map_tiles/access_token`, Raster unter `/api/map_tiles/raster/{z}/{x}/{y}.png?token=…`, Token-Erneuerung alle 20 Minuten (Core rotiert alle 30). **Kein Rückfall auf OSM direkt** – das würde den Kartenausschnitt einem Dritten zeigen; stattdessen ein Hinweis. Dunkles Theme per CSS-Filter auf den Kacheln.
 - Ausschnitt: halbe Zoomstufen (`zoomSnap: 0.5`); die Karte folgt dem Bereichskreis (auch nach Größenänderungen), bis der Nutzer selbst schiebt oder zoomt. Die Interaktions-Handler werden erst nach der Startansicht angemeldet, weil Leaflet auch dabei `zoomstart` feuert.
-- Editor über `getConfigForm()` (Entität, Titel, Höhe, geplante zeigen). Lokal getestet mit einer Testseite und simuliertem `hass` (Playwright), nicht in CI.
+- Mehrere Bereiche (seit 0.7.0): `entities:` (Liste), ein altes `entity:` wird dazugenommen. Je Bereich ein `streckenwacht/map`-Aufruf (parallel, `Promise.allSettled`: ein fehlerhafter Bereich blendet nur einen Hinweis ein), Meldungen über ihre `id` nur einmal gezeichnet, Ausschnitt über alle Kreise. `L.circle().getBounds()` geht erst, wenn der Kreis auf der Karte liegt.
+- Editor über `getConfigForm()` (Bereiche als Mehrfachauswahl, Titel, Höhe, geplante zeigen). Lokal getestet mit einer Testseite und simuliertem `hass` (Playwright), nicht in CI.
 
 ## 3. Entscheidungen
 
@@ -227,6 +228,6 @@ Stand 2026-10-19. Datenquellen gelten vorerst als ausgeschöpft (Städte-Sweep u
 
 - **Strecke statt Kreis:** Korridor entlang einer Route aus Wegpunkten (Wunsch aus dem Beta-Test). Knackpunkt: Eingabe im Dialog, HA hat keinen Linien-Selektor.
 - **Autobahn-Abschnitte** („A81 zwischen AS X und AS Y“): Abschnittsnamen sind Freitext – zugunsten der Fahrtrichtungen zurückgestellt.
-- **Kartenkarte, nächste Ausbaustufen:** mehrere Bereiche in einer Karte, Gruppierung naher Meldungen, Zeitregler.
+- **Kartenkarte, nächste Ausbaustufen:** Gruppierung naher Meldungen, Zeitregler. (Mehrere Bereiche in einer Karte: erledigt in 0.7.0.)
 - **Bekanntmachen:** simon42 Community erledigt (Vorstellung, Updates zu 0.2.0 und 0.3–0.5); als Nächstes HA Community (Custom Integrations), später ggf. Awesome Home Assistant und die HACS-Default-Liste.
 - Erledigt: eigene Kartenkarte (0.6.0, siehe Abschnitt 2 „Kartenkarte“), Deduplizierung (0.6.0, siehe Entscheidungen), Langzeitstatistik (der Sensor „Reisezeitverlust“ hat `state_class: measurement`, README zeigt die Statistik-Karte), Kartenansicht per `geo_location`, weitere Datenquellen.
