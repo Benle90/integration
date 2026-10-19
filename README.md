@@ -288,6 +288,25 @@ cards:
         name: Arbeitsweg
 ```
 
+### Reisezeitverlust auf lange Sicht
+
+Home Assistant speichert für den Sensor „Reisezeitverlust“ automatisch Langzeitstatistiken. Die Statistik-Karte zeigt damit z. B. pro Woche den Durchschnitt und den schlimmsten Stau – praktisch, um zu sehen, ob eine Baustelle die Strecke dauerhaft bremst:
+
+```yaml
+type: statistics-graph
+title: Reisezeitverlust pro Woche
+entities:
+  - sensor.streckenwacht_arbeitsweg_travel_time_loss
+period: week
+days_to_show: 90
+stat_types:
+  - mean
+  - max
+chart_type: bar
+```
+
+Der Durchschnitt enthält auch die staufreien Stunden (nachts 0 Minuten) und fällt deshalb niedrig aus; aussagekräftiger ist meist das Maximum. Mit `period: month` und `days_to_show: 365` gibt es den Jahresüberblick.
+
 ### Kalender im Dashboard
 
 ```yaml

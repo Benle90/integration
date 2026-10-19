@@ -290,6 +290,25 @@ cards:
         name: Commute
 ```
 
+### Travel time loss in the long run
+
+Home Assistant automatically keeps long-term statistics for the "travel time loss" sensor. The statistics graph card can show, for example, the weekly average and the worst jam – handy to see whether roadworks slow down the route for good:
+
+```yaml
+type: statistics-graph
+title: Travel time loss per week
+entities:
+  - sensor.streckenwacht_commute_travel_time_loss
+period: week
+days_to_show: 90
+stat_types:
+  - mean
+  - max
+chart_type: bar
+```
+
+The average includes the jam-free hours (0 minutes at night) and is therefore low; the maximum usually says more. Use `period: month` and `days_to_show: 365` for a yearly overview.
+
 ### Calendar on the dashboard
 
 ```yaml

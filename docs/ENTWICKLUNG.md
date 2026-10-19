@@ -210,10 +210,11 @@ Verkehrsmeldungen der LMS BW über MobiData BW, **dl-de/by-2.0**, ~75 KB gzip, E
 
 ## 6. Backlog
 
-- **Weitere Datenquellen:** Planung und geprüfte Endpunkte in [`DATENQUELLEN.md`](DATENQUELLEN.md). Der norddeutsche WFS ist umgesetzt; weitere WFS-Quellen (Rheinland-Pfalz, Brandenburg, Sachsen-Anhalt, Städte) können auf `providers/wfs.py` aufbauen.
-- **Kartenansicht:** eigene Lovelace-Karte mit der ohnehin vorhandenen Geometrie.
-- **Strecke statt Kreis:** Korridor entlang einer Route (aus dem Beta-Test).
+Stand 2026-10-19. Datenquellen gelten vorerst als ausgeschöpft (Städte-Sweep und TomTom-Prüfung in [`DATENQUELLEN.md`](DATENQUELLEN.md)); gelegentlich erneut prüfen: Rhein-Main/ivm (Timeout), Herne (Serverfehler), Heidelberg (404).
+
+- **Deduplizierung** zwischen Quellen, nur bei gleicher Straße (siehe Entscheidungen). Seit LMS BW, MobiData BW und Stadt Stuttgart dieselben Sperrungen melden, dringlicher.
+- **Strecke statt Kreis:** Korridor entlang einer Route aus Wegpunkten (Wunsch aus dem Beta-Test). Knackpunkt: Eingabe im Dialog, HA hat keinen Linien-Selektor.
 - **Autobahn-Abschnitte** („A81 zwischen AS X und AS Y“): Abschnittsnamen sind Freitext – zugunsten der Fahrtrichtungen zurückgestellt.
-- **Deduplizierung** nur bei gleicher Straße (siehe Entscheidungen).
-- **Langzeitstatistik**, z. B. Reisezeitverlust pro Monat.
-- **Bekanntmachen:** erst simon42 Community, danach HA Community (Custom Integrations); später ggf. Awesome Home Assistant und die HACS-Default-Liste.
+- **Eigene Lovelace-Karte** mit den Geometrien (Linien und Flächen in Farben je Art, Popup, Kreis des Bereichs; von der Integration mitgeliefert, Geometrien über eine eigene Schnittstelle): geplant als nächstes größeres Stück (2026-10-19). Vorher: Kartenpunkte per `geo_location` mit Symbol je Art statt Namenskürzel und ein Kartenbild für die README.
+- **Bekanntmachen:** simon42 Community erledigt (Vorstellung, Updates zu 0.2.0 und 0.3–0.5); als Nächstes HA Community (Custom Integrations), später ggf. Awesome Home Assistant und die HACS-Default-Liste.
+- Erledigt: Langzeitstatistik (der Sensor „Reisezeitverlust“ hat `state_class: measurement`, README zeigt die Statistik-Karte), Kartenansicht per `geo_location`, weitere Datenquellen.
