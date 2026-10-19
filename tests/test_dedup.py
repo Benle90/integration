@@ -128,6 +128,38 @@ def test_one_event_per_source_in_a_group() -> None:
     assert group.merged_ids == (CITY.id,)  # the closer one
 
 
+def test_tie_prefers_the_same_kind() -> None:
+    """Motorway works and a short closure at the same spot: works pair with works."""
+    works = event(
+        "autobahn:works",
+        Source.AUTOBAHN,
+        "A8",
+        road="A8",
+        start=day(1, 1),
+        end=day(12, 1),
+    )
+    closure = event(
+        "autobahn:closure",
+        Source.AUTOBAHN,
+        "A8",
+        EventType.CLOSURE,
+        road="A8",
+        start=day(10, 1),
+        end=day(10, 3),
+    )
+    statewide = event(
+        "mobidata_bw:1",
+        Source.MOBIDATA_BW,
+        "A8: Baustelle",
+        road="A8",
+        start=day(1, 1),
+        end=day(12, 1),
+    )
+    merged = {e.id: e for e in merge_duplicates([closure, works, statewide])}
+    assert set(merged) == {"autobahn:closure", "mobidata_bw:1"}
+    assert merged["mobidata_bw:1"].merged_ids == ("autobahn:works",)
+
+
 def test_road_keys() -> None:
     assert road_keys(LMS) == {"amstetterstr"}
     lms_b10 = event("l", Source.LMS_BW, "B10 Stuttgart Richtung Mühlacker: Sperrung")

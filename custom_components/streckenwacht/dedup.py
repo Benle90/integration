@@ -73,7 +73,9 @@ def merge_duplicates(events: list[StreckenwachtEvent]) -> list[StreckenwachtEven
         for key in keys[event.id]:
             by_key.setdefault(key, []).append(event)
 
-    pairs: list[tuple[float, str, str]] = []
+    # (distance, other kind, start gap, ids): closest first; on a tie the pair of
+    # the same kind and the closer start wins.
+    pairs: list[tuple[float, bool, float, str, str]] = []
     seen: set[tuple[str, str]] = set()
     for group in by_key.values():
         for i, a in enumerate(group):
@@ -86,12 +88,18 @@ def merge_duplicates(events: list[StreckenwachtEvent]) -> list[StreckenwachtEven
                     continue
                 distance = _min_distance_km(points[a.id], points[b.id])
                 if distance is not None and distance <= MAX_DISTANCE_KM:
-                    pairs.append((distance, *pair))
+                    gap = (
+                        abs((a.start - b.start).total_seconds())
+                        if a.start and b.start
+                        else float("inf")
+                    )
+                    kinds = a.event_type is not b.event_type
+                    pairs.append((round(distance, 3), kinds, gap, *pair))
 
     # Closest pairs first; a group never takes a second event of a source.
     group_of: dict[str, set[str]] = {}
     by_id = {e.id: e for e in planned}
-    for _, a_id, b_id in sorted(pairs):
+    for *_, a_id, b_id in sorted(pairs):
         ga = group_of.get(a_id, {a_id})
         gb = group_of.get(b_id, {b_id})
         if ga is gb:
