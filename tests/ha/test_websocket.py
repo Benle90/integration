@@ -4,10 +4,18 @@ from __future__ import annotations
 
 from unittest.mock import patch
 
+import pytest
+from freezegun.api import FrozenDateTimeFactory
 from homeassistant.core import HomeAssistant
 from homeassistant.setup import async_setup_component
 
-from .test_entities import EVENTS, FETCH, PREFIX, make_entry, setup
+from .test_entities import EVENTS, FETCH, NOW, PREFIX, make_entry, setup
+
+
+@pytest.fixture(autouse=True)
+def frozen_time(freezer: FrozenDateTimeFactory) -> FrozenDateTimeFactory:
+    freezer.move_to(NOW)  # the test events are relative to NOW
+    return freezer
 
 
 async def test_map_of_an_area(hass: HomeAssistant, hass_ws_client) -> None:
