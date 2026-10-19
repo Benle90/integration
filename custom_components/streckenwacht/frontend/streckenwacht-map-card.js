@@ -210,7 +210,8 @@ class StreckenwachtMapCard extends HTMLElement {
     try {
       const L = await loadLeaflet();
       this._L = L;
-      this._map = L.map(root.querySelector("#map"), { zoomControl: true });
+      // Half zoom steps let the area circle fill the card.
+      this._map = L.map(root.querySelector("#map"), { zoomControl: true, zoomSnap: 0.5 });
       this._map.attributionControl.setPrefix("");
       this._tiles = L.tileLayer("", {
         maxZoom: 19,
@@ -218,7 +219,16 @@ class StreckenwachtMapCard extends HTMLElement {
           '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>',
       }).addTo(this._map);
       this._map.setView([51.2, 10.4], 6);
-      this._resize = new ResizeObserver(() => this._map.invalidateSize());
+      // Until the user pans or zooms, the view follows the area circle
+      // (registered after the first view, which fires zoomstart too).
+      this._map.on("dragstart", () => (this._userMoved = true));
+      this._map.on("zoomstart", () => {
+        if (!this._fitting) this._userMoved = true;
+      });
+      this._resize = new ResizeObserver(() => {
+        this._map.invalidateSize();
+        if (!this._userMoved) this._fit();
+      });
       this._resize.observe(this._wrap);
       this._applyTheme();
       await this._refreshToken();
@@ -336,15 +346,20 @@ class StreckenwachtMapCard extends HTMLElement {
     }
     group.addTo(this._map);
     this._layer = group;
-    if (!this._fitted) {
-      this._map.fitBounds(circle.getBounds(), { padding: [10, 10] });
-      this._fitted = true;
-    }
+    this._circleBounds = circle.getBounds();
+    if (!this._userMoved) this._fit();
 
     const types = [...new Set(shown.map((f) => f.properties.type))];
     this._legend.innerHTML = types
       .map((type) => `<span class="chip"><i style="background:${COLORS[type]}"></i>${t[type] || type}</span>`)
       .join("");
+  }
+
+  _fit() {
+    if (!this._circleBounds) return;
+    this._fitting = true;
+    this._map.fitBounds(this._circleBounds, { padding: [10, 10], animate: false });
+    this._fitting = false;
   }
 
   _popup(p) {
