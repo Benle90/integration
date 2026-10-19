@@ -182,6 +182,13 @@ Verkehrsmeldungen der LMS BW über MobiData BW, **dl-de/by-2.0**, ~75 KB gzip, E
 - `validPeriod` nennt oft nur das Ende; der Beginn steht in `overallStartTime` (gilt jetzt für alle DATEX-Quellen, `providers/datex.py`). Ort als Linie `from` → `to`, sonst `locationForDisplay`.
 - Nicht genutzt: der ältere TIC3-Feed derselben Stelle (`…/incidents-bw/TIC3-Meldungen.xml`).
 
+### Kartenkarte (`frontend/streckenwacht-map-card.js`, seit 0.6.0)
+
+- Reines JavaScript ohne Build-Schritt (Custom Element mit Shadow DOM), Leaflet 1.9.4 mitgeliefert (`frontend/leaflet.js`, BSD-2-Clause, Lizenz daneben). Die Integration liefert den Ordner unter `/streckenwacht/frontend` aus und meldet die Karte per `add_extra_js_url` an (`async_setup`, nur wenn `http`/`frontend` geladen sind; `after_dependencies`). URL mit `?v=<Version>` gegen alte Browser-Caches.
+- Daten über den WebSocket-Befehl `streckenwacht/map` (`websocket.py`): Bereich über eine beliebige Entität des Bereichs (Entity-Registry → `config_subentry_id`), Antwort = Kreis + `summary.map_features()` (aktive und in 14 Tagen beginnende Meldungen als GeoJSON, zusammengefasste Dubletten). Geometrien bleiben so aus Attributen und Recorder heraus. Die Karte lädt neu, wenn sich `last_updated` der gewählten Entität ändert, sonst alle 5 Minuten.
+- Kartenhintergrund über den Kachel-Proxy des Cores (`map_tiles`, seit HA 2026.9): Token per WebSocket `map_tiles/access_token`, Raster unter `/api/map_tiles/raster/{z}/{x}/{y}.png?token=…`, Token-Erneuerung alle 20 Minuten (Core rotiert alle 30). **Kein Rückfall auf OSM direkt** – das würde den Kartenausschnitt einem Dritten zeigen; stattdessen ein Hinweis. Dunkles Theme per CSS-Filter auf den Kacheln.
+- Editor über `getConfigForm()` (Entität, Titel, Höhe, geplante zeigen). Lokal getestet mit einer Testseite und simuliertem `hass` (Playwright), nicht in CI.
+
 ## 3. Entscheidungen
 
 - **Eine Integration mit Providern** statt mehrerer: gemeinsame Entities pro Bereich, ein Config-Flow, ein HACS-Eintrag.
@@ -219,6 +226,6 @@ Stand 2026-10-19. Datenquellen gelten vorerst als ausgeschöpft (Städte-Sweep u
 
 - **Strecke statt Kreis:** Korridor entlang einer Route aus Wegpunkten (Wunsch aus dem Beta-Test). Knackpunkt: Eingabe im Dialog, HA hat keinen Linien-Selektor.
 - **Autobahn-Abschnitte** („A81 zwischen AS X und AS Y“): Abschnittsnamen sind Freitext – zugunsten der Fahrtrichtungen zurückgestellt.
-- **Eigene Lovelace-Karte** mit den Geometrien (Linien und Flächen in Farben je Art, Popup, Kreis des Bereichs; von der Integration mitgeliefert, Geometrien über eine eigene Schnittstelle): geplant als nächstes größeres Stück (2026-10-19). Vorher: Kartenpunkte per `geo_location` mit Symbol je Art statt Namenskürzel und ein Kartenbild für die README.
+- **Kartenkarte, nächste Ausbaustufen:** mehrere Bereiche in einer Karte, Gruppierung naher Meldungen, Zeitregler.
 - **Bekanntmachen:** simon42 Community erledigt (Vorstellung, Updates zu 0.2.0 und 0.3–0.5); als Nächstes HA Community (Custom Integrations), später ggf. Awesome Home Assistant und die HACS-Default-Liste.
-- Erledigt: Deduplizierung (0.6.0, siehe Entscheidungen), Langzeitstatistik (der Sensor „Reisezeitverlust“ hat `state_class: measurement`, README zeigt die Statistik-Karte), Kartenansicht per `geo_location`, weitere Datenquellen.
+- Erledigt: eigene Kartenkarte (0.6.0, siehe Abschnitt 2 „Kartenkarte“), Deduplizierung (0.6.0, siehe Entscheidungen), Langzeitstatistik (der Sensor „Reisezeitverlust“ hat `state_class: measurement`, README zeigt die Statistik-Karte), Kartenansicht per `geo_location`, weitere Datenquellen.

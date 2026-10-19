@@ -10,7 +10,7 @@
 
 🇩🇪 **Deutsch** · 🇬🇧 [English](https://github.com/streckenwacht/integration/blob/main/README.en.md)
 
-> ℹ️ **Junges Projekt.** Version 0.5 – die Grundfunktionen laufen stabil, neue Datenquellen und Funktionen sind frisch dazugekommen. Rückmeldungen sind sehr willkommen – siehe [Fehler melden](#fehler-melden).
+> ℹ️ **Junges Projekt.** Version 0.6 – die Grundfunktionen laufen stabil, neue Datenquellen und Funktionen sind frisch dazugekommen. Rückmeldungen sind sehr willkommen – siehe [Fehler melden](#fehler-melden).
 
 Streckenwacht wacht über deine Strecke – ob Autobahn, Bundesstraße oder dein täglicher Arbeitsweg. Baustellen, Sperrungen, Staus und Unfälle, direkt in deinem Home Assistant: als Kalender, Sensoren und Events für Automationen.
 
@@ -82,7 +82,7 @@ Dein Standort verlässt Home Assistant nicht. Streckenwacht lädt die Meldungen 
 
 Ausnahme sind große Landesquellen ohne ETag (Norddeutschland, Brandenburg): Sie sind zu groß, um bei jedem Abruf komplett geladen zu werden. Streckenwacht fragt dort deshalb einen groben Kartenausschnitt ab – auf ein Raster von etwa 55 × 35 km gerundet. Der Server erfährt so nur die ungefähre Region, nicht deinen Bereich.
 
-Die Abrufe enthalten keine persönlichen Daten, nur eine Kennung der Integration (User-Agent).
+Die Abrufe enthalten keine persönlichen Daten, nur eine Kennung der Integration (User-Agent). Die Streckenwacht-Kartenkarte lädt ihren Kartenhintergrund über Home Assistant selbst, nicht direkt bei OpenStreetMap.
 
 ## Installation (HACS, benutzerdefiniertes Repository)
 
@@ -321,7 +321,23 @@ entities:
   - calendar.streckenwacht_arbeitsweg
 ```
 
-### Karte im Dashboard
+### Streckenwacht-Kartenkarte
+
+Streckenwacht bringt eine eigene Dashboard-Karte mit: Sie zeigt die Meldungen eines Bereichs mit ihrer echten Geometrie – Baustellen und Sperrungen als Linien oder Flächen entlang der Straße, farbig je Art (Sperrung rot, Baustelle orange, Stau dunkelrot, Unfall violett, Warnung gelb). Was in den nächsten 14 Tagen beginnt, erscheint blass und gestrichelt. Ein Tipp öffnet Titel, Zeitraum, Beschreibung und Quelle(n); der Ausschnitt folgt dem Kreis des Bereichs.
+
+Die Karte ist nach dem Update einfach da: *Karte hinzufügen* → „Streckenwacht“, dann im Editor eine Entität des Bereichs wählen. Oder per YAML:
+
+```yaml
+type: custom:streckenwacht-map-card
+entity: sensor.streckenwacht_arbeitsweg_events  # eine beliebige Entität des Bereichs
+title: Arbeitsweg            # optional
+height: 400                  # optional, Pixel
+show_planned: true           # optional, geplante Meldungen zeigen
+```
+
+Den Kartenhintergrund lädt die Karte über den Kachel-Proxy von Home Assistant (ab 2026.9): Dein Browser spricht dabei nur mit Home Assistant, nicht mit OpenStreetMap. Auf älteren Versionen zeigt die Karte die Meldungen ohne Hintergrund und einen Hinweis.
+
+### Karte im Dashboard (eingebaute Kartenkarte)
 
 Alle aktuellen Meldungen deiner Bereiche erscheinen als Punkte auf der Kartenkarte (je Meldung eine `geo_location`-Entität, höchstens 150, die schwersten und nächsten zuerst):
 

@@ -10,7 +10,7 @@
 
 🇩🇪 [Deutsch](https://github.com/streckenwacht/integration/blob/main/README.md) · 🇬🇧 **English**
 
-> ℹ️ **Young project.** Version 0.5 – the core runs stably, new data sources and features were just added. Feedback is very welcome – see [Reporting issues](#reporting-issues).
+> ℹ️ **Young project.** Version 0.6 – the core runs stably, new data sources and features were just added. Feedback is very welcome – see [Reporting issues](#reporting-issues).
 
 Streckenwacht ("route watch") keeps an eye on your route – motorway, federal road or your daily commute. Roadworks, closures, traffic jams and accidents in Germany, right in your Home Assistant: as a calendar, sensors and events for automations.
 
@@ -84,7 +84,7 @@ Your location never leaves Home Assistant. Streckenwacht downloads the reports o
 
 The exception are large state sources without ETag (northern Germany, Brandenburg): they are too large to download completely on every poll. Streckenwacht therefore requests a coarse map section there, rounded to a grid of about 55 × 35 km. The server only learns the rough region, not your area.
 
-The requests contain no personal data, only an identifier of the integration (user agent).
+The requests contain no personal data, only an identifier of the integration (user agent). The Streckenwacht map card loads its base map through Home Assistant itself, not directly from OpenStreetMap.
 
 ## Installation (HACS, custom repository)
 
@@ -323,7 +323,23 @@ entities:
   - calendar.streckenwacht_commute
 ```
 
-### Map in the dashboard
+### Streckenwacht map card
+
+Streckenwacht ships its own dashboard card: it shows the reports of one area with their real geometry – roadworks and closures as lines or areas along the road, coloured by type (closure red, roadworks orange, traffic jam dark red, accident purple, warning yellow). Reports starting within the next 14 days are drawn pale and dashed. Tapping one shows title, period, description and source(s); the map fits the area's circle.
+
+After the update the card is simply there: *Add card* → "Streckenwacht", then pick an entity of the area in the editor. Or in YAML:
+
+```yaml
+type: custom:streckenwacht-map-card
+entity: sensor.streckenwacht_commute_events  # any entity of the area
+title: Commute               # optional
+height: 400                  # optional, pixels
+show_planned: true           # optional, show planned reports
+```
+
+The card loads its base map through Home Assistant's map tile proxy (2026.9 and later): your browser only talks to Home Assistant, not to OpenStreetMap. On older versions the card shows the reports without a base map and a notice.
+
+### Map in the dashboard (built-in map card)
 
 All current reports of your areas appear as markers on the map card (one `geo_location` entity per report, at most 150, most severe and nearest first):
 
