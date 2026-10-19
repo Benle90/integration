@@ -185,10 +185,13 @@ class StreckenwachtMapCard extends HTMLElement {
           font-size: 13px; background: var(--card-background-color); color: var(--primary-text-color);
           border-left: 4px solid var(--warning-color, #ffa600); border-radius: 4px; }
         .notice[hidden] { display: none; }
+        .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+          background: var(--card-background-color, #fff); color: var(--primary-text-color, #212121); }
         .leaflet-popup-content { margin: 10px 12px; font-size: 13px; line-height: 1.4; }
-        .leaflet-popup-content .meta { color: #555; }
+        .leaflet-popup-content .meta { color: var(--secondary-text-color, #555); }
         .leaflet-popup-content .desc { white-space: pre-line; margin-top: 4px; }
-        .leaflet-popup-content .src { color: #777; font-size: 11px; margin-top: 6px; }
+        .leaflet-popup-content .src { color: var(--secondary-text-color, #777); font-size: 11px;
+          margin-top: 6px; opacity: .8; }
       </style>
       <ha-card>
         <div class="wrap"><div id="map"></div><div class="legend"></div><div class="notice" hidden></div></div>
