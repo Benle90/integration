@@ -324,13 +324,17 @@ All current reports of your areas appear as markers on the map card (one `geo_lo
 
 ```yaml
 type: map
+cluster: false  # every report on its own instead of groups
 geo_location_sources:
-  - streckenwacht
+  - source: streckenwacht
+    label_mode: icon
 entities:
   - zone.home
 ```
 
-The markers carry title, type, road, period and the source's attribution. They come and go with the reports and do not end up in the entity list.
+<img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/karte.png" alt="Map card with roadworks icons on the A81 near Leonberg" width="420">
+
+With `label_mode: icon` each marker shows the icon of its type (roadworks, closure, traffic jam, accident, warning) instead of initials. Tapping a marker shows title, type, road, period and the source's attribution. The markers come and go with the reports and do not end up in the entity list.
 
 ## Troubleshooting
 

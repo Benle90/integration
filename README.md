@@ -322,13 +322,17 @@ Alle aktuellen Meldungen deiner Bereiche erscheinen als Punkte auf der Kartenkar
 
 ```yaml
 type: map
+cluster: false  # jede Meldung einzeln statt Gruppen
 geo_location_sources:
-  - streckenwacht
+  - source: streckenwacht
+    label_mode: icon
 entities:
   - zone.home
 ```
 
-Die Punkte tragen Titel, Art, Straße, Zeitraum und die Namensnennung der Quelle. Sie kommen und gehen mit den Meldungen und landen nicht in der Entitätsliste.
+<img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/karte.png" alt="Kartenkarte mit Baustellen-Symbolen an der A81 bei Leonberg" width="420">
+
+Mit `label_mode: icon` zeigt jeder Punkt das Symbol seiner Art (Baustelle, Sperrung, Stau, Unfall, Warnung) statt eines Namenskürzels. Ein Tipp auf den Punkt öffnet Titel, Art, Straße, Zeitraum und die Namensnennung der Quelle. Die Punkte kommen und gehen mit den Meldungen und landen nicht in der Entitätsliste.
 
 ## Fehlerbehebung
 
