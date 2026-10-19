@@ -325,6 +325,8 @@ entities:
 
 Streckenwacht bringt eine eigene Dashboard-Karte mit: Sie zeigt die Meldungen eines Bereichs mit ihrer echten Geometrie – Baustellen und Sperrungen als Linien oder Flächen entlang der Straße, farbig je Art (Sperrung rot, Baustelle orange, Stau dunkelrot, Unfall violett, Warnung gelb). Was in den nächsten 14 Tagen beginnt, erscheint blass und gestrichelt. Ein Tipp öffnet Titel, Zeitraum, Beschreibung und Quelle(n); der Ausschnitt folgt dem Kreis des Bereichs.
 
+<img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/streckenwacht_karte.png" alt="Streckenwacht-Kartenkarte: Stau als Linie auf der A81 mit Popup, Baustellen bei Leonberg" width="726">
+
 Die Karte ist nach dem Update einfach da: *Karte hinzufügen* → „Streckenwacht“, dann im Editor eine Entität des Bereichs wählen. Oder per YAML:
 
 ```yaml

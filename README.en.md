@@ -327,6 +327,8 @@ entities:
 
 Streckenwacht ships its own dashboard card: it shows the reports of one area with their real geometry – roadworks and closures as lines or areas along the road, coloured by type (closure red, roadworks orange, traffic jam dark red, accident purple, warning yellow). Reports starting within the next 14 days are drawn pale and dashed. Tapping one shows title, period, description and source(s); the map fits the area's circle.
 
+<img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/streckenwacht_karte.png" alt="Streckenwacht map card: traffic jam as a line on the A81 with popup, roadworks near Leonberg" width="726">
+
 After the update the card is simply there: *Add card* → "Streckenwacht", then pick an entity of the area in the editor. Or in YAML:
 
 ```yaml
