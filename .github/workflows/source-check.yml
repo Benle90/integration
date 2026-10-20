@@ -1,0 +1,63 @@
+name: Quellen-Check
+
+# Fetches every data source with the real providers (tools/source_check.py).
+# Weekly and on demand: opens an issue on problems, or comments on the open
+# one; closes it once all sources work again. Pushes that change the check
+# only run it (no issue), so it is tested before it reaches main.
+
+on:
+  schedule:
+    - cron: "17 5 * * 1" # Mondays, 05:17 UTC
+  workflow_dispatch:
+  push:
+    paths:
+      - tools/source_check.py
+      - .github/workflows/source-check.yml
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.2.0
+      - name: Install dependencies
+        run: uv sync --locked
+      - name: Check sources
+        id: check
+        continue-on-error: true
+        run: uv run tools/source_check.py --markdown report.md
+      - name: Summary
+        if: always()
+        run: |
+          [ -f report.md ] || echo "Der Quellen-Check ist abgebrochen, siehe Log." > report.md
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Issue
+        if: github.event_name != 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OUTCOME: ${{ steps.check.outcome }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          label=quellen-check
+          gh label create "$label" --color D93F0B \
+            --description "Automatischer Quellen-Check" 2>/dev/null || true
+          open=$(gh issue list --label "$label" --state open --json number --jq '.[0].number // empty')
+          printf '%s\n\n[Lauf ansehen](%s)\n' "$(cat report.md)" "$RUN_URL" > body.md
+          if [ "$OUTCOME" = success ]; then
+            if [ -n "$open" ]; then
+              gh issue comment "$open" --body-file body.md
+              gh issue close "$open" --reason completed
+            fi
+          elif [ -n "$open" ]; then
+            gh issue comment "$open" --body-file body.md
+          else
+            gh issue create --title "Quellen-Check: Datenquellen mit Problemen" \
+              --label "$label" --body-file body.md
+          fi
+      - name: Fail on problems
+        if: steps.check.outcome != 'success'
+        run: exit 1
