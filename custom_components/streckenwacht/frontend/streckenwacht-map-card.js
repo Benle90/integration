@@ -426,11 +426,15 @@ class StreckenwachtMapCard extends HTMLElement {
   }
 }
 
-customElements.define("streckenwacht-map-card", StreckenwachtMapCard);
-window.customCards = window.customCards || [];
-window.customCards.push({
-  type: "streckenwacht-map-card",
-  name: "Streckenwacht",
-  description: "Baustellen, Sperrungen und Staus eines Beobachtungsbereichs auf der Karte",
-  documentationURL: "https://github.com/streckenwacht/integration",
-});
+// The file can be loaded twice, e.g. under another version (?v=) from a
+// dashboard resource added by hand: the first one wins.
+if (!customElements.get("streckenwacht-map-card")) {
+  customElements.define("streckenwacht-map-card", StreckenwachtMapCard);
+  window.customCards = window.customCards || [];
+  window.customCards.push({
+    type: "streckenwacht-map-card",
+    name: "Streckenwacht",
+    description: "Baustellen, Sperrungen und Staus eines Beobachtungsbereichs auf der Karte",
+    documentationURL: "https://github.com/streckenwacht/integration",
+  });
+}

@@ -3,7 +3,8 @@
   "name": "Streckenwacht",
   "after_dependencies": [
     "frontend",
-    "http"
+    "http",
+    "lovelace"
   ],
   "codeowners": [
     "@n42net"

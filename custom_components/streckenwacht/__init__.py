@@ -34,6 +34,7 @@ from .coordinator import (
     issue_id,
 )
 from .dedup import merge_duplicates
+from .frontend_resource import async_register_card, async_unregister_card
 from .known_events import KnownEvents
 from .model import StreckenwachtEvent
 from .providers import Provider
@@ -61,7 +62,6 @@ from .providers.sachsen import SachsenProvider
 from .providers.sachsen_anhalt import SachsenAnhaltProvider
 from .providers.stuttgart import StuttgartProvider
 from .websocket import (
-    CARD_URL,
     FRONTEND_DIR,
     FRONTEND_URL,
     async_setup_websocket,
@@ -143,19 +143,12 @@ type StreckenwachtConfigEntry = ConfigEntry[StreckenwachtRuntimeData]
 
 
 async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
-    """Register the map card and its WebSocket command (once, not per entry)."""
+    """Serve the map card and register its WebSocket command (not per entry)."""
     async_setup_websocket(hass)
     if getattr(hass, "http", None) is not None:
         await hass.http.async_register_static_paths(
             [StaticPathConfig(FRONTEND_URL, str(FRONTEND_DIR), cache_headers=True)]
         )
-        # The card registers itself; no dashboard resource needed.
-        if "frontend" in hass.config.components:
-            from homeassistant.components.frontend import (
-                add_extra_js_url,
-            )
-
-            add_extra_js_url(hass, CARD_URL)
     return True
 
 
@@ -208,6 +201,10 @@ async def async_setup_entry(
     # Options and subentry (area) changes both trigger a reload.
     entry.async_on_unload(entry.add_update_listener(_async_update_listener))
     await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
+    # Here rather than in async_setup: after removing and adding the
+    # integration again, async_setup does not run before the next restart.
+    if getattr(hass, "http", None) is not None:
+        await async_register_card(hass)
     return True
 
 
@@ -245,10 +242,11 @@ async def async_unload_entry(
 async def async_remove_entry(
     hass: HomeAssistant, entry: StreckenwachtConfigEntry
 ) -> None:
-    """Remove repair issues and stored data when the integration is deleted."""
+    """Remove repair issues, stored data and the card resource."""
     for source in Source:
         ir.async_delete_issue(hass, DOMAIN, issue_id(source))
     await KnownEvents.async_remove(hass, entry.entry_id)
+    await async_unregister_card(hass)
 
 
 async def _async_update_listener(

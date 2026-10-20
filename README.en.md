@@ -329,7 +329,7 @@ Streckenwacht ships its own dashboard card: it shows the reports of one or more 
 
 <img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/streckenwacht_karte.png" alt="Streckenwacht map card: traffic jam as a line on the A81 with popup, roadworks near Leonberg" width="726">
 
-After the update the card is simply there: *Add card* → "Streckenwacht", then pick one or more areas in the editor (an entity of each area). Or in YAML:
+After the update the card is simply there: *Add card* → "Streckenwacht", then pick one or more areas in the editor (an entity of each area). Streckenwacht adds it to *Settings → Dashboards → ⋮ → Resources* by itself and keeps that entry up to date. Or in YAML:
 
 ```yaml
 type: custom:streckenwacht-map-card
@@ -365,6 +365,7 @@ With `label_mode: icon` each marker shows the icon of its type (roadworks, closu
 
 - **Repairs:** if a source cannot be reached three times in a row, a notice appears under *Settings → System → Repairs*. It disappears by itself as soon as fetching works again.
 - **Diagnostics:** *Devices & services → Streckenwacht → ⋮ → Download diagnostics*. The coordinates of your areas are redacted.
+- **Map card shows "Custom element not found":** reload the page (in the Companion app: *Settings → Companion app → Troubleshooting → Reset frontend cache*). This can happen right after an update if the page was opened while Home Assistant was still starting. If it persists, check that *Settings → Dashboards → ⋮ → Resources* lists `/streckenwacht/frontend/streckenwacht-map-card.js` (added when Streckenwacht starts).
 - **Detailed log:**
 
   ```yaml

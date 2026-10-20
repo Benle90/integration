@@ -327,7 +327,7 @@ Streckenwacht bringt eine eigene Dashboard-Karte mit: Sie zeigt die Meldungen ei
 
 <img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/streckenwacht_karte.png" alt="Streckenwacht-Kartenkarte: Stau als Linie auf der A81 mit Popup, Baustellen bei Leonberg" width="726">
 
-Die Karte ist nach dem Update einfach da: *Karte hinzufügen* → „Streckenwacht“, dann im Editor einen oder mehrere Bereiche wählen (je eine Entität des Bereichs). Oder per YAML:
+Die Karte ist nach dem Update einfach da: *Karte hinzufügen* → „Streckenwacht“, dann im Editor einen oder mehrere Bereiche wählen (je eine Entität des Bereichs). Streckenwacht trägt sie dafür selbst unter *Einstellungen → Dashboards → ⋮ → Ressourcen* ein und hält den Eintrag aktuell. Oder per YAML:
 
 ```yaml
 type: custom:streckenwacht-map-card
@@ -363,6 +363,7 @@ Mit `label_mode: icon` zeigt jeder Punkt das Symbol seiner Art (Baustelle, Sperr
 
 - **Reparaturen:** Ist eine Quelle dreimal in Folge nicht erreichbar, erscheint unter *Einstellungen → System → Reparaturen* ein Hinweis. Er verschwindet von selbst, sobald der Abruf wieder klappt.
 - **Diagnose:** *Geräte & Dienste → Streckenwacht → ⋮ → Diagnose herunterladen*. Die Koordinaten deiner Bereiche sind darin geschwärzt.
+- **Kartenkarte zeigt „Custom element not found“:** Seite neu laden (in der Companion App: *Einstellungen → Companion App → Fehlerbehebung → Frontend-Cache zurücksetzen*). Das kann direkt nach einem Update passieren, wenn die Seite geöffnet wurde, während Home Assistant noch startete. Bleibt es, prüfen, ob unter *Einstellungen → Dashboards → ⋮ → Ressourcen* der Eintrag `/streckenwacht/frontend/streckenwacht-map-card.js` steht (wird beim Start von Streckenwacht angelegt).
 - **Ausführliches Protokoll:**
 
   ```yaml
