@@ -4,6 +4,12 @@ on:
   push:
   pull_request:
 
+# A newer push to the same branch makes the running checks obsolete.
+# (Dependencies are cached already: setup-uv does that on GitHub's runners.)
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test:
     runs-on: ubuntu-latest

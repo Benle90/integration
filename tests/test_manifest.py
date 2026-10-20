@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import tomllib
 from pathlib import Path
 
 from custom_components.streckenwacht.const import DOMAIN, USER_AGENT, VERSION
@@ -18,6 +19,12 @@ def manifest() -> dict:
 def test_version_matches_const() -> None:
     assert manifest()["version"] == VERSION
     assert VERSION in USER_AGENT
+
+
+def test_version_matches_pyproject() -> None:
+    # A release bumps all three: manifest.json, const.py and pyproject.toml.
+    pyproject = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
+    assert pyproject["project"]["version"] == VERSION
 
 
 def test_domain_matches_folder() -> None:
