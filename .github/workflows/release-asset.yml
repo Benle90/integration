@@ -1,0 +1,44 @@
+name: Release-ZIP
+
+# HACS installs the integration from streckenwacht.zip attached to each
+# release (hacs.json: zip_release), so GitHub counts the downloads. The ZIP
+# holds the files of custom_components/streckenwacht at its root. On demand
+# for an existing tag, e.g. to repair or backfill a release.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release-Tag, z. B. v0.7.2
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ github.event.release.tag_name || inputs.tag }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ env.TAG }}
+      - name: Check version
+        # A tag must match the version in manifest.json, or HACS shows nonsense.
+        # Older releases (backfill) may predate this rule.
+        if: github.event_name == 'release'
+        run: |
+          version=$(jq -r .version custom_components/streckenwacht/manifest.json)
+          test "v$version" = "$TAG" || { echo "manifest.json: $version, Tag: $TAG"; exit 1; }
+      - name: Build ZIP
+        run: |
+          cd custom_components/streckenwacht
+          zip -r -X "$GITHUB_WORKSPACE/streckenwacht.zip" . -x '*__pycache__*'
+          unzip -l "$GITHUB_WORKSPACE/streckenwacht.zip" | tail -1
+          unzip -l "$GITHUB_WORKSPACE/streckenwacht.zip" | grep -q ' manifest.json$'
+      - name: Attach to release
+        run: gh release upload "$TAG" streckenwacht.zip --clobber
