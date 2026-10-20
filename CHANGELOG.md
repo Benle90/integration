@@ -4,6 +4,8 @@ Alle Änderungen an Streckenwacht, neueste zuerst. Die Einträge entsprechen den
 
 ## Unveröffentlicht
 
+## 0.8.0 – 2026-10-20
+
 ### Neu
 - **Kartenkarte fasst nahe Meldungen zusammen:** Beim Herauszoomen werden Meldungen, die dicht beieinander liegen, zu Kreisen mit ihrer Anzahl zusammengefasst – farbig nach der schwersten Meldung darin. Ein Tipp auf einen Kreis zoomt hinein, ab Straßenebene erscheint jede Meldung einzeln. Abschaltbar im Karten-Editor bzw. per `cluster: false`.
 
