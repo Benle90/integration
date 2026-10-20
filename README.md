@@ -323,7 +323,7 @@ entities:
 
 ### Streckenwacht-Kartenkarte
 
-Streckenwacht bringt eine eigene Dashboard-Karte mit: Sie zeigt die Meldungen eines oder mehrerer Bereiche mit ihrer echten Geometrie – Baustellen und Sperrungen als Linien oder Flächen entlang der Straße, farbig je Art (Sperrung rot, Baustelle orange, Stau dunkelrot, Unfall violett, Warnung gelb). Was in den nächsten 14 Tagen beginnt, erscheint blass und gestrichelt. Ein Tipp öffnet Titel, Zeitraum, Beschreibung und Quelle(n); der Ausschnitt folgt den Kreisen der Bereiche. Liegt eine Meldung in mehreren Bereichen, erscheint sie einmal.
+Streckenwacht bringt eine eigene Dashboard-Karte mit: Sie zeigt die Meldungen eines oder mehrerer Bereiche mit ihrer echten Geometrie – Baustellen und Sperrungen als Linien oder Flächen entlang der Straße, farbig je Art (Sperrung rot, Baustelle orange, Stau dunkelrot, Unfall violett, Warnung gelb). Was in den nächsten 14 Tagen beginnt, erscheint blass und gestrichelt. Ein Tipp öffnet Titel, Zeitraum, Beschreibung und Quelle(n); der Ausschnitt folgt den Kreisen der Bereiche. Liegt eine Meldung in mehreren Bereichen, erscheint sie einmal. Beim Herauszoomen fasst die Karte nahe Meldungen zu Kreisen mit ihrer Anzahl zusammen (Farbe der schwersten Meldung); ein Tipp darauf zoomt hinein, ab Straßenebene erscheint jede Meldung einzeln.
 
 <img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/streckenwacht_karte.png" alt="Streckenwacht-Kartenkarte: Stau als Linie auf der A81 mit Popup, Baustellen bei Leonberg" width="726">
 
@@ -337,6 +337,7 @@ entities:                    # je eine beliebige Entität pro Bereich
 title: Arbeitsweg            # optional
 height: 400                  # optional, Pixel
 show_planned: true           # optional, geplante Meldungen zeigen
+cluster: true                # optional, nahe Meldungen zusammenfassen
 ```
 
 Den Kartenhintergrund lädt die Karte über den Kachel-Proxy von Home Assistant (ab 2026.9): Dein Browser spricht dabei nur mit Home Assistant, nicht mit OpenStreetMap. Auf älteren Versionen zeigt die Karte die Meldungen ohne Hintergrund und einen Hinweis.

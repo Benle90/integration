@@ -10,6 +10,7 @@
  * title: optional
  * height: 400                                   # pixels
  * show_planned: true                            # events starting within 14 days
+ * cluster: true                                 # group nearby reports when zoomed out
  */
 
 const BASE = new URL(".", import.meta.url).pathname;
@@ -25,6 +26,15 @@ const COLORS = {
   accident: "#7b1fa2",
   warning: "#fbc02d",
 };
+
+// Most severe first (as in summary.py); a group takes the colour of its most
+// severe member, active ones before planned ones.
+const SEVERITY = ["accident", "closure", "traffic_jam", "warning", "roadworks"];
+
+// Reports whose markers lie closer than this are grouped; from street level
+// on every report is drawn on its own.
+const CLUSTER_RADIUS_PX = 40;
+const CLUSTER_MAX_ZOOM = 15;
 
 const TEXT = {
   de: {
@@ -45,6 +55,8 @@ const TEXT = {
     title: "Titel",
     height: "Höhe",
     show_planned: "Geplante Meldungen zeigen (nächste 14 Tage)",
+    cluster: "Nahe Meldungen beim Herauszoomen zusammenfassen",
+    zoomIn: "Klicken zum Hineinzoomen",
   },
   en: {
     closure: "Closure",
@@ -63,6 +75,8 @@ const TEXT = {
     title: "Title",
     height: "Height",
     show_planned: "Show planned reports (next 14 days)",
+    cluster: "Group nearby reports when zoomed out",
+    zoomIn: "Click to zoom in",
   },
 };
 
@@ -110,6 +124,7 @@ class StreckenwachtMapCard extends HTMLElement {
           },
         },
         { name: "show_planned", selector: { boolean: {} } },
+        { name: "cluster", selector: { boolean: {} } },
       ],
       // The form passes no hass here: take the language of the page.
       computeLabel: (schema) => TEXT[pageLanguage()][schema.name],
@@ -122,7 +137,7 @@ class StreckenwachtMapCard extends HTMLElement {
     );
     const events = ids.find((id) => hass.entities[id]?.translation_key === "events");
     const first = events || ids[0];
-    return { entities: first ? [first] : [], height: 400, show_planned: true };
+    return { entities: first ? [first] : [], height: 400, show_planned: true, cluster: true };
   }
 
   setConfig(config) {
@@ -136,7 +151,7 @@ class StreckenwachtMapCard extends HTMLElement {
     }
     const changed = entities.join() !== this._entities?.join();
     this._entities = entities;
-    this._config = { height: 400, show_planned: true, ...config };
+    this._config = { height: 400, show_planned: true, cluster: true, ...config };
     if (changed) {
       this._lastUpdated = undefined;
       this._userMoved = false; // new areas: fit them again
@@ -197,13 +212,13 @@ class StreckenwachtMapCard extends HTMLElement {
         .wrap { position: relative; }
         #map { height: 100%; width: 100%; background: var(--secondary-background-color); }
         .dark .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.9) contrast(.9); }
-        .legend { position: absolute; z-index: 500; bottom: 18px; left: 8px; display: flex;
+        .legend { position: absolute; z-index: 650; bottom: 18px; left: 8px; display: flex;
           flex-wrap: wrap; gap: 4px; max-width: calc(100% - 16px); pointer-events: none; }
         .chip { background: var(--card-background-color); color: var(--primary-text-color);
           border-radius: 10px; padding: 1px 8px 1px 6px; font-size: 12px; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
         .chip i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px;
           vertical-align: -1px; }
-        .notice { position: absolute; z-index: 600; top: 8px; left: 50px; right: 8px; padding: 6px 10px;
+        .notice { position: absolute; z-index: 660; top: 8px; left: 50px; right: 8px; padding: 6px 10px;
           font-size: 13px; background: var(--card-background-color); color: var(--primary-text-color);
           border-left: 4px solid var(--warning-color, #ffa600); border-radius: 4px; }
         .notice[hidden] { display: none; }
@@ -214,6 +229,9 @@ class StreckenwachtMapCard extends HTMLElement {
         .leaflet-popup-content .desc { white-space: pre-line; margin-top: 4px; }
         .leaflet-popup-content .src { color: var(--secondary-text-color, #777); font-size: 11px;
           margin-top: 6px; opacity: .8; }
+        .sw-cluster div { box-sizing: border-box; width: 100%; height: 100%; border-radius: 50%;
+          display: flex; align-items: center; justify-content: center; border: 2px solid #fff;
+          box-shadow: 0 1px 4px rgba(0,0,0,.4); font: 600 13px/1 var(--ha-font-family-body, sans-serif); }
       </style>
       <ha-card>
         <div class="wrap"><div id="map"></div><div class="legend"></div><div class="notice" hidden></div></div>
@@ -241,6 +259,7 @@ class StreckenwachtMapCard extends HTMLElement {
       this._map.on("zoomstart", () => {
         if (!this._fitting) this._userMoved = true;
       });
+      this._map.on("zoomend", () => this._cluster());
       this._resize = new ResizeObserver(() => {
         this._map.invalidateSize();
         if (!this._userMoved) this._fit();
@@ -345,7 +364,8 @@ class StreckenwachtMapCard extends HTMLElement {
     );
 
     const shown = features.filter((f) => f.properties.active || this._config.show_planned);
-    for (const feature of shown) {
+    // Each report's layers are kept here; _cluster() shows them or a group.
+    this._items = shown.map((feature) => {
       const p = feature.properties;
       const color = COLORS[p.type] || "#607d8b";
       const style = {
@@ -357,26 +377,38 @@ class StreckenwachtMapCard extends HTMLElement {
         fillOpacity: p.active ? 0.3 : 0.12,
       };
       const popup = this._popup(p);
-      L.geoJSON(feature, {
-        style: () => style,
-        pointToLayer: () => L.layerGroup(), // points get the marker below
-      })
-        .bindPopup(popup)
-        .addTo(group);
-      if (p.latitude != null && p.longitude != null) {
-        L.circleMarker([p.latitude, p.longitude], {
-          radius: p.active ? 7 : 5,
-          color: "#fff",
-          weight: 2,
-          fillColor: color,
-          fillOpacity: p.active ? 0.95 : 0.6,
-        })
-          .bindPopup(popup)
-          .addTo(group);
+      const layers = [
+        L.geoJSON(feature, {
+          style: () => style,
+          pointToLayer: () => L.layerGroup(), // points get the marker below
+        }).bindPopup(popup),
+      ];
+      const hasPoint = p.latitude != null && p.longitude != null;
+      if (hasPoint) {
+        layers.push(
+          L.circleMarker([p.latitude, p.longitude], {
+            radius: p.active ? 7 : 5,
+            color: "#fff",
+            weight: 2,
+            fillColor: color,
+            fillOpacity: p.active ? 0.95 : 0.6,
+          }).bindPopup(popup),
+        );
       }
-    }
+      const severity = SEVERITY.indexOf(p.type);
+      return {
+        type: p.type,
+        active: p.active,
+        latlng: hasPoint ? L.latLng(p.latitude, p.longitude) : null,
+        rank: (p.active ? 0 : SEVERITY.length) + (severity < 0 ? SEVERITY.length - 1 : severity),
+        layers,
+        shown: false,
+      };
+    });
     group.addTo(this._map);
     this._layer = group;
+    this._clusters?.remove();
+    this._clusters = L.layerGroup().addTo(this._map);
     // Circles know their bounds only once they are on the map.
     if (circles.length) {
       const bounds = circles[0].getBounds();
@@ -390,6 +422,75 @@ class StreckenwachtMapCard extends HTMLElement {
       .map((type) => `<span class="chip"><i style="background:${COLORS[type]}"></i>${t[type] || type}</span>`)
       .join("");
     if (!this._userMoved) this._fit();
+    this._cluster(); // fitting may not change the zoom: no zoomend then
+  }
+
+  _cluster() {
+    if (!this._items || !this._layer) return;
+    const map = this._map;
+    const zoom = map.getZoom();
+    const visible = new Set(this._items);
+    this._clusters.clearLayers();
+    if (this._config.cluster !== false && zoom < CLUSTER_MAX_ZOOM) {
+      // Greedy, in screen pixels at the current zoom: the most severe report
+      // seeds a group with every free report around it.
+      const points = this._items
+        .filter((item) => item.latlng)
+        .map((item) => ({ item, xy: map.project(item.latlng, zoom) }))
+        .sort((a, b) => a.item.rank - b.item.rank);
+      const taken = new Set();
+      for (const seed of points) {
+        if (taken.has(seed)) continue;
+        const members = points.filter(
+          (p) => !taken.has(p) && seed.xy.distanceTo(p.xy) <= CLUSTER_RADIUS_PX,
+        );
+        if (members.length < 2) continue;
+        for (const m of members) {
+          taken.add(m);
+          visible.delete(m.item);
+        }
+        this._clusters.addLayer(this._clusterMarker(seed, members));
+      }
+    }
+    for (const item of this._items) {
+      const show = visible.has(item);
+      if (show === item.shown) continue;
+      for (const layer of item.layers) {
+        if (show) this._layer.addLayer(layer);
+        else this._layer.removeLayer(layer);
+      }
+      item.shown = show;
+    }
+  }
+
+  _clusterMarker(seed, members) {
+    const L = this._L;
+    const t = this._t;
+    const items = members.map((m) => m.item);
+    // At the most severe report: seeds lie further apart than the radius,
+    // so groups never overlap (their centres could).
+    const lead = seed.item;
+    const size = items.length < 10 ? 28 : items.length < 100 ? 34 : 40;
+    const color = COLORS[lead.type] || "#607d8b";
+    const text = lead.type === "warning" ? "#212121" : "#fff";
+    const counts = SEVERITY.map((type) => [type, items.filter((i) => i.type === type).length])
+      .filter(([, n]) => n)
+      .map(([type, n]) => `${t[type] || type}: ${n}`);
+    const marker = L.marker(lead.latlng, {
+      icon: L.divIcon({
+        className: "sw-cluster",
+        html: `<div style="background:${color};color:${text};opacity:${lead.active ? 0.95 : 0.65}">${items.length}</div>`,
+        iconSize: [size, size],
+      }),
+      title: `${counts.join(", ")} – ${t.zoomIn}`,
+      // Above the report lines, below popups.
+      zIndexOffset: 1000,
+    });
+    marker.on("click", () => {
+      const bounds = L.latLngBounds(items.map((i) => i.latlng));
+      this._map.fitBounds(bounds, { padding: [40, 40], maxZoom: CLUSTER_MAX_ZOOM });
+    });
+    return marker;
   }
 
   _fit() {

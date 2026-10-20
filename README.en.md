@@ -325,7 +325,7 @@ entities:
 
 ### Streckenwacht map card
 
-Streckenwacht ships its own dashboard card: it shows the reports of one or more areas with their real geometry – roadworks and closures as lines or areas along the road, coloured by type (closure red, roadworks orange, traffic jam dark red, accident purple, warning yellow). Reports starting within the next 14 days are drawn pale and dashed. Tapping one shows title, period, description and source(s); the map fits the areas' circles. A report lying in several areas is shown once.
+Streckenwacht ships its own dashboard card: it shows the reports of one or more areas with their real geometry – roadworks and closures as lines or areas along the road, coloured by type (closure red, roadworks orange, traffic jam dark red, accident purple, warning yellow). Reports starting within the next 14 days are drawn pale and dashed. Tapping one shows title, period, description and source(s); the map fits the areas' circles. A report lying in several areas is shown once. When zoomed out, nearby reports are grouped into circles with their count (coloured by the most severe one); tapping one zooms in, and from street level on every report is drawn on its own.
 
 <img src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/screenshots/streckenwacht_karte.png" alt="Streckenwacht map card: traffic jam as a line on the A81 with popup, roadworks near Leonberg" width="726">
 
@@ -339,6 +339,7 @@ entities:                    # any entity of each area
 title: Commute               # optional
 height: 400                  # optional, pixels
 show_planned: true           # optional, show planned reports
+cluster: true                # optional, group nearby reports
 ```
 
 The card loads its base map through Home Assistant's map tile proxy (2026.9 and later): your browser only talks to Home Assistant, not to OpenStreetMap. On older versions the card shows the reports without a base map and a notice.
