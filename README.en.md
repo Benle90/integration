@@ -3,7 +3,7 @@
   <img alt="Streckenwacht – watches over your route." src="https://raw.githubusercontent.com/streckenwacht/integration/main/assets/github/readme-header-light@2x.png" width="640">
 </picture>
 
-[![HACS Custom](https://img.shields.io/badge/HACS-Custom-005B8C.svg)](https://hacs.xyz/)
+[![HACS Default](https://img.shields.io/badge/HACS-Default-005B8C.svg)](https://hacs.xyz/)
 [![Release](https://img.shields.io/github/v/release/streckenwacht/integration?color=005B8C)](https://github.com/streckenwacht/integration/releases)
 [![CI](https://github.com/streckenwacht/integration/actions/workflows/ci.yml/badge.svg)](https://github.com/streckenwacht/integration/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-F5A623.svg)](LICENSE)
@@ -86,19 +86,17 @@ The exception are large state sources without ETag (northern Germany, Brandenbur
 
 The requests contain no personal data, only an identifier of the integration (user agent). The Streckenwacht map card loads its base map through Home Assistant itself, not directly from OpenStreetMap.
 
-## Installation (HACS, custom repository)
+## Installation (HACS)
 
 Requires Home Assistant **2026.3** or newer and [HACS](https://hacs.xyz/).
 
 **One click:** [![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=streckenwacht&repository=integration&category=integration) → download, restart Home Assistant → [![Add integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=streckenwacht)
 
-Or manually:
+Or manually – Streckenwacht has been in the HACS default list since October 2026, no custom repository needed:
 
-1. Open HACS → menu (⋮) → **Custom repositories**.
-2. Enter `https://github.com/streckenwacht/integration`, type **Integration**, add.
-3. Open **Streckenwacht** in HACS → **Download**.
-4. Restart Home Assistant.
-5. **Settings → Devices & services → Add integration → Streckenwacht**.
+1. Open HACS, search for **Streckenwacht** → **Download**.
+2. Restart Home Assistant.
+3. **Settings → Devices & services → Add integration → Streckenwacht**.
 
 Note: the icon is currently missing in the HACS dashboard ([HACS issue #5171](https://github.com/hacs/integration/issues/5171)); it is shown in the Home Assistant settings.
 

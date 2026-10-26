@@ -4,6 +4,9 @@ Alle Änderungen an Streckenwacht, neueste zuerst. Die Einträge entsprechen den
 
 ## Unveröffentlicht
 
+### Doku
+- Streckenwacht ist seit dem 24.10.2026 in der Standardliste von HACS: Die README beschreibt die Installation jetzt ohne benutzerdefiniertes Repository.
+
 ## 0.8.0 – 2026-10-20
 
 ### Neu
