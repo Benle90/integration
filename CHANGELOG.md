@@ -5,7 +5,7 @@ Alle Änderungen an Streckenwacht, neueste zuerst. Die Einträge entsprechen den
 ## Unveröffentlicht
 
 ### Intern
-- Entwicklungs- und Testumgebung auf Home Assistant 2026.10.4 angehoben (Testbibliothek 0.13.375), Abhängigkeiten in `uv.lock` aktualisiert – behebt die Dependabot-Warnungen der Entwicklungsumgebung. Die Integration selbst bringt keine Abhängigkeiten mit.
+- Entwicklungs- und Testumgebung auf Home Assistant 2026.10.4 angehoben (Testbibliothek 0.13.375), Abhängigkeiten in `uv.lock` aktualisiert – behebt 28 der 69 Dependabot-Warnungen der Entwicklungsumgebung; die übrigen 41 betreffen Pillow, das Home Assistant 2026.10.4 selbst auf 12.3.0 festlegt. Die Integration selbst bringt keine Abhängigkeiten mit.
 
 ### Doku
 - Streckenwacht ist seit dem 24.10.2026 in der Standardliste von HACS: Die README beschreibt die Installation jetzt ohne benutzerdefiniertes Repository.
